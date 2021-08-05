@@ -1,6 +1,0 @@
-.navbar{
-    display: flex; /*flex박스로 보여주기*/
-    justify-content: space-between; /*중심콘텐츠로부터 space를 사이사이에 넣어줌*/
-    align-items: center; /*양 옆 콘텐츠들을 center로*/
-    background-color:cadetblue;
-}
