@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(15, 8, 43);   /*전체색상 */
+}
+
+.navbar {   /*내비게이션 바(로고+메뉴)*/
+    background-color: rgb(9, 4, 31);
+    height: 120px;
+    padding: 0 50px;
+    position: sticky;   /*상단바 고정*/
+    padding-top: 60px;  /*자연스럽게 줄어들기*/
+    top: -60px;
+    opacity: 0.7;   /*뒤에 비치게 하기*/
+    backdrop-filter: blur(30px);
+}
+
+.navbar #menu {   /*메뉴*/
+    float: right;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar #menu li {
+    padding: 0 20px;    /*hover때문에 간격 줌*/
+    cursor: pointer;
+    float: left;
+    line-height: 60px;
+}
+.navbar #menu li:not(:last-child) {     /*메뉴 간 간격 띄우기*/
+    margin-right: 40px;
+}
+
+.navbar #menu li:hover {    /*마우스 커서 올리면 gray색*/
+    background-color: gray;
+}
+
+.navbar #menu li a {    /*메뉴이름 속성*/
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.explain {
+    height: 100%;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(30px);
+    margin-top: 10%;
+    margin-bottom: 20%;
+}
+
+.explain .title {
+    line-height: 70px;
+}
+
+.explain .content {
+    line-height: 40px;
+}
