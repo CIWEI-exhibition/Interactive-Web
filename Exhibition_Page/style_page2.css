@@ -1,0 +1,101 @@
+boby{
+    margin: 0;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+a{
+    text-decoration: none;
+    color: teal;
+}
+/* 
+.navbar{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color:cadetblue; 
+    padding: 8px 12px;
+} 
+*/
+
+.navbar_logo{
+    font-size: 24px;
+    color: teal;
+}
+
+.navbar_logo i{
+    color: teal;
+}
+/* 
+.navbar_menu{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar_menu li{
+    padding: 8px 12px;
+}
+
+.navbar_menu li:hover{
+    background-color: wheat;
+    border-radius: 4px;
+}
+
+.navbar_icons{
+    list-style: none;
+    color: white;
+    display: flex;
+    padding-left: 0;
+}
+
+.navbar_icons li{
+    padding: 8px 12px;
+} */
+
+.navbar_toogleBtn{
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: teal;
+}
+
+/* @media screen and (max-width: 768px) { <- 반응형 헤더*/
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .navbar_menu{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .navbar_menu li{
+        padding: 8px 12px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar_menu li:hover{
+        background-color:lemonchiffon;
+        border-radius: 4px;
+    }
+
+    .navbar_icons{
+        display: none;
+        justify-content: center;
+        width: 100%;
+        list-style: none;
+        color: teal;
+        padding-left: 0;
+    }
+
+    .navbar_menu.active, 
+    .navbar_icons.active{
+        display: flex;
+    }
+/* } */
