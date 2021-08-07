@@ -52,7 +52,7 @@ body {
     color: white;
     backdrop-filter: blur(30px);
     margin-top: 10%;
-    margin-bottom: 20%;
+    margin-bottom: 15%;
 }
 
 .explain .title {
@@ -61,4 +61,10 @@ body {
 
 .explain .content {
     line-height: 40px;
+}
+
+.link-container .button {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
 }
