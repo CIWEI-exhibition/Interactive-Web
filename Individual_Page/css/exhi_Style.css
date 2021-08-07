@@ -67,12 +67,15 @@ body {
 
 /*여기까지가 작품 제목 및 부제목 내용*/
 
-.picture {
+.description {
     float: left;
     display: block;
-    margin: 0 30% 800px 30%;
+    margin: 0 30% 400px 30%;
 }
 
+.description .picture {
+    margin-bottom: 10%;
+}
 .description p {
     width: 700px;
     color: white;
