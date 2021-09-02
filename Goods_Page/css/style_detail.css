@@ -51,3 +51,22 @@ body {
     font-weight: bold;
     text-decoration: none;
 }
+
+/* 여기까지 navbar */
+/* 아래가 본격 상세페이지! */
+
+.header{
+    overflow: auto;         /* 꿀팁!! 부모 div가 자식 div를 감싸지 않을때 쓰는 코드! */
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    color: whitesmoke;
+}
+
+.big-image{
+    float: left;
+}
+
+.semi-header{
+    float: left;
+}

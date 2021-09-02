@@ -57,3 +57,19 @@ body {
     line-height: 1000px;
     vertical-align: middle;
 }
+
+/* 여기까지가 상단바 */
+/* 아래부터는 진짜 커뮤니티 페이지! */
+
+.board-wrap{
+    color: white;
+}
+
+ul, li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
