@@ -4,11 +4,11 @@
 
 body {
     margin: 0;
-    background-color: rgb(15, 8, 43);   /*전체색상 */
+    background-color: whitesmoke;   /*전체색상 */
 }
 
 .navbar {   /*내비게이션 바(로고+메뉴)*/
-    background-color: rgb(9, 4, 31);
+    background-color: rgb(228, 228, 228);
     height: 120px;
     padding: 0 50px;
     position: sticky;   /*상단바 고정*/
@@ -46,8 +46,8 @@ body {
 }
 
 .navbar #menu li a {    /*메뉴이름 속성*/
-    color: white;
-    font-size: 16px;
+    color: black;
+    font-size: 20px;
     font-weight: bold;
     text-decoration: none;
 }
@@ -55,18 +55,62 @@ body {
 /* 여기까지 navbar */
 /* 아래가 본격 상세페이지! */
 
+.detail{
+    width: 1245px;
+    margin: 150px auto 150px auto;
+}
+
 .header{
     overflow: auto;         /* 꿀팁!! 부모 div가 자식 div를 감싸지 않을때 쓰는 코드! */
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    color: whitesmoke;
+    color: black;
+    margin-bottom: 150px;
 }
 
 .big-image{
     float: left;
+    width: 600px;
+    margin-right: 130px;
 }
 
 .semi-header{
     float: left;
+    font-size: 24px;
+    font-weight: 500
+}
+
+.semi-header .price{
+    margin: 20px 0 20px 0;
+}
+
+.semi-header .subtitle{
+    margin: 15px 0 30px 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.semi-header .btn:not(:last-child){
+    margin-right: 1px;
+    padding: 15px 49px 15px 49px;
+}
+
+.semi-header .heart{
+    padding: 15px 73px 15px 73px;
+}
+.clearfix{
+    clear: both;
+}
+
+/* 여기까지 header(맨 위 구매정보 등) */
+/* 여기서부터 툴바 */
+
+.link-container .btn-outline-primary{
+    color: black;
+    padding: 15px 180px 15px 180px;
+    outline-color: black;
+}
+
+.link-container .btn-outline-primary:hover{
+    background-color: black;
+    color: white;
+
 }

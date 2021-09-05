@@ -4,11 +4,11 @@
 
 body {
     margin: 0;
-    background-color: rgb(15, 8, 43);   /*전체색상 */
+    background-color: whitesmoke;   /*전체색상 */
 }
 
 .navbar {   /*내비게이션 바(로고+메뉴)*/
-    background-color: rgb(9, 4, 31);
+    background-color: whitesmoke;
     height: 120px;
     padding: 0 50px;
     position: sticky;   /*상단바 고정*/
@@ -46,7 +46,7 @@ body {
 }
 
 .navbar #menu li a {    /*메뉴이름 속성*/
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
@@ -70,7 +70,7 @@ body {
 
 .products h3 {
     font-size: 24px;
-    color: whitesmoke;
+    color: black;
     margin-top: 200px;
     margin-bottom: 200px;
     text-align: center;
@@ -80,7 +80,7 @@ body {
     display: block;
     float: left;
     width: 225px;
-    color: whitesmoke;
+    color: black;
     text-decoration: none;
     text-align: center;
     margin-left: 10px;
