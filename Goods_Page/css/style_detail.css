@@ -63,7 +63,7 @@ body {
 .header{
     overflow: auto;         /* 꿀팁!! 부모 div가 자식 div를 감싸지 않을때 쓰는 코드! */
     color: black;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 
 .big-image{
@@ -105,12 +105,11 @@ body {
 
 .link-container .btn-outline-primary{
     color: black;
-    padding: 15px 180px 15px 180px;
-    outline-color: black;
+    border-color: black;
+    padding: 15px 182px;
 }
 
 .link-container .btn-outline-primary:hover{
     background-color: black;
     color: white;
-
 }

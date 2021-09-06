@@ -93,6 +93,11 @@ body {
     margin-bottom: 4px;
 }
 
+.product .product-icons{
+    margin-top: 20px;
+    color: gray;
+}
+
 .clearfix{
     clear: both;
 }
