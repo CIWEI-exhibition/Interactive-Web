@@ -102,17 +102,25 @@ input[id="navbar_menu"]:checked + label + div {
 /* 여기까지가 sidebar */
 /* 아래부터가 진짜 전시 시작! */
 
-.topbar{
-    background-color: aqua;
-    width: 1900px;
-    margin: 30px auto 30px auto;
-    opacity: 0.5;
-    backdrop-filter: blur(30px);
-    z-index: -1;
-}
-
 .sky{
+    position: absolute;
     width: 1899px;
     height: 2887px;
     background-image: url("images/background(0)/sky1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sky .moon{
+    position: relative;
+    top: 200px;
+    left: 900px;
+}
+
+.background-sky{
+    width: 11509px;
+    height: 960px;
+    background-image: url("images/background(0)/sky2---.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
