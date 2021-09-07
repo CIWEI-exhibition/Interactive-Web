@@ -1,0 +1,104 @@
+boby{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+input[id="navbar_menu"]{
+    display: none;
+}
+
+input[id="navbar_menu"] + label{
+    display: block;
+    width: 24px;
+    height: 18px;
+    position: relative;
+    cursor: pointer;
+}
+
+input[id="navbar_menu"] + label span{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 30px;
+    background: teal;
+    transition: all .35s;
+}
+
+input[id="navbar_menu"] + label span:nth-child(1){
+    top:0;
+}
+
+input[id="navbar_menu"] + label span:nth-child(2){
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+input[id="navbar_menu"] + label span:nth-child(3){
+    bottom:0;
+}
+
+/*check 되었을 때*/
+input[id="navbar_menu"]:checked + label{
+    z-index: 2;
+}
+
+input[id="navbar_menu"]:checked + label span{
+    background: #fff;
+}
+
+input[id="navbar_menu"]:checked + label span:nth-child(1){
+    top:50%;
+    transform:translateY(-50%) rotate(45deg);
+}
+
+input[id="navbar_menu"]:checked + label span:nth-child(2){
+    opacity: 0; /* 투명도 */
+}
+
+input[id="navbar_menu"]:checked + label span:nth-child(3){
+    bottom:50%;
+    transform:translateY(50%) rotate(-45deg);
+}
+
+div[class="sidebar"] {
+    list-style: none;
+    width:300px; 
+    height: 100%; 
+    background:teal; 
+    position: fixed; /*스크롤해도 고정됨, 상단에*/
+    top: 0; 
+    left: -300px; 
+    z-index: 1; /*position의 우선순위*/
+    transition: all .35s;} /*변화값에 모션을 주는 설정*/
+
+input[id="navbar_menu"]:checked + label + div {
+    left:0;
+}
+
+.sidebar a{
+    padding: 50px 0px 0px 25px;
+    font-size: 16px;
+    color:white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover{
+    color:aquamarine;
+}
+
+/* 여기까지가 sidebar */
+/* 아래부터가 진짜 전시 시작! */
+
+.body {
+    width: 1889px;
+    height: 2993px;
+    background-image: url("images/background(0)/sky1.png");
+}
