@@ -160,14 +160,44 @@ input[id="navbar_menu"]:checked + label + div {
     left: 550px;
 }
 
-.banner{
+.booth-banner{
     position: absolute;
     bottom: 50px;
     left: 1750px;
 }
 
-.busking{
+.booth-busking{
     position: absolute;
     bottom: 0;
     left: 2800px;
+}
+
+.booth-icecream{
+    position: absolute;
+    bottom: 30px;
+    left: 3670px;
+}
+
+.booth-study{
+    position: absolute;
+    bottom: 50px;
+    left: 4400px;
+}
+
+.booth-love{
+    position: absolute;
+    bottom: 50px;
+    left: 5300px;
+}
+
+.booth-music{
+    position: absolute;
+    bottom: 50px;
+    left: 6250px;
+}
+
+.booth-healing{
+    position: absolute;
+    bottom: 50px;
+    left: 7100px;
 }
