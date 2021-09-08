@@ -103,7 +103,6 @@ input[id="navbar_menu"]:checked + label + div {
 /* 아래부터가 진짜 전시 시작! */
 
 .sky{
-    position: absolute;
     width: 1899px;
     height: 2887px;
     background-image: url("images/background(0)/sky1.png");
@@ -111,16 +110,18 @@ input[id="navbar_menu"]:checked + label + div {
     background-size: cover;
 }
 
-.sky .moon{
-    position: relative;
-    top: 200px;
-    left: 900px;
-}
-
 .background-sky{
     width: 11509px;
     height: 960px;
     background-image: url("images/background(0)/sky2---.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-ground{
+    width: 11509px;
+    height: 960px;
+    background-image: url("images/background(0)/ground.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
