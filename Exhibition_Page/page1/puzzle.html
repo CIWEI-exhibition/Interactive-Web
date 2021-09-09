@@ -10,35 +10,46 @@
         }
 
         #pieces {
-            display: flex;
+            display: grid;
             flex-wrap: wrap;
             width: 212px;
             margin: auto;
-            justify-content: center;
+            grid-template-columns: repeat(3, 1fr);
         }
 
         #puzzle {
             
+            display: flex;
             width: 212px;
             height: 212px;
             display: flex;
-            flex-wrap:wrap-reverse;
+            flex-wrap: wrap;
             margin: auto;
         }
 
         .piece {
+            
             width: 106px;
             height: 106px;
             background-size: cover;
-            margin: 5px;
+            margin: 10px;
         }
+
+        /* img{
+            background-image: url('card image/healing_.jpg');
+            background-repeat: no-repeat;
+            width: 500px;
+            height: 400px;
+        } */
 
         .placeholder {
             background-image: url('card image/healing_.jpg');
+            
 			background-color: #FFFF;
             width: 106px;
             height: 106px;
             transition: 1s;
+            
         }
 
         .placeholder.hover {
@@ -55,9 +66,9 @@
             display: none;
         }
 
-        .success {
-            background-color: #B3D67C;
-        }
+        /* .success {
+            
+        } */
 
         .success #message {
             display: block;
@@ -65,6 +76,7 @@
 
         .success .placeholder {
             outline: none;
+            background-image: url('card image/healing.jpg');
         }
 
         .success #pieces {
@@ -75,11 +87,62 @@
             display: flex;
             flex-wrap: wrap;
         }
+        /* 
+       ul{
+            list-style-type: none;
+        }
+ 
+        li{
+            width: 106px;
+            height: 106px;
+            
+        }
+
+        .list0 {
+            background-position-x: 0px;
+            background-position-y: 0px;
+        }
+
+        .list1{
+            background-position-x: -106px;
+            background-position-y: 0px;
+        }
+
+        .list2{
+            background-position-x: -212px;
+            background-position-y: 0px;
+        }
+
+        .list3{
+            background-position-x: 0px;
+            background-position-y: -106px;
+        }
+
+        .list4{
+            background-position-x: -106px;
+            background-position-y: -106px;
+        }
+
+        .list5{
+            background-position-x: -212px;
+            background-position-y: -106px;
+        } */
     </style>
 </head>
 <body>
     <div class="container">
-        <div id="puzzle"></div>
+        <div id="puzzle">
+            <!-- <img background-image="card image/healing_.jpg"/> -->
+            <!-- <piece background="card image/healing_.jpg"/> -->
+            <!-- <ul class="image-container">
+                <li class ="list0"></li>
+                <li class ="list1"></li>
+                <li class ="list2"></li>
+                <li class ="list3"></li>
+                <li class ="list4"></li>
+                <li class ="list5"></li>
+            </ul> -->
+        </div>
         <div id="pieces"></div>
     </div>
     <h1 id="message">success!</h1>
@@ -87,8 +150,8 @@
     
     <script>
 		const images = [
-            'healing1', 'healing2', 'healing3',
-            'healing4', 'healing5', 'healing6'
+            'healing-0', 'healing-1', 'healing-2',
+            'healing-3', 'healing-4', 'healing-5'
         ];
 
         const puzzle = document.getElementById('puzzle');
@@ -97,7 +160,7 @@
 
         let terminado = images.length;
         
-        while (images.length) {
+        while (terminado) {
             const index = Math.floor(Math.random() * images.length);
             const div = document.createElement('div');
             div.className = 'piece';
@@ -116,7 +179,7 @@
         }
 
 
-        piezas.addEventListener('dragstart', e => {
+        pieces.addEventListener('dragstart', e => {
             e.dataTransfer.setData('id', e.target.id);
         });
 
@@ -133,9 +196,9 @@
             e.target.classList.remove('hover');
 
             const id = e.dataTransfer.getData('id');
-            const numero = id.split('-')[1];
+            const number = id.split('-')[1];
 
-            if (e.target.dataset.id === numero) {
+            if (e.target.dataset.id === number) {
                 e.target.appendChild(document.getElementById(id));
 
                 terminado--;
