@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle</title>
+    <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/trontastic/jquery-ui.css">
+    <script
+    src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <style>
+        #container{
+            width:1220px;
+            height: 409px;
+            border: 1px solid white;
+            border-radius: 20px;
+            margin: 10px auto;
+            padding: 10px;
+        }
+        #pieceContainer{
+            width: 606px;
+            height: 404px;
+            border: 1px solid white;
+            text-align: center;
+            font-size: 30px;
+            line-height: 404px;
+            float: left;
+            position: relative;
+        }
+        #puzzleContainer{
+            width: 606px;
+            height: 404px;
+            border:1px solid black;
+            font-size: 30px;
+            line-height: 404px;
+            float: right;
+        }
+        ul{
+            list-style-type: none;
+            text-align: center;
+        }
+        ul button{
+            width: 100px;
+            border: 1px solid black;
+            font-size: 20px;
+            border-radius: 5px;
+            padding: 5px;
+            margin-top: 20px;
+        }
+        #btnReset{
+            display: none;
+        }
+        .piece{
+            width: 200px;
+            height: 200px;
+            border: 1px solid white;
+            float: left;
+            background-image: url('card image/healing.png');
+            background-repeat: no-repeat;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            var pieces = createPieces(true);
+            // console.log(pieces);
+            $("#puzzleContainer").html(pieces);
+            //부스를 클릭하면,(나중에 Start버튼을 부스로 변경)
+            
+            $("#btnStart").click(function(){
+                var pieces = $("#puzzleContainer div");
+                pieces.each(function(){
+                    var leftPosition = 
+                    Math.floor(Math.random()*290) + "px";
+                    var topPosition = 
+                    Math.floor(Math.random()*290) + "px";
+                    $(this).addClass("draggablePiece")
+                        .css({
+                        position: "absolute",
+                        left: leftPosition,
+                        top: topPosition
+                    })
+                    $("#pieceContainer").append($(this));
+                });
+                var emptyString = createPieces(false);
+                $("#puzzleContainer").html(emptyString);
+                $(this).hide();
+                $("#btnReset").show()
+                implementLogic()
+            });
+
+            $("#btnReset").click(function(){
+                var newPieces = createPieces(true);
+                $("#puzzleContainer").html(newPieces);
+                $(this).hide();
+                $("#btnStart").show();
+                $("#pieceContainer").empty();
+            });
+            function createPieces(withImage){
+                var rows = 2, columns = 3;
+                var pieces = "";
+                for(var i=0, top=0, order=0; i<rows; i++, top-=200){
+                    for(var j=0, left=0; j<columns; j++, left-=200, order++){
+                        if(withImage){
+                            pieces += "<div style ='background-position:"+ left+ "px "+ top+ "px;' class='piece' data-order=" + order+ "></div>";
+                        }else{
+                            pieces += "<div style='background-image:none;' class='piece droppableSpace'></div>";
+                        }
+                    }
+                }
+                return pieces;
+            }
+            function checkIfPuzzleSolved(){
+
+                if($("#puzzleContainer .droppedPiece").length != 6){
+                    return false;
+                }
+                for(var k=0;k<6;k++){
+                    var item = $("#puzzleContainer .droppedPiece:eq(" + k + ")");
+                    var order = item.data("order");
+                    if(k != order){
+                        $("#pieceContainer").text("Try Again!");
+                        return false;
+                    }
+                }
+                $("#pieceContainer").text("Perfect!");
+                return true;
+            }
+            function implementLogic(){
+                
+                $(".draggablePiece").draggable({
+                    revert:"invalid",
+                    start:function(){
+                        if($(this).hasClass("droppedPiece")){
+                            $(this).removeClass("droppedPiece");
+                            $(this).parent().removeClass("piecePresent");
+                        }
+                    }
+                });
+                $(".droppableSpace").droppable({
+                    hoverClass:"ui-state-hightlight",
+                    accept:function(){
+                        return !$(this).hasClass("piecePresent")
+                    },
+                    drop:function(event, ui){
+                        var draggableElement = ui.draggable;
+                        var droppedOn = $(this);
+                        droppedOn.addClass("piecePresent");
+                        $(draggableElement)
+                            .addClass("droppedPiece")
+                            .css({
+                                top: 0,
+                                left: 0,
+                                position: "relative"
+                            }).appendTo(droppedOn);
+                            checkIfPuzzleSolved;
+                    }
+                });
+            }
+        });
+    </script>
+    
+</head>
+<body>
+    <div id="container">
+        <div id="pieceContainer"></div>
+        <div id="puzzleContainer"></div>
+        <ul id="buttons">
+            <li><button id="btnReset">Reset</button></li>
+            <!-- 나중에 Start버튼을 부스에 대입 -->
+            <li><button id="btnStart">Start</button></li>
+        </ul>
+    </div>
+</body>
+</html>
