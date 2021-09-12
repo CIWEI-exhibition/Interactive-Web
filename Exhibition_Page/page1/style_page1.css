@@ -102,10 +102,18 @@ input[id="navbar_menu"]:checked + label + div {
 /* 여기까지가 sidebar */
 /* 아래부터가 진짜 전시 시작! */
 
+/*스크롤바 없애기*/
+body{
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
 .sky-wrapper{
     position: relative;
     height: 2297px;
-    overflow: hidden;
 }
 
 .star{
