@@ -5,7 +5,14 @@ window.onload = function(){
     var moon = document.querySelector(".moon");
     var shootingStar = document.querySelector(".shootingStar");
 
-    //스크롤 이벤트 (패럴랙스 느낌)
+    // 부스 쪽
+    var bgsky = document.querySelector(".background-sky");
+    var bgstar = document.querySelector(".background-star");
+    var bgmountain = document.querySelector(".background-mountain");
+    var bgground = document.querySelector(".background-ground");
+
+
+    //스크롤 이벤트 (패럴랙스 느낌) (처음 하늘쪽)
     window.addEventListener("scroll", function(event){      //스크롤 이벤트를 걸어주고
         var scroll = this.scrollY;                          // scroll이라는 변수에 scrollY값을 넣어준다.
         
@@ -13,6 +20,15 @@ window.onload = function(){
         moon.style.transform = "translateY("+ -scroll/10 + "px)";           //달이 천천히 올라가는 것처럼 보이게 함.
         shootingStar.style.transform = "translateX("+ -scroll/6 + "px)";    // 별똥별이 오-->왼으로 움직이는 것처럼 보이게 함.
     })
+
+    window.addEventListener("scroll", function(event){
+        var scroll2 = this.scrollX;
+
+        bgstar.style.transform = "translateX("+ -scroll2/6 + "px)";
+        bgmountain.style.transform = "translateX("+ -scroll2/3 + "px)";
+    })
+
+
 
     //저절로 내려가게 하는 효과
     TweenMax.to( window, 4, {               //TweenMax적용함. 전체 window에, 2초,
@@ -25,20 +41,3 @@ window.onload = function(){
 }
 
 //가로 스크롤
-
-//움직임 주기
-// window.onload = function(){
-
-//     var bgsky = document.querySelector(".background-sky");
-//     var bgstar = document.querySelector(".background-star");
-//     var bgmountain = document.querySelector(".background-mountain");
-//     var bgground = document.querySelector(".background-ground");
-
-//     //스크롤 이벤트
-//     window.addEventListener("scroll", function(event){
-//         var scroll = this.scrollY;
-
-//         bgsky.style.trransform = "translateX("+ -scroll/10 + "px)";
-//     })
-  
-// }
