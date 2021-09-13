@@ -26,4 +26,19 @@ window.onload = function(){
 
 //가로 스크롤
 
-    
+//움직임 주기
+// window.onload = function(){
+
+//     var bgsky = document.querySelector(".background-sky");
+//     var bgstar = document.querySelector(".background-star");
+//     var bgmountain = document.querySelector(".background-mountain");
+//     var bgground = document.querySelector(".background-ground");
+
+//     //스크롤 이벤트
+//     window.addEventListener("scroll", function(event){
+//         var scroll = this.scrollY;
+
+//         bgsky.style.trransform = "translateX("+ -scroll/10 + "px)";
+//     })
+  
+// }
