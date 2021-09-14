@@ -111,3 +111,26 @@ input[id="navbar_menu"]:checked + label + div {
     top: 0;
     left: 0;
 }
+
+/*깜빡이는 효과 시작*/
+.blinking{ 
+    -webkit-animation:blink 0.3s ease-in-out infinite alternate; 
+    -moz-animation:blink 0.3s ease-in-out infinite alternate; 
+    animation:blink 0.3s ease-in-out infinite alternate; 
+}
+
+@-webkit-keyframes blink{
+    0% {opacity:0;} 
+    100% {opacity:1;} 
+} 
+
+@-moz-keyframes blink{
+    0% {opacity:0;} 
+    100% {opacity:1;} 
+} 
+
+@keyframes blink{
+    0% {opacity:0;} 
+    100% {opacity:1;} 
+}
+/*깜빡이는 효과 끝*/
