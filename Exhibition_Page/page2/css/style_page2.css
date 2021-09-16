@@ -102,6 +102,16 @@ input[id="navbar_menu"]:checked + label + div {
 /* 여기까지가 sidebar */
 /* 아래부터가 2페이지 시작! */
 
+/* 스크롤 없애기 */
+body{
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+/* 이미지 배치 */
 .wrapper{
     position: relative;
 }
@@ -112,11 +122,36 @@ input[id="navbar_menu"]:checked + label + div {
     left: 0;
 }
 
+/*화면 페럴랙스 효과 시작*/
+/*화면 페럴랙스 효과 끝*/
+
+/*세로 진행 바 시작*/
+.progress {
+    position: fixed;
+    width: 4px;
+    height: 140px;
+    top: 40%;
+    right: 10px;
+    background-color: black;
+    z-index: 10;
+}
+
+.bar{
+    position: absolute;
+    width: 4px;
+    height: 140px;
+    top: 0;
+    right: 0;
+    background-color: chartreuse;
+    z-index: 11;
+}
+/*세로 진행 바 끝*/
+
 /*깜빡이는 효과 시작*/
 .blinking{ 
-    -webkit-animation:blink 0.3s ease-in-out infinite alternate; 
-    -moz-animation:blink 0.3s ease-in-out infinite alternate; 
-    animation:blink 0.3s ease-in-out infinite alternate; 
+    -webkit-animation:blink 1.0s ease-in-out infinite alternate; 
+    -moz-animation:blink 1.0s ease-in-out infinite alternate; 
+    animation:blink 1.0s ease-in-out infinite alternate; 
 }
 
 @-webkit-keyframes blink{
@@ -134,3 +169,9 @@ input[id="navbar_menu"]:checked + label + div {
     100% {opacity:1;} 
 }
 /*깜빡이는 효과 끝*/
+
+.whatsproblem{
+    background-color: black;
+    width: 100%;
+    height: 400px;
+}
