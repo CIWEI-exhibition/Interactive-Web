@@ -36,11 +36,11 @@ function scrollFunc(e){
 
     //패럴렉스 핵심
     bg.style.transform = "translate3d(0px ," + scrollTop * .12 +"px, 0px)";
-    bgWall.style.transform = "translate3d(0px ," + scrollTop * .50 +"px , 0px)";
-    bgInterior.style.transform = "translate3d(0px ," + scrollTop * .50 +"px , 0px)";
-    com.style.transform = "translate3d(0px ," + scrollTop * .35 +"px , 0px)";
-    comLight.style.transform = "translate3d(0px ," + scrollTop * .35 +"px , 0px)";
-    comChair.style.transform = "translate3d(0px ," + scrollTop * .45 +"px , 0px)";
+    bgWall.style.transform = "translate3d(0px ," + scrollTop * .35 +"px , 0px)";
+    bgInterior.style.transform = "translate3d(0px ," + scrollTop * .35 +"px , 0px)";
+    com.style.transform = "translate3d(0px ," + scrollTop * .45 +"px , 0px)";
+    comLight.style.transform = "translate3d(0px ," + scrollTop * .47 +"px , 0px)";
+    comChair.style.transform = "translate3d(0px ," + scrollTop * .52 +"px , 0px)";
     fgMoonlight.style.transform = "translate3d(0px ," + scrollTop * .55 +"px , 0px);"
     fg.style.transform = "translate3d(0px ," + scrollTop * 1.5 +"px , 0px)";
 }
@@ -54,9 +54,9 @@ function loop() {
     mx += (x - mx) * speed;
     my += (y - my) * speed;
 
-    // bgWall.style.transform = "translate("+ mx / 30 +"px ," + -my / 30 +"px)";
-    // fgMoonlight.style.transform = "translate("+ mx / 50 +"px ," + -scrollTop * .85 +"px)";
-    // fg.style.transform = "translate("+ -mx / 20 +"px ," + -my / 20 +"px)";
+    bgWall.style.transform = "translate("+ mx / 30 +"px ," + -my / 30 +"px)";
+    fgMoonlight.style.transform = "translate("+ mx / 50 +"px ," + -scrollTop * .85 +"px)";
+    fg.style.transform = "translate("+ -mx / 20 +"px ," + -my / 20 +"px)";
 
     window.requestAnimationFrame(loop);
 }
