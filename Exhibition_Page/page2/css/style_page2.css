@@ -114,6 +114,7 @@ body::-webkit-scrollbar{
 /* 이미지 배치 */
 .wrapper{
     position: relative;
+    overflow: hidden;
 }
 
 #bg{
@@ -130,7 +131,7 @@ body::-webkit-scrollbar{
 
 #fg{
     position: absolute;
-    bottom:0;
+    bottom: 0;
     left: 0;
 }
 
@@ -161,9 +162,9 @@ body::-webkit-scrollbar{
 
 /*깜빡이는 효과 시작*/
 .blinking{ 
-    -webkit-animation:blink 1.0s ease-in-out infinite alternate; 
-    -moz-animation:blink 1.0s ease-in-out infinite alternate; 
-    animation:blink 1.0s ease-in-out infinite alternate; 
+    -webkit-animation:blink 0.7s ease-in-out infinite alternate; 
+    -moz-animation:blink 0.7s ease-in-out infinite alternate; 
+    animation:blink 0.7s ease-in-out infinite alternate; 
 }
 
 @-webkit-keyframes blink{
