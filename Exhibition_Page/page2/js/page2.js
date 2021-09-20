@@ -40,9 +40,9 @@ function scrollFunc(e){
     bgInterior.style.transform = "translate3d(0px ," + scrollTop * .35 +"px , 0px)";
     com.style.transform = "translate3d(0px ," + scrollTop * .45 +"px , 0px)";
     comLight.style.transform = "translate3d(0px ," + scrollTop * .47 +"px , 0px)";
-    comChair.style.transform = "translate3d(0px ," + scrollTop * .45 +"px , 0px)";
+    comChair.style.transform = "translate3d(0px ," + scrollTop * .43 +"px , 0px)";
     fgMoonlight.style.transform = "translate3d(0px ," + scrollTop * .55 +"px , 0px);"
-    fg.style.transform = "translate3d(0px ," + scrollTop * .12 +"px , 0px)";
+    fg.style.transform = "translate3d(0px ," + scrollTop * 1.55 +"px , 0px)";
 }
 
 function stageResize() {        //per를 위한 함수 (document랑 window height값)
