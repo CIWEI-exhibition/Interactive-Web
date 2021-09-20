@@ -125,7 +125,7 @@ body::-webkit-scrollbar{
 
 .img:not(:last-child){
     position: absolute;
-    top: 200px;
+    top: 280px;
     left: 0;
 }
 
