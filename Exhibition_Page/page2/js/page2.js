@@ -5,6 +5,7 @@ let my = 0;
 let speed = 0.03;
 let scrollTop = 0;
 let bg, bgWall, bgInterior, com, comMonitor, comChair, comLight, fgMoonlight, fg;
+let stand1, stand2;
 
 window.onload = function(){
     progressBar = document.getElementsByClassName("bar")[0];
@@ -18,6 +19,9 @@ window.onload = function(){
     comLight = document.getElementById("com-light");
     fgMoonlight = document.getElementById("fg-moonlight");
     fg = document.getElementById("fg");
+
+    stand1 = document.getElementById("stand1");
+    stand2 = document.getElementById("stand2");
 
     window.addEventListener('resize', stageResize, false);
     window.addEventListener('mousemove', mouseMove, false);
@@ -39,6 +43,10 @@ function scrollFunc(e){
     bgWall.style.transform = "translate3d(0px ," + scrollTop * .35 +"px , 0px)";
     bgInterior.style.transform = "translate3d(0px ," + scrollTop * .35 +"px , 0px)";
     com.style.transform = "translate3d(0px ," + scrollTop * .45 +"px , 0px)";
+
+    // stand1.style.transform = "translate3d(0px ," + scrollTop * .45 +"px , 0px)";
+    // stand2.style.transform = "translate3d(0px ," + scrollTop * .45 +"px , 0px)";
+
     comLight.style.transform = "translate3d(0px ," + scrollTop * .47 +"px , 0px)";
     comChair.style.transform = "translate3d(0px ," + scrollTop * .43 +"px , 0px)";
     fgMoonlight.style.transform = "translate3d(0px ," + scrollTop * .55 +"px , 0px);"
