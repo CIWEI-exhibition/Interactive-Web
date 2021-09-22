@@ -1,20 +1,21 @@
-// window.onload = function($){
-//     document.getElementById('monitor').onclick = function(){
-//         $(".modal-wrapper").toggleClass("open");
-//         $(".wrapper").toggleClass("blur-it");
-//         return false;
-//     };
-// };
+const body = document.querySelector('body');
+const modal = document.querySelector('.modal');
+const btnOpenPopup = document.querySelector('.btn-open-popup');
 
-$(function(){
-    $("#modal-open").click(function(){        
-        $("#popup").css('display','flex').hide().fadeIn();
-        $(".wrapper").toggleClass("blur-it");
-    });
-    $("#close").click(function(){
-        modalClose();
-    });
-    function modalClose(){
-      $("#popup").fadeOut();
+btnOpenPopup.addEventListener('click', (event) => {
+  modal.classList.toggle('show');
+
+  if (modal.classList.contains('show')) {
+    body.style.overflow = 'hidden';
+  }
+});
+
+modal.addEventListener('click', (event) => {
+  if (event.target == modal) {
+    modal.classList.toggle('show');
+
+    if (!modal.classList.contains('show')) {
+      body.style.overflow = 'auto';
     }
-  });
+  }
+});

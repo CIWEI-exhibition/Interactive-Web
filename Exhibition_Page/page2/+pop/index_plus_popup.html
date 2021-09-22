@@ -42,45 +42,35 @@
                 
             <img src="../images/desk.png" alt="책상" class="img" id="desk" width="100%">
             <img src="../images/computerStand.png" alt="스탠드" class="img" id="stand" width="100%">
-                
-            <!-- Button -->
-                <img src="../images/moniter.png" alt="모니터" id="monitor" class="img" width="100%"
-                @click="modalHandler">
-    
+            
             <img src="../images/computerLight.png" alt="컴퓨터-스탠드빛" class="img blinking" id="com-light" width="100%">
             <img src="../images/computerChair.png" alt="컴퓨터-의자" class="img" id="com-chair" width="100%">
                 
             <img src="../images/bgMoonlight.png" alt="달빛" class="img" id="fg-moonlight" width="100%">      <!--fg: front-ground(컴퓨터 앞에 놓이는 배경)-->
-            <img src="../images/bgFront.png" alt="맨 앞" class="img" id="fg" width="100%">
+            <img src="../images/bgFront.png" alt="맨 앞" class="img" id="fg" width="100%">    
+            
+            <!-- modal -->
+            <button class= "btn-open-popup"> </button>
+                
+            <div class="modal show">
+                <div class="modal_body">
+                    모달페이지
+                <!-- <img src="../images/오류1.png" alt="오류1" class="pop-img" id="오류1" width="100%">
+                <img src="../images/오류2.png" alt="오류2" class="pop-img" id="오류2" width="100%">
+                <img src="../images/오류3.png" alt="오류3" class="pop-img" id="오류3" width="100%">
+                <img src="../images/오류4.png" alt="오류4" class="pop-img" id="오류4" width="100%">
+                <img src="../images/오류5.png" alt="오류5" class="pop-img" id="오류5" width="100%">
+                <img src="../images/오류6.png" alt="오류6" class="pop-img" id="오류6" width="100%">
+                <img src="../images/오류7.png" alt="오류7" class="pop-img" id="오류7" width="100%">
+                <img src="../images/오류8.png" alt="오류8" class="pop-img" id="오류8" width="100%"> -->
+                </div>
+            </div>
+            
         </div>
     </div>
-    <!-- Modal -->
-    <div class="popup-wrap" id="popup">
-        <div class="popup">
-            <div class="popup-body">
-                <div class = "body-content">
-                    <div class="body-contentbox">
-                        <img src="../images/페이지.png" alt="전체페이지" width="100%">
-                        <!-- <img src="../images/오류1.png" alt="오류1" class="pop-img" id="오류1" width="100%">
-                        <img src="../images/오류2.png" alt="오류2" class="pop-img" id="오류2" width="100%">
-                        <img src="../images/오류3.png" alt="오류3" class="pop-img" id="오류3" width="100%">
-                        <img src="../images/오류4.png" alt="오류4" class="pop-img" id="오류4" width="100%">
-                        <img src="../images/오류5.png" alt="오류5" class="pop-img" id="오류5" width="100%">
-                        <img src="../images/오류6.png" alt="오류6" class="pop-img" id="오류6" width="100%">
-                        <img src="../images/오류7.png" alt="오류7" class="pop-img" id="오류7" width="100%">
-                        <img src="../images/오류8.png" alt="오류8" class="pop-img" id="오류8" width="100%"> -->
-                    </div>
-                </div>>
-            </div>
-            <div class="popup-foot">
-                <span class="pop-btn close">닫기</span>
-            </div>
-        </div>
-    </div>  
-      
-    
-    
 
+    
+      
     <!--세로 진행 바-->
     <div class="progress">      
         <span class="bar"></span>

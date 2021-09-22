@@ -30,128 +30,48 @@ html, body {
     left: 0;
 }
 
-.modal-btn-box button{
-    display:inline-block;
+.modal {
     position: absolute;
-    cursor:pointer;
-  }
-
-.popup-wrap{
-    justify-content:center;
-    align-items:center;
-    position:fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    display:none;
-    padding:15px;
-}
-
-.popup{
-    width:100%;
-    max-width:400px;
-    border-radius:10px;
-    overflow:hidden;
-}
-
-.popup-body{
-    width:100%;
-}
-
-.body-content{
-    width:100%;
-    padding:30px;
-}
-
-.body-contentbox{
-    word-break:break-word;
-    overflow-y:auto;
-    min-height:100px;
-    max-height:200px;
-}
-
-.popup-foot{
-    width:100%;
-    height:50px;
-}
-
-.pop-btn{
-    display:inline-flex;
-    width:50%;
-    height:100%;
-    float:left;
-    justify-content:center;
-    align-items:center;
-    color:#ffffff;
-    cursor:pointer;
-}
-
-
-/* 
-.page-wrapper {
-    width: 100%;
-    height: 100%;
-}
-
-.modal-wrapper {
-    width: 100%;
-    height: 100%;
-    position: fixed;
     top: 0;
     left: 0;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.25s ease-in-out;
-    background-image: url('../images/페이지.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
-.modal-wrapper.open {
-    opacity: 1;
-    visibility: visible;
+    width: 100%;
+    height: 100%;
+
+    display: none;
+
+    background-color: rgba(0, 0, 0, 0.4);
   }
 
-.modal {
-    width: 600px;
-    height: 400px;
+  .modal.show {
     display: block;
-    margin: 50% 0 0 -300px;
-    position: relative;
-    top: 50%; 
+  }
+
+  .modal_body {
+    position: absolute;
+    top: 50%;
     left: 50%;
-    background-image: url('../images/페이지.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
+
+    width: 400px;
+    height: 600px;
+
+    padding: 40px;
+
+    text-align: center;
+
+    background-image: url("../images/페이지.png");
+    border-radius: 10px;
+    box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+input.btn_open_popup{
+    background-image: url("../images/moniter.png") no-repeat;
+    border: none;
+    width: "100%";
+    cursor: pointer;
 }
-
-.modal-wrapper.open .modal {
-    margin-top: -200px;
-    opacity: 1;
-  } */
-
-
-
-/* .btn-close {
-    font-size: 28px;
-    display: block;
-    float: right;
-    color: #fff;
-} */
-
-/* .content {
-    
-    padding: 100%;
-    opacity: 1;
-}
-
-.popup {
-    position: relative;
-
-} */
 
 
 /*세로 진행 바 시작*/
