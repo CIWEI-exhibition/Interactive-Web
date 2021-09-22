@@ -53,12 +53,12 @@ class GameScene extends Phaser.Scene{       //phaser에서 scene이라는 class�
 
         //입력받기
         this.input.on('pointerdown', function(pointer){     //pointerdown: 눌렸을때(마우스 클릭, 터치), 뒤에 function 호출
-            if(this.player.y < HEIGHT-100)        //더블점프 방지(현 위치이면 실행 안하고 빠져나간다)
+            if(this.player.y < HEIGHT-280)        //더블점프 방지(현 위치이면 실행 안하고 빠져나간다)
                 return;     
             this.tweens.add({           //점프 애니메이션
                 targets: this.player,
-                y: this.player.y-50,    //점프 높이
-                duration: 500,          //점프 지속시간
+                y: this.player.y-400,    //점프 높이
+                duration: 400,          //점프 지속시간
                 yoyo: true,             //원상태로 돌리는것까지 구현
             });
         }.bind(this));
