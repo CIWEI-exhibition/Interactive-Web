@@ -6,72 +6,115 @@ html, body {
 
 .blur-it {
     filter: blur(4px);
+} 
+
+.wrapper{
+    position: relative;
 }
 
-.page-wrapper {
-    width: 100%;
-    height: 100%;
-}
-
-.modal-wrapper {
-    width: 100%;
-    height: 100%;
-    position: fixed;
+#bg{
+    position: relative;
     top: 0;
     left: 0;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.25s ease-in-out;
-    background-image: url('../images/페이지.png');
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
-.modal-wrapper.open {
-    opacity: 1;
-    visibility: visible;
-  }
-
-.modal {
-    width: 600px;
-    height: 400px;
-    display: block;
-    margin: 50% 0 0 -300px;
-    position: relative;
-    top: 50%; 
-    left: 50%;
-    background-image: url('../images/페이지.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-}
-
-.modal-wrapper.open .modal {
-    margin-top: -200px;
-    opacity: 1;
-  }
-
-
-
-/* .btn-close {
-    font-size: 28px;
-    display: block;
-    float: right;
-    color: #fff;
-} */
-
-.content {
-    padding: 10%;
-    /* opacity: 0; */
-}
-
-.popup {
-    position: relative;
-}
-
-.popup .pop-img:not(:last-child){
+.img:not(:last-child){
     position: absolute;
     top: 200px;
     left: 0;
 }
+
+#fg{
+    position: absolute;
+    bottom:0;
+    left: 0;
+}
+
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: none;
+
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .modal.show {
+    display: block;
+  }
+
+  .modal_body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 400px;
+    height: 600px;
+
+    padding: 40px;
+
+    text-align: center;
+
+    background-image: url("../images/페이지.png");
+    border-radius: 10px;
+    box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+input.btn_open_popup{
+    background-image: url("../images/moniter.png") no-repeat;
+    border: none;
+    width: "100%";
+    cursor: pointer;
+}
+
+
+/*세로 진행 바 시작*/
+.progress {
+    position: fixed;
+    width: 4px;
+    height: 140px;
+    top: 40%;
+    right: 10px;
+    background-color: black;
+    z-index: 10;
+}
+
+.bar{
+    position: absolute;
+    width: 4px;
+    height: 140px;
+    top: 0;
+    right: 0;
+    background-color: chartreuse;
+    z-index: 11;
+}
+/*세로 진행 바 끝*/
+
+/*깜빡이는 효과 시작*/
+.blinking{ 
+    -webkit-animation:blink 1.0s ease-in-out infinite alternate; 
+    -moz-animation:blink 1.0s ease-in-out infinite alternate; 
+    animation:blink 1.0s ease-in-out infinite alternate; 
+}
+
+@-webkit-keyframes blink{
+    0% {opacity:0;} 
+    100% {opacity:1;} 
+} 
+
+@-moz-keyframes blink{
+    0% {opacity:0;} 
+    100% {opacity:1;} 
+} 
+
+@keyframes blink{
+    0% {opacity:0;} 
+    100% {opacity:1;} 
+}
+/*깜빡이는 효과 끝*/
