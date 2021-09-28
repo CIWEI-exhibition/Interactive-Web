@@ -25,17 +25,18 @@ class GameScene extends Phaser.Scene{       //phaser에서 scene이라는 class�
     create(){       //이미지 로딩된 후의 함수
         this.bg_3 = this.add.tileSprite(0, HEIGHT-1080, WIDTH, 1920, 'bg_3')      //앞에 지나간 애들은 잘려서 다시 뒤로 붙음-->흐르는 효과
             .setOrigin(0, 0);
-        // this.decoBubble1 = this.add.tileSprite(0, HEIGHT-1080, WIDTH, 1920, 'decoBubble1')
-        //     .setOrigin(0, 0);
+      
         this.bg_2 = this.add.tileSprite(0, HEIGHT-1080, WIDTH, 1920, 'bg_2')
             .setOrigin(0, 0);
+       
         this.bg_1 = this.add.tileSprite(0, HEIGHT-1080, WIDTH, 1920, 'bg_1')
             .setOrigin(0, 0);
         this.bg_0 = this.add.tileSprite(0, HEIGHT-213, WIDTH, 1920, 'bg_0')
             .setOrigin(0, 0);
-
+     
         
-
+        this.decoBubble1 = this.add.tileSprite(0, HEIGHT-1080, WIDTH, 1920, 'decoBubble1')
+            .setOrigin(0, 0);
         // this.decoBubble2 = this.add.tileSprite(0, HEIGHT-1080, WIDTH, 1920, 'decoBubble2')
         //     .setOrigin(0, 0);
         // this.decoFish = this.add.tileSprite(0, HEIGHT-1080, WIDTH, 1920, 'decoFish')
@@ -48,7 +49,7 @@ class GameScene extends Phaser.Scene{       //phaser에서 scene이라는 class�
             key: 'run',         //run이라는 애니메이션을 만든다.
             //run 이라는 애니메이션은 /frame이 player이미지를 이용하고,/ 시작은 0 끝은 2(3장이니까)
             frames: this.anims.generateFrameNames('player', {start: 0, end: 2}),
-            frameRate: 7,   //사진 세장이 바뀌는 속도
+            frameRate: 1,   //사진 세장이 바뀌는 속도
             repeat: -1      //이걸 선언 안하면 가만히 있음. 이걸 선언해야 반복적으로 애니메이션을 보여준다.
         });     //따라서 앞으로 run이라는 애니메이션를 호출하면, 선언한 프레임 세장이 반복적으로 애니메이션 된다.
 
@@ -62,17 +63,27 @@ class GameScene extends Phaser.Scene{       //phaser에서 scene이라는 class�
         this.timer = this.time.addEvent({delay: this.delay,
             callback: this.onTimerEvent, callbackScope: this, loop: true });
 
+        //스페이스바
+        var spaceKey = game.input.keyboard.addKey(
+            Phaser.Keyboard.SPACEBAR);
+        spaceKey.onDown.add(this.jump, this);
+
+        jump(){
+            this.player.body.velocity.y = -350;
+        }
         //입력받기
-        this.input.on('pointerdown', function(pointer){     //pointerdown: 눌렸을때(마우스 클릭, 터치), 뒤에 function 호출
-            if(this.player.y < HEIGHT-280)        //더블점프 방지(현 위치이면 실행 안하고 빠져나간다)
-                return;     
-            this.tweens.add({           //점프 애니메이션
-                targets: this.player,
-                y: this.player.y-400,    //점프 높이
-                duration: 500,          //점프 지속시간
-                yoyo: true,             //원상태로 돌리는것까지 구현
-            });
-        }.bind(this));
+        // this.input.on('pointerdown', function(pointer){     //pointerdown: 눌렸을때(마우스 클릭, 터치), 뒤에 function 호출
+        //     if(this.player.y < HEIGHT-280)        //더블점프 방지(현 위치이면 실행 안하고 빠져나간다)
+        //         return;     
+        //     this.tweens.add({           //점프 애니메이션
+        //         targets: this.player,
+        //         y: this.player.y-400,    //점프 높이
+        //         duration: 500,          //점프 지속시간
+        //         yoyo: true,             //원상태로 돌리는것까지 구현
+        //     });
+        // }.bind(this));
+
+
     }
 
     onTimerEvent(){
@@ -145,7 +156,7 @@ class GameScene extends Phaser.Scene{       //phaser에서 scene이라는 class�
         this.bg_1.tilePositionX += 5;
         this.bg_0.tilePositionX += 6;
 
-        this.decoBubble1.tilePositionX += 1;
+        // this.decoBubble1.tilePositionX += 1;
         // this.decoBubble2.tilePositionX += 2;
         // this.decoFish.tilePositionX += 3;
         // this.decoJelly.tilePositionX += 4;
