@@ -14,17 +14,19 @@ class GameScene extends Phaser.Scene{       //phaser에서 scene이라는 class�
 
         //데코
         this.load.image('decoBubble1', 'Deco/decoBubble1.png');
-        this.load.image('decoBubble2', 'Deco.decoBubble2.png');
+        this.load.image('decoBubble2', 'Deco/decoBubble2.png');
         this.load.image('decoFish', 'Deco/decoFish.png');
         this.load.image('decoJelly', 'Deco/decoJelly.png');
 
         //플레이어(스프라이트)
-        this.load.spritesheet('player', 'Sprite/Sprite.png', {frameWidth: 99, frameHeight: 165});       //폭과 넓이만큼 이미지를 잘라서 여러장으로 저장한다.
+        this.load.spritesheet('player', 'Sprite/Sprites.png', {frameWidth: 99, frameHeight: 165});       //폭과 넓이만큼 이미지를 잘라서 여러장으로 저장한다.
     }
  
     create(){       //이미지 로딩된 후의 함수
         this.bg_3 = this.add.tileSprite(0, HEIGHT-1080, WIDTH, 1920, 'bg_3')      //앞에 지나간 애들은 잘려서 다시 뒤로 붙음-->흐르는 효과
             .setOrigin(0, 0);
+        // this.decoBubble1 = this.add.tileSprite(0, HEIGHT-1080, WIDTH, 1920, 'decoBubble1')
+        //     .setOrigin(0, 0);
         this.bg_2 = this.add.tileSprite(0, HEIGHT-1080, WIDTH, 1920, 'bg_2')
             .setOrigin(0, 0);
         this.bg_1 = this.add.tileSprite(0, HEIGHT-1080, WIDTH, 1920, 'bg_1')
@@ -32,12 +34,21 @@ class GameScene extends Phaser.Scene{       //phaser에서 scene이라는 class�
         this.bg_0 = this.add.tileSprite(0, HEIGHT-213, WIDTH, 1920, 'bg_0')
             .setOrigin(0, 0);
 
+        
+
+        // this.decoBubble2 = this.add.tileSprite(0, HEIGHT-1080, WIDTH, 1920, 'decoBubble2')
+        //     .setOrigin(0, 0);
+        // this.decoFish = this.add.tileSprite(0, HEIGHT-1080, WIDTH, 1920, 'decoFish')
+        //     .setOrigin(0, 0);
+        // this.decoJelly = this.add.tileSprite(0, HEIGHT-1080, WIDTH, 1920, 'decoJelly')
+        //     .setOrigin(0, 0);
+
         //animation
         this.anims.create({     //anims.create라는 함수를 이용해서
             key: 'run',         //run이라는 애니메이션을 만든다.
             //run 이라는 애니메이션은 /frame이 player이미지를 이용하고,/ 시작은 0 끝은 2(3장이니까)
             frames: this.anims.generateFrameNames('player', {start: 0, end: 2}),
-            frameRate: 15,   //사진 세장이 바뀌는 속도
+            frameRate: 7,   //사진 세장이 바뀌는 속도
             repeat: -1      //이걸 선언 안하면 가만히 있음. 이걸 선언해야 반복적으로 애니메이션을 보여준다.
         });     //따라서 앞으로 run이라는 애니메이션를 호출하면, 선언한 프레임 세장이 반복적으로 애니메이션 된다.
 
@@ -58,7 +69,7 @@ class GameScene extends Phaser.Scene{       //phaser에서 scene이라는 class�
             this.tweens.add({           //점프 애니메이션
                 targets: this.player,
                 y: this.player.y-400,    //점프 높이
-                duration: 400,          //점프 지속시간
+                duration: 500,          //점프 지속시간
                 yoyo: true,             //원상태로 돌리는것까지 구현
             });
         }.bind(this));
@@ -70,23 +81,58 @@ class GameScene extends Phaser.Scene{       //phaser에서 scene이라는 class�
 
     addBook(){
         this.book1Group = this.physics.add.group();      //장애물 여러개 나오니까 group 사용.
+        this.book2Group = this.physics.add.group();
         var randomX = Phaser.Math.Between(600, 1850);       //장애물 나타나는 간격(두 숫자 사이 랜덤하게 나온다.)
         var book1 = this.physics.add.sprite(WIDTH+randomX+100, HEIGHT-220,'book1').setScale(1.0);
+        var book2 = this.physics.add.sprite(WIDTH+randomX+100, HEIGHT-220, 'book2').setScale(1.0);
         book1.body.setSize(150, 50);      //충돌 영역 조절
+        book2.body.setSize(150, 100);
         this.book1Group.add(book1);     //여러개의 book1을 book1Group에 담는다.
+        this.book2Group.add(book2);
+
 
         //book animation
         this.tweens.add({       //여러 애니메이션들 있나봄
             targets: book1,     //타겟: book1
+            targets: book2,
             x: 0,       //변화(화면 끝에서 생성된 것을, x: 0의 위치까지 이동시킨다.)
-            duration: 2000,     //2초동안 변화가능❤❤❤
+            duration: 2000,     //2초동안 변화가능[❤❤❤]
             onComplete: function(tween, targets){       //완료되면 호출되는 함수. 제거한다.
                 book1.destroy();
+                book2.destroy();
             }.bind(this)
         })
+
+        // this.tweens.add({
+        //     targets: book2,
+        //     x: 0,
+        //     duration: 3000,
+        //     onComplete: function(tween, tagrets){
+        //         book2.destroy();
+        //     }.bind(this)
+        // })
         //addBook(장애물)과 player(플레이어)가 겹치면, hitBookPlayer 함수를 호출한다.
         this.physics.add.overlap(this.book1Group, this.player, this.hitBookPlayer, null, this); 
+        this.physics.add.overlap(this.book2Group, this.player, this.hitBookPlayer, null, this);
     }
+
+    // addBook2(){
+    //     this.book2Group = this.physics.add.group();
+    //     var randomX = Phaser.Math.Between(600, 1850);
+    //     var book2 = this.physics.add.sprite(WIDTH+randomX+100, HEIGHT-220, 'book2').setScale(1.0);
+    //     book2.body.setSize(150, 100);
+    //     this.book2Group.add(book2);
+
+    //     this.tweens.add({
+    //         targets: book2,
+    //         x: 0,
+    //         duration: 3000,
+    //         onComplete: function(tween, targets){
+    //             book2.destroy();
+    //         }.bind(this)
+    //     })
+    //     this.physics.add.overlap(this.book2Groupo, this.player, this.hitBookPlayer, null, this)
+    // }
 
     hitBookPlayer(){        //둘이 부딪혔을때
         alert("Game Over"); 
@@ -98,5 +144,11 @@ class GameScene extends Phaser.Scene{       //phaser에서 scene이라는 class�
         this.bg_2.tilePositionX += 3;
         this.bg_1.tilePositionX += 5;
         this.bg_0.tilePositionX += 6;
+
+        this.decoBubble1.tilePositionX += 1;
+        // this.decoBubble2.tilePositionX += 2;
+        // this.decoFish.tilePositionX += 3;
+        // this.decoJelly.tilePositionX += 4;
+    
     }
 }
