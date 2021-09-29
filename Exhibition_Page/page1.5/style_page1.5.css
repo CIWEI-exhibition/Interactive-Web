@@ -101,6 +101,9 @@ input[id="navbar_menu"]:checked + label + div {
 
 /* 1.5페이지 */
 
+body{
+    background-color: #2B2446;
+}
 
 /* 이미지 배치 */
 .wrapper{
@@ -114,10 +117,41 @@ input[id="navbar_menu"]:checked + label + div {
     left: 0;
 }
 
-.front-wrapper{
+/*이미지 배치--> 따로 있는 애들*/
+#bg-shooting{
     position: absolute;
+    top: 10em;
+    left: 27em;
 }
 
-#subway{
-    
+#bg-moon{
+    position: absolute;
+    top: 10em;
+    left: 50em;
 }
+
+#train{
+    position: absolute;
+    top: 21.5em;
+}
+/*이미지 배치--> 따로 있는 애들 끝*/
+
+/*지하철*/
+.sub{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#subway-handle{
+    position: fixed;
+    top: 0;
+    left: 9em;
+}
+
+#subway-seat{
+    position: fixed;
+    top: 37.5em;
+    left: -1.5em;
+}
+/*지하철 끝*/
