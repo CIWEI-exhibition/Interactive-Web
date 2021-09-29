@@ -59,19 +59,18 @@ html, body {
 
     text-align: center;
 
-    background-image: url("../images/페이지.png");
     border-radius: 10px;
     box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
 
     transform: translateX(-50%) translateY(-50%);
   }
 
-input.btn_open_popup{
+/* input.btn_open_popup{
     background-image: url("../images/moniter.png") no-repeat;
     border: none;
     width: "100%";
     cursor: pointer;
-}
+} */
 
 
 /*세로 진행 바 시작*/
