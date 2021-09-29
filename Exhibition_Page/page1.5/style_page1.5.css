@@ -105,17 +105,19 @@ input[id="navbar_menu"]:checked + label + div {
 /* 이미지 배치 */
 .wrapper{
     position: relative;
-    overflow: hidden;
+    min-height: 800px;
 }
 
-#bg{
-    position: relative;
+.img{
+    position: absolute;
     top: 0;
     left: 0;
 }
 
-.img:not(:last-child){
+.front-wrapper{
     position: absolute;
-    top: 280px;
-    left: 0;
+}
+
+#subway{
+    
 }
