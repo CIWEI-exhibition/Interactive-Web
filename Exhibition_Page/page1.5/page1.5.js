@@ -24,8 +24,6 @@ window.onload = function(){
     
     window.addEventListener("scroll", function(event){      //스크롤 이벤트를 걸어주고
         var scroll = this.scrollX;                          // scroll이라는 변수에 scrollY값을 넣어준다.
-        
-        bgMoon.style.transform = "translateX("+ scroll/1 + "px)";
 
         bgShootingStar.style.transform = "translateX("+ -scroll/0.1 + "px)";    // 별똥별이 오-->왼으로 움직이는 것처럼 보이게 함.
         bgStar.style.transform = "translateX("+ -scroll/10 + "px)";
@@ -35,8 +33,7 @@ window.onload = function(){
     })
 
 }
-
-//지하철 움직임
+/*
 let x = 0;
 let y = 0;
 let mx = 0;
@@ -101,3 +98,4 @@ function mouseMove (e) {        //윈도우 width의 가운데 기준
     y = (e.clientY - window.innerHeight / 2);
 }
 
+*/

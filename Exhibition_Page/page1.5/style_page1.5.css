@@ -124,8 +124,8 @@ body{
     left: 27em;
 }
 
-#bg-moon{
-    position: absolute;
+#bg-moon{ 
+    position: fixed; /*달은 안움직임*/
     top: 10em;
     left: 50em;
 }
