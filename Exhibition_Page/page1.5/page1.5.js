@@ -1,6 +1,12 @@
 var bg, bgFirst, bgSecond, bgStar, bgShootingStar, bgMoon;
 var Building, Train, Pillars, Fadeout;
 var Subway, SubwayHandle, SubwaySeat;
+let x = 0;
+let y = 0;
+let mx = 0;
+let my = 0;
+let speed = 0.03;
+let scrollTop = 0;
 
 window.onload = function(){
 
@@ -29,31 +35,20 @@ window.onload = function(){
         bgStar.style.transform = "translateX("+ -scroll/10 + "px)";
         bgFirst.style.transform = "translateX("+ -scroll/8 + "px)";
         bgSecond.style.transform = "translateX("+ -scroll/6 + "px)";
+        bgMoon.style.transform = "translateX("+ -scroll/20 + "px)";
+
         Pillars.style.transform = "translateX("+ -scroll/0.5 + "px)";
+    
+        window.addEventListener('resize', stageResize, false);
+        window.addEventListener('mousemove', mouseMove, false);
+        window.addEventListener('scroll', scrollFunc, false);
+    
+        stageResize();
+        loop();
     })
 
 }
-/*
-let x = 0;
-let y = 0;
-let mx = 0;
-let my = 0;
-let speed = 0.03;
-let scrollTop = 0;
-let sub, subHandle, subSeat;
 
-window.onload = function(){
-    sub = document.getElementById("subway");
-    subHandle = document.getElementById("subway-handle");
-    subSeat = document.getElementById("subway-seat");
-
-    window.addEventListener('resize', stageResize, false);
-    window.addEventListener('mousemove', mouseMove, false);
-    window.addEventListener('scroll', scrollFunc, false);
-
-    stageResize();
-    loop();
-}
 
 function scrollFunc(e){
     var scrollTop = document.documentElement.scrollTop;
@@ -81,21 +76,19 @@ function stageResize() {        //per를 위한 함수 (document랑 window heigh
     _windowNum = window.outerHeight;
 }
 
-function loop() {
-    mx += (x - mx) * speed;
-    my += (y - my) * speed;
+// function loop() {
+//     mx += (x - mx) * speed;
+//     my += (y - my) * speed;
 
-    sub.style.transform = "translate("+ mx / 30 +"px ," + -my / 30 +"px)";
-    subHandle.style.transform = "translate("+ mx / 50 +"px ," + -scrollTop * .85 +"px)";
-    subSeat.style.transform = "translate("+ -mx / 20 +"px ," + -my / 20 +"px)";
+//     sub.style.transform = "translate("+ mx / 30 +"px ," + -my / 30 +"px)";
+//     subHandle.style.transform = "translate("+ mx / 50 +"px ," + -scrollTop * .85 +"px)";
+//     subSeat.style.transform = "translate("+ -mx / 20 +"px ," + -my / 20 +"px)";
 
-    window.requestAnimationFrame(loop);
-}
+//     window.requestAnimationFrame(loop);
+// }
 
 
-function mouseMove (e) {        //윈도우 width의 가운데 기준
-    x = (e.clientX - window.innerHeight / 2);
-    y = (e.clientY - window.innerHeight / 2);
-}
-
-*/
+// function mouseMove (e) {        //윈도우 width의 가운데 기준
+//     x = (e.clientX - window.innerHeight / 2);
+//     y = (e.clientY - window.innerHeight / 2);
+// }
