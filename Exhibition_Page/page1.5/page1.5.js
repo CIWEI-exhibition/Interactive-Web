@@ -1,4 +1,4 @@
-var bg, bgFirst, bgSecond, bgStar, bgShootingStar, bgMoon;
+var bg, bgFirst, bgSecond, bgStar, bgShootingStar, bgMoon, bgMoonlight;
 var Building, Train, Pillars, Fadeout;
 var Subway, SubwayHandle, SubwaySeat;
 let x = 0;
@@ -17,6 +17,7 @@ window.onload = function(){
     bgStar = document.getElementById("bg-3(star)");
     bgShootingStar = document.getElementById("bg-shooting");
     bgMoon = document.getElementById("bg-moon"); //배경 중 유일하게 움직이지 않도록
+    bgMoonlight = document.getElementById("bg-moonlight");
 
     Building = document.getElementById("building");
     Train = document.getElementById("train");
@@ -35,9 +36,11 @@ window.onload = function(){
         bgStar.style.transform = "translateX("+ -scroll/10 + "px)";
         bgFirst.style.transform = "translateX("+ -scroll/8 + "px)";
         bgSecond.style.transform = "translateX("+ -scroll/6 + "px)";
-        bgMoon.style.transform = "translateX("+ -scroll/20 + "px)";
+        bgMoon.style.transform = "translateX("+ scroll/1.01 + "px)";
+        bgMoonlight.style.transform = "translateX("+ scroll/1.5 + "px)";
 
         Pillars.style.transform = "translateX("+ -scroll/0.5 + "px)";
+        Train.style.transform = "translateX("+ scroll/3 + "px)";
     
         window.addEventListener('resize', stageResize, false);
         window.addEventListener('mousemove', mouseMove, false);

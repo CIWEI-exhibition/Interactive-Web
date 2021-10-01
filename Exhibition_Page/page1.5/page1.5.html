@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class=".no-skrollr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,6 +19,29 @@
     <script type='text/javascript' src='/js/jquery.mousewheel.min.js'></script>-->
     <script type='text/javascript' src="page1.5.js"></script>
     <script  src="../js/jquery-3.6.0.js"></script>
+    <script type='text/javascript' src='https://deanoakley.com/assets/js/jquery/jqueryb8ff.js?ver=1.12.4'></script>
+	<script type='text/javascript' src='https://deanoakley.com/assets/js/jquery/jquery-migrate.min330a.js?ver=1.4.1'></script>
+    <script type='text/javascript' src='https://deanoakley.com/assets/themes/deanoakley/jquery.mousewheela07c.js?ver=4.6.11'></script>
+		<script type="text/javascript">
+
+		    jQuery(document).ready(function($) {
+
+		        $("html, body, *").mousewheel(function(event, delta) {
+		        this.scrollLeft -= (delta * 20);
+		        });
+
+			    jQuery(".scroll").click(function(event){
+				    event.preventDefault();
+
+				    if( $(window).width() > 1024 ){
+					    jQuery('html,body').animate({scrollLeft:$(this.hash).offset().left}, 500);
+				    }
+				    else{
+					    jQuery('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+				    }
+			    });
+		    });
+	    </script>
 </head>
 
 <body>
@@ -49,6 +72,7 @@
             <img src="images2/bg/bgFirst.png" alt="배경-1" class="img" id="bg-1" height="80%">
             <img src="images2/bg/bgSecond.png" alt="배경-2" class="img" id="bg-2" height="80%">
             <img src="images2/bg/bgStar.png" alt="배경-3(star)" class="img" id="bg-3(star)" height="80%">
+            <img src="images2/bg/bgmoonlight.png" alt="배경-달빛" class="img" id="bg-moonlight" height="80%">
             
             
             <img src="images2/bg/bgShootingStar.png" alt="배경-별똥별" class="img bg-shooting" id="bg-shooting">
@@ -66,6 +90,9 @@
             </div>
         </div>
     </div>
-    
+    <article>
+        
+    </article>
+
 </body>
 </html>

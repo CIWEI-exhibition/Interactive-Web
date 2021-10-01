@@ -125,10 +125,16 @@ body{
 }
 
 #bg-moon{ 
-    position: fixed; /*달은 안움직임*/
+    position: absolute;
     top: 10em;
-    left: 50em;
+    left: 28em;
 }
+
+/* #bg-moonlight{
+    
+    
+    
+} */
 
 #train{
     position: absolute;
@@ -155,3 +161,4 @@ body{
     left: -1.5em;
 }
 /*지하철 끝*/
+
