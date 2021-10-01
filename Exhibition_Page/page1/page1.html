@@ -17,6 +17,30 @@
 <!-- <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>        가로스크롤 플러그인(jQuery)
 <script type='text/javascript' src='/js/jquery.mousewheel.min.js'></script>          -->
 <script type='text/javascript' src="page1.js"></script>
+<!-- 횡스크롤 코드 -->
+<script type='text/javascript' src='https://deanoakley.com/assets/js/jquery/jqueryb8ff.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://deanoakley.com/assets/js/jquery/jquery-migrate.min330a.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://deanoakley.com/assets/themes/deanoakley/jquery.mousewheela07c.js?ver=4.6.11'></script>
+    <script type="text/javascript">
+
+        jQuery(document).ready(function($) {
+
+            $("html, body, *").mousewheel(function(event, delta) {
+            this.scrollLeft -= (delta * 20);
+            });
+
+            jQuery(".scroll").click(function(event){
+                event.preventDefault();
+
+                if( $(window).width() > 1024 ){
+                    jQuery('html,body').animate({scrollLeft:$(this.hash).offset().left}, 500);
+                }
+                else{
+                    jQuery('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+                }
+            });
+        });
+    </script>
 </head>
 <body>
     <input type="checkbox" id="navbar_menu">
