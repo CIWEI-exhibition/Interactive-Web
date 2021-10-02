@@ -160,7 +160,7 @@ body{
 #subway-seat{
     position: fixed;
     top: 37.5em;
-    left: -1.5em;
+    left: 0.5em;
 }
 /*지하철 끝*/
 
