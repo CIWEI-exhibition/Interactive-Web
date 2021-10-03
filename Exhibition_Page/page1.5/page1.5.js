@@ -37,10 +37,10 @@ window.onload = function(){
         bgFirst.style.transform = "translateX("+ -scroll/8 + "px)";
         bgSecond.style.transform = "translateX("+ -scroll/6 + "px)";
         bgMoon.style.transform = "translateX("+ scroll/1.01 + "px)";
-        bgMoonlight.style.transform = "translateX("+ scroll/1.5 + "px)";
+        bgMoonlight.style.transform = "translateX("+ scroll/1.01 + "px)";
 
-        Pillars.style.transform = "translateX("+ -scroll/0.5 + "px)";
-        Train.style.transform = "translateX("+ scroll/3 + "px)";
+        // Pillars.style.transform = "translateX("+ -scroll/0.5 + "px)";
+        Train.style.transform = "translateX("+ scroll/2 + "px)";
     
         window.addEventListener('resize', stageResize, false);
         window.addEventListener('mousemove', mouseMove, false);
