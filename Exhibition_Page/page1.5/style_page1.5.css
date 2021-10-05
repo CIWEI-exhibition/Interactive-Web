@@ -110,9 +110,6 @@ body{
     position: relative;
     min-height: 500px;
     margin-top: 9%;
-    /* overflow: hidden; */
-    /* overflow-y: hidden; */
-    /* overflow-x: hidden; */
 }
 
 /*스크롤바 없애기*/
@@ -132,6 +129,11 @@ body::-webkit-scrollbar{
 }
 
 /*이미지 배치--> 따로 있는 애들*/
+#building{
+    position: absolute;
+    left: -6em;
+}
+
 #bg-shooting{
     position: absolute;
     top: 1em;
@@ -182,3 +184,12 @@ body::-webkit-scrollbar{
     left: -1.5em;
 }
 /*지하철 끝*/
+
+
+/* 페이드 아웃 */
+#full-fade-out{
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}

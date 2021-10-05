@@ -34,10 +34,10 @@ window.onload = function(){
 
         bgShootingStar.style.transform = "translateX("+ -scroll/0.1 + "px)";    // 별똥별이 오-->왼으로 움직이는 것처럼 보이게 함.
         bgStar.style.transform = "translateX("+ -scroll/10 + "px)";
-        bgFirst.style.transform = "translateX("+ -scroll/8 + "px)";
-        bgSecond.style.transform = "translateX("+ -scroll/6 + "px)";
-        bgMoon.style.transform = "translateX("+ scroll/1.01 + "px)";
-        bgMoonlight.style.transform = "translateX("+ scroll/1.01 + "px)";
+        bgFirst.style.transform = "translateX("+ -scroll/5 + "px)";
+        bgSecond.style.transform = "translateX("+ -scroll/4 + "px)";
+        bgMoon.style.transform = "translateX("+ scroll/1.23 + "px)";
+        bgMoonlight.style.transform = "translateX("+ scroll/1.23 + "px)";
 
         // Pillars.style.transform = "translateX("+ -scroll/0.5 + "px)";
         Train.style.transform = "translateX("+ scroll/2 + "px)";
@@ -95,3 +95,27 @@ function stageResize() {        //per를 위한 함수 (document랑 window heigh
 //     x = (e.clientX - window.innerHeight / 2);
 //     y = (e.clientY - window.innerHeight / 2);
 // }
+
+//------------------------------------------------------------------------------------------------
+//전시 화면 fade out되는 코드
+$(document).ready(function(){
+
+    var navHeight = $(".wrapper").height(); /*wrapper의 높이*/
+
+    $(".fade").hide(); /*스크롤 시 나타날 검은 화면 미리 숨기기*/
+
+    $(window).scroll(function(){
+        var rollIt = $(this).scrollTop() >= navHeight;
+        /*scrollTop은 윈도우에서 스크롤 위치가 가장 상위에 있다는 의미
+        --> 스크롤의 위치가 화면 아래일수록 scrollTop 값이 커짐 */
+
+        if(rollIt){ 
+            //윈도우 스크롤 기능의 값이 navHeight 의 높이와 같거나 크면
+            $(".fade").show().css({"position":"fixed"});
+        }
+        else{
+            $(".fade").hide();
+        }
+    
+    });
+})
