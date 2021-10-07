@@ -172,15 +172,87 @@ body::-webkit-scrollbar{
     left: 0;
 }
 
-#subway-handle{
+/*손잡이 따로따로 배치*/
+#subway-handle1{
     position: fixed;
     top: 0;
-    left: 12em;
+    left: 15em;
+
+    
+}
+
+#subway-handle1:hover{
+    /*손잡이 애니메이션 적용*/
+    -webkit-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+     -ms-transform-origin: 0% 0%;
+      -o-transform-origin: 0% 0%;
+         transform-origin: 0% 0%;
+
+    -webkit-animation: subHandle .9s ease-in-out 0s infinite alternate;
+    -moz-animation: subHandle .9s ease-in-out 0s infinite alternate;
+     -ms-animation: subHandle .9s ease-in-out 0s infinite alternate;
+      -o-animation: subHandle .9s ease-in-out 0s infinite alternate;
+         animation: subHandle .9s ease-in-out 0s infinite alternate;
+}
+#subway-handle2{
+    position: fixed;
+    top: 0;
+    left: 36em;
+
+    /*손잡이 애니메이션 적용*/
+    -webkit-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+     -ms-transform-origin: 0% 0%;
+      -o-transform-origin: 0% 0%;
+         transform-origin: 0% 0%;
+
+    -webkit-animation: subHandle .9s ease-in-out 0s infinite alternate;
+    -moz-animation: subHandle .9s ease-in-out 0s infinite alternate;
+     -ms-animation: subHandle .9s ease-in-out 0s infinite alternate;
+      -o-animation: subHandle .9s ease-in-out 0s infinite alternate;
+         animation: subHandle .9s ease-in-out 0s infinite alternate;
+}
+#subway-handle3{
+    position: fixed;
+    top: 0;
+    left: 57em;
+
+    /*손잡이 애니메이션 적용*/
+    -webkit-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+     -ms-transform-origin: 0% 0%;
+      -o-transform-origin: 0% 0%;
+         transform-origin: 0% 0%;
+
+    -webkit-animation: subHandle .9s ease-in-out 0s infinite alternate;
+    -moz-animation: subHandle .9s ease-in-out 0s infinite alternate;
+     -ms-animation: subHandle .9s ease-in-out 0s infinite alternate;
+      -o-animation: subHandle .9s ease-in-out 0s infinite alternate;
+         animation: subHandle .9s ease-in-out 0s infinite alternate;
+}
+#subway-handle4{
+    position: fixed;
+    top: 0;
+    left: 78em;
+
+    /*손잡이 애니메이션 적용*/
+    -webkit-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+     -ms-transform-origin: 0% 0%;
+      -o-transform-origin: 0% 0%;
+         transform-origin: 0% 0%;
+
+    -webkit-animation: subHandle .9s ease-in-out 0s infinite alternate;
+    -moz-animation: subHandle .9s ease-in-out 0s infinite alternate;
+     -ms-animation: subHandle .9s ease-in-out 0s infinite alternate;
+      -o-animation: subHandle .9s ease-in-out 0s infinite alternate;
+         animation: subHandle .9s ease-in-out 0s infinite alternate;
 }
 
 #subway-seat{
     position: fixed;
-    top: 30em;
+    top: 37em;
     left: -1.5em;
 }
 /*지하철 끝*/
@@ -192,4 +264,42 @@ body::-webkit-scrollbar{
     top: 0;
     left: 0;
     opacity: 0;
+}
+
+
+/*손잡이 애니메이션*/
+@-webkit-keyframes subHandle {
+    from{
+        -webkit-transform: rotate(5deg);
+    } to{
+        -webkit-transform: rotate(-5deg);
+    }
+}
+@-moz-keyframes subHandle {
+    from{
+        -moz-transform: rotate(5deg);
+    } to{
+        -moz-transform: rotate(-5deg);
+    }
+}
+@-ms-keyframes subHandle {
+    from{
+        -ms-transform: rotate(5deg);
+    } to{
+        -ms-transform: rotate(-5deg);
+    }
+}
+@-o-keyframes subHandle {
+    from{
+        -o-transform: rotate(5deg);
+    } to{
+        -o-transform: rotate(-5deg);
+    }
+}
+@keyframes subHandle {
+    from{
+        transform: rotate(5deg);
+    } to{
+        transform: rotate(-5deg);
+    }
 }
