@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     box-sizing: border-box;
 }
@@ -154,4 +158,51 @@ body::-webkit-scrollbar{
 
 #rock{
     top: 17em;
+}
+
+/* 팝업 */
+.popup {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-height: 550px;
+    max-height: 550px;
+    min-width: 750px;
+    max-width: 750px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 55px -25px rgb(0 0 0 / 100%);
+}
+
+.popup > .content {
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#pop-world1{
+    position: relative;
+    top: -45em;
+    left: -20em;
+}
+
+.popup > .cmd {
+    bottom: 0;
+    min-height: 40px;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    border-radius: 0 0 15px 15px;
+    min-height: 40px;
+    text-align: right;
+}
+.popup > .cmd .button {
+    border-radius: 8px;
+    padding: 5px 10px;
+    border: 1px solid #aaa;
+}
+.popup > .cmd .button:hover {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
 }
