@@ -181,8 +181,8 @@ body::-webkit-scrollbar{
     
 }
 
-#subway-handle1:hover{
-    /*손잡이 애니메이션 적용*/
+/* #subway-handle1:hover{
+    
     -webkit-transform-origin: 0% 0%;
     -moz-transform-origin: 0% 0%;
      -ms-transform-origin: 0% 0%;
@@ -194,7 +194,7 @@ body::-webkit-scrollbar{
      -ms-animation: subHandle .9s ease-in-out 0s infinite alternate;
       -o-animation: subHandle .9s ease-in-out 0s infinite alternate;
          animation: subHandle .9s ease-in-out 0s infinite alternate;
-}
+} */
 #subway-handle2{
     position: fixed;
     top: 0;

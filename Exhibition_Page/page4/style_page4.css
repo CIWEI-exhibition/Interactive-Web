@@ -120,7 +120,7 @@ body::-webkit-scrollbar{
     
 }
 
-.img:not(:last-child){
+.img{
     position: absolute;
     top: 280px;
     left: 0;
@@ -158,6 +158,30 @@ body::-webkit-scrollbar{
 
 #rock{
     top: 17em;
+}
+
+#door1{
+    position: absolute;
+    top: 50em;
+    left: 21.5em;
+}
+
+#door2{
+    position: absolute;
+    top: 110em;
+    left: 65.5em;
+}
+
+#door3{
+    position: absolute;
+    top: 165.25em;
+    left: 17.25em;
+}
+
+#door4{
+    position: absolute;
+    top: 210em;
+    left: 64.35em;
 }
 
 /* 팝업 */

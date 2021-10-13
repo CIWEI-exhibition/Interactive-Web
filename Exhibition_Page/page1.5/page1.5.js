@@ -50,6 +50,8 @@ window.onload = function(){
         loop();
     })
 
+    window.addEventListener("scroll", scrollRotate);
+
 }
 
 
@@ -119,3 +121,10 @@ $(document).ready(function(){
     
     });
 })
+
+//손잡이 애니메이션(버전2)
+function scrollRotate(){
+    let image = getElementById("subway-handle1");
+    image.style.transform = "rotate(" + window.pageYOffset/2 + "deg)";
+}
+
