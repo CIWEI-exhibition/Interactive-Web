@@ -8,6 +8,10 @@ let bgwater, bgbottom, bgfish1, bgfish2, bgfish3, bgjellyfish, whale2, rock_shad
     fish, jellyfish, whale,
     rock, bottom_room_light, bottom_room, door1, door2, door3, door4, door5_bottom, room1, room2, room3, room4, world1;
 
+//문 열리는 애니메이션 변수
+const body = document.body;
+let tmp;
+
 window.onload = function(){
 
     //이미지들 연결
@@ -83,6 +87,21 @@ window.onload = function(){
         x = (e.clientX - window.innerHeight / 2);
         y = (e.clientY - window.innerHeight / 2);
     }
+
+    //문 열리게 애니메이션
+    document.getElementByClass("door").addEventListener("click", function () {
+        (body.classList.contains("doorOpened") && tmp !== 1)
+        ? (
+            document.body.classList.remove("doorOpened")
+        )
+        : (
+            tmp = 1,
+            setTimeout(function () {
+                tmp = 0,
+                    document.body.classList.add("doorOpened")
+            }, 3000)
+        )
+    })
 }
 
 function scrollFunc(e){
@@ -93,3 +112,4 @@ function stageResize() {        //per를 위한 함수 (document랑 window heigh
     _documentHum = document.body.offsetHeight;
     _windowNum = window.outerHeight;
 }
+
