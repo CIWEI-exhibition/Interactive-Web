@@ -61,16 +61,24 @@
 
             <img src="img/room/room1.png" alt="문1" class="img" id="room1" width="100%">
             <img src="img/room/world1.png" alt="방1" class="img" id="world1" width="100%">
-            <img src="img/room/door1.png" alt="문짝1" class="img door" id="door1" width="19%">
-
             <img src="img/room/room2.png" alt="문2" class="img" id="room2" width="100%">
-            <img src="img/room/door2.png" alt="문짝2" class="img door" id="door2" width="19%">
-
             <img src="img/room/room3.png" alt="문3" class="img" id="room3" width="100%">
-            <img src="img/room/door3.png" alt="문짝3" class="img door" id="door3" width="19%">
-
             <img src="img/room/room4.png" alt="문4" class="img" id="room4" width="100%">
-            <img src="img/room/door4.png" alt="문짝4" class="img door" id="door4" width="19%">
+
+            <div class="stage">
+                <div class="door">
+                    <img src="img/room/door1.png" alt="문짝1" class="door-body door1" id="door1" width="19%">
+                </div>
+                <div class="door">
+                    <img src="img/room/door2.png" alt="문짝2" class="door-body door2" id="door2" width="19%">
+                </div>
+                <div class="door">
+                    <img src="img/room/door3.png" alt="문짝3" class="door-body door3" id="door3" width="19%">
+                </div>
+                <div class="door">
+                    <img src="img/room/door4.png" alt="문짝4" class="door-body door4" id="door4" width="19%">
+                </div>
+            </div>
         </div>
     </div>
 
@@ -85,6 +93,37 @@
     </div> -->
 
     <script type="text/javascript" src="page4.js"></script>
+    <script>    //문 열리는 애니메이션
+        (function(){
+            const stage = document.querySelector(".stage");
 
+            // 현재 활성화된 아이템을 저장
+            let currentItem;
+
+            function activate(item){
+                item.classList.add('door-opened');
+                currentItem = item;
+            }
+
+            function inactivate(item){
+                item.classList.remove('door-opened');
+            }
+
+            function doorHandler(e){
+                // 부모클래스를 타고 가도록 진행하기(?)
+                let element = e.target;
+                if(currentItem){
+                    inactivate(currentItem);
+                }
+                if(element.classList.contains('door-body')){
+                    activate(element.parentNode);
+                }
+            }
+
+            stage.addEventListener('click', doorHandler);
+
+            // activate(document.querySelector('.door:first-child'));
+        })();
+    </script>
 </body>
 </html>

@@ -117,7 +117,7 @@ body::-webkit-scrollbar{
 /* 이미지 배치 */
 .wrapper{
     position: relative;
-    height: 3000px;
+    
 }
 
 .img{
@@ -160,33 +160,52 @@ body::-webkit-scrollbar{
     top: 17em;
 }
 
-#door1{
-    position: absolute;
-    top: 26.65%;
-    left: 22.4%;
+.door-opened .door-body{
+    transform: perspective(100vw) rotateY(80deg);
 }
 
-#door2{
+.door1{
     position: absolute;
-    top: 57%;
-    left: 65.5%;
+    top: 50em;
+    left: 21.5em;
+
+    transition: 2s;
+    transform-origin: 0%;
+    transition-timing-function: ease-in-out;
+    /* z-index: 5; */
 }
 
-#door3{
+.door2{
+    position: absolute;
+    top: 110em;
+    left: 65.5em;
+
+    transition: 2s;
+    transform-origin: 0%;
+    transition-timing-function: ease-in-out;
+    /* z-index: 5; */
+}
+
+.door3{
     position: absolute;
     top: 165.25em;
     left: 17.25em;
+
+    transition: 2s;
+    transform-origin: 0%;
+    transition-timing-function: ease-in-out;
+    /* z-index: 5; */
 }
 
-#door4{
+.door4{
     position: absolute;
     top: 210em;
     left: 64.35em;
-}
 
-/*문 열리게 애니메이션*/
-body .doorOpened .door{
-    transform: perspective(100vw) rotateY(-80deg)
+    transition: 2s;
+    transform-origin: 0%;
+    transition-timing-function: ease-in-out;
+    /* z-index: 5; */
 }
 
 /* 팝업 */
