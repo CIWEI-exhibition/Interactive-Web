@@ -14,6 +14,8 @@
 
     <script src="https://kit.fontawesome.com/10f8dabd1b.js" crossorigin="anonymous"></script>
     <script  src="jquery-3.6.0.js"></script>
+    <!-- 모달창 -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script> 
 </head>
 <body>
     <input type="checkbox" id="navbar_menu">
@@ -56,41 +58,96 @@
             <img src="img/front/fish.png" alt="물고기" class="img" id="fish" width="100%">
             <img src="img/front/whale.png" alt="고래" class="img" id="whale" width="100%">
             <img src="img/front/jellyfish.png" alt="해파리" class="img" id="jellyfish" width="100%">
+            <img src="img/room/bottom_room_light.png" alt="빛" class="img" id="bottom_room_light" width="100%">
             
-            <img src="img/room/bottom_room.png" alt="아래문(문5)" class="img" id="bottom_room" width="100%">
-
-            <img src="img/room/room1.png" alt="문1" class="img" id="room1" width="100%">
-            <img src="img/room/world1.png" alt="방1" class="img" id="world1" width="100%">
-            <img src="img/room/room2.png" alt="문2" class="img" id="room2" width="100%">
-            <img src="img/room/room3.png" alt="문3" class="img" id="room3" width="100%">
-            <img src="img/room/room4.png" alt="문4" class="img" id="room4" width="100%">
+            <!-- 모달창 -->
+            <div id="Modal1" class="modal">
+                <div class="modal-content">
+                    <img src="img/room/sky.png" alt="방1" class="world1" id="world1"  />
+                    <div style=
+                    "cursor:pointer; 
+                    background-color:rgb(255, 255, 255); 
+                    text-align: center; 
+                    padding: 455px 10px 15px 10px; "
+                    onClick="close_pop1();">
+                        <span class="pop_bt" style="font-size: 13pt;" > close </span>
+                    </div>
+                </div>
+            </div>
+            <div id="Modal2" class="modal">
+                <div class="modal-content">
+                    <img src="img/room/flower.png" alt="방2" class="world2" id="world2" width="100%" />
+                    <div style=
+                    "cursor:pointer; 
+                    background-color:rgb(255, 255, 255); 
+                    text-align: center; 
+                    padding: 455px 10px 15px 10px; "
+                    onClick="close_pop2();">
+                        <span class="pop_bt" style="font-size: 13pt;" > close </span>
+                    </div>
+                </div>
+            </div>
+            <div id="Modal3" class="modal">
+                <div class="modal-content">
+                    <img src="img/room/flower.png" alt="방3" class="world3" id="world3" width="100%" />
+                    <div style=
+                    "cursor:pointer; 
+                    background-color:rgb(255, 255, 255); 
+                    text-align: center; 
+                    padding: 455px 10px 15px 10px; "
+                    onClick="close_pop3();">                        
+                        <span class="pop_bt" style="font-size: 13pt;" > close </span>
+                    </div>
+                </div>
+            </div>
+            <div id="Modal4" class="modal">
+                <div class="modal-content">
+                    <img src="img/room/flower.png" alt="방4" class="world4" id="world4" width="100%" />
+                    <div style=
+                    "cursor:pointer; 
+                    background-color:rgb(255, 255, 255); 
+                    text-align: center; 
+                    padding: 455px 10px 15px 10px; "
+                    onClick="close_pop4();">
+                        <span class="pop_bt" style="font-size: 13pt;" > close </span>
+                    </div>
+                </div>
+            </div>
+            <!-- 모달창 끝 -->
 
             <div class="stage">
+                <div class="room">
+                    <img src="img/room/room1.png" alt="방1" class="room-body room1" id="room1" width="19%" onClick="open_pop1();">
+                </div>
+                <div class="room">
+                    <img src="img/room/room2.png" alt="방2" class="room-body room2" id="room2" width="19%" onClick="open_pop2();">
+                </div>
+                <div class="room">
+                    <img src="img/room/room3.png" alt="방3" class="room-body room3" id="room3" width="19%" onClick="open_pop3();">
+                </div>
+                <div class="room">
+                    <img src="img/room/room4.png" alt="방4" class="room-body room4" id="room4" width="19%" onClick="open_pop4();">
+                </div>
+                <div class="room">
+                    <img src="img/room/room_bottom.png" alt="아래방(방5)" class="room-body room5" id="bottom_room" width="19%">
+                </div>
+
                 <div class="door">
-                    <img src="img/room/door1.png" alt="문짝1" class="door-body door1" id="door1" width="19%">
+                    <img src="img/room/door1.png" alt="문1" class="door-body door1" id="door1" width="19%">
                 </div>
                 <div class="door">
-                    <img src="img/room/door2.png" alt="문짝2" class="door-body door2" id="door2" width="19%">
+                    <img src="img/room/door2.png" alt="문2" class="door-body door2" id="door2" width="19%">
                 </div>
                 <div class="door">
-                    <img src="img/room/door3.png" alt="문짝3" class="door-body door3" id="door3" width="19%">
+                    <img src="img/room/door3.png" alt="문3" class="door-body door3" id="door3" width="19%">
                 </div>
                 <div class="door">
-                    <img src="img/room/door4.png" alt="문짝4" class="door-body door4" id="door4" width="19%">
+                    <img src="img/room/door4.png" alt="문4" class="door-body door4" id="door4" width="19%">
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- <div class="popup">
-        
-        <div class="content">
-            <img src="img/room/world1.png" alt="그림1" class="pop" id="pop-world1" width="280%">
-        </div>
-        <div class="cmd">
-            <input type="button" name="btnclose" class="button" value="close">
-        </div>
-    </div> -->
 
     <script type="text/javascript" src="page4.js"></script>
     <script>    //문 열리는 애니메이션
@@ -124,6 +181,9 @@
 
             // activate(document.querySelector('.door:first-child'));
         })();
+
+
+
     </script>
 </body>
 </html>

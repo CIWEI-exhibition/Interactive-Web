@@ -44,16 +44,15 @@ window.onload = function(){
         var scroll = this.scrollY;    
     
         //패럴렉스 핵심
-        bgfish1.style.transform = "translateX("+ scroll/2 + "px)";
+        bgfish1.style.transform = "translateX("+ scroll/8 + "px)";
         bgfish2.style.transform = "translateX("+ -scroll/6 + "px)";
-        bgfish3.style.transform = "translateX("+ -scroll/5 + "px)";
-        bgjellyfish.style.transform = "translateX("+ scroll/13 + "px)";
-        whale2.style.transform = "translateX("+ scroll/10 + "px)";
-        rock1.style.transform = "translateX("+ -scroll/15 + "px)";
+        bgfish3.style.transform = "translateX("+ -scroll/6 + "px)";
+        bgjellyfish.style.transform = "translateX("+ scroll/8 + "px)";
+        whale2.style.transform = "translateX("+ scroll/2 + "px)";
     
         fish.style.transform = "translateX("+ scroll/4 + "px)";
         jellyfish.style.transform = "translateX("+ -scroll/10 + "px)";
-        whale.style.transform = "translateX("+ -scroll/7 + "px)";
+        whale.style.transform = "translateX("+ -scroll/6 + "px)";
         
         window.addEventListener('resize', stageResize, false);
         window.addEventListener('mousemove', mouseMove, false);
@@ -65,12 +64,6 @@ window.onload = function(){
 
     function scrollFunc(e){
         var scrollTop = document.documentElement.scrollTop;
-    
-        //패럴렉스 핵심
-        // whale2.style.transform = "translate3d(0px ," + scrollTop * .20 +"px, 0px)";
-        // bgjellyfish.style.transform = "translate3d(0px ," + scrollTop * .1 +"px, 0px)";
-        // whale.style.transform = "translate3d(0px ," + scrollTop * .15 +"px , 0px)";
-        // rock.style.transform = "translate3d(0px ," + scrollTop * .0 +"px , 0px)";
     }
     
     function stageResize() {        //per를 위한 함수 (document랑 window height값)
@@ -93,3 +86,29 @@ function stageResize() {        //per를 위한 함수 (document랑 window heigh
     _windowNum = window.outerHeight;
 }
 
+// 팝업창
+function open_pop1(flag){
+    $('#Modal1').css('display','block');
+};
+function open_pop2(flag){
+    $('#Modal2').css('display','block');
+};
+function open_pop3(flag){
+    $('#Modal3').css('display','block');
+};
+function open_pop4(flag){
+    $('#Modal4').css('display','block');
+};
+  
+function close_pop1(flag) {
+    $('#Modal1').hide();
+};
+function close_pop2(flag) {
+    $('#Modal2').hide();
+};
+function close_pop3(flag) {
+    $('#Modal3').hide();
+};
+function close_pop4(flag) {
+    $('#Modal4').hide();
+};
