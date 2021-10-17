@@ -117,7 +117,6 @@ body::-webkit-scrollbar{
 /* 이미지 배치 */
 .wrapper{
     position: relative;
-    
 }
 
 .img{
@@ -165,7 +164,72 @@ body::-webkit-scrollbar{
 
 /* ----------world---------- */
 
+/* -----------꽃------------ */ 
+.modal-wrapper{
+    position: relative;
+}
 
+.world2{
+    position: absolute;
+}
+
+#flower1{
+    /* 꽃 애니메이션 삽입 */ 
+    /* transform-origin: 0% 0%;
+    -webkit-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+     -ms-transform-origin: 0% 0%;
+      -o-transform-origin: 0% 0%;
+         transform-origin: 0% 0%;
+
+    -webkit-animation: flower .9s ease-in-out 3s infinite alternate;
+    -moz-animation: flower .9s ease-in-out 3s infinite alternate;
+     -ms-animation: flower .9s ease-in-out 3s infinite alternate;
+      -o-animation: flower .9s ease-in-out 3s infinite alternate; */
+         animation: flower 2s ease-in-out 0s infinite linear;
+}
+
+/* 꽃 애니메이션 */
+/* @-webkit-keyframes flower {
+    from{
+        -webkit-transform: rotate(5deg);
+    } to{
+        -webkit-transform: rotate(-5deg);
+    }
+}
+@-moz-keyframes flower {
+    from{
+        -moz-transform: rotate(5deg);
+    } to{
+        -moz-transform: rotate(-5deg);
+    }
+}
+@-ms-keyframes flower {
+    from{
+        -ms-transform: rotate(5deg);
+    } to{
+        -ms-transform: rotate(-5deg);
+    }
+}
+@-o-keyframes flower {
+    from{
+        -o-transform: rotate(5deg);
+    } to{
+        -o-transform: rotate(-5deg);
+    }
+} */
+@keyframes flower {
+    0%, 50%{
+        transform: rotate(0deg);
+    }
+    5%, 15%, 25%, 35%, 45%{
+        transform: rotate(13deg);
+    }
+    10%, 20%, 30%, 40%{
+        transform: rotate(-13deg);
+    }
+}
+/* ----------꽃 끝---------- */
 /* ----------room----------- */
 .room1{
     position: absolute;
