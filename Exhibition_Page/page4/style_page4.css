@@ -244,8 +244,7 @@ body::-webkit-scrollbar{
 
 .room3{
     position: absolute;
-    top: 165.25em;
-    left: 17.25em;
+    margin: 172% 0 0 17.95%;
 }
 
 .room4{
@@ -279,6 +278,7 @@ body::-webkit-scrollbar{
 
 .door2{
     position: absolute;
+    margin: 100% 17% 0 0;
     /* top: 110em;
     left: 65.5em; */
 
@@ -290,8 +290,9 @@ body::-webkit-scrollbar{
 
 .door3{
     position: absolute;
-    top: 165.25em;
-    left: 17.25em;
+    margin: 172% 0 0 17.95%;
+    /* top: 165.25em;
+    left: 17.25em; */
 
     transition: 2s;
     transform-origin: 0%;
