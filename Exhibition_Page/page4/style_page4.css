@@ -233,8 +233,7 @@ body::-webkit-scrollbar{
 /* ----------room(방)----------- */
 .room1{
     position: absolute;
-    top: 50em;
-    left: 21.5em;
+    margin: 52.2% 0 0 22.4%;
 }
 
 .room2{
@@ -280,8 +279,8 @@ body::-webkit-scrollbar{
 
 .door2{
     position: absolute;
-    top: 110em;
-    left: 65.5em;
+    /* top: 110em;
+    left: 65.5em; */
 
     transition: 2s;
     transform-origin: 0%;
