@@ -168,30 +168,50 @@ body::-webkit-scrollbar{
 }
 
 /* ----------world---------- */
-
+.pop_bt{
+    display: block;
+    font-size: 13pt;
+    text-align: center;
+    margin: 0 auto 0 auto;
+}
 /* -----------꽃------------ */ 
-.modal-wrapper{
-    position: relative;
-}
-
 .world2{
-    position: absolute;
+    position: relative;
+    overflow: hidden;
 }
 
-#flower1{
-    /* 꽃 애니메이션 삽입 */ 
-    transform-origin: 0% 100%;
-    -webkit-transform-origin: 0% 100%;
-    -moz-transform-origin: 0% 100%;
-     -ms-transform-origin: 0% 100%;
-      -o-transform-origin: 0% 100%;
-         transform-origin: 0% 100%;
+.world2-cutter{
+    display: flex;
+    overflow: hidden;
+}
 
-    -webkit-animation: flower .9s ease-in-out 0s infinite alternate;
-    -moz-animation: flower .9s ease-in-out 0s infinite alternate;
-     -ms-animation: flower .9s ease-in-out 0s infinite alternate;
-      -o-animation: flower .9s ease-in-out 0s infinite alternate;
-         animation: flower 9s ease-in-out 0s infinite alternate;
+.world2 .w2_bg_content .cloudL{
+    position: absolute;
+    margin: -48% 0 0 -53%;
+}
+
+.world2 .w2_bg_content .cloudR{
+    position: absolute;
+    margin: -57% 0 0 5%;
+}
+
+.world2 .w2_bg_content .ground{
+    position: absolute;
+    margin: -57.3% 0 0 -50.1%;
+}
+
+/*광기의 시작*/
+.world2 .w2_flower_content .flower1{
+    position: absolute;
+    margin: -33% 0 0 -50%;
+}
+.world2 .w2_flower_content .flower2{
+    position: absolute;
+    margin: -31% 0 0 8%;
+}
+.world2 .w2_flower_content .flower3-g1{
+    position: absolute;
+    margin: -25% 0 7%;
 }
 
 /* 꽃 애니메이션 */

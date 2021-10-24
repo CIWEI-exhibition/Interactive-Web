@@ -81,27 +81,49 @@
             </div>
             <div id="Modal2" class="modal">
                 <div class="modal-content">
-                    <div class="modal-wrapper">
-                        <img src="img/flower/bgSky.png" alt="방2-하늘" class="world2" id="world2" width="100%" />
+                    <!--close 창(modal 안에 style 창 있고, 이 style 안에 그림을 넣어야 해서 이렇게 수정함)-->
+                    
 
-                        <div class="bg-wrapper">    <!--구름에도 움직임이 들어가서 class 만들었음-->
-                            <img src="img/flower/cloudL.png" alt="방2-구름L" class="world2" id="world2" width="100%" />
-                            <img src="img/flower/cloudR.png" alt="방2-구름R" class="world2" id="world2" width="100%" />
-                            <img src="img/flower/bgGround.png" alt="방2-땅" class="world2" id="world2" width="100%" />
-                            <!--미친 꽃의 대향연...-->
-                            
+                        <!-- <img src="img/flower/bgSky.png" alt="방2-하늘" class="sky" id="sky" width="100%" />
+                        <div class="main-content">
+                            <img src="img/flower/cloudL.png" alt="방2-구름L" class="cloudL" id="cloudL" width="60%" />
+                            <img src="img/flower/cloudR.png" alt="방2-구름R" class="cloudR" id="cloudR" width="50%" />
+                            <img src="img/flower/bgGround.png" alt="방2-땅" class="ground" id="ground" width="100%" />
                         </div>
-                    </div>
+                        <div class="flower-content">
+                             <img src="img/flower/crazyFlower/flower1(bgflower).png" alt="꽃1(배경)" class="flower1" id="flower1" width="100%" />
+                             <img src="img/flower/crazyFlower/flower2.png" alt="꽃2" class="flower2" id="flower2" width="6%" />
+                             <img src="img/flower/crazyFlower/flower3(grass1).png" alt="꽃3(풀1)" class="flower3-g1" id="flower-g1" height="45%" />
+                        </div> -->
+                        <div class="world2"     
+                        style=
+                        "cursor:pointer; 
+                        background-color:rgb(255, 255, 255); 
+                        text-align: center; 
+                        padding: 0px 0px 0px 0px;  ">   <!--얘는 모달 창 내부. 사실 없어도 될 것 같긴 한데 일단 뭔가 필요하겠지 싶어 뒀다-->
+                             <div class="w2-cutter">    <!--얘는 모달 창 내부에 이미지. 이 이미지를 넘는 애들은 안보이게 하려고 이름을 cutter로 지었다.-->
+                                <img src="img/flower/bgSky.png" alt="하늘" class="sky" id="sky" width="100%" />
+                                
+                                <div class="w2_bg_content">     <!--얘는 아무 기능이 없음. 그냥 묶어놓은 용도!-->
+                                    <img src="img/flower/cloudL.png" alt="구름L" class="cloudL" id="cloudL" width="60%" />
+                                    <img src="img/flower/cloudR.png" alt="구름R" class="cloudR" id="cloudR" width="50%" />
+                                    <img src="img/flower/bgGround.png" alt="땅" class="ground" id="ground" width="100%" />
+                                </div>
+
+                                <div class="w2_flower_content">
+                                    <img src="img/flower/crazyFlower/flower1(bgflower).png" alt="꽃1(배경)" class="flower1" id="flower1" width="100%" />
+                                    <img src="img/flower/crazyFlower/flower2.png" alt="꽃2" class="flower2" id="flower2" width="6%" />
+                                    <img src="img/flower/crazyFlower/flower3(grass1).png" alt="꽃3(풀1)" class="flower3-g1" id="flower-g1" height="45%" />
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="world2-btn" onClick="close_pop2();">    <!--얘는 close 버튼. 모달 창이랑 따로 만들었다!-->
+                            <span class="pop_bt"> close </div>
+                        </div>
                 </div>
-                    <div style=
-                    "cursor:pointer; 
-                    background-color:rgb(255, 255, 255); 
-                    text-align: center; 
-                    padding: 455px 10px 15px 10px; "
-                    onClick="close_pop2();">
-                        <span class="pop_bt" style="font-size: 13pt;" > close </span>
-                    </div>
-                </div>
+                   
+          
             </div>
             <div id="Modal3" class="modal">
                 <div class="modal-content">
