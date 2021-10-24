@@ -44,10 +44,10 @@ window.onload = function(){
         var scroll = this.scrollY;    
     
         //패럴렉스 핵심
-        bgfish1.style.transform = "translateX("+ scroll/8 + "px)";
-        bgfish2.style.transform = "translateX("+ -scroll/6 + "px)";
+        bgfish1.style.transform = "translateX("+ -scroll/8 + "px)";
+        bgfish2.style.transform = "translateX("+ scroll/10 + "px)";
         bgfish3.style.transform = "translateX("+ -scroll/6 + "px)";
-        bgjellyfish.style.transform = "translateX("+ scroll/8 + "px)";
+        bgjellyfish.style.transform = "translateX("+ scroll/10 + "px)";
         whale2.style.transform = "translateX("+ scroll/2 + "px)";
     
         fish.style.transform = "translateX("+ scroll/4 + "px)";

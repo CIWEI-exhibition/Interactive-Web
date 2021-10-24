@@ -131,6 +131,11 @@ body::-webkit-scrollbar{
     left: 0em;
 }
 
+#bgjellyfish{
+    position: absolute;
+    left: 10em;
+}
+
 #fish{
     position: absolute;
     top: 15em;
@@ -234,17 +239,17 @@ body::-webkit-scrollbar{
 
 .room2{
     position: absolute;
-    margin: 114% 0 0 68%;
+    margin: 112.3% 0 0 66.5%;
 }
 
 .room3{
     position: absolute;
-    margin: 172% 0 0 17.95%;
+    margin: 170.25% 0 0 16.5%;
 }
 
 .room4{
     position: absolute;
-    margin: 230% 0 0 68%;
+    margin: 228.5% 0 0 66.5%;
 }
 
 .room5{
