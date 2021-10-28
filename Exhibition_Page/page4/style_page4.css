@@ -168,30 +168,50 @@ body::-webkit-scrollbar{
 }
 
 /* ----------world---------- */
-
+.pop_bt{
+    display: block;
+    font-size: 13pt;
+    text-align: center;
+    margin: 0 auto 0 auto;
+}
 /* -----------꽃------------ */ 
-.modal-wrapper{
-    position: relative;
-}
-
 .world2{
-    position: absolute;
+    position: relative;
+    overflow: hidden;
 }
 
-#flower1{
-    /* 꽃 애니메이션 삽입 */ 
-    transform-origin: 0% 0%;
-    -webkit-transform-origin: 0% 0%;
-    -moz-transform-origin: 0% 0%;
-     -ms-transform-origin: 0% 0%;
-      -o-transform-origin: 0% 0%;
-         transform-origin: 0% 0%;
+.world2-cutter{
+    display: flex;
+    overflow: hidden;
+}
 
-    -webkit-animation: flower .9s ease-in-out 3s infinite alternate;
-    -moz-animation: flower .9s ease-in-out 3s infinite alternate;
-     -ms-animation: flower .9s ease-in-out 3s infinite alternate;
-      -o-animation: flower .9s ease-in-out 3s infinite alternate;
-         animation: flower 2s ease-in-out 0s infinite linear;
+.world2 .w2_bg_content .cloudL{
+    position: absolute;
+    margin: -48% 0 0 -53%;
+}
+
+.world2 .w2_bg_content .cloudR{
+    position: absolute;
+    margin: -57% 0 0 5%;
+}
+
+.world2 .w2_bg_content .ground{
+    position: absolute;
+    margin: -57.3% 0 0 -50.1%;
+}
+
+/*광기의 시작*/
+.world2 .w2_flower_content .flower1{
+    position: absolute;
+    margin: -33% 0 0 -50%;
+}
+.world2 .w2_flower_content .flower2{
+    position: absolute;
+    margin: -31% 0 0 8%;
+}
+.world2 .w2_flower_content .flower3-g1{
+    position: absolute;
+    margin: -25% 0 7%;
 }
 
 /* 꽃 애니메이션 */
@@ -204,34 +224,30 @@ body::-webkit-scrollbar{
 }
 @-moz-keyframes flower {
     from{
-        -moz-transform: rotate(5deg);
+        -webkit-transform: rotate(5deg);
     } to{
-        -moz-transform: rotate(-5deg);
+        -webkit-transform: rotate(-5deg);
     }
 }
 @-ms-keyframes flower {
     from{
-        -ms-transform: rotate(5deg);
+        -webkit-transform: rotate(5deg);
     } to{
-        -ms-transform: rotate(-5deg);
+        -webkit-transform: rotate(-5deg);
     }
 }
 @-o-keyframes flower {
     from{
-        -o-transform: rotate(5deg);
+        -webkit-transform: rotate(5deg);
     } to{
-        -o-transform: rotate(-5deg);
+        -webkit-transform: rotate(-5deg);
     }
 }
 @keyframes flower {
-    0%, 50%{
-        transform: rotate(0deg);
-    }
-    5%, 15%, 25%, 35%, 45%{
-        transform: rotate(13deg);
-    }
-    10%, 20%, 30%, 40%{
-        transform: rotate(-13deg);
+    from{
+        -webkit-transform: rotate(5deg);
+    } to{
+        -webkit-transform: rotate(-5deg);
     }
 }
 /* ----------꽃 끝---------- */
@@ -258,7 +274,7 @@ body::-webkit-scrollbar{
 
 .room5{
     position: absolute;
-    margin: 291% 0 0 41.5%;
+    margin: 286.5% 0 0 41.25%;
 }
 
 /* ------------door(문)------------ */
