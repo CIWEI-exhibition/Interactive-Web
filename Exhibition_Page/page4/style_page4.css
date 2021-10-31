@@ -185,7 +185,7 @@ body::-webkit-scrollbar{
 }
 
 .w2_cutter{
-    display: relative;
+    position: relative;
     overflow: hidden;
 }
 
@@ -526,8 +526,31 @@ body::-webkit-scrollbar{
     }
   }
 /* ----------꽃 끝---------- */
+/* ---------운동 시작(world3)------*/
+.world3{
+    position: relative;
+    overflow: hidden;
+}
 
+.w3_cutter{
+    position: relative;
+    overflow: hidden;
+}
 
+.world3 .w3_content .basketball{
+    position: absolute;
+    margin: -48.7% 0 0 -3%;
+}
+.world3 .w3_content .basket_shadow{
+    position: absolute;
+    margin: -49% 0 0 1%;
+}
+.world3 .w3_content .light{
+    position: absolute;
+    margin: -53% 0 0 -40%;
+}
+
+/* ---------운동 끝---------------*/
 /*-----------피크닉-------------*/
 .world4 .w4-cutter{
     position: relative;
