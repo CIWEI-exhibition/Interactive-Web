@@ -174,6 +174,10 @@ body::-webkit-scrollbar{
     text-align: center;
     margin: 0 auto 0 auto;
 }
+
+/* ----------하늘----------- */
+/* ---------하늘 끝---------- */
+
 /* -----------꽃------------ */ 
 .world2{
     position: relative;
@@ -251,6 +255,358 @@ body::-webkit-scrollbar{
     }
 }
 /* ----------꽃 끝---------- */
+
+
+/*-----------피크닉-------------*/
+.world4 .w4-cutter{
+    position: relative;
+    overflow: hidden;
+}
+
+.w4 {
+    display: flex;
+    overflow: hidden;
+}
+
+#shadow_grass{
+    position: absolute;
+    margin: -53% 0 0 10%;
+    animation-name: shadow;
+    animation-duration: 1.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
+}
+
+#basket{
+    position: absolute;
+    margin: -50% 0 0 1.1%;
+}
+
+#bread{
+    position: absolute;
+    margin: -40% 0 0 33%;
+}
+
+#shadow_bread{
+    position: absolute;
+    margin: -40.93% 0 0 33%;
+    animation-name: shadow;
+    animation-duration: 1.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
+}
+
+#fruits{
+    position: absolute;
+    margin: -30% 0 0 60.2%;
+}
+
+/* #grass{
+    position: absolute;
+    margin: 0 0 0 0;
+} */
+
+#mat{
+    position: absolute;
+    margin: -41% 0 0 0%;
+}
+
+#sentence{
+    position: absolute;
+    margin: 0 0 0 0;
+}
+
+#shadow_right{
+    position: absolute;
+    margin: -30.5% 0 0 16.5%;
+    animation-name: shadow;
+    animation-duration: 1.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
+}
+
+#shadow_left{
+    position: absolute;
+    margin: -41% 0 0 1%;
+    animation-name: shadow;
+    animation-duration: 1.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
+}
+
+#blanket{
+    position: absolute;
+    margin: -32.5% 0 0 18.2%;
+}
+
+#small-blanket{
+    position: absolute;
+    margin: -43% 0 0 17%;
+    animation-name: blanket;
+    animation-duration: 1.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
+}
+
+#tomato1{
+    position: absolute;
+    margin: -13% 0 0 30%;
+    animation-name: small-tomato1;
+    animation-duration: 1.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
+}
+
+#tomato2{
+    position: absolute;
+    margin: -8% 0 0 38%;
+    animation-name: small-tomato1;
+    animation-duration: 1.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
+}
+
+#tomato3{
+    position: absolute;
+    margin: -8% 0 0 52%;
+    animation-name: small-tomato2;
+    animation-duration: 1.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
+}
+
+#tomato4{
+    position: absolute;
+    margin: -13% 0 0 36%;
+    animation-name: small-tomato2;
+    animation-duration: 1.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
+}
+
+/* 담요그림자 애니메이션 */
+@-webkit-keyframes shadow {
+    0% {
+        top:446px;
+        left: 0px;
+        
+      }
+      100% {
+        top:447px;
+        left: 1px;
+      }
+    }
+@-moz-keyframes shadow {
+    0% {
+        top:446px;
+        left: 0px;
+        
+      }
+      100% {
+        top:447px;
+        left: 1px;
+      }
+    }
+@-ms-keyframes shadow {
+    0% {
+        top:446px;
+        left: 0px;
+        
+      }
+      100% {
+        top:447px;
+        left: 1px;
+      }
+    }
+@-o-keyframes shadow {
+    0% {
+        top:446px;
+        left: 0px;
+        
+      }
+      100% {
+        top:447px;
+        left: 1px;
+      }
+    }
+@keyframes shadow {
+    0% {
+        top:446px;
+        left: 0px;
+        
+      }
+      100% {
+        top:447px;
+        left: 1px;
+      }
+    }
+/* 담요 애니메이션 */
+@-webkit-keyframes blanket {
+    0% {
+        top:445px;
+        left: 20px;
+        
+      }
+      100% {
+        top:446px;
+        left: 21px;
+      }
+    }
+@-moz-keyframes blanket {
+    0% {
+        top:445px;
+        left: 20px;
+        
+      }
+      100% {
+        top:446px;
+        left: 21px;
+      }
+    }
+@-ms-keyframes blanket {
+    0% {
+        top:445px;
+        left: 20px;
+        
+      }
+      100% {
+        top:446px;
+        left: 21px;
+      }
+    }
+@-o-keyframes blanket {
+    0% {
+        top:445px;
+        left: 20px;
+        
+      }
+      100% {
+        top:446px;
+        left: 21px;
+      }
+    }
+@keyframes blanket {
+    0% {
+        top:445px;
+        left: 20px;
+        
+      }
+      100% {
+        top:446px;
+        left: 21px;
+      }
+    }
+/* 방울토마토 애니메이션 */
+@-webkit-keyframes small-tomato1 {
+  0% {
+    left:50px;
+  }
+  100% {
+    left:52px;
+  }
+}
+@-moz-keyframes small-tomato1 {
+  0% {
+    left:50px;
+  }
+  100% {
+    left:52px;
+  }
+}
+@-ms-keyframes small-tomato1 {
+  0% {
+    left:50px;
+  }
+  100% {
+    left:52px;
+  }
+}
+@-o-keyframes small-tomato1 {
+  0% {
+    left:50px;
+  }
+  100% {
+    left:52px;
+  }
+}
+@keyframes small-tomato1 {
+  0% {
+    left:50px;
+  }
+  100% {
+    left:52px;
+  }
+}
+@-webkit-keyframes small-tomato2 {
+    0% {
+        top:448px;
+        left: 50px;
+      }
+      100% {
+        top:450px;
+        left: 50px;
+      }
+    }
+  @-moz-keyframes small-tomato2 {
+    0% {
+        top:448px;
+        left: 50px;
+      }
+      100% {
+        top:450px;
+        left: 50px;
+      }
+    }
+  @-ms-keyframes small-tomato2 {
+    0% {
+        top:448px;
+        left: 50px;
+      }
+      100% {
+        top:450px;
+        left: 50px;
+      }
+    }
+  @-o-keyframes small-tomato2 {
+    0% {
+        top:448px;
+        left: 50px;
+      }
+      100% {
+        top:450px;
+        left: 50px;
+      }
+    }
+  @keyframes small-tomato2 {
+    0% {
+        top:448px;
+        left: 50px;
+      }
+      100% {
+        top:450px;
+        left: 50px;
+      }
+    }
+/*-----------피크닉 끝----------*/
+
 /* ----------room(방)----------- */
 .room1{
     position: absolute;
