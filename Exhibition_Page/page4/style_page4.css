@@ -180,14 +180,17 @@ body::-webkit-scrollbar{
     overflow: hidden;
 }
 
-.world2-cutter{
-    display: flex;
+.w2_cutter{
+    display: relative;
     overflow: hidden;
 }
 
 .world2 .w2_bg_content .cloudL{
     position: absolute;
     margin: -48% 0 0 -53%;
+    
+    -webkit-transform-origin: 0% 100%;
+    -webkit-animation: cloud 5s ease-in-out 0s linear infinite;
 }
 
 .world2 .w2_bg_content .cloudR{
@@ -201,21 +204,206 @@ body::-webkit-scrollbar{
 }
 
 /*광기의 시작*/
-.world2 .w2_flower_content .flower1{
+.world2 .w2_flower_content .flower_bg1{
     position: absolute;
-    margin: -33% 0 0 -50%;
-}
-.world2 .w2_flower_content .flower2{
-    position: absolute;
-    margin: -31% 0 0 8%;
-}
-.world2 .w2_flower_content .flower3-g1{
-    position: absolute;
-    margin: -25% 0 7%;
+    margin: -33.5% 0 0 -50%;
 }
 
+.world2 .w2_flower_content .flower1{
+    position: absolute;
+    margin: -15% 0 0 -1.9%;
+}
+
+.world2 .w2_flower_content .flower2{
+    position: absolute;
+    margin: -24.5% 0 0 12.8%;
+}
+
+.world2 .w2_flower_content .flower3{
+    position: absolute;
+    margin: -22% 0 0 22%;
+}
+.world2 .w2_flower_content .flower_bg2{
+    position: absolute;
+    margin: -27% 0 0 -13%;
+}
+.world2 .w2_flower_content .flower4{
+    position: absolute;
+    margin: -32% 0 0 -23%;
+}
+.world2 .w2_flower_content .flower5{
+    position: absolute;
+    margin: -22.5% 0 0 2%;
+}
+.world2 .w2_flower_content .flower6{
+    position: absolute;
+    margin: -31.5% 0 0 -4%;
+}
+.world2 .w2_flower_content .flower7{
+    position: absolute;
+    margin: -29% 0 0 16%;
+}
+.world2 .w2_flower_content .flower8{
+    position: absolute;
+    margin: -22% 0 0 16%;
+}
+.world2 .w2_flower_content .flower9{
+    position: absolute;
+    margin: -24% 0 0 -13%;
+}
+.world2 .w2_flower_content .flower10{
+    position: absolute;
+    margin: -25% 0 0 6%;
+}
+.world2 .w2_flower_content .flower11{
+    position: absolute;
+    margin: -24% 0 0 -39%;
+}
+.world2 .w2_flower_content .flower12{
+    position: absolute;
+    margin: -19.5% 0 0 -20%;
+}
+.world2 .w2_flower_content .flower13{
+    position: absolute;
+    margin: -25% 0 0 37%;
+}
+.world2 .w2_flower_content .flower14{
+    position: absolute;
+    margin: -23% 0 0 -50%;
+}
+.world2 .w2_flower_content .flower15{
+    position: absolute;
+    margin: -24% 0 0 -25%;
+}
+.world2 .w2_flower_content .flower16{
+    position: absolute;
+    margin: -21% 0 0 -33%;
+}
+.world2 .w2_flower_content .flower17{
+    position: absolute;
+    margin: -16% 0 0 11%;
+}
+.world2 .w2_flower_content .flower18{
+    position: absolute;
+    margin: -20% 0 0 -43%;
+}
+.world2 .w2_flower_content .flower19{
+    position: absolute;
+    margin: -12% 0 0 -18%;
+}
+.world2 .w2_flower_content .flower20{       /*맨 앞 큰 꽃*/
+    position: absolute;
+    margin: -14.15% 0 0 -49%;
+}
+.world2 .w2_flower_content .flower21{
+    position: absolute;
+    margin: -16.6% 0 0 -35%;
+}
+.world2 .w2_flower_content .flower22{       /*맨 앞 큰 꽃*/
+    position: absolute;
+    margin: -15.8% 0 0 15%;
+}
+.world2 .w2_flower_content .flower23{       /*맨 앞 큰 꽃*/
+    position: absolute;
+    margin: -13.2% 0 0 -28%;
+}
+.world2 .w2_flower_content .flower24{       /*맨 앞 풀*/
+    position: absolute;
+    margin: -36.4% 0 0 31%;
+}
+.world2 .w2_flower_content .flower25{       /*맨 앞 풀*/
+    position: absolute;
+    margin: -30% 0 0 -48%;
+}
+.world2 .w2_flower_content .flower26{
+    position: absolute;
+    margin: -19.5% 0 0 -10%;
+}
+.world2 .w2_flower_content .flower27{
+    position: absolute;
+    margin: -18% 0 0 1%;
+}
+.world2 .w2_flower_content .flower28{
+    position: absolute;
+    margin: -24.5% 0 0 23.5%;
+}
+.world2 .w2_flower_content .flower29{
+    position: absolute;
+    margin: -16% 0 0 -49%;
+}
+.world2 .w2_flower_content .flower30{
+    position: absolute;
+    margin: -25% 0 0 -20%;
+}
+.world2 .w2_flower_content .flower31{
+    position: absolute;
+    margin: -19% 0 0 9%;
+}
+.world2 .w2_flower_content .flower32{
+    position: absolute;
+    margin: -27% 0 0 32.5%;
+}
+.world2 .w2_flower_content .flower33{
+    position: absolute;
+    margin: -22% 0 0 -16%;
+}
+.world2 .w2_flower_content .flower34{
+    position: absolute;
+    margin: -20.5% 0 0 -15%;
+}
+.world2 .w2_flower_content .flower35{
+    position: absolute;
+    margin: -14% 0 0 -10%;
+}
+.world2 .w2_flower_content .flower36{       /*맨 앞 큰 꽃*/
+    position: absolute;
+    margin: -15.2% 0 0 -32%;
+}
+
+.flower1, .flower3, .flower4, .flower6, .flower8, .flower10, .flower12, .flower14, .flower16, .flower17, .flower19, .flower29, .flower31, .flower33, .flower34{
+    -webkit-transform-origin: 0% 100%;
+    -moz-transform-origin: 0% 100%;
+     -ms-transform-origin: 0% 100%;
+      -o-transform-origin: 0% 100%;
+         transform-origin: 0% 100%;
+
+    -webkit-animation: flower 5s ease-in-out 0s infinite alternate;
+    -moz-animation: flower 5s ease-in-out 0s infinite alternate;
+     -ms-animation: flower 5s ease-in-out 0s infinite alternate;
+      -o-animation: flower 5s ease-in-out 0s infinite alternate;
+         animation: flower 5s ease-in-out 0s infinite alternate;
+}
+
+.flower2, .flower_bg2, .flower5, .flower7, .flower9, .flower11, .flower13, .flower15, .flower18, .flower21, .flower26, .flower27, .flower28, .flower30, .flower32, .flower35{
+    -webkit-transform-origin: 0% 100%;
+    -moz-transform-origin: 0% 100%;
+     -ms-transform-origin: 0% 100%;
+      -o-transform-origin: 0% 100%;
+         transform-origin: 0% 100%;
+
+    -webkit-animation: flower2 3s ease-in-out 0s infinite alternate;
+    -moz-animation: flower2 3s ease-in-out 0s infinite alternate;
+     -ms-animation: flower2 3s ease-in-out 0s infinite alternate;
+      -o-animation: flower2 3s ease-in-out 0s infinite alternate;
+         animation: flower2 3s ease-in-out 0s infinite alternate;
+}
+
+.flower24, .flower25{
+    -webkit-transform-origin: 0% 100%;
+    -moz-transform-origin: 0% 100%;
+     -ms-transform-origin: 0% 100%;
+      -o-transform-origin: 0% 100%;
+         transform-origin: 0% 100%;
+
+    -webkit-animation: flower3 3s ease-in-out 0s infinite alternate;
+    -moz-animation: flower3 3s ease-in-out 0s infinite alternate;
+     -ms-animation: flower3 3s ease-in-out 0s infinite alternate;
+      -o-animation: flower3 3s ease-in-out 0s infinite alternate;
+         animation: flower3 3s ease-in-out 0s infinite alternate;
+}
 /* 꽃 애니메이션 */
-@-webkit-keyframes flower {
+/*중간 정도의 흔들림*/
+@-webkit-keyframes flower {     
     from{
         -webkit-transform: rotate(5deg);
     } to{
@@ -250,6 +438,89 @@ body::-webkit-scrollbar{
         -webkit-transform: rotate(-5deg);
     }
 }
+/*강한 흔들림*/
+@-webkit-keyframes flower2 {
+    from{
+        -webkit-transform: rotate(-3deg);
+    } to{
+        -webkit-transform: rotate(3deg);
+    }
+}
+@-moz-keyframes flower2 {
+    from{
+        -webkit-transform: rotate(-3deg);
+    } to{
+        -webkit-transform: rotate(3deg);
+    }
+}
+@-ms-keyframes flower2 {
+    from{
+        -webkit-transform: rotate(-3deg);
+    } to{
+        -webkit-transform: rotate(3deg);
+    }
+}
+@-o-keyframes flower2 {
+    from{
+        -webkit-transform: rotate(-3deg);
+    } to{
+        -webkit-transform: rotate(3deg);
+    }
+}
+@keyframes flower2 {
+    from{
+        -webkit-transform: rotate(-3deg);
+    } to{
+        -webkit-transform: rotate(3deg);
+    }
+}
+/*약한 흔들림*/
+@-webkit-keyframes flower3 {
+    from{
+        -webkit-transform: rotate(-1deg);
+    } to{
+        -webkit-transform: rotate(1deg);
+    }
+}
+@-moz-keyframes flower3 {
+    from{
+        -webkit-transform: rotate(-1deg);
+    } to{
+        -webkit-transform: rotate(1deg);
+    }
+}
+@-ms-keyframes flower3 {
+    from{
+        -webkit-transform: rotate(-1deg);
+    } to{
+        -webkit-transform: rotate(1deg);
+    }
+}
+@-o-keyframes flower3 {
+    from{
+        -webkit-transform: rotate(-1deg);
+    } to{
+        -webkit-transform: rotate(1deg);
+    }
+}
+@keyframes flower3 {
+    from{
+        -webkit-transform: rotate(-1deg);
+    } to{
+        -webkit-transform: rotate(1deg);
+    }
+}
+/*구름 움직임*/
+@-webkit-keyframes cloud {
+    0% {
+      left: 100px;
+      top: 100px;
+    }
+    100% {
+      left: 200px;
+      top: 200px;
+    }
+  }
 /* ----------꽃 끝---------- */
 /* ----------room(방)----------- */
 .room1{
