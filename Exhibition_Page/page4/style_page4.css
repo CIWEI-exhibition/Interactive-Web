@@ -176,6 +176,409 @@ body::-webkit-scrollbar{
 }
 
 /* ----------하늘----------- */
+.world1 .w1-cutter{
+    position: relative;
+    overflow: hidden;
+}
+
+.w1 {
+    display: flex;
+    overflow: hidden;
+}
+
+#airplane{
+    position: absolute;
+    margin: -53% 0 0 10%;
+    animation-name: airplane;
+    animation-duration: 30s;
+	animation-timing-function: linear;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
+}
+
+#cloud_left{
+    position: absolute;
+    margin: -50% 0 0 -6%;
+    animation-name: cloud_left;
+    animation-duration: 20s;
+	animation-timing-function: linear;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
+}
+
+#cloud_right{
+    position: absolute;
+    margin: -50% 0 0 57%;
+    animation-name: cloud_left;
+    animation-duration: 30s;
+	animation-timing-function: linear;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
+}
+
+#sentence1{
+    position: absolute;
+    margin: -50% 0 0 25%;
+}
+
+#hand{
+    position: absolute;
+    margin: -40% 0 0 -10%;
+    animation-name: hand;
+    animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
+}
+
+#small-cloud{
+    position: absolute;
+    margin: -15% 0 0 25%;
+    animation-name: cloud_left;
+    animation-duration: 30s;
+	animation-timing-function: linear;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
+}
+
+#tree_back{
+    position: absolute;
+    margin: -15% 0 0 -10%;
+    animation-name: tree_back;
+    animation-duration: 20s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
+}
+
+#tree_front{
+    position: absolute;
+    margin: -15.2% 0 0 15%;
+    animation-name: tree_front;
+    animation-duration: 20s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
+}
+
+/* 비행기 애니메이션 */
+@-webkit-keyframes airplane {
+    0% {
+        top:446px;
+        left: 0px;
+        
+      }
+      100% {
+        top:447px;
+        left: 1px;
+      }
+    }
+@-moz-keyframes airplane {
+    0% {
+        top:446px;
+        left: 0px;
+        
+      }
+      100% {
+        top:447px;
+        left: 1px;
+      }
+    }
+@-ms-keyframes airplane {
+    0% {
+        top:446px;
+        left: 0px;
+        
+      }
+      100% {
+        top:447px;
+        left: 1px;
+      }
+    }
+@-o-keyframes airplane {
+    0% {
+        top:446px;
+        left: 0px;
+        
+      }
+      100% {
+        top:447px;
+        left: 1px;
+      }
+    }
+@keyframes airplane {
+    0% {
+        top:446px;
+        left: 0px;
+        
+      }
+      100% {
+        top:447px;
+        left: 1px;
+      }
+    }
+/* 구름(왼) 애니메이션 */
+@-webkit-keyframes cloud_left {
+    0% {
+        top:445px;
+        left: 20px;
+        
+      }
+      100% {
+        top:446px;
+        left: 21px;
+      }
+    }
+@-moz-keyframes cloud_left {
+    0% {
+        top:445px;
+        left: 20px;
+        
+      }
+      100% {
+        top:446px;
+        left: 21px;
+      }
+    }
+@-ms-keyframes cloud_left {
+    0% {
+        top:445px;
+        left: 20px;
+        
+      }
+      100% {
+        top:446px;
+        left: 21px;
+      }
+    }
+@-o-keyframes cloud_left {
+    0% {
+        top:445px;
+        left: 20px;
+        
+      }
+      100% {
+        top:446px;
+        left: 21px;
+      }
+    }
+@keyframes cloud_left {
+    0% {
+        top:445px;
+        left: 20px;
+        
+      }
+      100% {
+        top:446px;
+        left: 21px;
+      }
+    }
+
+ /* 구름(오) 애니메이션 */
+@-webkit-keyframes cloud_right {
+    0% {
+        top:445px;
+        left: 20px;
+        
+      }
+      100% {
+        top:446px;
+        left: 21px;
+      }
+    }
+@-moz-keyframes cloud_right {
+    0% {
+        top:445px;
+        left: 20px;
+        
+      }
+      100% {
+        top:446px;
+        left: 21px;
+      }
+    }
+@-ms-keyframes cloud_right {
+    0% {
+        top:445px;
+        left: 20px;
+        
+      }
+      100% {
+        top:446px;
+        left: 21px;
+      }
+    }
+@-o-keyframes cloud_right {
+    0% {
+        top:445px;
+        left: 20px;
+        
+      }
+      100% {
+        top:446px;
+        left: 21px;
+      }
+    }
+@keyframes cloud_right {
+    0% {
+        top:445px;
+        left: 20px;
+        
+      }
+      100% {
+        top:446px;
+        left: 21px;
+      }
+    }
+
+/* 나무(뒤) 애니메이션 */
+@-webkit-keyframes tree_back {
+  0% {
+    left:50px;
+  }
+  100% {
+    left:52px;
+  }
+}
+@-moz-keyframes tree_back {
+  0% {
+    left:50px;
+  }
+  100% {
+    left:52px;
+  }
+}
+@-ms-keyframes tree_back {
+  0% {
+    left:50px;
+  }
+  100% {
+    left:52px;
+  }
+}
+@-o-keyframes tree_back {
+  0% {
+    left:50px;
+  }
+  100% {
+    left:52px;
+  }
+}
+@keyframes tree_back {
+  0% {
+    left:50px;
+  }
+  100% {
+    left:52px;
+  }
+}
+/* 나무(앞) 애니메이션 */
+@-webkit-keyframes tree_front {
+    0% {
+        top:448px;
+        left: 50px;
+      }
+      100% {
+        top:450px;
+        left: 50px;
+      }
+    }
+  @-moz-keyframes tree_front {
+    0% {
+        top:448px;
+        left: 50px;
+      }
+      100% {
+        top:450px;
+        left: 50px;
+      }
+    }
+  @-ms-keyframes tree_front {
+    0% {
+        top:448px;
+        left: 50px;
+      }
+      100% {
+        top:450px;
+        left: 50px;
+      }
+    }
+  @-o-keyframes tree_front {
+    0% {
+        top:448px;
+        left: 50px;
+      }
+      100% {
+        top:450px;
+        left: 50px;
+      }
+    }
+  @keyframes tree_front {
+    0% {
+        top:448px;
+        left: 50px;
+      }
+      100% {
+        top:450px;
+        left: 50px;
+      }
+    }
+
+/* 손 애니메이션 */
+@-webkit-keyframes hand {
+    0% {
+        top:448px;
+        left: 50px;
+      }
+      100% {
+        top:450px;
+        left: 50px;
+      }
+    }
+  @-moz-keyframes hand {
+    0% {
+        top:448px;
+        left: 50px;
+      }
+      100% {
+        top:450px;
+        left: 50px;
+      }
+    }
+  @-ms-keyframes hand {
+    0% {
+        top:448px;
+        left: 50px;
+      }
+      100% {
+        top:450px;
+        left: 50px;
+      }
+    }
+  @-o-keyframes hand {
+    0% {
+        top:448px;
+        left: 50px;
+      }
+      100% {
+        top:450px;
+        left: 50px;
+      }
+    }
+  @keyframes hand {
+    0% {
+        top:448px;
+        left: 50px;
+      }
+      100% {
+        top:450px;
+        left: 50px;
+      }
+    }
+
 /* ---------하늘 끝---------- */
 
 /* -----------꽃------------ */ 
@@ -599,17 +1002,12 @@ body::-webkit-scrollbar{
     margin: -30% 0 0 60.2%;
 }
 
-/* #grass{
-    position: absolute;
-    margin: 0 0 0 0;
-} */
-
 #mat{
     position: absolute;
     margin: -41% 0 0 0%;
 }
 
-#sentence{
+#sentence4{
     position: absolute;
     margin: 0 0 0 0;
 }
