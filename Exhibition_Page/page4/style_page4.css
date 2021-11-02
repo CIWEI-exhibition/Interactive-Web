@@ -573,13 +573,13 @@ body::-webkit-scrollbar{
 .world2 .w2_bg_content .cloudL{
     position: absolute;
     margin: -48% 0 0 -53%;
-    
-    animation: cloud 1.4s ease-in-out 0s linear infinite;
+    animation: cloudL 10s ease-in-out infinite alternate;
 }
 
 .world2 .w2_bg_content .cloudR{
     position: absolute;
     margin: -57% 0 0 5%;
+    animation: cloudR 7s ease-in-out infinite alternate;
 }
 
 .world2 .w2_bg_content .ground{
@@ -595,7 +595,7 @@ body::-webkit-scrollbar{
 
 .world2 .w2_flower_content .flower1{
     position: absolute;
-    margin: -15% 0 0 -1.9%;
+    margin: -17% 0 0 -1.9%;
 }
 
 .world2 .w2_flower_content .flower2{
@@ -681,7 +681,7 @@ body::-webkit-scrollbar{
 }
 .world2 .w2_flower_content .flower21{
     position: absolute;
-    margin: -16.6% 0 0 -35%;
+    margin: -17% 0 0 -35%;
 }
 .world2 .w2_flower_content .flower22{       /*맨 앞 큰 꽃*/
     position: absolute;
@@ -701,7 +701,7 @@ body::-webkit-scrollbar{
 }
 .world2 .w2_flower_content .flower26{
     position: absolute;
-    margin: -19.5% 0 0 -10%;
+    margin: -20% 0 0 -10%;
 }
 .world2 .w2_flower_content .flower27{
     position: absolute;
@@ -784,6 +784,21 @@ body::-webkit-scrollbar{
      -ms-animation: flower3 3s ease-in-out 0s infinite alternate;
       -o-animation: flower3 3s ease-in-out 0s infinite alternate;
          animation: flower3 3s ease-in-out 0s infinite alternate;
+}
+/*구름 움직임*/
+@keyframes cloudL {
+  from{
+      transform: translateX(0px);
+  } to{
+      transform: translateX(-50px);
+  }
+}
+@keyframes cloudR {
+  from{
+      transform: translateX(0px);
+  } to{
+      transform: translateX(50px);
+  }
 }
 /* 꽃 애니메이션 */
 /*중간 정도의 흔들림*/
@@ -894,14 +909,7 @@ body::-webkit-scrollbar{
         -webkit-transform: rotate(1deg);
     }
 }
-/*구름 움직임*/
-@keyframes cloud {
-    from{
-        transform: translateX(0px);
-    } to{
-        transform: translateX(50px);
-    }
-  }
+
 /* ----------꽃 끝---------- */
 /* ---------운동 시작(world3)------*/
 .world3{
@@ -921,16 +929,25 @@ body::-webkit-scrollbar{
 .world3 .w3_content .basket_shadow{
     position: absolute;
     margin: -49% 0 0 1%;
+    animation: w3_shadow 3s ease-in-out 0s infinite alternate;
 }
 .world3 .w3_content .light{
     position: absolute;
     margin: -53% 0 0 -40%;
 
     transform-origin: 0% 0%;
-    animation: light 3s ease-in-out 0s infinite alternate;
+    animation: w3_light 3s ease-in-out 0s infinite alternate;
 }
 
-@keyframes light{
+@keyframes w3_shadow {
+  from{
+      transform: translate(0px, 0px)
+  } to{
+      transform: translate(10px, -10px);
+  }
+}
+
+@keyframes w3_light {
   from{
       transform: rotate(5deg)
   } to{
