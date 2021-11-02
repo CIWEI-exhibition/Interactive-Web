@@ -574,8 +574,7 @@ body::-webkit-scrollbar{
     position: absolute;
     margin: -48% 0 0 -53%;
     
-    -webkit-transform-origin: 0% 100%;
-    -webkit-animation: cloud 5s ease-in-out 0s linear infinite;
+    animation: cloud 1.4s ease-in-out 0s linear infinite;
 }
 
 .world2 .w2_bg_content .cloudR{
@@ -896,14 +895,11 @@ body::-webkit-scrollbar{
     }
 }
 /*구름 움직임*/
-@-webkit-keyframes cloud {
-    0% {
-      left: 100px;
-      top: 100px;
-    }
-    100% {
-      left: 200px;
-      top: 200px;
+@keyframes cloud {
+    from{
+        transform: translateX(0px);
+    } to{
+        transform: translateX(50px);
     }
   }
 /* ----------꽃 끝---------- */
@@ -929,6 +925,17 @@ body::-webkit-scrollbar{
 .world3 .w3_content .light{
     position: absolute;
     margin: -53% 0 0 -40%;
+
+    transform-origin: 0% 0%;
+    animation: light 3s ease-in-out 0s infinite alternate;
+}
+
+@keyframes light{
+  from{
+      transform: rotate(5deg)
+  } to{
+      transform: rotate(-5deg);
+  }
 }
 
 /* ---------운동 끝---------------*/
@@ -1370,7 +1377,7 @@ body::-webkit-scrollbar{
     margin: 3% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 63%; /* Could be more or less, depending on screen size */ 
+    width: 68%; /* Could be more or less, depending on screen size */ 
     height: 85%;                       
 }
 
