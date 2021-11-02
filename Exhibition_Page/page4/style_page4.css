@@ -586,6 +586,30 @@ body::-webkit-scrollbar{
     position: absolute;
     margin: -57.3% 0 0 -50.1%;
 }
+/*글씨 나타나는 효과*/
+.world2 .w2_bg_content p{
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 2.5rem;
+  white-space: nowrap;
+  color: transparent;
+  margin: 0;
+  position: absolute;
+  /*글자 위치 대충 여기서 조절하면 됨!*/
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.world2 .w2_bg_content p::before{
+  content: "바쁜 일상 속에서 나와 여유를 느껴보는 건 어떨까요?";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  overflow: hidden;
+  animation: typing 5s steps(100);  /*steps 괄호 안 숫자는 멘트 길이.*/
+}
 
 /*광기의 시작*/
 .world2 .w2_flower_content .flower_bg1{
@@ -938,7 +962,31 @@ body::-webkit-scrollbar{
     transform-origin: 0% 0%;
     animation: w3_light 3s ease-in-out 0s infinite alternate;
 }
-
+/*글씨 나타나는 효과*/
+.world3 .w3_content p{
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 3rem;
+    white-space: nowrap;
+    color: transparent;
+    margin: 0;
+    position: absolute;
+    /*글자 위치 대충 여기서 조절하면 됨!*/
+    top: 90%;
+    left: 35%;
+    /*이거는 글자 가운데정렬!*/
+    transform: translate(-50%, -50%);
+}
+.world3 .w3_content p::before{
+    content: "운동으로 기분전환 해보는 건 어떨까요?";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    overflow: hidden;
+    animation: typing 5s steps(100);  /*steps 괄호 안 숫자는 멘트 길이.*/
+}
 @keyframes w3_shadow {
   from{
       transform: translate(0px, 0px)
@@ -953,6 +1001,15 @@ body::-webkit-scrollbar{
   } to{
       transform: rotate(-5deg);
   }
+}
+
+@keyframes typing{
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 100%;
+    }
 }
 
 /* ---------운동 끝---------------*/
