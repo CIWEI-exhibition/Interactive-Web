@@ -190,7 +190,7 @@ body::-webkit-scrollbar{
   position: absolute;
   margin: -53% 0 0 10%;
   animation-name: airplane;
-  animation-duration: 60s;
+  animation-duration: 30s;
  animation-timing-function: linear;
 }
 
@@ -198,7 +198,7 @@ body::-webkit-scrollbar{
   position: absolute;
   margin: -50% 0 0 -16%;
   animation-name: cloud_left;
-  animation-duration: 100s;
+  animation-duration: 50s;
  animation-timing-function: linear;
 }
 
@@ -206,18 +206,18 @@ body::-webkit-scrollbar{
   position: absolute;
   margin: -50% 0 0 57%;
   animation-name: cloud_left;
-  animation-duration: 100s;
+  animation-duration: 50s;
  animation-timing-function: linear;
 }
 
-#sentence1{
+/* #sentence1{
   position: absolute;
   margin: -50% 0 0 25%;
-}
+} */
 
 #hand{
   position: absolute;
-  margin: -40% 0 0 -10%;
+  margin: -35% 0 0 -10%;
   animation-name: hand;
   animation-duration: 5s;
  animation-timing-function: linear;
@@ -230,7 +230,7 @@ body::-webkit-scrollbar{
   position: absolute;
   margin: -15% 0 0 25%;
   animation-name: cloud_left;
-  animation-duration: 100s;
+  animation-duration: 40s;
  animation-timing-function: linear;
 }
 
@@ -255,6 +255,32 @@ body::-webkit-scrollbar{
   animation-direction:alternate;
   animation-fill-mode: forwards;
 }
+
+/*글씨 나타나는 효과*/
+.world1 .w1-cutter p{
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 2.5rem;
+  white-space: nowrap;
+  color: transparent;
+  margin: 0;
+  position: absolute;
+  /*글자 위치 대충 여기서 조절하면 됨!*/
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.world1 .w1-cutter p::before{
+  content: "가끔은 창 밖의 하늘을 바라보는건 어떨까요?";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  overflow: hidden;
+  animation: typing 5s steps(100);  /*steps 괄호 안 숫자는 멘트 길이.*/
+}
+
 
 /* 비행기 애니메이션 */
 @-webkit-keyframes airplane {
@@ -1026,18 +1052,29 @@ body::-webkit-scrollbar{
 
 #shadow_grass{
     position: absolute;
-    margin: -53% 0 0 10%;
+    margin: -50% 0 0 10%;
     animation-name: shadow;
     animation-duration: 1.5s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+	  animation-iteration-count: infinite;
     animation-direction:alternate;
     animation-fill-mode: forwards;
 }
 
+#grass_white{
+  position: absolute;
+  margin: -50% 0 0 10%;
+  animation-name: shadow;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+  animation-fill-mode: forwards;
+}
+
 #basket{
     position: absolute;
-    margin: -50% 0 0 1.1%;
+    margin: -50% 0 0 1%;
 }
 
 #bread{
@@ -1048,17 +1085,17 @@ body::-webkit-scrollbar{
 #shadow_bread{
     position: absolute;
     margin: -40.93% 0 0 33%;
-    animation-name: shadow;
+    /* animation-name: shadow;
     animation-duration: 2s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
     animation-direction:alternate;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
 
 #fruits{
     position: absolute;
-    margin: -30% 0 0 60.2%;
+    margin: -30% 0 0 60.3%;
 }
 
 #mat{
@@ -1066,91 +1103,116 @@ body::-webkit-scrollbar{
     margin: -41% 0 0 0%;
 }
 
-#sentence4{
+/* #sentence4{
   position: absolute;
   margin: -50% 0 0 25%;
-}
+} */
 
 #shadow_right{
     position: absolute;
-    margin: -30.5% 0 0 16.5%;
-    animation-name: shadow;
+    margin: -30.5% 0 0 18.3%;
+    /* animation-name: shadow;
     animation-duration: 2s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
     animation-direction:alternate;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
 
 #shadow_left{
     position: absolute;
     margin: -41% 0 0 1%;
     animation-name: shadow;
-    animation-duration: 2s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+  	animation-timing-function: linear;
+  	animation-iteration-count: infinite;
     animation-direction:alternate;
     animation-fill-mode: forwards;
 }
 
 #blanket{
     position: absolute;
-    margin: -32.5% 0 0 18.2%;
+    margin: -32% 0 0 18.3%;
 }
 
 #small-blanket{
     position: absolute;
     margin: -43% 0 0 17%;
-    animation-name: blanket;
+    /* animation-name: blanket;
     animation-duration: 2s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
     animation-direction:alternate;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
 
 #tomato1{
     position: absolute;
     margin: -13% 0 0 30%;
-    animation-name: small-tomato1;
+    /* animation-name: small-tomato1;
     animation-duration: 1.5s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
     animation-direction:alternate;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
 
 #tomato2{
     position: absolute;
     margin: -8% 0 0 38%;
-    animation-name: small-tomato1;
+    /* animation-name: small-tomato1;
     animation-duration: 1.5s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
     animation-direction:alternate;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
 
 #tomato3{
     position: absolute;
     margin: -8% 0 0 52%;
-    animation-name: small-tomato2;
+    /* animation-name: small-tomato2;
     animation-duration: 1.5s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
     animation-direction:alternate;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
 
 #tomato4{
     position: absolute;
     margin: -13% 0 0 36%;
-    animation-name: small-tomato2;
+    /* animation-name: small-tomato2;
     animation-duration: 1.5s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
     animation-direction:alternate;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
+}
+
+/*글씨 나타나는 효과*/
+.world4 .w4-cutter p{
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 2.5rem;
+  white-space: nowrap;
+  color: transparent;
+  margin: 0;
+  position: absolute;
+  /*글자 위치 대충 여기서 조절하면 됨!*/
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.world4 .w4-cutter p::before{
+  content: "오늘 저녁엔 내가 좋아하는 걸 하나 먹는건 어떨까요?";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  overflow: hidden;
+  animation: typing 5s steps(100);  /*steps 괄호 안 숫자는 멘트 길이.*/
 }
 
 /* 담요그림자 애니메이션 */
@@ -1205,7 +1267,7 @@ body::-webkit-scrollbar{
         
       }
       100% {
-        top:438px;
+        top:445px;
         left: 1px;
       }
     }
