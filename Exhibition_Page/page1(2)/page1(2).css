@@ -1,0 +1,205 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+input[id="navbar_menu"]{
+    display: none;
+}
+
+input[id="navbar_menu"] + label{
+    display: block;
+    width: 24px;
+    height: 18px;
+    position: relative;
+    cursor: pointer;
+    margin: 20px;
+}
+
+input[id="navbar_menu"] + label span{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 30px;
+    background: teal;
+    transition: all .35s;
+}
+
+input[id="navbar_menu"] + label span:nth-child(1){
+    top:0;
+}
+
+input[id="navbar_menu"] + label span:nth-child(2){
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+input[id="navbar_menu"] + label span:nth-child(3){
+    bottom:0;
+}
+
+/*check 되었을 때*/
+input[id="navbar_menu"]:checked + label{
+    z-index: 2;
+}
+
+input[id="navbar_menu"]:checked + label span{
+    background: #fff;
+}
+
+input[id="navbar_menu"]:checked + label span:nth-child(1){
+    top:50%;
+    transform:translateY(-50%) rotate(45deg);
+}
+
+input[id="navbar_menu"]:checked + label span:nth-child(2){
+    opacity: 0; /* 투명도 */
+}
+
+input[id="navbar_menu"]:checked + label span:nth-child(3){
+    bottom:50%;
+    transform:translateY(50%) rotate(-45deg);
+}
+
+div[class="sidebar"] {
+    list-style: none;
+    width:300px; 
+    height: 100%; 
+    background:teal; 
+    position: fixed; /*스크롤해도 고정됨, 상단에*/
+    top: 0; 
+    left: -300px; 
+    z-index: 1; /*position의 우선순위*/
+    transition: all .35s;} /*변화값에 모션을 주는 설정*/
+
+input[id="navbar_menu"]:checked + label + div {
+    left:0;
+}
+
+.sidebar a{
+    padding: 50px 0px 0px 25px;
+    font-size: 16px;
+    color:white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover{
+    color:aquamarine;
+}
+
+/* 여기까지가 sidebar */
+/* 아래부터가 진짜 전시 시작! */
+
+/*스크롤바 없애기*/
+/* body{
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+} */
+/*스크롤바 없애기 끝*/
+
+/*그림 배치*/
+.wrapper{
+    position: relative;
+    min-height: 500px;
+}
+
+.img{
+    position: absolute;
+}
+
+.wrapper .main_wrapper .bgStar1{
+    position: absolute;
+}
+
+.wrapper .main_wrapper .bgStar2{
+    position: absolute;
+}
+
+.wrapper .main_wrapper .bgStar3{
+    position: absolute;
+}
+
+.wrapper .main_wrapper .bgMount1{
+    position: absolute;
+    margin: 23% 0 0 -5%;
+}
+
+.wrapper .main_wrapper .bgMount2{
+    position: absolute;
+    margin: 28.5% 0 0 227%;
+}
+
+.wrapper .main_wrapper .bgMount3{
+    position: absolute;
+    margin: 23% 0 0 44%;
+}
+
+.wrapper .main_wrapper .bgMount4{
+    position: absolute;
+    margin: 25% 0 0 260%;
+}
+
+.wrapper .main_wrapper .bgGround{
+    position: absolute;
+    margin: 39.3% 0 0 0;
+}
+
+.wrapper .main_wrapper .bgLamp{
+    position: absolute;
+    margin: 9.5% 0 0 38%;
+}
+
+.wrapper .main_wrapper .bgTree{
+    position: absolute;
+    margin: 14% 0 0 27%;
+}
+
+.wrapper .booth_wrapper .banner{
+    position: absolute;
+    margin: 23% 0 0 108%;
+}
+
+.wrapper .booth_wrapper .busking{
+    position: absolute;
+    margin: 23.5% 0 0 175%;
+}
+
+.wrapper .booth_wrapper .icecream{
+    position: absolute;
+    margin: 18% 0 0 234%;
+}
+
+.wrapper .booth_wrapper .study{
+    position: absolute;
+    margin: 15% 0 0 283%;
+}
+
+.wrapper .booth_wrapper .love{
+    position: absolute;
+    margin: 15% 0 0 344%;
+}
+
+.wrapper .booth_wrapper .music{
+    position: absolute;
+    margin: 15% 0 0 404%;
+}
+
+.wrapper .booth_wrapper .healing{
+    position: absolute;
+    margin: 15% 0 0 465%;
+}

@@ -113,101 +113,33 @@ body::-webkit-scrollbar{
 /*스크롤바 없애기 끝*/
 
 /*그림 배치*/
-.sky-wrapper{
-    position: relative;
-    height: 2297px;
-}
-
-.star{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.moon{
-    position: absolute;
-    top: 500px;
-    left: 45%;
-}
-
-.shootingStar{
-    position: absolute;
-    bottom: 300px;
-    right: 400px; 
-}
-
-.main-wrapper{
+.wrapper{
     position: relative;
 }
 
-.background-star{
+.img{
     position: absolute;
-    top: 0;
-    left: 0;
 }
 
-.background-mountain{
+.wrapper .sky_wrapper .star{
     position: absolute;
-    bottom: 0;
-    left: 0;
 }
 
-.background-ground{
+.wrapper .sky_wrapper .star2{
     position: absolute;
-    bottom: 0;
-    left: 0;
 }
 
-.background-streetLamp{
+.wrapper .sky_wrapper .moon{
     position: absolute;
-    bottom: 70px;
-    left: 700px;
+    margin: 30% 50% 0 42%;
 }
 
-.background-tree{
+.wrapper .sky_wrapper .shootingStar{
     position: absolute;
-    bottom: 40px;
-    left: 550px;
+    margin: 80% 0 0 60%;
 }
 
-.booth-banner{
-    position: absolute;
-    bottom: 50px;
-    left: 1750px;
+.wrapper2{
+    position: relative;
 }
 
-.booth-busking{
-    position: absolute;
-    bottom: 0;
-    left: 2800px;
-}
-
-.booth-icecream{
-    position: absolute;
-    bottom: 30px;
-    left: 3670px;
-}
-
-.booth-study{
-    position: absolute;
-    bottom: 50px;
-    left: 4400px;
-}
-
-.booth-love{
-    position: absolute;
-    bottom: 50px;
-    left: 5300px;
-}
-
-.booth-music{
-    position: absolute;
-    bottom: 50px;
-    left: 6250px;
-}
-
-.booth-healing{
-    position: absolute;
-    bottom: 50px;
-    left: 7100px;
-}
