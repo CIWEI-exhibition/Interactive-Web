@@ -8,7 +8,7 @@ body{
     font-family: 'Baloo Chettan 2', cursive;
 }
 
-a{
+/* a{
     text-decoration: none;
     color: #fff;
 }
@@ -49,7 +49,7 @@ input[id="navbar_menu"] + label span:nth-child(3){
     bottom:0;
 }
 
-/*check 되었을 때*/
+check 되었을 때
 input[id="navbar_menu"]:checked + label{
     z-index: 2;
 }
@@ -64,7 +64,7 @@ input[id="navbar_menu"]:checked + label span:nth-child(1){
 }
 
 input[id="navbar_menu"]:checked + label span:nth-child(2){
-    opacity: 0; /* 투명도 */
+    opacity: 0;  투명도 
 }
 
 input[id="navbar_menu"]:checked + label span:nth-child(3){
@@ -77,11 +77,11 @@ div[class="sidebar"] {
     width:300px; 
     height: 100%; 
     background:teal; 
-    position: fixed; /*스크롤해도 고정됨, 상단에*/
+    position: fixed; 스크롤해도 고정됨, 상단에
     top: 0; 
     left: -300px; 
-    z-index: 1; /*position의 우선순위*/
-    transition: all .35s;} /*변화값에 모션을 주는 설정*/
+    z-index: 1; position의 우선순위
+    transition: all .35s;} 변화값에 모션을 주는 설정
 
 input[id="navbar_menu"]:checked + label + div {
     left:0;
@@ -97,74 +97,93 @@ input[id="navbar_menu"]:checked + label + div {
 
 .sidebar a:hover{
     color:aquamarine;
-}
+} */
 
 /* 여기까지가 sidebar */
 /* 아래부터가 2페이지 시작! */
 
 /* 스크롤 없애기 */
-body{
+/* body{
     -ms-overflow-style: none;
 }
 
 body::-webkit-scrollbar{
     display: none;
-}
+} */
 
 /* 이미지 배치 */
 .wrapper{
     position: relative;
-    overflow: hidden;
+    min-height: 500px;
 }
 
-#bg{
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-.img:not(:last-child){
+.img{
     position: absolute;
-    top: 280px;
-    left: 0;
 }
 
-#desk{
+.wrapper .small_wrapper .bgWall{
     position: absolute;
-    margin: 25% 0 0 18%;
 }
 
-#monitor{
+.wrapper .small_wrapper .bgInterior{
     position: absolute;
-    margin: 14% 0 0 39%;
 }
 
-#stand{
+.wrapper .small_wrapper .desk{
     position: absolute;
-    margin: 5.9% 0 0 58%;
+    margin: 6% 0 0 17%;
 }
 
-#com-chair{
+.wrapper .small_wrapper .deskClock{
     position: absolute;
-    margin: 26.3% 0 0 39.5%;
+    margin: 22% 0 0 23%;
+    -webkit-animation:blink 2s ease-in infinite alternate; 
+    -moz-animation:blink 2s ease-in infinite alternate; 
+    animation:blink 2s ease-in infinite alternate; 
 }
-
-#com-light{
+.wrapper .small_wrapper .comLight{
     position: absolute;
-    margin: 6.5% 0 0 32.8%;
+    margin: 9.5% 0 0 32.5%;
+    -webkit-animation:blink 0.7s ease-in-out infinite alternate; 
+    -moz-animation:blink 0.7s ease-in-out infinite alternate; 
+    animation:blink 0.7s ease-in-out infinite alternate; 
 }
 
-#fg{
+.wrapper .small_wrapper .com{
     position: absolute;
-    bottom: 0;
-    left: 0;
+    margin: 14% 0 0 38%;
 }
 
-/*화면 페럴랙스 효과 시작*/
-/*화면 페럴랙스 효과 끝*/
+.wrapper .small_wrapper .comLogo{
+    position: absolute;
+    margin: 20.5% 0 0 49.5%;
+    animation: dongdong 2s ease-in-out infinite alternate;
+}
+
+.wrapper .small_wrapper .comMonitor2{
+    position: absolute;
+    margin: 14% 0 0 38.05%;
+    -webkit-animation:blink 2s ease-in-out infinite alternate; 
+    -moz-animation:blink 2s ease-in-out infinite alternate; 
+    animation:blink 2s ease-in-out infinite alternate; 
+}
+
+.wrapper .small_wrapper .comChair{
+    position: absolute;
+    margin: 27% 0 0 39.5%;
+}
+
+.wrapper .small_wrapper .standLight{
+    position: absolute;
+    margin: 7% 0 0 32%;
+    opacity: 0.7;
+    -webkit-animation:blink 2s ease-in-out infinite alternate; 
+    -moz-animation:blink 2s ease-in-out infinite alternate; 
+    animation:blink 2s ease-in-out infinite alternate; 
+}
 
 /*세로 진행 바 시작*/
-.progress {
+/* .progress {
     position: fixed;
     width: 4px;
     height: 140px;
@@ -182,16 +201,25 @@ body::-webkit-scrollbar{
     right: 0;
     background-color: chartreuse;
     z-index: 11;
-}
+} */
 /*세로 진행 바 끝*/
 
-/*깜빡이는 효과 시작*/
-.blinking{ 
-    -webkit-animation:blink 0.7s ease-in-out infinite alternate; 
-    -moz-animation:blink 0.7s ease-in-out infinite alternate; 
-    animation:blink 0.7s ease-in-out infinite alternate; 
+/*동동 애니메이션*/
+@keyframes dongdong{
+    0%{ 
+        transform:translate(-50%,-40%);
+        opacity: 0; 
+    } 
+    50%{
+        transform:translate(-50%,-60%); 
+    }
+    100%{
+        transform:translate(-50%, -40%);
+        opacity: 1;
+    }
 }
 
+/*깜빡이는 애니메이션*/
 @-webkit-keyframes blink{
     0% {opacity:0;} 
     100% {opacity:1;} 
@@ -206,43 +234,5 @@ body::-webkit-scrollbar{
     0% {opacity:0;} 
     100% {opacity:1;} 
 }
-/*깜빡이는 효과 끝*/
 
-/*물결 효과 시작*/
-.wave-box{
-    width: 1600px;
-    height: 900px;
-    border-radius: 5px;
-    box-shadow: 0 2px 30px rgba(black, .2);
-    background: lighten(#f0f4c3, 10%);
-    position: relative;
-    overflow: hidden;
-    transform: translate3d(0, 0, 0);
-}
-
-.wave-three {
-    animation: drift 5000ms infinite linear;
-}
-  
-.wave-two {
-    animation: drift 7000ms infinite linear;
-    opacity: .1;
-    background: yellow;
-}
-  
-.wave-box:after {
-    content: '';
-    display: block;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(#e8a, 1), rgba(#def, 0) 80%, rgba(white, .5));
-    z-index: 11;
-    transform: translate3d(0, 0, 0);
-}
-
-@keyframes drift {
-    from { transform: rotate(0deg); }
-    from { transform: rotate(360deg); }
-}
+/*물결 효과*/
