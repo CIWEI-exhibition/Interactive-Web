@@ -258,10 +258,47 @@ body::-webkit-scrollbar{
 
 #subway-seat{
     position: fixed;
-    top: 37em;
-    left: -1.5em;
+    margin: 37.1% 0 0 -1.8%;
 }
 /*지하철 끝*/
+
+/* 채팅창 */
+#chat{
+    position: absolute;
+    margin: 0 0 0 0;
+}
+
+#chat_1{
+
+}
+
+#chat_2{
+
+}
+
+#chat_3{
+
+}
+
+#chat_4{
+
+}
+
+#chat_5{
+
+}
+
+#chat_6{
+
+}
+
+#my_chat{
+
+}
+
+#chat_ing{
+
+}
 
 
 /* 페이드 아웃 */

@@ -42,6 +42,33 @@
 			    });
 		    });
 	    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript">
+
+            jQuery(document).ready(function($){
+
+                var x = $(document).scrollTop(0);
+                $(document).scroll(function(){
+                    var y = $(document).scrolTop();
+                    var z = y - x;
+                    if(z >= 0 && y >= 220){
+                        $("div").stop().animate({
+                            marginTop: "0",
+                            opacity: 1
+                        });
+                    }
+                    if(z <= 0 && y >= 220){
+                        $("div").stop().animate({
+                            marginTop: "200px",
+                            opacity: 0
+                        });
+                    }
+                    x = y;
+                    $("p").text(z + " , " + y);
+                });
+            });
+
+        </script>
 </head>
 
 <body>
@@ -91,6 +118,18 @@
                 <img src="images3/subway/SubHandle4.png" alt="지하철-손잡이" class="sub" id="subway-handle4" height="23%">
 
                 <img src="images3/subway/SubwaySeat.png" alt="지하철-자리" class="sub" id="subway-seat" width="104.5%">
+
+                <!-- 채팅 -->
+                <img src="images3/chat/chat_bottom.png" alt="채팅-글적는 칸" class="chat" id="chat_bottom" width="30%">
+                <img src="images3/chat/chat1.png" alt="채팅-1" class="chat" id="chat_1" width="30%">
+                <img src="images3/chat/chat_2.png" alt="채팅-2" class="chat" id="chat_2" width="30%">
+                <img src="images3/chat/chat_3.png" alt="채팅-3" class="chat" id="chat_3" width="30%">
+                <img src="images3/chat/chat_4.png" alt="채팅-4" class="chat" id="chat_4" width="30%">
+                <img src="images3/chat/chat_5.png" alt="채팅-5" class="chat" id="chat_5" width="30%">
+                <img src="images3/chat/chat_6.png" alt="채팅-6" class="chat" id="chat_6" width="30%">
+                <img src="images3/chat/my_chat.png" alt="채팅-내 글" class="chat" id="my_chat" width="30%">
+                <img src="images3/chat/chat_ing.png" alt="채팅-적는중인 것" class="chat" id="chat_ing" width="30%">
+
                 <img src="images3/front/Full-Fade-out.png" alt="전체-페이드아웃" class="fade" id="full-fade-out" width="100%">
             </div>
         </div>
