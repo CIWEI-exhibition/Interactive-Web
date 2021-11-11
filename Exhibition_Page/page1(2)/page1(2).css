@@ -205,22 +205,23 @@ body::-webkit-scrollbar{
 }
 
 .wrapper .booth_wrapper .study:hover{
+    /* background-blend-mode: darken; */
     transform: scale(1.1);
-    transition: transform 1s ease-in-out;
-    filter: brightness(140%);
+    transition: transform 0.4s ease-in-out;
+    filter: brightness(120%);
 }
 .wrapper .booth_wrapper .love:hover{
     transform: scale(1.1);
-    transition: transform 1s ease-in-out;
-    filter: brightness(140%);
+    transition: transform 0.4s ease-in-out;
+    filter: brightness(120%);
 }
 .wrapper .booth_wrapper .music:hover{
     transform: scale(1.1);
-    transition: transform 1s ease-in-out;
-    filter: brightness(140%);
+    transition: transform 0.4s ease-in-out;
+    filter: brightness(120%);
 }
 .wrapper .booth_wrapper .healing:hover{
     transform: scale(1.1);
-    transition: transform 1s ease-in-out;
-    filter: brightness(140%);
+    transition: transform 0.4s ease-in-out;
+    filter: brightness(120%);
 }
