@@ -203,3 +203,24 @@ body::-webkit-scrollbar{
     position: absolute;
     margin: 15% 0 0 465%;
 }
+
+.wrapper .booth_wrapper .study:hover{
+    transform: scale(1.1);
+    transition: transform 1s ease-in-out;
+    filter: brightness(140%);
+}
+.wrapper .booth_wrapper .love:hover{
+    transform: scale(1.1);
+    transition: transform 1s ease-in-out;
+    filter: brightness(140%);
+}
+.wrapper .booth_wrapper .music:hover{
+    transform: scale(1.1);
+    transition: transform 1s ease-in-out;
+    filter: brightness(140%);
+}
+.wrapper .booth_wrapper .healing:hover{
+    transform: scale(1.1);
+    transition: transform 1s ease-in-out;
+    filter: brightness(140%);
+}

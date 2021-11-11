@@ -6,7 +6,7 @@ let speed = 0.03;
 let scrollTop = 0;
 let bgwater, bgbottom, bgfish1, bgfish2, bgfish3, bgjellyfish, whale2, rock_shadow, rock1, bottom,
     fish, jellyfish, whale,
-    rock, bottom_room_light, bottom_room, door1, door2, door3, door4, door5_bottom, room1, room2, room3, room4, world1;
+    rock, bottom_room_light, bottom_room, door1, door2, door3, door4, door5_bottom, room1, room2, room3, room4, world1, star, star2;
 
 window.onload = function(){
 
@@ -25,6 +25,8 @@ window.onload = function(){
     fish = document.getElementById("fish");
     jellyfish = document.getElementById("jellyfish");
     whale = document.getElementById("whale");
+    star1 = document.getElementById("star1");
+    star2 = document.getElementById("star2");
 
     rock = document.getElementById("rock");
     bottom_room_light = document.getElementById("bottom_room_light");
@@ -53,6 +55,9 @@ window.onload = function(){
         fish.style.transform = "translateX("+ scroll/4 + "px)";
         jellyfish.style.transform = "translateX("+ -scroll/10 + "px)";
         whale.style.transform = "translateX("+ -scroll/6 + "px)";
+
+        star1.style.transform = "translateY("+ -scroll/5 + "px)";
+        star2.style.transform = "translateY("+ -scroll/2 + "px)";
         
         window.addEventListener('resize', stageResize, false);
         window.addEventListener('mousemove', mouseMove, false);

@@ -8,7 +8,7 @@ body{
     font-family: 'Baloo Chettan 2', cursive;
 }
 
-a{
+/* a{
     text-decoration: none;
     color: #fff;
 }
@@ -97,20 +97,20 @@ input[id="navbar_menu"]:checked + label + div {
 
 .sidebar a:hover{
     color:aquamarine;
-}
+} */
 
 /* 여기까지가 sidebar */
 /* 아래부터가 진짜 전시 시작! */
 
 /*스크롤바 없애기*/
-/* body{
+body{
     -ms-overflow-style: none;
 }
 
 body::-webkit-scrollbar{
     display: none;
-} */
-/*스크롤바 없애기 끝*/
+}
+/*스크롤바 없애기 끝
 
 /*그림 배치*/
 .wrapper{

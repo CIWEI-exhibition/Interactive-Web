@@ -6,12 +6,14 @@ window.onload = function(){
     var moon = document.querySelector(".moon");
     var shootingStar = document.querySelector(".shootingStar");
 
-    // 부스 쪽
-    var bgsky = document.querySelector(".background-sky");
-    var bgstar = document.querySelector(".background-star");
-    var bgmountain = document.querySelector(".background-mountain");
-    var bgground = document.querySelector(".background-ground");
-
+    //저절로 내려가게 하는 효과
+    TweenMax.to(window, 4, {               //TweenMax적용함. 전체 window에, 2초,
+        scrollTo:{
+            y: ".bottom",                    //스크롤이 y의 끝
+        },
+        delay: 1.7,                        //1.7초 있다 내려감
+        ease:Power3.easeInOut              //무슨 의미인진 모르겠으나 필요하다고 함.
+    });
 
     //스크롤 이벤트 (패럴랙스 느낌) (처음 하늘쪽)
     window.addEventListener("scroll", function(event){      //스크롤 이벤트를 걸어주고
@@ -29,17 +31,4 @@ window.onload = function(){
         bgstar.style.transform = "translateX("+ -scroll2/6 + "px)";
         bgmountain.style.transform = "translateX("+ -scroll2/3 + "px)";
     })
-
-
-
-    //저절로 내려가게 하는 효과
-    // TweenMax.to( window, 4, {               //TweenMax적용함. 전체 window에, 2초,
-    //     scrollTo:{
-    //         y: ".bottom"                    //스크롤이 y의 끝   
-    //     },
-    //     delay: 1.7,                        //1.7초 있다 내려감
-    //     ease: Power4.easeInOut               //무슨 의미인진 모르겠으나 필요하다고 함.
-    // });
 }
-
-//가로 스크롤
