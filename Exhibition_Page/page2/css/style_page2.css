@@ -129,6 +129,31 @@ body::-webkit-scrollbar{
     left: 0;
 }
 
+#desk{
+    position: absolute;
+    margin: 25% 0 0 18%;
+}
+
+#monitor{
+    position: absolute;
+    margin: 14% 0 0 39%;
+}
+
+#stand{
+    position: absolute;
+    margin: 5.9% 0 0 58%;
+}
+
+#com-chair{
+    position: absolute;
+    margin: 26.3% 0 0 39.5%;
+}
+
+#com-light{
+    position: absolute;
+    margin: 6.5% 0 0 32.8%;
+}
+
 #fg{
     position: absolute;
     bottom: 0;
