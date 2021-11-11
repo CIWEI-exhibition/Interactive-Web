@@ -4,24 +4,27 @@ let mx = 0;
 let my = 0;
 let speed = 0.03;
 let scrollTop = 0;
-let bg, bgWall, bgInterior, com, comMonitor, comChair, comLight, fgMoonlight, fg;
-let stand1, stand2;
+let bg, bgWall, bgInterior, desk, deskClock, com, comMonitor2, comLogo, comChair, standLight, fgMoonlight, fgFront;
 
 window.onload = function(){
-    progressBar = document.getElementsByClassName("bar")[0];
+    // progressBar = document.getElementsByClassName("bar")[0];
 
     //이미지들 연결
-    bg = document.getElementById("bg");
-    bgWall = document.getElementById("bg-wall");
-    bgInterior = document.getElementById("bg-interior");
-    com = document.getElementById("com");
-    comChair = document.getElementById("com-chair");
-    comLight = document.getElementById("com-light");
-    fgMoonlight = document.getElementById("fg-moonlight");
-    fg = document.getElementById("fg");
+    bg = document.querySelector(".bg");
 
-    stand1 = document.getElementById("stand1");
-    stand2 = document.getElementById("stand2");
+    bgWall = document.querySelector(".bgWall");
+    bgInterior = document.querySelector(".bgInterior");
+
+    desk = document.querySelector(".desk");
+    deskClock = document.querySelector("deskClock");
+    com = document.querySelector(".com");
+    comMonitor2 = document.querySelector("comMonitor2");
+    comLogo = document.querySelector(".comLogo");
+    comChair = document.querySelector(".comChair");
+    standLight = document.querySelector(".standLight");
+
+    fgMoonlight = document.querySelector(".fgMoonlight");
+    fgFront = document.querySelector(".fgFront");
 
     window.addEventListener('resize', stageResize, false);
     window.addEventListener('mousemove', mouseMove, false);
@@ -36,21 +39,33 @@ function scrollFunc(e){
     // console.log(scrollTop);     스크롤값 콘솔에 찍어봄
 
     let per = Math.ceil(scrollTop / (_documentHum - _windowNum) * 100);
-    progressBar.style.height = per + "%";   //세로 진행 바 위해
+    // progressBar.style.height = per + "%";   //세로 진행 바 위해
 
-    //패럴렉스 핵심
-    bg.style.transform = "translate3d(0px ," + scrollTop * .12 +"px, 0px)";
-    bgWall.style.transform = "translate3d(0px ," + scrollTop * .35 +"px , 0px)";
-    bgInterior.style.transform = "translate3d(0px ," + scrollTop * .35 +"px , 0px)";
-    com.style.transform = "translate3d(0px ," + scrollTop * .45 +"px , 0px)";
+    //패럴렉스 핵심(속도 같이 해야 하는 애들끼리 묶음!!)
+    bgWall.style.transform = "translate(0," + -scrollTop * .35 +"px)"
 
-    // stand1.style.transform = "translate3d(0px ," + scrollTop * .45 +"px , 0px)";
-    // stand2.style.transform = "translate3d(0px ," + scrollTop * .45 +"px , 0px)";
+    bgInterior.style.transform = "translate(0," + -scrollTop * .35 +"px)"
 
-    comLight.style.transform = "translate3d(0px ," + scrollTop * .47 +"px , 0px)";
-    comChair.style.transform = "translate3d(0px ," + scrollTop * .43 +"px , 0px)";
-    fgMoonlight.style.transform = "translate3d(0px ," + scrollTop * .55 +"px , 0px);"
-    fg.style.transform = "translate3d(0px ," + scrollTop * 1.55 +"px , 0px)";
+    desk.style.transform = "translate(0," + -scrollTop * .45 +"px)"
+    deskClock.style.transform = "translate(0," + -scrollTop * .45 +"px)"
+    com.style.transform = "translate(0," + -scrollTop * .45 +"px)"
+    comMonitor2.style.transform = "translate(0," + -scrollTop * .45 +"px)"
+    comLogo.style.transform = "translate(0," + -scrollTop * .45 +"px)"
+    standLight.style.transform = "translate(0," + -scrollTop * .45 +"px)"
+
+    comChair.style.transform = "translate(0," + -scrollTop * .47 +"px)"
+    
+    fgMoonlight.style.transform = "translate(0," + -scrollTop * .55 +"px)"
+    fgFront.style.transform = "translate(0," + -scrollTop * 5.5 +"px)"
+
+    // bgWall.style.transform = "translateX("+ -scroll2/2 + "px)";
+    // bgInterior.style.transform = "translate3d(0px ," + scrollTop * .35 +"px , 0px)";
+    // com.style.transform = "translate3d(0px ," + scrollTop * .45 +"px , 0px)";
+
+    // comLight.style.transform = "translate3d(0px ," + scrollTop * .47 +"px , 0px)";
+    // comChair.style.transform = "translate3d(0px ," + scrollTop * .43 +"px , 0px)";
+    // fgMoonlight.style.transform = "translate3d(0px ," + scrollTop * .55 +"px , 0px);"
+    // fg.style.transform = "translate3d(0px ," + scrollTop * 1.55 +"px , 0px)";
 }
 
 function stageResize() {        //per를 위한 함수 (document랑 window height값)

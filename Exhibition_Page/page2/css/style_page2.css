@@ -113,6 +113,7 @@ body::-webkit-scrollbar{
 
 /* 이미지 배치 */
 .wrapper{
+    display: flex;
     position: relative;
     min-height: 500px;
 }
