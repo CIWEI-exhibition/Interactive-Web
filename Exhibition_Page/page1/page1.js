@@ -20,7 +20,7 @@ window.onload = function(){
         var scroll = this.scrollY;                          // scroll이라는 변수에 scrollY값을 넣어준다.
         
         star.style.transform = "translateY("+ -scroll/4 + "px)";            //별이 올라가는것처럼 보이게 함. + 느리게 (별 이미지 추가하면 더 좋을듯)
-        star2.style.transform = "translateY("+ -scroll/0.5 + "px)";
+        star2.style.transform = "translateY("+ -scroll/2 + "px)";
         moon.style.transform = "translateY("+ -scroll/10 + "px)";           //달이 천천히 올라가는 것처럼 보이게 함.
         shootingStar.style.transform = "translateX("+ -scroll/6 + "px)";    // 별똥별이 오-->왼으로 움직이는 것처럼 보이게 함.
     })
