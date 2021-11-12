@@ -144,6 +144,15 @@ input[id="navbar_menu"]:checked + label + div {
     text-decoration: none;
 } */
 
+/*스크롤바 없애기*/
+body{
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
 .wrapper{
     display: relative;
     min-height: 500px;
