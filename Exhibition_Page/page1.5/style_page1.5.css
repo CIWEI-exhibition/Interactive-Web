@@ -263,41 +263,50 @@ body::-webkit-scrollbar{
 /*지하철 끝*/
 
 /* 채팅창 */
-#chat{
+#chat_bottom{
     position: absolute;
-    margin: 0 0 0 0;
+    margin: 30% 0 0 70%;
+    opacity: 80%;
 }
 
 #chat_1{
-
+    position: absolute;
+    margin: -12% 0 0 70%;
 }
 
 #chat_2{
-
+    position: absolute;
+    margin: -5.8% 0 0 70%;
 }
 
 #chat_3{
-
+    position: absolute;
+    margin: 1.7% 0 0 70%;
 }
 
 #chat_4{
-
+    position: absolute;
+    margin: 7.9% 0 0 70%;
 }
 
 #chat_5{
-
+    position: absolute;
+    margin: 14% 0 0 70%;
 }
 
 #chat_6{
-
+    position: absolute;
+    margin: 20% 0 0 70%;
 }
 
 #my_chat{
-
+    position: absolute;
+    margin: 26% 0 0 88.5%;
 }
 
 #chat_ing{
-
+    position: absolute;
+    margin: 31% 0 0 72%;
 }
 
 

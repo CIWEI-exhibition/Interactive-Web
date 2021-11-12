@@ -88,3 +88,11 @@ function mouseMove (e) {        //윈도우 width의 가운데 기준
     x = (e.clientX - window.innerHeight / 2);
     y = (e.clientY - window.innerHeight / 2);
 }
+
+function open_pop(flag){
+    $('#com-light').css('display','block');
+};
+
+function close_pop(flag) {
+    $('#com-light').hide();
+};
