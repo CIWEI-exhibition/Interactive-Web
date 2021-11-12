@@ -185,3 +185,40 @@ body::-webkit-scrollbar{
 .wrapper .button_wrapper .button2:hover{
     opacity: 1;    
 }
+
+
+/* 내부 */
+.enter .exit .logo{
+    position: absolute;
+    margin: -42% 0 0 35.5%;
+}
+
+.enter .light{
+    position: absolute;
+    margin: -50% 0 0 35.5%;
+}
+
+.enter .art #art1{
+    position: absolute;
+    margin: -32% 0 0 2%;
+}
+
+.enter .art #art1_5{
+    position: absolute;
+    margin: -32% 0 0 21.5%;
+}
+
+.enter .art #art2{
+    position: absolute;
+    margin: -32% 0 0 41%;
+}
+
+.enter .art #art3{
+    position: absolute;
+    margin: -32% 0 0 60.5%;
+}
+
+.enter .art #art4{
+    position: absolute;
+    margin: -32% 0 0 80%;
+}
