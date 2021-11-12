@@ -167,7 +167,21 @@ body::-webkit-scrollbar{
     margin: -90% 0 0 37.1%;
 }
 
-.wrapper .button_wrapper .button{
+.wrapper .button_wrapper .button1{
     position: absolute;
     margin: -10% 0 0 41.8%;
+}
+
+.wrapper .button_wrapper .button2{
+    position: absolute;
+    margin: -10% 0 0 41.8%;
+    opacity: 0;
+}
+
+.wrapper .button_wrapper .button1:hover{
+    opacity: 0;
+}
+
+.wrapper .button_wrapper .button2:hover{
+    opacity: 1;    
 }
