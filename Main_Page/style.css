@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    background-color: rgb(15, 8, 43);   /*전체색상 */
+    background-color: #86aec7;   /*전체색상 */
 }
 
 /*사이드바 끝*/
@@ -154,21 +154,20 @@ body::-webkit-scrollbar{
 }
 .wrapper{
     display: relative;
-    min-height: 500px;
-    /* line-height: 1000px; */
-    vertical-align: middle;
+    /* min-height: 500px; */
+    overflow: hidden;
 }
 
 .img{
     display: absolute;
 }
 
-.wrapper .logo{
+.wrapper .logo_wrapper .logo{
     position: sticky;
-    margin: -32% 0 0 21%;
+    margin: -90% 0 0 37.1%;
 }
 
-.wrapper .text-center{
+.wrapper .button_wrapper .button{
     position: absolute;
-    margin: 20% 0 0 47%;
+    margin: -10% 0 0 41.8%;
 }
