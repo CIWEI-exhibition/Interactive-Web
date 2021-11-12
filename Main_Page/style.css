@@ -7,18 +7,116 @@ body {
     background-color: rgb(15, 8, 43);   /*전체색상 */
 }
 
-.navbar {   /*내비게이션 바(로고+메뉴)*/
+/*사이드바 끝*/
+#label{
+    position: fixed;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+input[id="navbar_menu"]{
+    display: none;
+}
+
+input[id="navbar_menu"] + label{
+    display: block;
+    width: 24px;
+    height: 18px;
+    position: relative;
+    cursor: pointer;
+    margin: 20px;
+}
+
+input[id="navbar_menu"] + label span{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 30px;
+    background: teal;
+    transition: all .35s;
+}
+
+input[id="navbar_menu"] + label span:nth-child(1){
+    top:0;
+}
+
+input[id="navbar_menu"] + label span:nth-child(2){
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+input[id="navbar_menu"] + label span:nth-child(3){
+    bottom:0;
+}
+
+/*check 되었을 때*/
+input[id="navbar_menu"]:checked + label{
+    z-index: 2;
+}
+
+input[id="navbar_menu"]:checked + label span{
+    background: #fff;
+}
+
+input[id="navbar_menu"]:checked + label span:nth-child(1){
+    top:50%;
+    transform:translateY(-50%) rotate(45deg);
+}
+
+input[id="navbar_menu"]:checked + label span:nth-child(2){
+    opacity: 0; /* 투명도 */
+}
+
+input[id="navbar_menu"]:checked + label span:nth-child(3){
+    bottom:50%;
+    transform:translateY(50%) rotate(-45deg);
+}
+
+div[class="sidebar"] {
+    list-style: none;
+    width:300px; 
+    height: 100%; 
+    background:teal; 
+    position: fixed; /*스크롤해도 고정됨, 상단에*/
+    top: 0; 
+    left: -300px; 
+    z-index: 1; /*position의 우선순위*/
+    transition: all .35s;} /*변화값에 모션을 주는 설정*/
+
+input[id="navbar_menu"]:checked + label + div {
+    left:0;
+}
+
+.sidebar a{
+    padding: 50px 0px 0px 25px;
+    font-size: 16px;
+    color:white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover{
+    color:aquamarine;
+}
+/*사이드바 끝*/
+
+/*내비게이션 바*/
+/* .navbar {
     background-color: rgb(9, 4, 31);
     height: 120px;
     padding: 0 50px;
-    position: sticky;   /*상단바 고정*/
-    padding-top: 60px;  /*자연스럽게 줄어들기*/
+    position: sticky;
+    padding-top: 60px;
     top: -60px;
-    opacity: 0.7;   /*뒤에 비치게 하기*/
+    opacity: 0.7;
     backdrop-filter: blur(30px);
 }
 
-.navbar #menu {   /*메뉴*/
+.navbar #menu { 
     float: right;
     list-style: none;
     padding: 0;
@@ -26,32 +124,50 @@ body {
 }
 
 .navbar #menu li {
-    padding: 0 20px;    /*hover때문에 간격 줌*/
+    padding: 0 20px;
     cursor: pointer;
     float: left;
     line-height: 60px;
 }
-.navbar #menu li:not(:last-child) {     /*메뉴 간 간격 띄우기*/
+.navbar #menu li:not(:last-child) {
     margin-right: 40px;
 }
 
-.navbar #menu li:hover {    /*마우스 커서 올리면 gray색*/
+.navbar #menu li:hover {
     background-color: gray;
 }
 
-.navbar #menu li a {    /*메뉴이름 속성*/
+.navbar #menu li a {
     color: white;
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
-}
+} */
 
-.mainPage {
-    height: 1000px;
-    line-height: 1000px;
+.wrapper{
+    display: relative;
+    min-height: 500px;
+    /* line-height: 1000px; */
     vertical-align: middle;
 }
 
-.btn-outline-light {
+.img{
+    display: absolute;
+}
+
+.wrapper .logo{
+    position: sticky;
+    margin: -32% 0 0 21.5%;
+}
+
+.wrapper .text-center{
+    position: absolute;
+    margin: 22% 0 0 42.5%;
+}
+
+.wrapper .text-center .btn-outline-light{
+    padding: 8px 50px 10px 50px;
+    font-size: 2em;
+    border-radius: 30px;
     line-height: normal;
 }
