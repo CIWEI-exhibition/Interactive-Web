@@ -138,9 +138,6 @@ body::-webkit-scrollbar{
 .wrapper .small_wrapper .deskClock{
     position: absolute;
     margin: 22% 0 0 23%;
-    -webkit-animation:blink 2s ease-in infinite alternate; 
-    -moz-animation:blink 2s ease-in infinite alternate; 
-    animation:blink 2s ease-in infinite alternate; 
 }
 .wrapper .small_wrapper .comLight{
     position: absolute;
@@ -164,9 +161,9 @@ body::-webkit-scrollbar{
 .wrapper .small_wrapper .comMonitor2{
     position: absolute;
     margin: 14% 0 0 38.05%;
-    -webkit-animation:blink 2s ease-in-out infinite alternate; 
-    -moz-animation:blink 2s ease-in-out infinite alternate; 
-    animation:blink 2s ease-in-out infinite alternate; 
+    /* -webkit-animation:blink 4s ease-in-out infinite alternate; 
+    -moz-animation:blink 4s ease-in-out infinite alternate; 
+    animation:blink 4s ease-in-out infinite alternate;  */
 }
 
 .wrapper .small_wrapper .comChair{
@@ -178,9 +175,9 @@ body::-webkit-scrollbar{
     position: absolute;
     margin: 7% 0 0 32%;
     opacity: 0.7;
-    -webkit-animation:blink 2s ease-in-out infinite alternate; 
-    -moz-animation:blink 2s ease-in-out infinite alternate; 
-    animation:blink 2s ease-in-out infinite alternate; 
+    -webkit-animation:blink 0.7s ease-in-out infinite alternate; 
+    -moz-animation:blink 0.7s ease-in-out infinite alternate; 
+    animation:blink 0.7s ease-in-out infinite alternate; 
 }
 
 /*세로 진행 바 시작*/
