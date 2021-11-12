@@ -171,7 +171,8 @@ body::-webkit-scrollbar{
 
 .wrapper .text-center{
     position: absolute;
-    margin: 22% 0 0 42.5%;
+    top: 96%;
+    left: 41%;
 }
 
 .wrapper .text-center .btn-outline-light{
