@@ -170,13 +170,5 @@ body::-webkit-scrollbar{
 
 .wrapper .text-center{
     position: absolute;
-    margin: 22% 0 0 41.1%;
-}
-
-.wrapper .text-center .btn-outline-light{
-    padding: 8px 50px 10px 50px;
-    font-size: 2em;
-    border-radius: 30px;
-    border-width: thick;
-    line-height: normal;
+    margin: 20% 0 0 47%;
 }
