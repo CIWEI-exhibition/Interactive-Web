@@ -49,8 +49,15 @@
         </div>
         <div class="button_wrapper">
             <a href="../Exhibition_Page/page1/page1.html"><img src="images/button1.png" alt="버튼1" class="img button1" id="button1" width="16%" /></a>
-            <a href="../Exhibition_Page/page1/page1.html"><img src="images/button2.png" alt="버튼2" class="img button2" id="button2" width="16%" /></a>
+            <a href="../Exhibition_Page/page1/page1.html"><img src="images/button2.png" alt="버튼2" class="img button2" id="button2" width="16%" onClick="fadeOut();"/></a>
+            <div class="fadeOut_box"></div>
+            <script>
+                $(".button2").click(function(){
+                    $(".hall").fadeOut();
+                });
+            </script>
         </div>
+
     </div>
 </body>
 </html>
