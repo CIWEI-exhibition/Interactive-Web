@@ -51,8 +51,22 @@
             <a href="entrance.html"><img src="images/button1.png" alt="버튼1" class="img button1" id="button1" width="16%" /></a>
             <a href="entrance.html"><img src="images/button2.png" alt="버튼2" class="img button2" id="button2" width="16%" /></a>
         </div>
-
     </div>
+
+    <script>
+        jQuery(function($) {
+            $("body").css("display", "none");
+            $("body").fadeIn(2000);
+            $("a.transition").click(function(event){
+            event.preventDefault();
+            linkLocation = this.href;
+            $("body").fadeOut(1000, redirectPage);
+        });
+        function redirectPage() {
+            window.location = linkLocation;
+            }
+        });
+    </script>
     <script type='text/javascript' src="index.js"></script>
 </body>
 </html>
