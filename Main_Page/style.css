@@ -186,12 +186,7 @@ body::-webkit-scrollbar{
     opacity: 1;    
 }
 
-<<<<<<< HEAD
-.fadeOut_box{
-    width: 100%;
-    height: 100%;
-    background-color: black;
-=======
+
 
 /* 내부 */
 .enter .exit .logo{
@@ -227,5 +222,4 @@ body::-webkit-scrollbar{
 .enter .art #art4{
     position: absolute;
     margin: -32% 0 0 80%;
->>>>>>> f4692cefc71a91431b6adb79f5d29c88c6d1681d
 }
