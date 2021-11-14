@@ -16,7 +16,6 @@ window.onload = function(){
     var desk = document.querySelector(".desk");
     var deskClock = document.querySelector("deskClock");
     var com = document.querySelector(".com");
-    var comMonitor2 = document.querySelector("comMonitor2");
     var comLogo = document.querySelector(".comLogo");
     var comChair = document.querySelector(".comChair");
     var standLight = document.querySelector(".standLight");
@@ -33,7 +32,7 @@ window.onload = function(){
 }
 
 function scrollFunc(e){
-    var scrollTop = document.documentElement.scrollTop;
+    // var scrollTop = document.documentElement.scrollTop;
     var scroll = this.scrollY;
     // console.log(scrollTop);     스크롤값 콘솔에 찍어봄
 
@@ -43,19 +42,18 @@ function scrollFunc(e){
     //패럴렉스 핵심(속도 같이 해야 하는 애들끼리 묶음!!)
     bgWall.style.transform = "translateY("+ scroll/2 + "px)";
 
-    bgInterior.style.transform = "translateY("+ scroll/5 + "px)";
+    bgInterior.style.transform = "translateY("+ scroll/3 + "px)";
 
     desk.style.transform = "translateY("+ scroll/4 + "px)";        
     deskClock.style.transform = "translateY("+ scroll/4 + "px)";
     com.style.transform = "translateY("+ scroll/4 + "px)";
-    comMonitor2.style.transform = "translateY("+ scroll/4 + "px)";
-    comLogo.style.transform = "translateY("+ scroll/4 + "px)";
+    comLogo.style.transform = "translateY("+ scroll/200 + "px)";
     standLight.style.transform = "translateY("+ scroll/4 + "px)";
 
-    comChair.style.transform = "translateY("+ -scroll/2 + "px)";
+    comChair.style.transform = "translateY("+ -scroll/30 + "px)";
     
-    fgMoonlight.style.transform = "translateY("+ -scroll/5 + "px)";
-    fgFront.style.transform = "translateY("+ -scroll + "px)";
+    fgMoonlight.style.transform = "translateY("+ -scroll/8 + "px)";
+    fgFront.style.transform = "translateY("+ scroll/0.8 + "px)";
 
     // fg.style.transform = "translate3d(0px ," + scrollTop * 1.55 +"px , 0px)";
 }

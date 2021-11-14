@@ -112,7 +112,7 @@ body::-webkit-scrollbar{
 
 .wrapper .small_wrapper .bgWall{
     position: absolute;
-    margin: 15% 0 0 0;
+    margin: 20% 0 0 23%;
 }
 
 .wrapper .small_wrapper .bgInterior{
@@ -127,14 +127,7 @@ body::-webkit-scrollbar{
 
 .wrapper .small_wrapper .deskClock{
     position: absolute;
-    margin: 30% 0 0 23%;
-}
-.wrapper .small_wrapper .comLight{
-    position: absolute;
-    margin: 9.5% 0 0 32.5%;
-    -webkit-animation:blink 0.7s ease-in-out infinite alternate; 
-    -moz-animation:blink 0.7s ease-in-out infinite alternate; 
-    animation:blink 0.7s ease-in-out infinite alternate; 
+    margin: 49% 0 0 25.5%;
 }
 
 .wrapper .small_wrapper .com{
@@ -144,7 +137,7 @@ body::-webkit-scrollbar{
 
 .wrapper .small_wrapper .comLogo{
     position: absolute;
-    margin: 47% 0 0 50%;
+    margin: 56% 0 0 50%;
     animation: dongdong 2s ease-in-out infinite alternate;
 }
 
@@ -172,21 +165,8 @@ body::-webkit-scrollbar{
 
 .wrapper .small_wrapepr .fgMoonlight{
     position: absolute;
-    animation:move 1s ease-in-out infinite alternate;
 }
 
-@keyframes move{
-    0%{
-        transform:translate(100px,100px);
-    }
-    50%{
-        transform:translate(-50px,-50px);
-    }
-    100%{
-        transform:translate(100px,100px); 
-    }
-
-}
 /*세로 진행 바 시작*/
 /* .progress {
     position: fixed;
