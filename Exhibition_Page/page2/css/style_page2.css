@@ -88,12 +88,12 @@ input[id="navbar_menu"]:checked + label + div {
 /* 아래부터가 2페이지 시작! */
 
 /* 스크롤 없애기 */
-/* body{
+body{
     -ms-overflow-style: none;
 }
 body::-webkit-scrollbar{
     display: none;
-} */
+}
 
 /* 이미지 배치 */
 .wrapper{
@@ -102,26 +102,32 @@ body::-webkit-scrollbar{
     min-height: 500px;
 }
 
+.wrapper .bg{
+    overflow: hidden;
+}
+
 .img{
     position: absolute;
 }
 
 .wrapper .small_wrapper .bgWall{
     position: absolute;
+    margin: 15% 0 0 0;
 }
 
 .wrapper .small_wrapper .bgInterior{
     position: absolute;
+    margin: 20% 0 0 0;
 }
 
 .wrapper .small_wrapper .desk{
     position: absolute;
-    margin: 6% 0 0 17%;
+    margin: 34.2% 0 0 20%;
 }
 
 .wrapper .small_wrapper .deskClock{
     position: absolute;
-    margin: 22% 0 0 23%;
+    margin: 30% 0 0 23%;
 }
 .wrapper .small_wrapper .comLight{
     position: absolute;
@@ -133,37 +139,54 @@ body::-webkit-scrollbar{
 
 .wrapper .small_wrapper .com{
     position: absolute;
-    margin: 14% 0 0 38%;
+    margin: 40.8% 0 0 39%;
 }
 
 .wrapper .small_wrapper .comLogo{
     position: absolute;
-    margin: 20.5% 0 0 49.5%;
+    margin: 47% 0 0 50%;
     animation: dongdong 2s ease-in-out infinite alternate;
 }
 
-.wrapper .small_wrapper .comMonitor2{
+/* .wrapper .small_wrapper .comMonitor2{
     position: absolute;
-    margin: 14% 0 0 38.05%;
-    /* -webkit-animation:blink 4s ease-in-out infinite alternate; 
+    margin: 41% 0 0 39.1%;
+    -webkit-animation:blink 4s ease-in-out infinite alternate; 
     -moz-animation:blink 4s ease-in-out infinite alternate; 
-    animation:blink 4s ease-in-out infinite alternate;  */
-}
+    animation:blink 4s ease-in-out infinite alternate; 
+} */
 
 .wrapper .small_wrapper .comChair{
     position: absolute;
-    margin: 27% 0 0 39.5%;
+    margin: 62.5% 0 0 39.5%;
 }
 
 .wrapper .small_wrapper .standLight{
     position: absolute;
-    margin: 7% 0 0 32%;
+    margin: 36% 0 0 35.5%;
     opacity: 0.7;
     -webkit-animation:blink 0.7s ease-in-out infinite alternate; 
     -moz-animation:blink 0.7s ease-in-out infinite alternate; 
     animation:blink 0.7s ease-in-out infinite alternate; 
 }
 
+.wrapper .small_wrapepr .fgMoonlight{
+    position: absolute;
+    animation:move 1s ease-in-out infinite alternate;
+}
+
+@keyframes move{
+    0%{
+        transform:translate(100px,100px);
+    }
+    50%{
+        transform:translate(-50px,-50px);
+    }
+    100%{
+        transform:translate(100px,100px); 
+    }
+
+}
 /*세로 진행 바 시작*/
 /* .progress {
     position: fixed;
@@ -188,7 +211,7 @@ body::-webkit-scrollbar{
 /*동동 애니메이션*/
 @keyframes dongdong{
     0%{ 
-        transform:translate(-50%,-40%);
+        transform:translate(-50%, -40%);
         opacity: 0; 
     } 
     50%{

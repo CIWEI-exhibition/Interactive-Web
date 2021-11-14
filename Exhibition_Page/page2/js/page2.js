@@ -41,29 +41,22 @@ function scrollFunc(e){
     // progressBar.style.height = per + "%";   //세로 진행 바 위해
 
     //패럴렉스 핵심(속도 같이 해야 하는 애들끼리 묶음!!)
-    bgWall.style.transform = "translateY("+ -scroll/2 + "px)";
+    bgWall.style.transform = "translateY("+ scroll/2 + "px)";
 
-    bgInterior.style.transform = "translateY("+ -scroll/2 + "px)";
+    bgInterior.style.transform = "translateY("+ scroll/5 + "px)";
 
-    desk.style.transform = "translateY("+ -scroll/2 + "px)";        //얘까지만 애니메이션 적용되고 뒤에 애들은 적용 안됨...왜why?
-    deskClock.style.transform = "translateY("+ -scroll/2 + "px)";
-    com.style.transform = "translateY("+ -scroll/2 + "px)";
-    comMonitor2.style.transform = "translateY("+ -scroll/2 + "px)";
-    comLogo.style.transform = "translateY("+ -scroll/2 + "px)";
-    standLight.style.transform = "translateY("+ -scroll2 + "px)";
+    desk.style.transform = "translateY("+ scroll/4 + "px)";        
+    deskClock.style.transform = "translateY("+ scroll/4 + "px)";
+    com.style.transform = "translateY("+ scroll/4 + "px)";
+    comMonitor2.style.transform = "translateY("+ scroll/4 + "px)";
+    comLogo.style.transform = "translateY("+ scroll/4 + "px)";
+    standLight.style.transform = "translateY("+ scroll/4 + "px)";
 
     comChair.style.transform = "translateY("+ -scroll/2 + "px)";
     
-    fgMoonlight.style.transform = "translateY("+ -scroll/2 + "px)";
-    fgFront.style.transform = "translateY("+ -scroll/2 + "px)";
+    fgMoonlight.style.transform = "translateY("+ -scroll/5 + "px)";
+    fgFront.style.transform = "translateY("+ -scroll + "px)";
 
-    // bgWall.style.transform = "translateX("+ -scroll2/2 + "px)";
-    // bgInterior.style.transform = "translate3d(0px ," + scrollTop * .35 +"px , 0px)";
-    // com.style.transform = "translate3d(0px ," + scrollTop * .45 +"px , 0px)";
-
-    // comLight.style.transform = "translate3d(0px ," + scrollTop * .47 +"px , 0px)";
-    // comChair.style.transform = "translate3d(0px ," + scrollTop * .43 +"px , 0px)";
-    // fgMoonlight.style.transform = "translate3d(0px ," + scrollTop * .55 +"px , 0px);"
     // fg.style.transform = "translate3d(0px ," + scrollTop * 1.55 +"px , 0px)";
 }
 

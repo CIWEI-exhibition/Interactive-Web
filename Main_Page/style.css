@@ -187,10 +187,10 @@ body::-webkit-scrollbar{
 }
 
 body{
-    animation: fadein 2000ms ease-out;
-    -moz-animation: fadein 2000ms ease-out; /* Firefox */
-    -webkit-animation: fadein 2000ms ease-out; /* Safari and  Chrome */
-    -o-animation: fadein 2000ms ease-out; /* Opera */
+    animation: fadein 2000ms ease-in-out;
+    -moz-animation: fadein 2000ms ease-in-out; /* Firefox */
+    -webkit-animation: fadein 2000ms ease-in-out; /* Safari and  Chrome */
+    -o-animation: fadein 2000ms ease-in-out; /* Opera */
 
     /* animation: zoom 2000ms ease-out;
     -moz-animation: zoom 2000ms ease-out;
