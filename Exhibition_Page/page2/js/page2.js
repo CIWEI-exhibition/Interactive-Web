@@ -23,20 +23,29 @@ window.onload = function(){
     var fgMoonlight = document.querySelector(".fgMoonlight");
     var fgFront = document.querySelector(".fgFront");
 
+    var fgMonitor = document.querySelector(".fgMonitor");
+
     window.addEventListener('resize', stageResize, false);
     window.addEventListener('mousemove', mouseMove, false);
     window.addEventListener('scroll', scrollFunc, false);
 
     stageResize();
     loop();
+
 }
 
 function scrollFunc(e){
-    // var scrollTop = document.documentElement.scrollTop;
+    var scrollTop = document.documentElement.scrollTop;
     var scroll = this.scrollY;
-    // console.log(scrollTop);     스크롤값 콘솔에 찍어봄
 
-    // let per = Math.ceil(scrollTop / (_documentHum - _windowNum) * 100);
+    let per = Math.ceil(scrollTop / (_documentHum - _windowNum) * 100);
+    console.log(per);
+
+    if(per <= 0){
+        // comLogo.style.position = "fixed";
+        fgFront.style.position = "fixed";
+    }
+    
     // progressBar.style.height = per + "%";   //세로 진행 바 위해
 
     //패럴렉스 핵심(속도 같이 해야 하는 애들끼리 묶음!!)
@@ -47,14 +56,15 @@ function scrollFunc(e){
     desk.style.transform = "translateY("+ scroll/4 + "px)";        
     deskClock.style.transform = "translateY("+ scroll/4 + "px)";
     com.style.transform = "translateY("+ scroll/4 + "px)";
-    comLogo.style.transform = "translateY("+ scroll/200 + "px)";
+    comLogo.style.transform = "translateY("+ -scroll/40 + "px)";
     standLight.style.transform = "translateY("+ scroll/4 + "px)";
 
     comChair.style.transform = "translateY("+ -scroll/30 + "px)";
     
     fgMoonlight.style.transform = "translateY("+ -scroll/8 + "px)";
-    fgFront.style.transform = "translateY("+ scroll/0.8 + "px)";
+    fgFront.style.transform = "translateY("+ scroll/10 + "px)";
 
+    fgMonitor.style.transform = "translateY("+ scroll/4 + "px)";
     // fg.style.transform = "translate3d(0px ," + scrollTop * 1.55 +"px , 0px)";
 }
 
