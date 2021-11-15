@@ -61,7 +61,7 @@ function scrollFunc(e){
 
     comChair.style.transform = "translateY("+ -scroll/30 + "px)";
     
-    fgMoonlight.style.transform = "translateY("+ -scroll/8 + "px)";
+    // fgMoonlight.style.transform = "translateY("+ -scroll/8 + "px)";
     fgFront.style.transform = "translateY("+ scroll/10 + "px)";
 
     fgMonitor.style.transform = "translateY("+ scroll/4 + "px)";

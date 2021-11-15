@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+
+/* 스크롤 없애기 */
+/* body{
+    -ms-overflow-style: none;
+}
+body::-webkit-scrollbar{
+    display: none;
+} */
+
+/* 이미지 배치 */
+.wrapper{
+    position: relative;
+    min-height: 500px;
+}
+    
+.img{
+    position: absolute;
+}
+
+.wrapper .small_wrapper .btnSave{
+    position: absolute;
+}
+
+#btnSave{
+    padding: 0;
+    border: 0;
+}
+
+form{
+    position: absolute;
+    margin: 22% 0 0 28%;
+}
+
+form input{
+    width: 400%;
+    height: 100%;
+}
+
+form textarea{
+    width: 400%;
+    height: 300%;
+}

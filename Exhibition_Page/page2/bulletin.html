@@ -1,49 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-
-<!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-
-<title>[과제]미래 이력서 쓰기</title>
-
-<script>
-	$(document).on('click', '#btnSave', function(e){
-		e.preventDefault();
-		$("#form").submit();
-	});
-
-	$(document).on('click', '#btnList', function(e){
-		e.preventDefault();
-		location.href="${pageContext.request.contextPath}/board/getBoardList";
-	});
-</script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-<style>
-	
-body {
-	.wrapper{
-		position: fixed;
-	}
-	
-	#bg{
-		height: 80%;
-	}
-}
+	<link href="css/bulletin.css" rel="stylesheet">
 
-</style>
+	<title>[과제]미래 이력서 쓰기</title>
 
+	<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 </head>
-
 <body>
 	<div class="wrapper">
-        <img src="images/bulletin.png" alt="과제" class="img" id="bg">
+        <img src="images/pop/bulletin.png" alt="과제" class="img bg" id="bg" width="100%" />
 		
 		<div class="small-wrapper">
-			<button type="button" class="btn btn-sm btn-primary" id="btnSave">
-				<img src="images/submit.png" alt="제출">
-			</button>
+			<button type="button" class="img btnSave" id="btnSave">
+				<img src="images/pop/submit.png" alt="제출" class="img submit" id="submit" />
+			</button> 
 			
 			<article>
 				<h2>본인 성격의 강점 및 단점은 무엇인가요?</h2>
@@ -57,7 +34,6 @@ body {
 						<input type="text" class="form-control" name="title" id="title" placeholder="제목을 입력해 주세요">
 					</div>
 				
-
 					<div class="mb-3">
 						<label for="content">내용</label>
 						<textarea class="form-control" rows="5" name="content" id="content" placeholder="내용을 입력해 주세요" ></textarea>
@@ -66,6 +42,17 @@ body {
 		</article>
 	</div>
 
-</body>
+	<script>
+		$(document).on('click', '#btnSave', function(e){
+			e.preventDefault();
+			$("#form").submit();
+		});
+	
+		$(document).on('click', '#btnList', function(e){
+			e.preventDefault();
+			location.href="${pageContext.request.contextPath}/board/getBoardList";
+		});
+	</script>
 
+</body>
 </html>
