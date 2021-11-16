@@ -40,18 +40,19 @@ function stageResize() {        //per를 위한 함수 (document랑 window heigh
 
 //blur
 wrapper = document.getElementById("wrapper");
+submit = document.getElementById("submit");
 
-wrapper.addEventListener("click", function(e) {
-  e.preventDefault;
-  
-  // -> removing the class
-  wrapper.classList.remove("blur");
-  
-  // -> triggering reflow /* The actual magic */
-  // without this it wouldn't work. Try uncommenting the line and the transition won't be retriggered.
-  wrapper.offsetWidth = wrapper.offsetWidth;
-  
-  // -> and re-adding the class
-  wrapper.classList.add("blur");
+submit.addEventListener("click", function(e) {
+    e.preventDefault;
+    
+    // -> removing the class
+    wrapper.classList.remove("blur");
+    
+    // -> triggering reflow /* The actual magic */
+    // without this it wouldn't work. Try uncommenting the line and the transition won't be retriggered.
+    wrapper.offsetWidth = wrapper.offsetWidth;
+    
+    // -> and re-adding the class
+    wrapper.classList.add("blur");
 }, false);
 //blur 끝
