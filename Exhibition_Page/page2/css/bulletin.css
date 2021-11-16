@@ -3,12 +3,12 @@
 }
 
 /* 스크롤 없애기 */
-/* body{
+body{
     -ms-overflow-style: none;
 }
 body::-webkit-scrollbar{
     display: none;
-} */
+}
 
 /* 이미지 배치 */
 .wrapper{
@@ -20,26 +20,58 @@ body::-webkit-scrollbar{
     position: absolute;
 }
 
-.wrapper .small_wrapper .btnSave{
+.wrapper .small_wrapper .submit{
     position: absolute;
+    margin: 20% 0 0 77%;
 }
 
-#btnSave{
-    padding: 0;
-    border: 0;
+.wrapper .small_wrapper .submit:hover{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
 }
 
 form{
     position: absolute;
-    margin: 22% 0 0 28%;
-}
-
-form input{
-    width: 400%;
-    height: 100%;
+    margin: 25.3% 0 0 29%;
 }
 
 form textarea{
-    width: 400%;
+    width: 260%;
     height: 300%;
+}
+
+form p{
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+/*이미지 및 폼 배치 끝*/
+
+/*블러*/
+@-webkit-keyframes blur {
+    0%, 100%{ filter: blur(0); }
+    50%{ filter: blur(0); }
+}
+@-moz-keyframes blur{
+    0%, 100%{ filter: blur(0); }
+    50%{ filter: blur(0); }
+}
+@-ms-keyframes blur{
+    0%, 100%{ filter: blur(0); }
+    50%{ filter: blur(0); }
+}
+@-o-keyframes blur{
+    0%, 100%{ filter: blur(0); }
+    50%{ filter: blur(0); }
+}
+@keyframes blur {
+    0%, 100%{ filter: blur(0); }
+    50%{ filter: blur(1rem); }
+}
+
+.blur {
+    -webkit-animation: blur 3s ease-in-out 5s 3 alternate both;
+    -moz-animation: blur 3s ease-in-out 5s 3 alternate both;
+     -ms-animation: blur 3s ease-in-out 5s 3 alternate both;
+      -o-animation: blur 3s ease-in-out 5s 3 alternate both;
+         animation: blur 3s ease-in-out 5s 3 alternate both;
 }

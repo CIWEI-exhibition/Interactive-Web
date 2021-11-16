@@ -167,10 +167,9 @@ body::-webkit-scrollbar{
     position: absolute;
 }
 
-
 .wrapper .small_wrapper .fgMonitor{
     position: absolute;
-    margin: 41.5% 0 0 39.1%;
+    margin: 40.7% 0 0 39.1%;
     opacity: 0;
 }
 
