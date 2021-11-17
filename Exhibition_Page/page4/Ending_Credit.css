@@ -1,0 +1,27 @@
+/* 스크롤 없애기 */
+body{
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+/* 엔딩크레딧 */
+.credit{
+    position: relative;
+    min-height: 500px;
+}
+  
+  .img{
+    position: absolute;
+}
+  
+  .credit .bg{
+    margin: -10% 0 0 0;
+}
+  
+  .small_wrapper .front_wrapper .cd{
+    position: absolute;
+    margin: 13.5% 0 0 135%;
+}

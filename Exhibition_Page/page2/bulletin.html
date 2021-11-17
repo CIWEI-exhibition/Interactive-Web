@@ -46,8 +46,20 @@ integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6ji
 			<div class="wave -two"></div>
 			<div class="wave -three"></div>
 			<!-- <div class="title">Capacities</div> -->
-		  </div>
+		</div>
 		
+		<script>
+		$( document ).ready( function() {
+			var jbTime = 600;
+			$( '.blur' ).animate( {
+			opacity: '1'
+			}, jbTime, function() {
+			$( '.box' ).animate( {
+				opacity: '1'
+			} );
+			} );
+		} );
+		</script>
 
 	<!-- <script>
 		$(document).on('click', '#btnSave', function(e){
