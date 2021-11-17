@@ -53,6 +53,16 @@ submit.addEventListener("click", function(e) {
     wrapper.offsetWidth = wrapper.offsetWidth;
     
     // -> and re-adding the class
-    wrapper.classList.add("blur");
+    wrapper.classList.add("blur");    
+
+    setTimeout(wave, 10000);
+
 }, false);
 //blur 끝
+
+var waveBox = document.querySelector(".box");
+
+function wave(){
+    // stripe.classList.add('animate');
+    waveBox.style.display = "flex";
+}
