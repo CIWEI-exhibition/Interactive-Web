@@ -31,17 +31,4 @@ window.onload = function(){
         bgMount3.style.transform = "translateX("+ -scroll2/2 + "px)";
         bgMount4.style.transform = "translateX("+ -scroll2/3 + "px)";
     })
-
-
-
-    //저절로 내려가게 하는 효과
-    // TweenMax.to( window, 4, {               //TweenMax적용함. 전체 window에, 2초,
-    //     scrollTo:{
-    //         y: ".bottom"                    //스크롤이 y의 끝   
-    //     },
-    //     delay: 1.7,                        //1.7초 있다 내려감
-    //     ease: Power4.easeInOut               //무슨 의미인진 모르겠으나 필요하다고 함.
-    // });
 }
-
-//가로 스크롤
