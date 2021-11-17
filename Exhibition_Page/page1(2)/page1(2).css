@@ -103,13 +103,13 @@ input[id="navbar_menu"]:checked + label + div {
 /* 아래부터가 진짜 전시 시작! */
 
 /*스크롤바 없애기*/
-/* body{
+body{
     -ms-overflow-style: none;
 }
 
 body::-webkit-scrollbar{
     display: none;
-} */
+}
 /*스크롤바 없애기 끝*/
 
 /*그림 배치*/
@@ -136,47 +136,47 @@ body::-webkit-scrollbar{
 
 .wrapper .main_wrapper .bgMount1{
     position: absolute;
-    margin: 23% 0 0 -5%;
+    margin: 24.5% 0 0 -5%;
 }
 
 .wrapper .main_wrapper .bgMount2{
     position: absolute;
-    margin: 28.5% 0 0 227%;
+    margin: 30% 0 0 227%;
 }
 
 .wrapper .main_wrapper .bgMount3{
     position: absolute;
-    margin: 23% 0 0 44%;
+    margin: 24.5% 0 0 44%;
 }
 
 .wrapper .main_wrapper .bgMount4{
     position: absolute;
-    margin: 25% 0 0 260%;
+    margin: 26% 0 0 260%;
 }
 
 .wrapper .main_wrapper .bgGround{
     position: absolute;
-    margin: 39.3% 0 0 0;
+    margin: 40.5% 0 0 0;
 }
 
 .wrapper .main_wrapper .bgLamp{
     position: absolute;
-    margin: 9.5% 0 0 38%;
+    margin: 10% 0 0 38%;
 }
 
 .wrapper .main_wrapper .bgTree{
     position: absolute;
-    margin: 14% 0 0 27%;
+    margin: 15% 0 0 27%;
 }
 
 .wrapper .booth_wrapper .banner{
     position: absolute;
-    margin: 23% 0 0 108%;
+    margin: 24% 0 0 108%;
 }
 
 .wrapper .booth_wrapper .busking{
     position: absolute;
-    margin: 23.5% 0 0 175%;
+    margin: 24.5% 0 0 175%;
 }
 
 .wrapper .booth_wrapper .icecream{

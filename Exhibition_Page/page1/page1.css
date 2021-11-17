@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+/* 아래부터가 진짜 전시 시작! */
+
+/*스크롤바 없애기*/
+body{
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+/*스크롤바 없애기 끝
+
+/*그림 배치*/
+.wrapper{
+    position: relative;
+}
+
+.img{
+    position: absolute;
+}
+
+.wrapper .sky_wrapper .star{
+    position: absolute;
+}
+
+.wrapper .sky_wrapper .star2{
+    position: absolute;
+}
+
+.wrapper .sky_wrapper .moon{
+    position: absolute;
+    margin: 30% 50% 0 42%;
+}
+
+.wrapper .sky_wrapper .shootingStar{
+    position: absolute;
+    margin: 80% 0 0 60%;
+}
+
+.wrapper2{
+    position: relative;
+}
+
