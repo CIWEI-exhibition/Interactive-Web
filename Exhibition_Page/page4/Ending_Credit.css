@@ -10,7 +10,7 @@ body::-webkit-scrollbar{
 /* 엔딩크레딧 */
 .credit{
     position: relative;
-    min-height: 500px;
+    min-height: 400px;
 }
   
   .img{
