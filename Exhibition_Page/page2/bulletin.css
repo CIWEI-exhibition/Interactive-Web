@@ -44,6 +44,10 @@ form p{
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
+
+form #content{
+    padding: 0.5rem;
+}
 /*이미지 및 폼 배치 끝*/
 
 /*블러*/
@@ -69,11 +73,11 @@ form p{
 }
 
 .blur {
-    -webkit-animation: blur 1s ease-in-out 5s 3 alternate both;
-    -moz-animation: blur 1s ease-in-out 5s 3 alternate both;
-     -ms-animation: blur 1s ease-in-out 5s 3 alternate both;
-      -o-animation: blur 1s ease-in-out 5s 3 alternate both;
-         animation: blur 1s ease-in-out 5s 3 alternate both;
+    -webkit-animation: blur 3s ease-in-out 5s 2 alternate both;
+    -moz-animation: blur 3s ease-in-out 5s 2 alternate both;
+     -ms-animation: blur 3s ease-in-out 5s 2 alternate both;
+      -o-animation: blur 3s ease-in-out 5s 2 alternate both;
+         animation: blur 3s ease-in-out 5s 2 alternate both;
 }
 
 
@@ -82,42 +86,46 @@ form p{
     display: none;
     position: fixed;
     /* overflow: hidden; */
-    width: 120%;
-    height: 1200%;
+    width: 200%;
+    height: 2000%;
     border-radius: 40%;
     box-shadow: 0 2px 30px rgba(black, .2);
     background: lighten(#f0f4c3, 10%);
     
     transform: translate3d(0, 0, 0);
-    animation: updown 5s linear alternate forwards;
+    animation: updown 7s ease-in-out alternate forwards;
     /* animation-delay: 10s; */
   }
   
   .wave {
     position: absolute;
-    opacity: .4;
+    opacity: .7;
     
     top: 65%;
-    left: -5%;
-    background: #0af;
-    width: 100%;
+    left: -30%;
+    background: #649ae4;
+    width: 120%;
     height: 35%;
     /* margin: 0 0 0 -70%; */
 
     transform-origin: 50% 48%;
     border-radius: 50%;
-    animation: drift 3000ms infinite linear;
+    animation: drift 2000ms infinite linear;
   }
   
   .wave.-three {
+    /* top: 70%;
+    left: -30%; */
     animation: drift 5000ms infinite linear;
   }
   
   .wave.-two {
+    /* top: 70%;
+    left: 30%; */
     animation: drift 7000ms infinite linear;
 
     opacity: .2;
-    background: white;
+    background: #c2dbfd;
   }
   
   /* .box:after {
