@@ -316,7 +316,7 @@ body::-webkit-scrollbar{
     margin: 31% 0 0 72%;
 }
 
-/* 채팅 스크롤 */
+채팅 스크롤
 .chat{
     display: none;
     position: fixed;
