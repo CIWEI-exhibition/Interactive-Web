@@ -55,7 +55,7 @@ submit.addEventListener("click", function(e) {
     // -> and re-adding the class
     wrapper.classList.add("blur");    
 
-    setTimeout(wave, 10000);
+    setTimeout(wave, 11000);
 
 }, false);
 //blur 끝
