@@ -190,20 +190,6 @@ body::-webkit-scrollbar{
          animation: subHandle 1.2s ease-in-out 0s infinite alternate;
 }
 
-/* #subway-handle1:hover{
-    
-    -webkit-transform-origin: 0% 0%;
-    -moz-transform-origin: 0% 0%;
-     -ms-transform-origin: 0% 0%;
-      -o-transform-origin: 0% 0%;
-         transform-origin: 0% 0%;
-
-    -webkit-animation: subHandle .9s ease-in-out 0s infinite alternate;
-    -moz-animation: subHandle .9s ease-in-out 0s infinite alternate;
-     -ms-animation: subHandle .9s ease-in-out 0s infinite alternate;
-      -o-animation: subHandle .9s ease-in-out 0s infinite alternate;
-         animation: subHandle .9s ease-in-out 0s infinite alternate;
-} */
 #subway-handle2{
     position: fixed;
     margin: 0 0 0 38%;
