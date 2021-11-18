@@ -13,15 +13,15 @@ body::-webkit-scrollbar{
     min-height: 400px;
 }
   
-  .img{
+.img{
     position: absolute;
 }
   
-  .credit .bg{
-    margin: -10% 0 0 0;
+.credit .bg{
+    margin: auto 0 0 0;
 }
   
-  .small_wrapper .front_wrapper .cd{
+.small_wrapper .front_wrapper .cd{
     position: absolute;
     margin: 12.5% 0 0 129.7%;
 }
