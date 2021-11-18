@@ -50,7 +50,7 @@ body::-webkit-scrollbar{
 }
 
 .section .slidelist > li > a img{
-    width: 100%;
+    /* width: 100%; */
 }
 
 .section .slidelist label{
@@ -79,6 +79,8 @@ body::-webkit-scrollbar{
 .section [id="slide03"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
 
 
+/*가운데(본전시)이미지 배치*/
+
 .enter .exit .logo{
     position: absolute;
     margin: -42% 0 0 35.5%;
@@ -86,7 +88,7 @@ body::-webkit-scrollbar{
 
 .enter .light{
     position: absolute;
-    margin: -50% 0 0 35.5%;
+    margin: -70% 0 0 0;
 }
 
 .enter .art_wrapper .art1{
@@ -112,4 +114,30 @@ body::-webkit-scrollbar{
 .enter .art_wrapper .art5{
     position: absolute;
     margin: -32% 0 0 82%;
+}
+
+/* 세번째(게시판&굿즈) 이미지 배치*/
+.memo .light{
+    position: absolute;
+    margin: -70% 0 0 0;
+}
+
+.memo .below{
+    position: absolute;
+    margin: -45% 0 0 8%;
+}
+
+.memo .board{
+    position: absolute;
+    margin: -37% 0 0 7%;
+}
+
+.goods .comfort{
+    position: absolute;
+    margin: -45% 0 0 65%;
+}
+
+.goods .goodsBoard{
+    position: absolute;
+    margin: -35% 0 0 55%
 }
