@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_page1.5.css">
+    <link rel="stylesheet" href="page2.css">
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
     <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollToPlugin.min.js"></script>    <!--트윈맥스. scrolltoplugin--><!--jQuery-->
     <!-- <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>        가로스크롤 플러그인(jQuery)
     <script type='text/javascript' src='/js/jquery.mousewheel.min.js'></script>-->
-    <script type='text/javascript' src="page1.5.js"></script>
+ 
     <script  src="../js/jquery-3.6.0.js"></script>
     <script type='text/javascript' src='https://deanoakley.com/assets/js/jquery/jqueryb8ff.js?ver=1.12.4'></script>
 	<script type='text/javascript' src='https://deanoakley.com/assets/js/jquery/jquery-migrate.min330a.js?ver=1.4.1'></script>
@@ -71,8 +71,8 @@
         </script> -->
 </head>
 
-<body #show-scene-0>
-    <input type="checkbox" id="navbar_menu">
+<body>
+    <!-- <input type="checkbox" id="navbar_menu">
     <label for="navbar_menu">
         <span></span>
         <span></span>
@@ -88,53 +88,51 @@
         <li><a href="../../Goods_Page/index.html">Goods</a></li>
         <li><a href="https://www.instagram.com/aquaurore/">
             <i class="fab fa-instagram"></i></a></li>
-    </div>
+    </div> -->
     
     <div class="wrapper">
-        <img src="images3/bg/bg.png" alt="배경" class="img" id="bg" height="60%" />
+        <img src="images3/bg/bg.png" alt="배경" class="img bg" id="bg" width="200%" />
        
         <div class="small-wrapper">
-            
-            <img src="images3/bg/bgStar.png" alt="배경-3(star)" class="img" id="bg-3(star)" height="60%">
+            <!-- <img src="images3/bg/bgStar.png" alt="배경-3(star)" class="img bg" id="bg-3(star)" height="60%">
             <img src="images3/bg/bgShootingStar.png" alt="배경-별똥별" class="img bg-shooting" id="bg-shooting" height="30%">
-            <img src="images3/bg/bgMoon.png" alt="배경-달" class="img" id="bg-moon" width="8.5%">
-            <img src="images3/bg/bgFirst.png" alt="배경-1" class="img" id="bg-1" height="60%">
+            <img src="images3/bg/bgMoon.png" alt="배경-달" class="img bg-moon" id="bg-moon" width="8.5%">
+            <img src="images3/bg/bgFirst.png" alt="배경-1" class="img bg-1" id="bg-1" height="60%">
             
-            <img src="images3/front/Train.png" alt="앞-기차" class="img" id="train" width="35%"> 
-            <img src="images3/bg/bgSecond.png" alt="배경-2" class="img" id="bg-2" height="60%">
+            <img src="images3/front/Train.png" alt="앞-기차" class="img train" id="train" width="35%"> 
+            <img src="images3/bg/bgSecond.png" alt="배경-2" class="img bg-2" id="bg-2" height="60%">
         
 
-            <img src="images3/front/Building.png" alt="앞-건물" class="img" id="building" height="60%">
-            <img src="images3/bg/bgMoonLight.png" alt="배경-달빛" class="img" id="bg-moonlight" height="35%">
-            <!-- <img src="images3/front/Pillars.png" alt="앞-기둥" class="img" id="pillars" height="80%"> -->
-            <img src="images3/front/Fade-out.png" alt="앞-페이드아웃" class="img" id="fade-out" height="60%">
-
-            <!-- <div class="front-wrapper">
-                <img src="images3/subway/Subway.png" alt="지하철" class="sub" id="subway" width="100%" height="100%"> -->
-                <!--손잡이-->
-                <!-- <img src="images3/subway/SubHandle1.png" alt="지하철-손잡이" class="sub" id="subway-handle1" height="23%">
-                <img src="images3/subway/SubHandle2.png" alt="지하철-손잡이" class="sub" id="subway-handle2" height="23%">
-                <img src="images3/subway/SubHandle3.png" alt="지하철-손잡이" class="sub" id="subway-handle3" height="23%">
-                <img src="images3/subway/SubHandle4.png" alt="지하철-손잡이" class="sub" id="subway-handle4" height="23%">
-
-                <img src="images3/subway/SubwaySeat.png" alt="지하철-자리" class="sub" id="subway-seat" width="104.5%"> -->
-
-                <!-- 채팅 -->
-                <!-- <img src="images3/chat/chat_bottom.png" alt="채팅-글적는 칸" class="chat" id="chat_bottom" width="25%">
-                <img src="images3/chat/chat1.png" alt="채팅-1" class="chat" id="chat_1" width="12%">
-                <img src="images3/chat/chat2.png" alt="채팅-2" class="chat" id="chat_2" width="22%">
-                <img src="images3/chat/chat3.png" alt="채팅-3" class="chat" id="chat_3" width="17.5%">
-                <img src="images3/chat/chat4.png" alt="채팅-4" class="chat" id="chat_4" width="17%">
-                <img src="images3/chat/chat5.png" alt="채팅-5" class="chat" id="chat_5" width="13%">
-                <img src="images3/chat/chat6.png" alt="채팅-6" class="chat" id="chat_6" width="19%">
-                <img src="images3/chat/my_chat.png" alt="채팅-내 글" class="chat" id="my_chat" width="6%">
-                <img src="images3/chat/chat_ing.png" alt="채팅-적는중인 것" class="chat" id="chat_ing" width="10%">
-
-                <img src="images3/front/Full-Fade-out.png" alt="전체-페이드아웃" class="fade" id="full-fade-out" width="100%"> -->
-            </div>
+            <img src="images3/front/Building.png" alt="앞-건물" class="img building" id="building" height="60%">
+            <img src="images3/bg/bgMoonLight.png" alt="배경-달빛" class="img bg-moonlight" id="bg-moonlight" height="35%">
+            <img src="images3/front/Fade-out.png" alt="앞-페이드아웃" class="img fade-out" id="fade-out" height="60%"> -->
         </div>
 
-        
+        <div class="front-wrapper">
+            <!-- <img src="images3/subway/Subway.png" alt="지하철" class="sub subway" id="subway" width="100%" height="100%">
+
+            <img src="images3/subway/SubHandle1.png" alt="지하철-손잡이" class="sub handle1" id="subway-handle1" height="23%">
+            <img src="images3/subway/SubHandle2.png" alt="지하철-손잡이" class="sub handle2" id="subway-handle2" height="23%">
+            <img src="images3/subway/SubHandle3.png" alt="지하철-손잡이" class="sub handle3" id="subway-handle3" height="23%">
+            <img src="images3/subway/SubHandle4.png" alt="지하철-손잡이" class="sub handle4" id="subway-handle4" height="23%">
+
+            <img src="images3/subway/SubwaySeat.png" alt="지하철-자리" class="sub seat" id="subway-seat" width="104.5%"> -->
+
+            <!-- 채팅 -->
+            <!-- <img src="images3/chat/chat_bottom.png" alt="채팅-글적는 칸" class="chat" id="chat_bottom" width="25%">
+            <img src="images3/chat/chat1.png" alt="채팅-1" class="chat" id="chat_1" width="12%">
+            <img src="images3/chat/chat2.png" alt="채팅-2" class="chat" id="chat_2" width="22%">
+            <img src="images3/chat/chat3.png" alt="채팅-3" class="chat" id="chat_3" width="17.5%">
+            <img src="images3/chat/chat4.png" alt="채팅-4" class="chat" id="chat_4" width="17%">
+            <img src="images3/chat/chat5.png" alt="채팅-5" class="chat" id="chat_5" width="13%">
+            <img src="images3/chat/chat6.png" alt="채팅-6" class="chat" id="chat_6" width="19%">
+            <img src="images3/chat/my_chat.png" alt="채팅-내 글" class="chat" id="my_chat" width="6%">
+            <img src="images3/chat/chat_ing.png" alt="채팅-적는중인 것" class="chat" id="chat_ing" width="10%">
+
+            <img src="images3/front/Full-Fade-out.png" alt="전체-페이드아웃" class="fade" id="full-fade-out" width="100%"> -->
+        </div>
     </div>
+    
+    <script type='text/javascript' src="page2.js"></script>
 </body>
 </html>
