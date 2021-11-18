@@ -16,22 +16,52 @@
 <script src="https://kit.fontawesome.com/3bd70c3cf5.js" crossorigin="anonymous"></script>
 
 <body>
-    <div class="enter">
-        <img src="images_ent/bg.jpg" alt="전시내부" class="img exhibition" id="exhibition" width="100%" height="80%"/>
-        <img src="images_ent/light.png" alt="전등" class="img light" id="light" width="100%">
+    <div class="section">
+        <input type="radio" name="slide" id="slide01">
+        <input type="radio" name="slide" id="slide02" checked>
+        <input type="radio" name="slide" id="slide03">
 
-        <div class="exit">
-            <a href="../Main_Page/index.html"><img src="images_ent/logo.png" alt="로고" class="img logo" id="logo" width="30%"/></a>
+        <div class="slidewrap">
+            <ul class="slidelist">
+                <li>
+                    <a>
+                        <label for="slide03" class="left"></label>      <!--1. 개인전시-->
+                        <img src="memo_goods/기본 bg (1).jpg" alt="전시내부" class="img memo_bg" id="memo_bg" width="100%" />
+                        <label for="slide02" class="right"></label>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <label for="slide01" class="left"></label>      <!--2. 본전시-->
+                        <div class="enter">
+                            <img src="images_ent/bg.jpg" alt="전시내부" class="img exhibition" id="exhibition" width="100%" />
+                            <img src="images_ent/light.png" alt="전등" class="img light" id="light" width="100%" />
+                    
+                            <div class="exit">
+                                <a href="../Main_Page/index.html"><img src="images_ent/logo.png" alt="로고" class="img logo" id="logo" width="30%" /></a>
+                            </div>
+                    
+                            <div class="art_wrapper">
+                                <img src="images_ent/1p.png" alt="1페이지" class="art art1" id="art1" width="13%" />
+                                <img src="images_ent/1.5p.png" alt="2페이지" class="art art2" id="art2" width="13%" />
+                                <img src="images_ent/2p.png" alt="3페이지" class="art art3" id="art3" width="13%" />
+                                <img src="images_ent/3p.png" alt="4페이지" class="art art4" id="art4" width="13%" />
+                                <img src="images_ent/4p.png" alt="5페이지" class="art art5" id="art5" width="13%" />
+                            </div>
+                        </div>
+                        <label for="slide03" class="right"></label>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <label for="slide02" class="left"></label>      <!--3. 굿즈페이지-->
+                        <img src="memo_goods/기본 bg (1).jpg" alt="전시내부" class="img indiv_bg" id="indiv_bg" width="100%" />
+                        <label for="slide01" class="right"></label>
+                    </a>
+                </li>
+            </ul>
         </div>
-
-        <div class="art">
-            <img src="images_ent/1p.png" alt="1페이지" class="art" id="art1" width="13%">
-            <img src="images_ent/1.5p.png" alt="1.5페이지" class="art" id="art1_5" width="13%">
-            <img src="images_ent/2p.png" alt="2페이지" class="art" id="art2" width="13%">
-            <img src="images_ent/3p.png" alt="3페이지" class="art" id="art3" width="13%">
-            <img src="images_ent/4p.png" alt="4페이지" class="art" id="art4" width="13%">
-        </div>
-        
     </div>
+   
 </body>
 </html>
