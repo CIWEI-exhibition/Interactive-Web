@@ -3,10 +3,10 @@
 }
 
 body{
+    background-color: #246D9B;
     margin: 0;
     padding: 0; 
     font-family: 'Baloo Chettan 2', cursive;
-    background-color: black;
 }
 
 a{
@@ -101,4 +101,4 @@ input[id="navbar_menu"]:checked + label + div {
 }
 
 /* 여기까지가 sidebar */
-/* 아래부터가 2페이지 시작! */
+/* 아래부터가 4페이지 시작! */
