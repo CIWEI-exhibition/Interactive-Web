@@ -49,10 +49,6 @@ body::-webkit-scrollbar{
     position: relative;
 }
 
-.section .slidelist > li > a img{
-    /* width: 100%; */
-}
-
 .section .slidelist label{
     position: absolute;
     z-index: 10;
@@ -64,8 +60,12 @@ body::-webkit-scrollbar{
 
 .section .slidelist .left{
     left: 0;
-    margin: 28% 0 0 0;
     background: url("memo_goods/left.png") center center / 100% no-repeat;
+    margin: 28% 0 0 0;
+}
+
+.section .slidelist #left_2{
+    
 }
 
 .section .slidelist .right{
@@ -78,7 +78,26 @@ body::-webkit-scrollbar{
 .section [id="slide02"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
 .section [id="slide03"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
 
+/*첫번째(개인전시)이미지 배치*/
+.indiv .light{
+    position: absolute;
+    margin: -50% 0 0 0;
+}
 
+.indiv .yena .yena_exhi{
+    position: absolute;
+    margin: -42% 0 0 5%;
+}
+
+.indiv .chaewon .chaewon_exhi{
+    position: absolute;
+    margin: -42% 0 0 37%;
+}
+
+.indiv .jiyoung .jiyoung_exhi{
+    position: absolute;
+    margin: -42% 0 0 70%;
+}
 /*가운데(본전시)이미지 배치*/
 
 .enter .exit .logo{
@@ -124,20 +143,30 @@ body::-webkit-scrollbar{
 
 .memo .below{
     position: absolute;
-    margin: -45% 0 0 8%;
+    margin: -43.6% 0 0 8.5%;
+}
+
+.memo .text{
+    position: absolute;
+    margin: -40.5% 0 0 28%;
 }
 
 .memo .board{
     position: absolute;
-    margin: -37% 0 0 7%;
+    margin: -36% 0 0 7%;
 }
 
 .goods .comfort{
     position: absolute;
-    margin: -45% 0 0 65%;
+    margin: -39% 0 0 68%;
+}
+
+.goods .goodsText{
+    position: absolute;
+    margin: -33.5% 0 0 83%;
 }
 
 .goods .goodsBoard{
     position: absolute;
-    margin: -35% 0 0 55%
+    margin: -34% 0 0 50%;
 }
