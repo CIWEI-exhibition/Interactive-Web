@@ -114,26 +114,29 @@ body::-webkit-scrollbar{
 
 /*그림 배치*/
 .wrapper{
-    max-width: 500%;
+    min-width: 100%;
+    /* min-height: 50 */
+    max-width: 525%;
     height: auto;
     position: relative;
     /* min-height: 400px; */
 }
 
 .img{
-    max-width: 500%;
+    min-width: 100%;
+    max-width: 525%;
     height: auto;
     position: absolute;
 }
 
 .wrapper .main_wrapper .bgStar1{
-    max-width: 425%;
+    max-width: 450%;
     height: auto;
     position: absolute;
 }
 
 .wrapper .main_wrapper .bgStar2{
-    max-width: 575%;
+    max-width: 100%;
     height: auto;
     position: absolute;
 }
