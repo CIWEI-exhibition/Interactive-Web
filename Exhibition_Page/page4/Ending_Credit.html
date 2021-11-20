@@ -42,6 +42,7 @@
 			    });
 		    });
 	    </script>
+        <script src="https://code.jquery.com/jquery-latest.js"></script> 
 </head>
 
 <body>
@@ -51,10 +52,34 @@
        
         <div class="small_wrapper">
             <div class="front_wrapper">
-                <a href="https://www.melon.com/"><img src="img/credit/CD.png" alt="앨범" class="img cd" id="cd" width="9.4%" /></a>
+                <img src="img/credit/CD.png" alt="앨범" class="img cd" id="cd" width="9.4%" onClick="open_pop();" />
             </div>
         </div>
-        
     </div>
+
+    <div id="Modal" class="modal">
+                <div class="modal-content">
+                    <p> <br>
+                        "지나갈거야" 앨범은 12월 4일 발매 예정입니다.<br>
+                        음원은 메인 전시 공간의 오른편 <br>
+                        Below The Surface에서 미리 들으실 수 있습니다.
+                        <br><br>
+                        많은 관심 부탁드립니다 :) <br><br><br><br><br>
+                    </p>
+
+                    <div class="btn" onClick="close_pop();">                 
+                        <span class="pop_bt"> close </span>
+                    </div>
+                </div>
+    </div>
+    <script>
+        function open_pop(flag){
+            $('#Modal').css('display','block');
+        };
+  
+        function close_pop(flag) {
+            $('#Modal').hide();
+        };
+    </script>
 
 </body>
