@@ -7,6 +7,11 @@ body {
     background-color: whitesmoke;   /*전체색상 */
 }
 
+@font-face {
+    src: url("../../NanumSquareR.otf");
+    font-family: "NanumSquare";
+}
+
 .navbar {   /*내비게이션 바(로고+메뉴)*/
     background-color: whitesmoke;
     height: 120px;
@@ -50,6 +55,7 @@ body {
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
+    font-family: "NanumSquare";
 }
 
 /* 여기까지 navbar */
@@ -69,6 +75,7 @@ body {
 }
 
 .products h3 {
+    font-family: "NanumSquare";
     font-size: 24px;
     color: black;
     margin-top: 200px;
@@ -81,6 +88,7 @@ body {
     float: left;
     width: 225px;
     color: black;
+    font-family: "NanumSquare";
     text-decoration: none;
     text-align: center;
     margin-left: 10px;
@@ -89,11 +97,13 @@ body {
 }
 
 .product .product-name{
+    font-family: "NanumSquare";
     margin-top: 20px;
     margin-bottom: 4px;
 }
 
 .product .product-icons{
+    font-family: "NanumSquare";
     margin-top: 20px;
     color: gray;
 }

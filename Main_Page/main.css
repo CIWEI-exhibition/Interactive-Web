@@ -4,7 +4,12 @@
 
 body {
     margin: 0;
-    background-color: #89c2e6;   /*전체색상 */
+    background-color: #5eb1fe;   /*전체색상 */
+}
+
+@font-face {
+    src: url("../NanumSquareR.otf");
+    font-family: "NanumSquare";
 }
 
 /*사이드바 끝*/
@@ -13,6 +18,7 @@ body {
 }
 
 a{
+    /* font-family: "NanumSquare"; */
     text-decoration: none;
     color: #fff;
 }
@@ -36,7 +42,7 @@ input[id="navbar_menu"] + label span{
     width: 100%;
     height: 3px;
     border-radius: 30px;
-    background: teal;
+    background: white;
     transition: all .35s;
 }
 
@@ -80,7 +86,7 @@ div[class="sidebar"] {
     list-style: none;
     width:300px; 
     height: 100%; 
-    background:teal; 
+    background: #5eb1fe; 
     position: fixed; /*스크롤해도 고정됨, 상단에*/
     top: 0; 
     left: -300px; 
@@ -92,15 +98,25 @@ input[id="navbar_menu"]:checked + label + div {
 }
 
 .sidebar a{
-    padding: 50px 0px 0px 25px;
+    font-family: "NanumSquare";
+    padding: 25px 0px 25px 25px;
     font-size: 16px;
     color:white;
     display: block;
     transition: 0.3s;
 }
 
+.sidebar{
+    /* margin-top: 50px; */
+    /* margin-bottom: -50px; */
+}
+
+.sidebar i{
+    /* margin-top: 0; */
+}
+
 .sidebar a:hover{
-    color:aquamarine;
+    background-color: #aed8ff;
 }
 /*사이드바 끝*/
 

@@ -7,6 +7,11 @@ body {
     background-color: whitesmoke;   /*전체색상 */
 }
 
+@font-face {
+    src: url("../NanumSquareR.otf");
+    font-family: "NanumSquare";
+}
+
 .navbar {   /*내비게이션 바(로고+메뉴)*/
     background-color: rgb(228, 228, 228);
     height: 120px;
