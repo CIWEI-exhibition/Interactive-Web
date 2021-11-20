@@ -114,92 +114,130 @@ body::-webkit-scrollbar{
 
 /*그림 배치*/
 .wrapper{
+    max-width: 525%;
+    height: auto;
     position: relative;
-    min-height: 500px;
+    /* min-height: 400px; */
 }
 
 .img{
+    max-width: 525%;
+    height: auto;
     position: absolute;
 }
 
 .wrapper .main_wrapper .bgStar1{
+    max-width: 450%;
+    height: auto;
     position: absolute;
 }
 
 .wrapper .main_wrapper .bgStar2{
+    max-width: 600%;
+    height: auto;
     position: absolute;
 }
 
 .wrapper .main_wrapper .bgStar3{
+    max-width: 100%;
+    height: auto;
     position: absolute;
 }
 
 .wrapper .main_wrapper .bgMount1{
+    max-width: 100%;
+    height: auto;
     position: absolute;
     margin: 24.5% 0 0 -5%;
 }
 
 .wrapper .main_wrapper .bgMount2{
+    max-width: 100%;
+    height: auto;
     position: absolute;
     margin: 30% 0 0 227%;
 }
 
 .wrapper .main_wrapper .bgMount3{
+    max-width: 100%;
+    height: auto;
     position: absolute;
     margin: 24.5% 0 0 44%;
 }
 
 .wrapper .main_wrapper .bgMount4{
+    max-width: 100%;
+    height: auto;
     position: absolute;
     margin: 26% 0 0 260%;
 }
 
 .wrapper .main_wrapper .bgGround{
+    max-width: 100%;
+    height: auto;
     position: absolute;
     margin: 40.5% 0 0 0;
 }
 
 .wrapper .main_wrapper .bgLamp{
+    max-width: 100%;
+    height: auto;
     position: absolute;
     margin: 10% 0 0 38%;
 }
 
 .wrapper .main_wrapper .bgTree{
+    max-width: 100%;
+    height: auto;
     position: absolute;
     margin: 15% 0 0 27%;
 }
 
 .wrapper .booth_wrapper .banner{
+    max-width: 100%;
+    height: auto;
     position: absolute;
     margin: 24% 0 0 108%;
 }
 
 .wrapper .booth_wrapper .busking{
+    max-width: 100%;
+    height: auto;
     position: absolute;
     margin: 24.5% 0 0 175%;
 }
 
 .wrapper .booth_wrapper .icecream{
+    max-width: 100%;
+    height: auto;
     position: absolute;
     margin: 18% 0 0 234%;
 }
 
 .wrapper .booth_wrapper .study{
+    max-width: 100%;
+    height: auto;
     position: absolute;
     margin: 15% 0 0 283%;
 }
 
 .wrapper .booth_wrapper .love{
+    max-width: 100%;
+    height: auto;
     position: absolute;
     margin: 15% 0 0 344%;
 }
 
 .wrapper .booth_wrapper .music{
+    max-width: 100%;
+    height: auto;
     position: absolute;
     margin: 15% 0 0 404%;
 }
 
 .wrapper .booth_wrapper .healing{
+    max-width: 100%;
+    height: auto;
     position: absolute;
     margin: 15% 0 0 465%;
 }
