@@ -38,13 +38,43 @@ function stageResize() {        //per를 위한 함수 (document랑 window heigh
     _windowNum = window.outerHeight;
 }
 
-//blur
 wrapper = document.getElementById("wrapper");
 submit = document.getElementById("submit");
+error1 = document.getElementById("error1");
+error2 = document.getElementById("error2");
+error3 = document.getElementById("error3");
+error4 = document.getElementById("error4");
+error5 = document.getElementById("error5");
+error6 = document.getElementById("error6");
+error7 = document.getElementById("error7");
+error8 = document.getElementById("error8");
+error9 = document.getElementById("error9");
+
 
 submit.addEventListener("click", function(e) {
     e.preventDefault;
-    
+
+    //assignment pop-up
+    error1.style.display = "block";
+    error1.style.animationPlayState = "running";
+    error2.style.display = "block";
+    error2.style.animationPlayState = "running";
+    error3.style.display = "block";
+    error3.style.animationPlayState = "running";
+    error4.style.display = "block";
+    error4.style.animationPlayState = "running";
+    error5.style.display = "block";
+    error5.style.animationPlayState = "running";
+    error6.style.display = "block";
+    error6.style.animationPlayState = "running";
+    error7.style.display = "block";
+    error7.style.animationPlayState = "running";
+    error8.style.display = "block";
+    error8.style.animationPlayState = "running";
+    error9.style.display = "block";
+    error9.style.animationPlayState = "running";
+
+    //blur
     // -> removing the class
     wrapper.classList.remove("blur");
     
@@ -55,7 +85,7 @@ submit.addEventListener("click", function(e) {
     // -> and re-adding the class
     wrapper.classList.add("blur");    
 
-    setTimeout(wave, 11000);
+    setTimeout(wave, 9000);
 
 }, false);
 //blur 끝
