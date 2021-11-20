@@ -46,12 +46,12 @@ class GameScene extends Phaser.Scene{
             callback: this.onTimerEvent, callbackScope: this, loop: true });
         
         //30분
-        this.input.on("pointerdown", function(pointer){
+        this.input.on('pointerdown', function (pointer) {
             if(this.player.y < HEIGHT-167) return;
             this.tweens.add({
-                targets: this.player,
-                y: this.player.y-50,    //점프높이
-                duration: 500,      //점프기간(ms)
+                targets:this.player,
+                y:this.player.y-500,    //점프높이
+                duration:500,      //점프기간(ms)
                 yoyo:true,
             });
         }.bind(this));
@@ -78,7 +78,7 @@ class GameScene extends Phaser.Scene{
             onComplete: function(tween, targets){
                 book3.destroy();
             }.bind(this)
-        })
+        });
 
     }
 

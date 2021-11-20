@@ -7,6 +7,11 @@ body {
     background-color: whitesmoke;   /*전체색상 */
 }
 
+@font-face {
+    src: url("../../NanumSquareR.otf");
+    font-family: "NanumSquare";
+}
+
 .navbar {   /*내비게이션 바(로고+메뉴)*/
     background-color: rgb(228, 228, 228);
     height: 120px;
@@ -47,6 +52,7 @@ body {
 
 .navbar #menu li a {    /*메뉴이름 속성*/
     color: black;
+    font-family: "NanumSquare";
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
@@ -63,6 +69,7 @@ body {
 .header{
     overflow: auto;         /* 꿀팁!! 부모 div가 자식 div를 감싸지 않을때 쓰는 코드! */
     color: black;
+    font-family: "NanumSquare";
     margin-bottom: 50px;
 }
 
@@ -74,6 +81,7 @@ body {
 
 .semi-header{
     float: left;
+    font-family: "NanumSquare";
     font-size: 24px;
     font-weight: 500
 }
@@ -84,6 +92,7 @@ body {
 
 .semi-header .subtitle{
     margin: 15px 0 30px 0;
+    font-family: "NanumSquare";
     font-size: 14px;
     font-weight: 400;
 }
@@ -104,6 +113,7 @@ body {
 /* 여기서부터 툴바 */
 
 .link-container .btn-outline-primary{
+    font-family: "NanumSquare";
     color: black;
     border-color: black;
     padding: 15px 182px;
