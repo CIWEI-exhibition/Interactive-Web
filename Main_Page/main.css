@@ -7,12 +7,18 @@ body {
     background-color: #89c2e6;   /*전체색상 */
 }
 
+@font-face {
+    src: url("../NanumSquareR.otf");
+    font-family: "NanumSquare";
+}
+
 /*사이드바 끝*/
 #label{
     position: fixed;
 }
 
 a{
+    font-family: "NanumSquare";
     text-decoration: none;
     color: #fff;
 }
@@ -92,6 +98,7 @@ input[id="navbar_menu"]:checked + label + div {
 }
 
 .sidebar a{
+    font-family: "NanumSquare";
     padding: 50px 0px 0px 25px;
     font-size: 16px;
     color:white;
