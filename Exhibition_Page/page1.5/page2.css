@@ -122,79 +122,171 @@ body::-webkit-scrollbar{
 /*스크롤바 없애기 끝*/
 
 /*이미지 배치--> 따로 있는 애들*/
-/* @media (min-width:1200px) and (max-width:1500px) {
+@media (min-width:1200px) and (max-width:1500px) {
+    .wrapper{
+        display: flex;
+        position: relative;
+        max-width: 250%;
+    }
 
+    .img{
+        position: absolute;
+        height: auto;
+    }
+
+    .wrapper .bgSky{
+        width: 250%;
+    }
+
+    .wrapper .small_wrapper .bg-3{
+        width: 350%;
+    }
+
+    .wrapper .small_wrapper .bg-shooting{
+        width: 60%;
+        margin: 8% 0 0 25%;
+    }
+
+    .wrapper .small_wrapper .bg-moon{
+        width: 9%;
+        margin: 11% 0 0 40%;
+    }
+
+    .wrapper .small_wrapper .bg-2{
+        margin: 0 0 0 -5%;
+    }
+
+    .wrapper .small_wrapper .train{
+        width: 60%;
+        margin: 22.5% 0 0 0;
+    }
+
+    .wrapper .small_wrapper .building{
+
+    }
+    
+    .wrapper .small_wrapper .bg-moonlight{
+        width: 40%;
+        margin: 30% 0 0 20%;
+    }
+
+    .wrapper .front_wrapper .subway{
+        position: fixed;
+        width: 100%;
+        margin: -7% 0 0 0;
+    }
+
+    .wrapper .front_wrapper .handle1{
+        position: fixed;
+        width: 3%;
+        margin: -1% 0 0 19%;
+    }
+    .wrapper .front_wrapper .handle2{
+        position: fixed;
+        width: 3%;
+        margin: -1% 0 0 38%;
+    }
+    .wrapper .front_wrapper .handle3{
+        position: fixed;
+        width: 3%;
+        margin: -1% 0 0 57%;
+    }
+    .wrapper .front_wrapper .handle4{
+        position: fixed;
+        width: 3%;
+        margin: -1% 0 0 76%;
+    }
+
+    .wrapper .front_wrapper .seat{
+        position: fixed;
+        width: 105%;
+        margin: 37% 0 0 -2%;
+    }
 }
 @media (min-width: 1500px) {
+    .wrapper{
+        display: flex;
+        position: relative;
+        max-width: 250%;
+    }
 
-} */
+    .img{
+        position: absolute;
+        height: auto;
+    }
 
-.wrapper{
-    /* display: flex; */
-    position: relative;
-    min-height: 400px;
-}
+    .wrapper .bgSky{
+        width: 250%;
+    }
 
-.img{
-    position:absolute; 
-    /* max-width:100%; 
-    max-height:100%;  */
-    /* width:auto; 
-    height:auto;  */
-   
-}
+    .wrapper .small_wrapper .bg-3{
+        width: 350%;
+    }
 
-.wrapper .bg{
-    position: absolute;
-    margin: auto 0 0 0;
-}
-.wrapper .small-wrapper .building{
-    position: absolute;
-    left: -6em;
-}
+    .wrapper .small_wrapper .bg-shooting{
+        width: 60%;
+        margin: 8% 0 0 25%;
+    }
 
-#bg-shooting{
-    position: absolute;
-    top: 1em;
-    left: 20em;
-}
+    .wrapper .small_wrapper .bg-moon{
+        width: 9%;
+        margin: 11% 0 0 40%;
+    }
 
-#bg-moon{ 
-    position: absolute;
-    top: 3em;
-    left: 37em;
-}
+    .wrapper .small_wrapper .bg-2{
+        margin: 0 0 0 -5%;
+    }
 
-#bg-moonlight{
-    position: absolute;
-    top: 15.7em;
-    left: 15em;
-}
+    .wrapper .small_wrapper .train{
+        width: 60%;
+        margin: 22.5% 0 0 0;
+    }
 
-/* #bg-moonlight{
+    .wrapper .small_wrapper .building{
+
+    }
     
-    
-    
-} */
+    .wrapper .small_wrapper .bg-moonlight{
+        width: 40%;
+        margin: 30% 0 0 20%;
+    }
 
-#train{
-    position: absolute;
-    top: 12.3em;
-    left: 13.5em;
-}
-/*이미지 배치--> 따로 있는 애들 끝*/
+    .wrapper .front_wrapper .subway{
+        position: fixed;
+        width: 100%;
+        margin: -7% 0 0 0;
+    }
 
-/*지하철*/
-.sub{
-    position: fixed;
-    top: 0;
-    left: 0;
+    .wrapper .front_wrapper .handle1{
+        position: fixed;
+        width: 3%;
+        margin: -1% 0 0 19%;
+    }
+    .wrapper .front_wrapper .handle2{
+        position: fixed;
+        width: 3%;
+        margin: -1% 0 0 38%;
+    }
+    .wrapper .front_wrapper .handle3{
+        position: fixed;
+        width: 3%;
+        margin: -1% 0 0 57%;
+    }
+    .wrapper .front_wrapper .handle4{
+        position: fixed;
+        width: 3%;
+        margin: -1% 0 0 76%;
+    }
+
+    .wrapper .front_wrapper .seat{
+        position: fixed;
+        width: 105%;
+        margin: 37% 0 0 -2%;
+    }
 }
 
 /*손잡이 따로따로 배치*/
-#subway-handle1{
-    position: fixed;
-    margin: 0 0 0 17%;
+.wrapper .front_wrapper .handle1{
 
     -webkit-transform-origin: 0% 0%;
     -moz-transform-origin: 0% 0%;
@@ -209,9 +301,7 @@ body::-webkit-scrollbar{
          animation: subHandle 1.2s ease-in-out 0s infinite alternate;
 }
 
-#subway-handle2{
-    position: fixed;
-    margin: 0 0 0 38%;
+.wrapper .front_wrapper .handle2{
 
     /*손잡이 애니메이션 적용*/
     -webkit-transform-origin: 0% 0%;
@@ -226,9 +316,7 @@ body::-webkit-scrollbar{
       -o-animation: subHandle2 .9s ease-in-out 0s infinite alternate;
          animation: subHandle2 .9s ease-in-out 0s infinite alternate;
 }
-#subway-handle3{
-    position: fixed;
-    margin: 0 0 0 60%;
+.wrapper .front_wrapper .handle3{
 
     /*손잡이 애니메이션 적용*/
     -webkit-transform-origin: 0% 0%;
@@ -243,9 +331,7 @@ body::-webkit-scrollbar{
       -o-animation: subHandle .9s ease-in-out 0s infinite alternate;
          animation: subHandle .9s ease-in-out 0s infinite alternate;
 }
-#subway-handle4{
-    position: fixed;
-    margin: 0 0 0 80%;
+.wrapper .front_wrapper .handle4{
 
     /*손잡이 애니메이션 적용*/
     -webkit-transform-origin: 0% 0%;
@@ -261,11 +347,6 @@ body::-webkit-scrollbar{
          animation: subHandle2 1.2s ease-in-out 0s infinite alternate;
 }
 
-#subway-seat{
-    position: fixed;
-    margin: 37.1% 0 0 -1.8%;
-}
-/*지하철 끝*/
 
 /* 채팅창 */
 #chat_bottom{
