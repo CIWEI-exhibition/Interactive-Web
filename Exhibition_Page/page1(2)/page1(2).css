@@ -125,7 +125,7 @@ body::-webkit-scrollbar{
         height: auto;
     }
     
-    .wrapper .bgSky{
+     .wrapper .bgSky{
         width: 500%;
     }
 
@@ -212,7 +212,7 @@ body::-webkit-scrollbar{
         margin: 15% 0 0 450%;
     }
 }
-/* @media(min-width: 1500px){
+@media(min-width: 1500px){
     .wrapper{
         display: flex;
         position: relative;
@@ -309,7 +309,7 @@ body::-webkit-scrollbar{
         width: 42%;
         margin: 15% 0 0 450%;
     }
-} */
+}
 
 .wrapper .booth_wrapper .study:hover{
     /* background-blend-mode: darken; */
