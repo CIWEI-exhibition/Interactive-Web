@@ -40,6 +40,8 @@ body::-webkit-scrollbar{
     }
 }
 
+
+/* 공지사항 */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -56,8 +58,60 @@ body::-webkit-scrollbar{
 
 .modal-content {
     background-color: #fefefe;
-    margin: 10% 0 0 35%; /* 15% from the top and centered */
-    padding: 20px;
+    margin: 10% 40% 0 33%; /* 15% from the top and centered */
+    padding: 40px;
     border: 1px solid #888;
-    width: 30%; /* Could be more or less, depending on screen size */                          
+    width: 30%; /* Could be more or less, depending on screen size */  
+    border-radius: 30px;     
+    animation: appear .8s cubic-bezier(.77,0,.175,1) forwards;                   
 }
+
+.btn{
+    background-color: #b7c4dd;
+    border: 0;
+    outline: none;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px rgb(202, 202, 202), -2px -2px 2px rgb(237, 237, 237);
+    transition: 0.3s;
+    margin: 0% 40% -5% 40%;
+    padding: 5px 10px 5px 21px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: -2px -2px 2px rgb(226, 226, 226), 2px 2px 2px rgb(237, 237, 237);
+    transition: 0.3s;
+}
+
+
+p{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    text-align:center;
+    font-size: 17px;
+}
+
+.dialog__animate-out{
+    animation: dissappear .8s cubic-bezier(.77,0,.175,1) forwards;
+  }
+
+  @keyframes appear {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes dissappear {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }

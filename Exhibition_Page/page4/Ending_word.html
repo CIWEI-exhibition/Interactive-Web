@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" class=".no-skrollr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
+    <!-- <meta http-equiv="refresh" content="30; url=https://www.aquaurore.co.kr/Exhibition_Page/page4/Ending_Credit.html"> -->
+    
+    <title>Ending: 아쿠아로레의 진심</title>
+
+    <script  src="jquery-3.6.0.js"></script>
+
+    <style>
+        /* 스크롤 없애기 */
+        body{
+            -ms-overflow-style: none;
+        }
+
+        body::-webkit-scrollbar{
+            display: none;
+        }
+
+        * { box-sizing:content-box; }
+        body { margin: 0% 0% 0% 0%; }
+        /* main { padding-bottom: 100px; } */
+        header {
+            background-color: #fff;
+            height: 300px;
+            padding: 200px;
+        }
+        section {
+            display: flex;
+            justify-content: space-between;
+            padding: 20% 0 0 0;
+        }
+        section div {
+            background-color: #fff;
+            width: 100%;
+            height: 500px;
+        }
+
+        /* Scroll Animation (sa, 스크롤 애니메이션) */
+        .sa {
+            opacity: 0;
+            transition: all .5s ease;
+        }
+
+        /* 아래에서 위로 페이드 인 */
+        .sa-up {
+            transform: translate(0, 100px);
+            text-align: center;
+            font-size: 35px;
+            font-family: 'IBM Plex Sans KR', sans-serif;
+        }
+
+        .sa-up p{
+            font-size: 20px;
+            color: rgb(184, 185, 185);
+        }
+
+        .sa.show {
+            opacity: 1;
+            transform: none;
+        }
+    </style>
+  </head>
+  <body>
+        <head>
+            <section>
+                <div class="sa sa-up"></div>
+            </section>
+        </head>
+        <main>
+            <section>
+                <div class="sa sa-up">
+                    <br><br>아쿠아로레 전시, 공감하며 잘 보셨나요?<br>
+                    <p>Did you enjoy our Aquaurore exhibition?</p>
+                </div>
+            </section>
+            <section>
+                <div class="sa sa-up">
+                    <br><br>마지막으로 저희가 드리고 싶은 말씀은,
+                    <p>Lastly, what we want to say is,</p>
+                </div>
+            </section>
+            <section>
+                <div class="sa sa-up">
+                    <br><br>여러분은 지금까지 각자의 위치에서 충분히 잘하고 있으니
+                    <p>You've been doing well enough in your respective positions so far,</p>
+                </div>
+            </section>
+            <section>
+                <div class="sa sa-up">
+                    <br><br>나는 뭐든 할 수 있다는 믿음을 가지셨으면 좋겠습니다.
+                    <p>so we hope you can believe that you can do anything.</p>
+                </div>
+            </section>
+            <section>
+                <div class="sa sa-up">
+                    <br><br>오늘은 스스로에게 따뜻한 말을 건네 보는 건 어떨까요?
+                    <p>Why don't you say heartwarming words to yourself today?</p>
+                </div>
+            </section>
+            <section>
+                <div class="sa sa-up">
+                    <br><br>난 잘하고 있다고. 나는 나를 믿는다고.
+                    <p>I'm doing well. I believe in myself.</p>
+                </div>
+            </section>
+        </main>
+
+        <script>
+            // Scroll Animation (sa, 스크롤 애니메이션)
+            const saDefaultMargin = 300;
+            let saTriggerMargin = 0;
+            let saTriggerHeight = 0;
+            const saElementList = document.querySelectorAll('.sa');
+
+            const saFunc = function() {
+                for (const element of saElementList) {
+                    if (!element.classList.contains('show')) {
+                        if (element.dataset.saMargin) {
+                            saTriggerMargin = parseInt(element.dataset.saMargin);
+                        } else {
+                            saTriggerMargin = saDefaultMargin;
+                        }
+
+                        if (element.dataset.saTrigger) {
+                            saTriggerHeight = document.querySelector(element.dataset.saTrigger).getBoundingClientRect().top + saTriggerMargin;
+                        } else {
+                            saTriggerHeight = element.getBoundingClientRect().top + saTriggerMargin;
+                        }
+
+                        if (window.innerHeight > saTriggerHeight) {
+                            let delay = (element.dataset.saDelay) ? element.dataset.saDelay : 0;
+                            setTimeout(function() {
+                                element.classList.add('show');
+                            }, delay);
+                        }
+                    }
+                }
+            }
+
+            window.addEventListener('load', saFunc);
+            window.addEventListener('scroll', saFunc);
+        </script>
+    </body>
+</html>
+
