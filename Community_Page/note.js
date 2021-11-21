@@ -97,7 +97,7 @@ function addStickyToDOM(key, stickyObj) {
     stickies.appendChild(sticky); 
      
     // 스티키 노트를 클릭하면 삭제되도록 이벤트 리스너를 붙임 
-    // sticky.onclick = deleteSticky; 
+    // sticky.onclick = deleteSticky;  // 나중에 삭제 필요할때 해제할 것
 } 
 
 function removeStickyFromDOM(key) { 

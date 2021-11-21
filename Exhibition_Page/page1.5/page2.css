@@ -122,9 +122,15 @@ body::-webkit-scrollbar{
 /*스크롤바 없애기 끝*/
 
 /*이미지 배치--> 따로 있는 애들*/
-.wrapper{
-    display: flex;
+/* @media (min-width:1200px) and (max-width:1500px) {
 
+}
+@media (min-width: 1500px) {
+
+} */
+
+.wrapper{
+    /* display: flex; */
     position: relative;
     min-height: 400px;
 }
@@ -135,11 +141,7 @@ body::-webkit-scrollbar{
     max-height:100%;  */
     /* width:auto; 
     height:auto;  */
-    margin:auto; 
-    top:0; 
-    bottom:0; 
-    left:0; 
-    right:0;
+   
 }
 
 .wrapper .bg{
