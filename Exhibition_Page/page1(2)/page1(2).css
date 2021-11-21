@@ -113,7 +113,7 @@ body::-webkit-scrollbar{
 /*스크롤바 없애기 끝*/
 
 /*그림 배치*/
-@media (min-width:1200px) and (max-width:1500px) {
+@media (min-height:600px) and (max-height:700px) {
     .wrapper{
         display: flex;
         position: relative;
@@ -212,7 +212,7 @@ body::-webkit-scrollbar{
         margin: 15% 0 0 450%;
     }
 }
-@media (min-width: 1500px) {
+@media (min-height: 700px) {
     .wrapper{
         display: flex;
         position: relative;
