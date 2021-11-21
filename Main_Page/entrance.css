@@ -35,6 +35,11 @@ body::-webkit-scrollbar{
     white-space: nowrap;
     font-size: 0;
     padding: 0;
+    margin: 0;
+}
+
+.section .slidelist ul{
+    margin: 0;
 }
 
 .section .slidelist > li{

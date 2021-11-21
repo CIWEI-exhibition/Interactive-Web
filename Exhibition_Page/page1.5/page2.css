@@ -216,7 +216,7 @@ body::-webkit-scrollbar{
     .wrapper{
         display: flex;
         position: relative;
-        max-width: 250%;
+        max-width: 400%;
     }
 
     .img{
@@ -224,8 +224,8 @@ body::-webkit-scrollbar{
         height: auto;
     }
 
-    .wrapper .bgSky{
-        width: 250%;
+    .wrapper .bg{
+        width: 400%;
     }
 
     .wrapper .small_wrapper .bg-3{
@@ -241,23 +241,32 @@ body::-webkit-scrollbar{
         width: 9%;
         margin: 11% 0 0 40%;
     }
-
-    .wrapper .small_wrapper .bg-2{
-        margin: 0 0 0 -5%;
+    
+    .wrapper .small_wrapper .bg-1{
+        width: 400%;
     }
 
     .wrapper .small_wrapper .train{
         width: 60%;
-        margin: 22.5% 0 0 0;
+        margin: 20.5% 0 0 0;
+    }
+
+    .wrapper .small_wrapper .bg-2{
+        width: 400%;
+        margin: 0 0 0 -5%;
     }
 
     .wrapper .small_wrapper .building{
-
+        width: 400%;
     }
     
     .wrapper .small_wrapper .bg-moonlight{
         width: 40%;
         margin: 30% 0 0 20%;
+    }
+
+    .wrapper .small_wrapper .fade-out{
+        width: 400%;
     }
 
     .wrapper .front_wrapper .subway{
