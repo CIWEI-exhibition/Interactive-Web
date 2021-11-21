@@ -10,9 +10,7 @@ const config = {
     },
     physics: {
         default: "arcade",
-        arcade: {
-            debug: true,       //충돌 영역 확인용!
-        }
+       
     },
     pixelArt: true,
 };
