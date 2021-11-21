@@ -7,7 +7,7 @@
 window.onload = init; 
 
 function init() { 
-    var button = document.getElementById("add_button"); 
+    var button = document.getElementById("comment-submit"); 
     button.onclick = createSticky; 
      
 /*    var clearbutton = document.getElementById("clear_button"); 
@@ -35,17 +35,17 @@ function getStickiesArray() {
 
 function createSticky() { 
     var stickiesArray = getStickiesArray(); 
-    var value = document.getElementById("note_text").value; 
-    var ColorSelectObj = document.getElementById("note_color"); 
-    var index = ColorSelectObj.selectedIndex; 
-    var color = ColorSelectObj[index].value; 
+    var value = document.getElementById("input-message").value; 
+    // var ColorSelectObj = document.getElementById("note-color"); 
+    // var index = ColorSelectObj.selectedIndex; 
+    // var color = ColorSelectObj[index].value; 
      
     // json으로 value와 color가 유지되는 스티키 노트를 생성 
     var currentDate = new Date(); 
     var key = "sticky_"+currentDate.getTime(); 
     var stickyObj = { 
             "value" : value, 
-            "color" : color 
+            // "color" : color 
     }; 
     localStorage.setItem(key, JSON.stringify(stickyObj)); 
      
@@ -84,7 +84,7 @@ function addStickyToDOM(key, stickyObj) {
     sticky.setAttribute("id", key); 
      
     // stickyObj의 color를 이용해서 CSS 배경색 스타일을 지정 
-    sticky.style.backgroundColor = stickyObj.color; 
+    // sticky.style.backgroundColor = stickyObj.color; 
      
     var span = document.createElement("span"); 
     span.setAttribute("class", "sticky"); 
@@ -97,7 +97,7 @@ function addStickyToDOM(key, stickyObj) {
     stickies.appendChild(sticky); 
      
     // 스티키 노트를 클릭하면 삭제되도록 이벤트 리스너를 붙임 
-    sticky.onclick = deleteSticky; 
+    // sticky.onclick = deleteSticky; 
 } 
 
 function removeStickyFromDOM(key) { 

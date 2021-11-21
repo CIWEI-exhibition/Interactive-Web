@@ -35,12 +35,13 @@ class GameScene extends Phaser.Scene{
         });
 
         //20분
-        this.player = this.physics.add.sprite(200, HEIGHT-300);
-        this.player.body.setSize(100, 200);   //충돌영역 지정
+        this.player = this.physics.add.sprite(200, HEIGHT-280);
+        this.player.body.setSize(100, 300);   //충돌영역 지정
         this.player.play("run");
 
         //22분
-        this.delay = 3000;
+        var randomX = Phaser.Math.Between(1000, 1500);    //다른 위치에서 생성됨
+        this.delay = randomX;
         this.timer = this.time.addEvent({delay: this.delay,
             callback: this.onTimerEvent, callbackScope: this, loop: true });
         
@@ -51,7 +52,7 @@ class GameScene extends Phaser.Scene{
             this.tweens.add({
                 targets: this.player,
                 y: this.player.y-400,    //점프높이
-                duration: 400,      //점프기간(ms)
+                duration: 350,      //점프기간(ms)
                 yoyo: true,
             });
         }.bind(this));
@@ -63,9 +64,9 @@ class GameScene extends Phaser.Scene{
 
     addBook3(){      //23분
         this.book3Group = this.physics.add.group();
-        var randomX = Phaser.Math.Between(100, 200);    //다른 위치에서 생성됨
+        var randomX = Phaser.Math.Between(300, 600);    //다른 위치에서 생성됨
         var book3 = this.physics.add.sprite(WIDTH+randomX-300, HEIGHT-280, "book3").setScale(1);
-        book3.body.setSize(100, 200);
+        book3.body.setSize(100, 150);
         this.book3Group.add(book3);
 
         //player와 비교하는 로직
@@ -74,7 +75,7 @@ class GameScene extends Phaser.Scene{
         this.tweens.add({
             targets: book3,
             x: 0,
-            duration: 1000,
+            duration: 700,
             onComplete: function(tween, targets){
                 book3.destroy();
             }.bind(this)
