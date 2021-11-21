@@ -4,18 +4,45 @@
  테스트 브라우저: firefox, safari, opera, chrome
  전환 효과(ease-in)은 firefox에서 적용되지 않습니다.
 */
-@font-face {
+/* @font-face {
     font-family: "NanumSquare";
     src: url("../NanumSquareR.otf");
-}
+} */
 
 body {
     background-color: #dbdbdb;
-    font-family: "NanumSquare";
+    font-family: 'IBM Plex Sans KR', sans-serif;
     font-size: 100%;
 }
 
 /*모달창*/
+.add-postit{
+	padding: 1rem 8rem 1rem 8rem;
+	border: 0;
+	/* background: transparent; */
+	cursor: pointer;
+	font-family: 'IBM Plex Sans KR', sans-serif;
+	font-size: 1.5rem;
+	position: fixed;
+	top: 50%;
+	left: 40%;
+	opacity: 0.5;
+}
+.add-postit:hover{
+	animation: button 0.5s forwards;
+}
+@keyframes button {
+	from{
+		transform: scale(1);
+		opacity: 0.5;
+	}
+	to{
+		transform: scale(1.1);
+		opacity: 1;
+		filter: brightness(120%);
+	}
+
+}
 .comment-form {
 	display: none;
 	flex-direction: column;
@@ -40,7 +67,7 @@ body {
 .form-row {
 	display: flex;
 	align-items: center;
-	margin-bottom: 1rem;
+	margin-top: 1rem;
 }
 .form-row label {
 	flex: 0 0 auto;
@@ -51,7 +78,7 @@ body {
 	border: 2px solid #222;
 	border-radius: 0;
 	font-size: 1rem;
-	font-family: "NanumSquare";
+	font-family: 'IBM Plex Sans KR', sans-serif;
 	-webkit-appearance: none;
 }
 .form-row textarea {
@@ -60,22 +87,23 @@ body {
 	border: 2px solid #222;
 	border-radius: 0;
 	font-size: 1rem;
-	font-family: "NanumSquare";
+	font-family: 'IBM Plex Sans KR', sans-serif;
 	-webkit-appearance: none;
 }
+
 #note-color, .comment-submit, .undo-submit {
 	display: inline;
-	width: 32%;
+	width: 49%;
 	height: 40px;
 	border: 0;
 	border-radius: 0;
 	font-weight: 400;
 	line-height: 40px;
 	color: #fff;
-	background: #222;
+	background: #5970ac;
 	-webkit-appearance: none;
 	cursor: pointer;
-    margin: 1rem 0 0 0;
+    margin: 3rem 0 0 0;
 }
 #note-color{
     text-align: center;
@@ -107,12 +135,6 @@ body {
 	}
 }
 
-button {
-	border: 0;
-	/* background: transparent; */
-	cursor: pointer;
-}
-
    /* 스티키 노트 */
    
 ul#stickies li {
@@ -125,7 +147,7 @@ ul#stickies li {
     width: 200px;
     height: 200px;
     border: 1px solid #bfbfbf;
-    background-color:  LightGoldenRodYellow; /* 색상명 값이 맞지 않을 땐 #fafad2 */
+    background-color:  #bcc7e2; /* 색상명 값이 맞지 않을 땐 #fafad2 */
     color: black;
     text-decoration: none;
     -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
@@ -141,12 +163,13 @@ ul#stickies li {
 }
    
 ul#stickies li span.sticky {
-    font-family: "NanumSquare", Verdana, Helvetica, sans-serif;
-    font-size: 140%;
+	font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 100%;
 }
    
    /* 회전 */
 ul#stickies li:nth-child(even) {
+	background-color: #aab7d9;
     -webkit-transform: rotate(2deg);
     -moz-transform: rotate(2deg);
     -o-transform: rotate(2deg);
@@ -155,6 +178,7 @@ ul#stickies li:nth-child(even) {
 }
    
 ul#stickies li:nth-child(odd) {
+	background-color: #96a6cf;
     -webkit-transform: rotate(-1deg);
     -moz-transform: rotate(-1deg);
     -o-transform: rotate(-1deg);
@@ -163,6 +187,7 @@ ul#stickies li:nth-child(odd) {
 }
    
 ul#stickies li:nth-child(3n) {
+	background-color: #8192c3;
     -webkit-transform: rotate(1deg);
     -moz-transform: rotate(1deg);
     -o-transform: rotate(1deg);

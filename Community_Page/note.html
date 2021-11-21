@@ -6,37 +6,44 @@
 <title>스티키 노트</title> 
 <link rel="stylesheet" href="note.css">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
 <script type="text/javascript" src="jquery-3.6.0.js"></script> 
 <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script> --> 
 
 </head> 
 <body>
-    <button id="add-postit" class="add-postit" onclick="open_pop();">포스트잇 붙이기</button>
-    <!-- <input type="button" id="clear_button" value="스티키 노트 전부 삭제">  -->
-
+    <!--폼-->
     <div id="form-wrapper" class="form-wrapper">
         <form class="comment-form">
-            <div class="form-row">
+            <!-- <div class="form-row">
                 <label for="input-authorname">이름</label>
                 <input type="text" id="input-authorname" maxlength="16" placeholder="Name">
-            </div>
+            </div> -->
             <div class="form-row">
                 <label for="input-message">메시지</label>
-                <textarea id="input-message" maxlength="60" placeholder="Message"></textarea>
+                <textarea id="input-message" maxlength="150" placeholder="Message"></textarea>
             </div>
-            <select id="note-color"> 
-                <option value="LightGoldenRodYellow">노란색</option>    <!-- #fafad2 --> 
-                <option value="PaleGreen">녹색</option>    <!-- #98fb98 --> 
-                <option value="LightPink">분홍</option>    <!-- #ffb6c1 --> 
-                <option value="LightBlue">파란색</option>    <!-- #add8e6 --> 
-            </select>
+            <!-- <select id="note-color"> 
+                <option value="#bcc7e2">하늘색1</option>
+                <option value="#aab7d9">하늘색2</option>
+                <option value="#96a6cf">하늘색3</option>
+                <option value="#8192c3">하늘색4</option>
+            </select> -->
             <button id="comment-submit" class="comment-submit">OK</button>
             <button id="undo-submit" class="undo-submit">취소</button>
         </form>
     </div>
+
+    <!--포스트잇들-->
     <ul id="stickies"> 
     </ul> 
 
+    <!--포스트잇 붙이기 버튼-->
+    <button id="add-postit" class="add-postit" onclick="open_pop();">포스트잇 붙이기</button>
+    <!-- <input type="button" id="clear_button" value="스티키 노트 전부 삭제">  -->
+    
     <script>
         function open_pop(){
             var pop = document.querySelector(".comment-form");
