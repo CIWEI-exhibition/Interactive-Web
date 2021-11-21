@@ -88,20 +88,69 @@ body::-webkit-scrollbar{
     position: absolute;
     margin: -50% 0 0 0;
 }
-
-.indiv .yena .yena_exhi{
+/*예나*/
+.indiv .mockup .yena .yena_1{
     position: absolute;
-    margin: -42% 0 0 5%;
+    margin: -37% 0 0 7%;
+}
+.indiv .mockup .yena .yena_2{
+    position: absolute;
+    margin: -39% 0 0 14%;
+}
+.indiv .mockup .yena .yena_3{
+    position: absolute;
+    margin: -30% 0 0 8%;
+}
+.indiv .mockup .yena .yena_4{
+    position: absolute;
+    margin: -32% 0 0 15%;
+}
+.indiv .mockup .yena .yena_explain{
+    position: absolute;
+    margin: -35% 0 0 24%;
+}
+/*채원*/
+.indiv .mockup .chaewon .chaewon_1{
+    position: absolute;
+    margin: -37% 0 0 37%;
+}
+.indiv .mockup .chaewon .chaewon_2{
+    position: absolute;
+    margin: -39% 0 0 44%;
+}
+.indiv .mockup .chaewon .chaewon_3{
+    position: absolute;
+    margin: -30% 0 0 38%;
+}
+.indiv .mockup .chaewon .chaewon_4{
+    position: absolute;
+    margin: -32% 0 0 45%;
+}
+.indiv .mockup .chaewon .chaewon_explain{
+    position: absolute;
+    margin: -35% 0 0 54%;
 }
 
-.indiv .chaewon .chaewon_exhi{
+/*지영*/
+.indiv .mockup .jiyoung .jiyoung_1{
     position: absolute;
-    margin: -42% 0 0 37%;
+    margin: -37% 0 0 68%;
 }
-
-.indiv .jiyoung .jiyoung_exhi{
+.indiv .mockup .jiyoung .jiyoung_2{
     position: absolute;
-    margin: -42% 0 0 70%;
+    margin: -39% 0 0 75%;
+}
+.indiv .mockup .jiyoung .jiyoung_3{
+    position: absolute;
+    margin: -30% 0 0 69%;
+}
+.indiv .mockup .jiyoung .jiyoung_4{
+    position: absolute;
+    margin: -32% 0 0 76%;
+}
+.indiv .mockup .jiyoung .jiyoung_explain{
+    position: absolute;
+    margin: -35% 0 0 85%;
 }
 /*가운데(본전시)이미지 배치*/
 
