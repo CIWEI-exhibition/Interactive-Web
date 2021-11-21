@@ -7,7 +7,7 @@
 window.onload = init; 
 
 function init() { 
-    var button = document.getElementById("add_button"); 
+    var button = document.getElementById("comment-submit"); 
     button.onclick = createSticky; 
      
 /*    var clearbutton = document.getElementById("clear_button"); 
@@ -35,15 +35,17 @@ function getStickiesArray() {
 
 function createSticky() { 
     var stickiesArray = getStickiesArray(); 
-    var value = document.getElementById("note_text").value; 
-    var ColorSelectObj = document.getElementById("note_color"); 
+    var names = document.getElementById("input-authorname").names;
+    var value = document.getElementById("input-message").value; 
+    var ColorSelectObj = document.getElementById("note-color"); 
     var index = ColorSelectObj.selectedIndex; 
     var color = ColorSelectObj[index].value; 
      
     // json으로 value와 color가 유지되는 스티키 노트를 생성 
     var currentDate = new Date(); 
     var key = "sticky_"+currentDate.getTime(); 
-    var stickyObj = { 
+    var stickyObj = {  
+            "names" : names,
             "value" : value, 
             "color" : color 
     }; 
@@ -90,6 +92,7 @@ function addStickyToDOM(key, stickyObj) {
     span.setAttribute("class", "sticky"); 
      
     // stickyObj의 value를 이용해서 스티키 노트의 내용을 할당 
+    span.innerHTML = stickyObj.names;
     span.innerHTML = stickyObj.value; 
      
     // 모든 것을 DOM에 추가 

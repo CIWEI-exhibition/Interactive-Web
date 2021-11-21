@@ -4,27 +4,51 @@
 <meta charset="UTF-8"> 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
 <title>스티키 노트</title> 
-<link rel="stylesheet" href="note.css"> 
-<!-- <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script> --> 
+<link rel="stylesheet" href="note.css">
+
+<script type="text/javascript" src="jquery-3.6.0.js"></script> 
 <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script> --> 
 
 </head> 
-<body> 
-    <form> 
-        <label for="note_color">색상:</label> 
-        <select id="note_color"> 
-            <option value="LightGoldenRodYellow">노란색</option>    <!-- #fafad2 --> 
-            <option value="PaleGreen">녹색</option>    <!-- #98fb98 --> 
-            <option value="LightPink">분홍</option>    <!-- #ffb6c1 --> 
-            <option value="LightBlue">파란색</option>    <!-- #add8e6 --> 
-        </select> 
-        <label for="note_text">내용:</label><input type="text" id="note_text"> 
-        <input type="button" id="add_button" value="스티키 노트 추가"> 
-        <!-- <input type="button" id="clear_button" value="스티키 노트 전부 삭제"> --> 
-         
-        <ul id="stickies"> 
-        </ul> 
-    </form>
+<body>
+    <button id="add-postit" class="add-postit" onclick="open_pop();">포스트잇 붙이기</button>
+    <!-- <input type="button" id="clear_button" value="스티키 노트 전부 삭제">  -->
+
+    <div id="form-wrapper" class="form-wrapper">
+        <form class="comment-form">
+            <div class="form-row">
+                <label for="input-authorname">이름</label>
+                <input type="text" id="input-authorname" maxlength="16" placeholder="Name">
+            </div>
+            <div class="form-row">
+                <label for="input-message">메시지</label>
+                <textarea id="input-message" maxlength="60" placeholder="Message"></textarea>
+            </div>
+            <select id="note-color"> 
+                <option value="LightGoldenRodYellow">노란색</option>    <!-- #fafad2 --> 
+                <option value="PaleGreen">녹색</option>    <!-- #98fb98 --> 
+                <option value="LightPink">분홍</option>    <!-- #ffb6c1 --> 
+                <option value="LightBlue">파란색</option>    <!-- #add8e6 --> 
+            </select>
+            <button id="comment-submit" class="comment-submit">OK</button>
+            <button id="undo-submit" class="undo-submit">취소</button>
+        </form>
+    </div>
+    <ul id="stickies"> 
+    </ul> 
+
+    <script>
+        function open_pop(){
+            var pop = document.querySelector(".comment-form");
+            pop.style.display = "block";
+        }
+  
+        function close_pop(){
+            var undo = document.querySelector(".undo-submit");
+            // var pop = document.querySelector(".comment-form");
+            pop.style.display = "none";
+        }
+    </script>
 
     <script type="text/javascript" src="note.js"></script> 
 </body> 

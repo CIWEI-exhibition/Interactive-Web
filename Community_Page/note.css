@@ -4,19 +4,118 @@
  테스트 브라우저: firefox, safari, opera, chrome
  전환 효과(ease-in)은 firefox에서 적용되지 않습니다.
 */
+@font-face {
+    font-family: "NanumSquare";
+    src: url("../NanumSquareR.otf");
+}
 
 body {
     background-color: #dbdbdb;
+    font-family: "NanumSquare";
     font-size: 100%;
-   }
-   
-   form input#note_text {
-    width: 350px;
-   }
-   
+}
+
+/*모달창*/
+.comment-form {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 50%;
+	top: -30%;
+	z-index: 100;
+	width: 300px;
+	height: 200px;
+	margin: -100px 0 0 -150px;
+	padding: 2rem;
+	border: 2px solid #222;
+	font-weight: bold;
+    font-family: "NanumSquare";
+	/* background: rgba(255, 255, 255, 0.9); */
+	background: #fff;
+	transform: translateY(70vh);
+	transition: 0.3s;
+}
+.form-row {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+.form-row label {
+	flex: 0 0 auto;
+	width: 100px;
+}
+.form-row input {
+	width: 100%;
+	border: 2px solid #222;
+	border-radius: 0;
+	font-size: 1rem;
+	font-family: "NanumSquare";
+	-webkit-appearance: none;
+}
+.form-row textarea {
+	width: 100%;
+	height: 60px;
+	border: 2px solid #222;
+	border-radius: 0;
+	font-size: 1rem;
+	font-family: "NanumSquare";
+	-webkit-appearance: none;
+}
+#note-color, .comment-submit, .undo-submit {
+	display: inline;
+	width: 32%;
+	height: 40px;
+	border: 0;
+	border-radius: 0;
+	font-weight: 400;
+	line-height: 40px;
+	color: #fff;
+	background: #222;
+	-webkit-appearance: none;
+	cursor: pointer;
+    margin: 1rem 0 0 0;
+}
+#note-color{
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+	.menu {
+		width: 402px;
+	}
+	.menu-item {
+		margin: 0 3rem;
+	}
+	.menu-link {
+		font-size: 2rem;
+	}
+	.menu-question {
+		padding: 1em 3rem;
+	}
+	.note {
+		margin-left: 24vw;
+		padding: 3rem;
+	}
+	.note-header h2 {
+		font-size: 3rem;
+	}
+	.form-row textarea {
+		width: 100%;
+		height: 70px;
+	}
+}
+
+button {
+	border: 0;
+	/* background: transparent; */
+	cursor: pointer;
+}
+
    /* 스티키 노트 */
    
-   ul#stickies li {
+ul#stickies li {
     display: block;
     list-style: none;
     z-index: 1;
@@ -39,48 +138,48 @@ body {
     -ms-transition: all 0.5s ease-in;
     transition: all 0.5s ease-in;
     overflow: hidden;
-   }
+}
    
-   ul#stickies li span.sticky {
-    font-family: Verdana, Helvetica, sans-serif;
+ul#stickies li span.sticky {
+    font-family: "NanumSquare", Verdana, Helvetica, sans-serif;
     font-size: 200%;
-   }
+}
    
    /* 회전 */
-   ul#stickies li:nth-child(even) {
+ul#stickies li:nth-child(even) {
     -webkit-transform: rotate(2deg);
     -moz-transform: rotate(2deg);
     -o-transform: rotate(2deg);
     -ms-transform: rotate(2deg);
     transform: rotate(2deg);
-   }
+}
    
-   ul#stickies li:nth-child(odd) {
+ul#stickies li:nth-child(odd) {
     -webkit-transform: rotate(-1deg);
     -moz-transform: rotate(-1deg);
     -o-transform: rotate(-1deg);
     -ms-transform: rotate(-1deg);
     transform: rotate(-1deg);
-   }
+}
    
-   ul#stickies li:nth-child(3n) {
+ul#stickies li:nth-child(3n) {
     -webkit-transform: rotate(1deg);
     -moz-transform: rotate(1deg);
     -o-transform: rotate(1deg);
     -ms-transform: rotate(1deg);
     transform: rotate(1deg);
-   }
+}
    
-   /* 변형 데모 - 위에 정의한 전환을 이용해서 서서히 변형시킴 */
-   ul#stickies li:hover {
+/* 변형 데모 - 위에 정의한 전환을 이용해서 서서히 변형시킴 */
+ul#stickies li:hover {
     -webkit-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.4);
     -o-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.4);
     
-    -webkit-transform: rotate(0deg) scale(1.25);
-    -moz-transform: rotate(0deg) scale(1.25);
-    -o-transform: rotate(0deg) scale(1.25);
-    -ms-transform: rotate(0deg) scale(1.25);
-    transform: rotate(0deg) scale(1.25);
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    transform: rotate(5deg);
     z-index: 10;
-   }
+}
