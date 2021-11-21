@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
 <script type="text/javascript" src="jquery-3.6.0.js"></script> 
 <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script> --> 
-
+<script src="//code.jquery.com/jquery.min.js"></script>
 </head> 
 <body>
     <!--폼-->
@@ -57,6 +57,50 @@
         }
     </script>
 
+<script>
+    var load = null;
+    var write = null;
+    var modify = null;
+    var del = null;
+
+    $(document).ready(function () {
+        load = function () {
+            $.get('/load', function (data){
+                $(".comment-form").empty();
+                
+                $(data).each(function (i){  // 포문을 돌면서 각 메모를 출력
+                    var id = this._id;
+                    $("comment-form").prepend("<div class='item'></div>");
+                    $("comment-form .item:first").append("<div class='contents " + id + "'>" + this.contents + "</div>");
+                    
+                    var cnt = 0;
+
+                    $("#memo .item:first .modify").click(function(evt) {  // modify 버튼을 눌렀을 때
+                        var contents = $("#memo ." + id).html();
+                        if(cnt==0){
+                            $("#memo ." + id).html("<textarea id='textarea_" + id + "' class='textarea_modify'>" + contents + "</textarea>");
+                            cnt = 1;
+                        }
+                        $("#textarea_" + id).keypress(function(evt){  
+                            if((evt.keyCode || evt.which) == 13){  // 키보드에서 엔터버튼이 눌러졌을 때
+                               if(this.value != "") {
+                                modify(this.value, id);
+                                evt.preventDefault();
+                               }
+                            }
+                        });
+                    });
+                    
+                    $("#memo .item:first .del").click(function(evt) {  // del 버튼이 눌러졌을 때
+                        del(id);
+                    });
+                });
+            });
+        };
+       
+        load();
+    });
+</script>
     <script type="text/javascript" src="note.js"></script> 
 </body> 
 </html>
