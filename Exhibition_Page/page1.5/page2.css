@@ -393,6 +393,9 @@ body::-webkit-scrollbar{
     }
 }
 @media (min-width: 1900px){     /*pc 4(완전 와이드스크린)*/
+    body{
+        background-color: white;
+    }
     .wrapper{
         display: flex;
         position: relative;
