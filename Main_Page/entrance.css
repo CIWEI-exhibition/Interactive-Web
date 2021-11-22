@@ -180,6 +180,7 @@ body::-webkit-scrollbar{
     margin-bottom: 0.7rem;
 }
 
+/* 모달창 크기, 위치 설정 */
 .Modal .ch{
     width: 30%;
     margin: 10% auto auto 35%; /* 15% from the top and centered */
@@ -192,18 +193,15 @@ body::-webkit-scrollbar{
     width: 30%;
     margin: 10% auto auto 35%; /* 15% from the top and centered */
 }
-.Modal .explain{
+.Modal .explain{        /*개인전시 설명문*/
     width: 20%;
     padding: 3rem;
     margin: 15% auto auto 40%;
 }
-.Modal #mc_explain{
-    padding: 2rem;
-}
-
-.Modal #link p:hover{
-    cursor: pointer;
-    color: black;
+.Modal .explain2{       /*굿즈 설명문*/
+    width: 30%;
+    padding: 3rem;
+    margin: 15% auto auto 37%;
 }
 
 @keyframes appear {
@@ -217,6 +215,7 @@ body::-webkit-scrollbar{
     }
 }
 
+/*모달창 내부 글 설정*/
 .modal-content p{
     font-family: 'IBM Plex Sans KR', sans-serif;
     font-size: 1rem;
@@ -238,6 +237,16 @@ body::-webkit-scrollbar{
 .modal-content #explain{
     font-size: 0.8rem;
     color: gray;
+}
+.modal-content #explain2{
+    font-size: 0.8rem;
+    color: gray;
+    padding: 1rem;
+}
+
+.Modal #link p:hover{
+    cursor: pointer;
+    color: black;
 }
 
 /* .btn{
