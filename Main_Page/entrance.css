@@ -176,6 +176,10 @@ body::-webkit-scrollbar{
     animation: appear .8s cubic-bezier(.77,0,.175,1) forwards;                   
 }
 
+.modal-content .top{
+    margin-bottom: 0.7rem;
+}
+
 .Modal .ch{
     width: 30%;
     margin: 10% auto auto 35%; /* 15% from the top and centered */
@@ -217,12 +221,10 @@ body::-webkit-scrollbar{
     font-family: 'IBM Plex Sans KR', sans-serif;
     font-size: 1rem;
     white-space: nowrap;
-    /* color: transparent; */
     margin: 0;
-    /* position: absolute; */
-    /*글자 위치 대충 여기서 조절하면 됨!*/
     top: 0;
     left: 0;
+    text-align: center;
 }
 
 .modal-content #title{
