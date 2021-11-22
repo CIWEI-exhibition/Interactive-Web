@@ -14,6 +14,10 @@ body {
     font-family: 'IBM Plex Sans KR', sans-serif;
     font-size: 100%;
 }
+/*멘트*/
+.explain{
+	text-align: center;
+}
 
 /*모달창*/
 .add-postit{

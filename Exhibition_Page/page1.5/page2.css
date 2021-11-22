@@ -122,7 +122,7 @@ body::-webkit-scrollbar{
 /*스크롤바 없애기 끝*/
 
 /*이미지 배치--> 따로 있는 애들*/
-@media screen and (max-width: 1280px){
+@media (max-width: 1280px){     /*모바일 일단 포함*/
     .wrapper{
         display: flex;
         position: relative;
@@ -212,7 +212,7 @@ body::-webkit-scrollbar{
         margin: 37% 0 0 -2%;
     }
 }
-@media screen and (max-width: 1900px){
+@media (min-width: 1281px) and (max-width: 1440px){     /*pc 2(13인치)*/
     .wrapper{
         display: flex;
         position: relative;
@@ -272,7 +272,7 @@ body::-webkit-scrollbar{
     .wrapper .front_wrapper .subway{
         position: fixed;
         width: 100%;
-        margin: -10% 0 0 0;
+        margin: -7% 0 0 0;
     }
 
     .wrapper .front_wrapper .handle1{
@@ -300,6 +300,189 @@ body::-webkit-scrollbar{
         position: fixed;
         width: 105%;
         margin: 37% 0 0 -2%;
+    }
+}
+@media (min-width: 1440px) and (max-width: 1900px){     /*pc 3(15인치, 데탑)*/
+    .wrapper{
+        display: flex;
+        position: relative;
+        max-width: 400%;
+    }
+
+    .img{
+        position: absolute;
+        height: auto;
+    }
+
+    .wrapper .bg{
+        width: 400%;
+    }
+
+    .wrapper .small_wrapper .bg-3{
+        width: 350%;
+    }
+
+    .wrapper .small_wrapper .bg-shooting{
+        width: 60%;
+        margin: 8% 0 0 25%;
+    }
+
+    .wrapper .small_wrapper .bg-moon{
+        width: 9%;
+        margin: 11% 0 0 40%;
+    }
+    
+    .wrapper .small_wrapper .bg-1{
+        width: 400%;
+    }
+
+    .wrapper .small_wrapper .train{
+        width: 60%;
+        margin: 20.5% 0 0 0;
+    }
+
+    .wrapper .small_wrapper .bg-2{
+        width: 400%;
+        margin: 0 0 0 -5%;
+    }
+
+    .wrapper .small_wrapper .building{
+        width: 400%;
+    }
+    
+    .wrapper .small_wrapper .bg-moonlight{
+        width: 40%;
+        margin: 30% 0 0 20%;
+    }
+
+    .wrapper .small_wrapper .fade-out{
+        width: 400%;
+    }
+
+    .wrapper .front_wrapper .subway{
+        position: fixed;
+        width: 100%;
+        margin: -7% 0 0 0;
+    }
+
+    .wrapper .front_wrapper .handle1{
+        position: fixed;
+        width: 3%;
+        margin: -1% 0 0 19%;
+    }
+    .wrapper .front_wrapper .handle2{
+        position: fixed;
+        width: 3%;
+        margin: -1% 0 0 38%;
+    }
+    .wrapper .front_wrapper .handle3{
+        position: fixed;
+        width: 3%;
+        margin: -1% 0 0 57%;
+    }
+    .wrapper .front_wrapper .handle4{
+        position: fixed;
+        width: 3%;
+        margin: -1% 0 0 76%;
+    }
+
+    .wrapper .front_wrapper .seat{
+        position: fixed;
+        width: 105%;
+        margin: 37% 0 0 -2%;
+    }
+}
+@media (min-width: 1900px){     /*pc 4(완전 와이드스크린)*/
+    /* body{
+        background-color: white;
+    } */
+    .wrapper{
+        display: flex;
+        position: relative;
+        max-width: 400%;
+    }
+
+    .img{
+        position: absolute;
+        height: auto;
+    }
+
+    .wrapper .bg{
+        width: 400%;
+    }
+
+    .wrapper .small_wrapper .bg-3{
+        width: 350%;
+    }
+
+    .wrapper .small_wrapper .bg-shooting{
+        width: 60%;
+        margin: 8% 0 0 25%;
+    }
+
+    .wrapper .small_wrapper .bg-moon{
+        width: 9%;
+        margin: 11% 0 0 40%;
+    }
+    
+    .wrapper .small_wrapper .bg-1{
+        width: 400%;
+    }
+
+    .wrapper .small_wrapper .train{
+        width: 60%;
+        margin: 20.5% 0 0 0;
+    }
+
+    .wrapper .small_wrapper .bg-2{
+        width: 400%;
+        margin: 0 0 0 -5%;
+    }
+
+    .wrapper .small_wrapper .building{
+        width: 400%;
+    }
+    
+    .wrapper .small_wrapper .bg-moonlight{
+        width: 40%;
+        margin: 30% 0 0 20%;
+    }
+
+    .wrapper .small_wrapper .fade-out{
+        width: 400%;
+    }
+
+    .wrapper .front_wrapper .subway{
+        position: fixed;
+        width: 100%;
+        margin: -7% 0 0 0;
+    }
+
+    .wrapper .front_wrapper .handle1{
+        position: fixed;
+        width: 3%;
+        margin: -1% 0 0 19%;
+    }
+    .wrapper .front_wrapper .handle2{
+        position: fixed;
+        width: 3%;
+        margin: -1% 0 0 38%;
+    }
+    .wrapper .front_wrapper .handle3{
+        position: fixed;
+        width: 3%;
+        margin: -1% 0 0 57%;
+    }
+    .wrapper .front_wrapper .handle4{
+        position: fixed;
+        width: 3%;
+        margin: -1% 0 0 76%;
+    }
+
+    .wrapper .front_wrapper .seat{
+        position: fixed;
+        width: 105%;
+        margin: 39% 0 0 -2%;
     }
 }
 

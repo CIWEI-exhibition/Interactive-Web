@@ -170,25 +170,40 @@ body::-webkit-scrollbar{
     background-color: #fefefe;
     padding: 1rem;
     border: 1px solid #888;
-    width: 20%; /* Could be more or less, depending on screen size */  
     border-radius: 30px;     
     justify-content:center; 
     align-items:center;
     animation: appear .8s cubic-bezier(.77,0,.175,1) forwards;                   
 }
 
+.modal-content .top{
+    margin-bottom: 0.7rem;
+}
+
 .Modal .ch{
-    margin: 12% auto auto 40%; /* 15% from the top and centered */
+    width: 30%;
+    margin: 10% auto auto 35%; /* 15% from the top and centered */
 }
 .Modal .yn{
-    margin: 3% auto 5% 40%; /* 15% from the top and centered */
+    width: 20%; /* Could be more or less, depending on screen size */
+    margin: 3% auto 5% 40%; /* 15% from the top and centered */  
 }
 .Modal .jy{
-    margin: 12% auto auto 40%; /* 15% from the top and centered */
+    width: 30%;
+    margin: 10% auto auto 35%; /* 15% from the top and centered */
 }
 .Modal .explain{
+    width: 20%;
     padding: 3rem;
-    margin: 12% auto auto 40%;
+    margin: 15% auto auto 40%;
+}
+.Modal #mc_explain{
+    padding: 2rem;
+}
+
+.Modal #link p:hover{
+    cursor: pointer;
+    color: black;
 }
 
 @keyframes appear {
@@ -206,16 +221,15 @@ body::-webkit-scrollbar{
     font-family: 'IBM Plex Sans KR', sans-serif;
     font-size: 1rem;
     white-space: nowrap;
-    /* color: transparent; */
     margin: 0;
-    /* position: absolute; */
-    /*글자 위치 대충 여기서 조절하면 됨!*/
     top: 0;
     left: 0;
+    text-align: center;
 }
 
 .modal-content #title{
     font-weight: bold;
+    margin-top: 1rem;
 }
 .modal-content #name{
     font-weight: 100;
