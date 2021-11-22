@@ -113,7 +113,7 @@ body::-webkit-scrollbar{
 /*스크롤바 없애기 끝*/
 
 /*그림 배치*/
-@media (min-width:1025px){
+@media screen and (min-width: 1024px){      /* pc */
     .wrapper{
         display: flex;
         position: relative;
