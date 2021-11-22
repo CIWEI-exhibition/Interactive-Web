@@ -17,44 +17,44 @@ body::-webkit-scrollbar{
 }
 
 /* 내부 */
-.section input {
+.section input, .section2 input {
     display: none;
 }
 
-.section input[id="slide"] {
+.section input[id="slide"], .section2 input[id="slide2"] {
     display: none;
 }
 
-.section .slidewrap{
+.section .slidewrap, .section2 .slidewrap2{
     max-width: 100%;
     margin: 0 auto 0 auto;
     overflow: hidden;
 }
 
-.section .slidelist{
+.section .slidelist, .section2 .slidelist2{
     white-space: nowrap;
     font-size: 0;
     padding: 0;
     margin: 0;
 }
 
-.section .slidelist ul{
+.section .slidelist ul, .section2 .slidelist2 ul{
     margin: 0;
 }
 
-.section .slidelist > li{
+.section .slidelist > li, .sectoin2 .slidelist2 > li{
     display: inline-block;
     vertical-align: middle;
     width: 100%;
     transition: all .5s;
 }
 
-.section .slidelist > li > a{
+.section .slidelist > li > a, .section2 .slidelist2 > li > a{
     display: block;
     position: relative;
 }
 
-.section .slidelist label{
+.section .slidelist label, .section2 .slidelist2 label{
     position: absolute;
     z-index: 10;
     top: 50%;
@@ -68,20 +68,28 @@ body::-webkit-scrollbar{
     background: url("memo_goods/left.png") center center / 100% no-repeat;
     margin: 28% 0 0 0;
 }
-
-.section .slidelist #left_2{
-    
+.modal_goods .section2 .slidelsit2 .left2{
+    left: 0;
+    background: url("memo_goods/left.png") center center / 100% no-repeat;
 }
 
 .section .slidelist .right{
     right: 0;
     background: url("memo_goods/right.png") center center / 100% no-repeat;
-
+}
+.modal_goods .section2 .slidelist2 .right2{
+    right: 0;
+    background: url("memo_goods/right.png") center center / 100% no-repeat;
 }
 
 .section [id="slide01"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%);}
 .section [id="slide02"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
 .section [id="slide03"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
+
+.section2 [id="slide2_01"]:checked ~ .slidewrap2 .slidelist2 > li {transform: translateX(0%);}
+.section2 [id="slide2_02"]:checked ~ .slidewrap2 .slidelist2 > li {transform: translateX(-100%);}
+.section2 [id="slide2_03"]:checked ~ .slidewrap2 .slidelist2 > li {transform: translateX(-200%);}
+.section2 [id="slide2_04"]:checked ~ .slidewrap2 .slidelist2 > li {transform: translateX(-300%);}
 
 /*첫번째(개인전시)이미지 배치*/
 .indiv .light{
@@ -151,6 +159,7 @@ body::-webkit-scrollbar{
     position: absolute;
     margin: -35% 0 0 85%;
 }
+
 /*모달*/
 .Modal {
     display: none; /* Hidden by default */
@@ -168,7 +177,7 @@ body::-webkit-scrollbar{
 
 .modal-content {
     background-color: #fefefe;
-    padding: 1rem;
+    padding: 5rem;
     border: 1px solid #888;
     border-radius: 30px;     
     justify-content:center; 
@@ -199,6 +208,12 @@ body::-webkit-scrollbar{
     margin: 15% auto auto 40%;
 }
 .Modal .explain2{       /*굿즈 설명문*/
+    width: 30%;
+    padding: 3rem;
+    margin: 15% auto auto 37%;
+}
+.Modal .modal_goods{
+    /* background-color: white; */
     width: 30%;
     padding: 3rem;
     margin: 15% auto auto 37%;
@@ -374,4 +389,26 @@ body::-webkit-scrollbar{
 .goods .goodsBoard{
     position: absolute;
     margin: -34% 0 0 50%;
+}
+
+
+.modal_goods .diary_wrapper .diary{
+    position: absolute;
+}
+/* .modal_goods .diary_wrapper .diary-reflect{
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
+.modal_goods .calendar_wrapper .calendar{
+    position: absolute;
+}
+
+.modal_goods .postcard_wrapper .postcard{
+    position: absolute;
+}
+
+.modal_goods .cup_wrapper .cup{
+    position: absolute;
 }
