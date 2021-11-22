@@ -88,49 +88,48 @@ body::-webkit-scrollbar{
     position: absolute;
     margin: -50% 0 0 0;
 }
-/*예나*/
-.indiv .mockup .yena .yena_1{
-    position: absolute;
-    margin: -37% 0 0 7%;
-}
-.indiv .mockup .yena .yena_2{
-    position: absolute;
-    margin: -39% 0 0 14%;
-}
-.indiv .mockup .yena .yena_3{
-    position: absolute;
-    margin: -30% 0 0 8%;
-}
-.indiv .mockup .yena .yena_4{
-    position: absolute;
-    margin: -32% 0 0 15%;
-}
-.indiv .mockup .yena .yena_explain{
-    position: absolute;
-    margin: -35% 0 0 24%;
-}
 /*채원*/
 .indiv .mockup .chaewon .chaewon_1{
     position: absolute;
-    margin: -37% 0 0 37%;
+    margin: -37% 0 0 7%;
 }
 .indiv .mockup .chaewon .chaewon_2{
     position: absolute;
-    margin: -39% 0 0 44%;
+    margin: -39% 0 0 14%;
 }
 .indiv .mockup .chaewon .chaewon_3{
     position: absolute;
-    margin: -30% 0 0 38%;
+    margin: -30% 0 0 8%;
 }
 .indiv .mockup .chaewon .chaewon_4{
     position: absolute;
-    margin: -32% 0 0 45%;
+    margin: -32% 0 0 15%;
 }
 .indiv .mockup .chaewon .chaewon_explain{
     position: absolute;
+    margin: -35% 0 0 24%;
+}
+/*예나*/
+.indiv .mockup .yena .yena_1{
+    position: absolute;
+    margin: -37% 0 0 37%;
+}
+.indiv .mockup .yena .yena_2{
+    position: absolute;
+    margin: -39% 0 0 44%;
+}
+.indiv .mockup .yena .yena_3{
+    position: absolute;
+    margin: -30% 0 0 38%;
+}
+.indiv .mockup .yena .yena_4{
+    position: absolute;
+    margin: -32% 0 0 45%;
+}
+.indiv .mockup .yena .yena_explain{
+    position: absolute;
     margin: -35% 0 0 54%;
 }
-
 /*지영*/
 .indiv .mockup .jiyoung .jiyoung_1{
     position: absolute;
@@ -152,6 +151,109 @@ body::-webkit-scrollbar{
     position: absolute;
     margin: -35% 0 0 85%;
 }
+/*모달*/
+.Modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+    z-index:100000000;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 1rem;
+    border: 1px solid #888;
+    width: 20%; /* Could be more or less, depending on screen size */  
+    border-radius: 30px;     
+    justify-content:center; 
+    align-items:center;
+    animation: appear .8s cubic-bezier(.77,0,.175,1) forwards;                   
+}
+
+.Modal .ch{
+    margin: 12% auto auto 40%; /* 15% from the top and centered */
+}
+.Modal .yn{
+    margin: 3% auto 5% 40%; /* 15% from the top and centered */
+}
+.Modal .jy{
+    margin: 12% auto auto 40%; /* 15% from the top and centered */
+}
+.Modal .explain{
+    padding: 3rem;
+    margin: 12% auto auto 40%;
+}
+
+@keyframes appear {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+.modal-content p{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 1rem;
+    white-space: nowrap;
+    /* color: transparent; */
+    margin: 0;
+    /* position: absolute; */
+    /*글자 위치 대충 여기서 조절하면 됨!*/
+    top: 0;
+    left: 0;
+}
+
+.modal-content #title{
+    font-weight: bold;
+}
+.modal-content #name{
+    font-weight: 100;
+    font-size: 0.5rem;
+}
+.modal-content #explain{
+    font-size: 0.8rem;
+    color: gray;
+}
+
+/* .btn{
+    background-color: #b7c4dd;
+    border: 0;
+    outline: none;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px rgb(202, 202, 202), -2px -2px 2px rgb(237, 237, 237);
+    transition: 0.3s;
+    margin: 0% 40% -5% 40%;
+    padding: 5px 10px 5px 21px;
+    text-align: center;
+    cursor: pointer;
+} */
+
+.pop_bt{
+    display: block;
+    font-size: 13pt;
+    text-align: center;
+    margin: 0.5rem auto 0 auto;
+    padding: 0.1rem 3rem 0.1rem 3rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.pop_bt:hover{
+    background-color: gray;
+    color: white;
+}
+
 /*가운데(본전시)이미지 배치*/
 
 .enter .exit .logo{
