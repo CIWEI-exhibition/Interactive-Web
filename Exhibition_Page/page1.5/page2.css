@@ -273,75 +273,81 @@ body::-webkit-scrollbar{
 
 
 /* 채팅창 */
+
 #chat_bottom{
-    position: absolute;
-    margin: 30% 0 0 70%;
+    position: fixed;
+    margin: 42% 0 0 70%;
     opacity: 90%;
 }
 
 #chat_1{
-    position: absolute;
-    margin: -10.8% 0 0 70%;
+
+    margin: 2% 0 0 70%;
     opacity: 90%;
 }
 
 #chat_2{
-    position: absolute;
-    margin: -4.6% 0 0 70%;
+    margin: 8% 0 0 70%;
     opacity: 90%;
 }
 
 #chat_3{
-    position: absolute;
-    margin: 1.7% 0 0 70%;
-    opacity: 90%;
-}
-
-#chat_4{
-    position: absolute;
-    margin: 7.9% 0 0 70%;
-    opacity: 90%;
-}
-
-#chat_5{
-    position: absolute;
     margin: 14% 0 0 70%;
     opacity: 90%;
 }
 
-#chat_6{
-    position: absolute;
+#chat_4{
     margin: 20% 0 0 70%;
     opacity: 90%;
 }
 
+#chat_5{
+    margin: 26% 0 0 70%;
+    opacity: 90%;
+}
+
+#chat_6{
+    margin: 32% 0 0 70%;
+    opacity: 90%;
+}
+
 #my_chat{
-    position: absolute;
-    margin: 26% 0 0 88.5%;
+    margin: 38% 0 0 88.5%;
     opacity: 90%;
 }
 
 #chat_ing{
-    position: absolute;
-    margin: 31% 0 0 72%;
+    
+    margin: 43% 0 0 72%;
 }
 
-채팅 스크롤
-.chat{
-    display: none;
-    position: fixed;
-}
-#show-scene-0 #chat_1 .chat,
-#show-scene-0 #chat_2 .chat,
-#show-scene-0 #chat_3 .chat,
-#show-scene-0 #chat_4 .chat,
-#show-scene-0 #chat_5 .chat,
-#show-scene-0 #chat_6 .chat,
-#show-scene-0 #my_chat .chat,
-#show-scene-0 #chat_ing .chat {
-    display: block;
+/* Scroll Animation (sa, 스크롤 애니메이션)
+section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 0 0 0;
+    margin: 0 0 0 80%;
 }
 
+section div {
+    width: 100%;
+    height: 200px;
+}
+
+.chat {
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+
+.up{
+    transform: translate(0, 100px);
+}
+
+.chat.show {
+    opacity: 1;
+    transform: none;
+} */
 
 /* 페이드 아웃 */
 #full-fade-out{
