@@ -75,6 +75,7 @@ body::-webkit-scrollbar{
     transition: 0.3s;
     margin: 0% 40% -5% 40%;
     padding: 5px 10px 5px 21px;
+    text-align: center;
     cursor: pointer;
 }
 
