@@ -228,7 +228,7 @@ body::-webkit-scrollbar{
         width: 400%;
     }
 
-    .wrapper .small_wrapper .bg-3{
+    /* .wrapper .small_wrapper .bg-3{
         width: 350%;
     }
 
@@ -300,7 +300,7 @@ body::-webkit-scrollbar{
         position: fixed;
         width: 105%;
         margin: 37% 0 0 -2%;
-    }
+    } */
 }
 
 /*손잡이 따로따로 배치*/
