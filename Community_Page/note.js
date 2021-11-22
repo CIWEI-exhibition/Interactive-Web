@@ -3,6 +3,16 @@
  *  
  * 이 버전은 배열을 이용하며 JSON으로 색상을 추가했습니다. 
  */ 
+var sound = new Howl({
+    src: ['sound.wav'],
+    volume: 1.0,
+    autoplay: true,
+    onend : () => {     //오디오가 재생된 다음 실행할 내용
+        console.log('Finished!');
+    }
+});
+    
+sound.play();
 
 window.onload = init; 
 
