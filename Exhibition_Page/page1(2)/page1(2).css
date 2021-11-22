@@ -126,19 +126,19 @@ body::-webkit-scrollbar{
     }
     
     .wrapper .bgSky{
-        width: 500%;
+        width: 511%;
     }
 
     .wrapper .main_wrapper .bgStar1{
-        width: 450%;
+        width: 461%;
     }
 
     .wrapper .main_wrapper .bgStar2{
-        width: 550%;
+        width: 561%;
     }
 
     .wrapper .main_wrapper .bgStar3{
-        width: 500%;
+        width: 511%;
     }
 
     .wrapper .main_wrapper .bgMount1{
@@ -163,7 +163,7 @@ body::-webkit-scrollbar{
 
     .wrapper .main_wrapper .bgGround{
         position: fixed;
-        width: 500%;
+        width: 514%;
         margin: 39% 0 0 0;
     }
 
@@ -183,7 +183,7 @@ body::-webkit-scrollbar{
     }
 
     .wrapper .booth_wrapper .busking{
-        width: 42%;
+        width: 43%;
         margin: 21.7% 0 0 175%;
     }
 
