@@ -268,27 +268,53 @@ body::-webkit-scrollbar{
 
 .enter .art_wrapper .art1{
     position: absolute;
-    margin: -32% 0 0 6%;
+    margin: -32% 0 0 7%;
+}
+
+.enter .art_wrapper .board1{
+    position: absolute;
+    margin: -29% 0 0 20%;
 }
 
 .enter .art_wrapper .art2{
     position: absolute;
-    margin: -32% 0 0 25%;
+    margin: -32% 0 0 25.5%;
+}
+
+.enter .art_wrapper .board2{
+    position: absolute;
+    margin: -29% 0 0 34.5%;
 }
 
 .enter .art_wrapper .art3{
     position: absolute;
-    margin: -32% 0 0 44%;
+    margin: -32% 0 0 40.5%;
+}
+
+.enter .art_wrapper .board3{
+    position: absolute;
+    margin: -29% 0 0 53.5%;
 }
 
 .enter .art_wrapper .art4{
     position: absolute;
-    margin: -32% 0 0 63%;
+    margin: -32% 0 0 59.5%;
 }
+
+.enter .art_wrapper .board4{
+    position: absolute;
+    margin: -29% 0 0 72.5%;
+}
+
 
 .enter .art_wrapper .art5{
     position: absolute;
-    margin: -32% 0 0 82%;
+    margin: -32% 0 0 78%;
+}
+
+.enter .art_wrapper .board5{
+    position: absolute;
+    margin: -29% 0 0 82%;
 }
 
 /* 세번째(게시판&굿즈) 이미지 배치*/
