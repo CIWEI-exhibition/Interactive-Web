@@ -162,8 +162,8 @@ body::-webkit-scrollbar{
     }
 
     .wrapper .small_wrapper .bg-2{
-        width: 400%;
-        margin: 0 0 0 -5%;
+        width: 380%;
+        margin: 6% 0 0 -5%;
     }
 
     .wrapper .small_wrapper .building{
@@ -252,8 +252,8 @@ body::-webkit-scrollbar{
     }
 
     .wrapper .small_wrapper .bg-2{
-        width: 400%;
-        margin: 0 0 0 -5%;
+        width: 380%;
+        margin: 6% 0 0 -5%;
     }
 
     .wrapper .small_wrapper .building{
@@ -342,18 +342,18 @@ body::-webkit-scrollbar{
     }
 
     .wrapper .small_wrapper .bg-2{
-        width: 400%;
-        margin: 0 0 0 -5%;
+        width: 380%;
+        margin: 6% 0 0 -5%;
     }
 
-    .wrapper .small_wrapper .bg-shadow{
+    /* .wrapper .small_wrapper .bg-shadow{
         width: 350%;
         margin: -11% 0 0 15.3%;
-    }
+    } */
 
     .wrapper .small_wrapper .building{
         width: 400%;
-        margin: 0 0 0 -30%;
+        margin: 0 0 0 -40%;
     }
     
     .wrapper .small_wrapper .bg-moonlight{
@@ -441,8 +441,13 @@ body::-webkit-scrollbar{
     }
 
     .wrapper .small_wrapper .bg-2{
-        width: 400%;
-        margin: 0 0 0 -5%;
+        width: 380%;
+        margin: 6% 0 0 -5%;
+    }
+
+    .wrapper .small_wrapper .bg-shadow{
+        width: 350%;
+        margin: -11% 0 0 15.3%;
     }
 
     .wrapper .small_wrapper .building{
