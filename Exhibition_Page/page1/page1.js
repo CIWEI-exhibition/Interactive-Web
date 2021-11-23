@@ -1,11 +1,7 @@
-
-
-
-
 window.onload = function(){
 
     var sound = new Howl({
-        src: ['evening.wav'],
+        src: ['evening.mp3'],
         volume: 1.0,
         autoplay: true,
         loop: true,
