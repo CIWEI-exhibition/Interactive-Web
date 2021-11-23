@@ -1448,10 +1448,10 @@ body::-webkit-scrollbar{
     width: 800px;
 }
 
-#icon_sound {
+/* #icon_sound {
 	position: absolute;
 	margin: 3% 0 0 3%;
 }
 #icon_sound:hover{
 	transform: scale(1.2);
-}
+} */

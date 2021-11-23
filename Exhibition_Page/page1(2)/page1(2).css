@@ -112,13 +112,13 @@ body::-webkit-scrollbar{
 }
 /*스크롤바 없애기 끝*/
 
-#icon_sound {
+/* #icon_sound {
 	position: absolute;
 	margin: 3% 0 0 3%;
 }
 #icon_sound:hover{
 	transform: scale(1.2);
-}
+} */
 
 /*그림 배치*/
 @media (max-width: 1280px){      /* pc */

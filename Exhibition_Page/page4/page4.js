@@ -10,6 +10,18 @@ let bgwater, bgbottom, bgfish1, bgfish2, bgfish3, bgjellyfish, whale2, rock_shad
 
 window.onload = function(){
 
+    var sound = new Howl({
+        src: ['underwater.mp3'],
+        volume: 1,
+        autoplay: true,
+        loop: true,
+        onend : () => {     //오디오가 재생된 다음 실행할 내용
+            console.log('Finished!');
+        }
+    });
+
+    sound.play();
+
     //이미지들 연결
     bgwater = document.getElementById("bg");
     bgbottom = document.getElementById("bg-bottom");
@@ -118,16 +130,3 @@ function close_pop4(flag) {
     $('#Modal4').hide();
 };
 
-function play(){
-    var sound = new Howl({
-        src: ['water.mp3'],
-        volume: 1,
-        autoplay: true,
-        loop: true,
-        onend : () => {     //오디오가 재생된 다음 실행할 내용
-            console.log('Finished!');
-        }
-    });
-
-    sound.play();
-}
