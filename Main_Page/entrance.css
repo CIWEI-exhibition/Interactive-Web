@@ -295,7 +295,7 @@ body::-webkit-scrollbar{
 .Explain {
     width: 50%;
     background-color: #fefefed8;
-    padding: 3% 2% 3% 5%;
+    padding: 3% 2% 3% 8%;
     margin: 8% auto auto 25%;
     border-radius: 30px;     
     justify-content:center; 
@@ -310,25 +310,30 @@ body::-webkit-scrollbar{
     text-align: left;
 }
 .Explain #title{
+    font-family: 'IBM Plex Sans KR', sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
     margin-top: 1.2rem;
 }
 .Explain #subtitle{
+    font-family: 'IBM Plex Sans KR', sans-serif;
     font-weight: bold;
     font-size: 0.9rem;
     color: gray;
 }
 .Explain #script{
+    font-family: 'IBM Plex Sans KR', sans-serif;
     font-size: 0.8rem;
 }
 .Explain #explain{
+    font-family: 'IBM Plex Sans KR', sans-serif;
     font-size: 0.7rem;
     color: gray;
 }
 
 .Explain .pop_bt{
     display: block;
+    font-family: 'IBM Plex Sans KR', sans-serif;
     font-size: 13pt;
     text-align: center;
     margin: 0.5rem auto 0 10rem;
