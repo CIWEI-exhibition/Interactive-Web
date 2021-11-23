@@ -1,4 +1,4 @@
-const config = {
+var config = {
     type: Phaser.AUTO,
     backgroundColor: "#246d9b",
     scene: [GameScene],
@@ -15,6 +15,12 @@ const config = {
     pixelArt: true,
 };
 
-const GAME = new Phaser.Game(config);
-const WIDTH = GAME.config.width;
-const HEIGHT = GAME.config.height;
+var game;
+game = new Phaser.Game(config);
+var WIDTH = game.config.width;
+var HEIGHT = game.config.height;
+
+game.state.add('StartPage',StartPage);
+game.state.add('GameScene',GameScene);
+
+game.state.start('StartPage');
