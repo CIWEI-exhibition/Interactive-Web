@@ -6,6 +6,9 @@
 <title>스티키 노트</title> 
 <link rel="stylesheet" href="note.css">
 
+<!--아이콘-->
+<script src="https://kit.fontawesome.com/3bd70c3cf5.js" crossorigin="anonymous"></script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
@@ -14,7 +17,8 @@
 <script src="//code.jquery.com/jquery.min.js"></script>
 </head> 
 <body>
-    <img src="logo.png" alt="음악 재생" class="sound" id="sound" width="3%" onClick="play();" />
+    <i id="icon_sound" class="far fa-play-circle fa-3x" onClick="play();"></i>
+    <!-- <i id="icon_sound2" class="far fa-stop-circle fa-3x"></i> -->
     <div class="explain">
         <h1>Below The Surface</h1>
         <p>'Below The Surface'는 '속마음'이라는 뜻으로, 나를 비롯한 사람들의 속마음을 들여다볼 수 있는 공간입니다.<br>
@@ -109,6 +113,7 @@
         load();
     });
 </script> -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"></script>   <!--for 음원. internet explorer에서는 적용 안됨-->
     <script type="text/javascript" src="note.js"></script> 
     <script type="text/javascript" src="db.js"></script> 

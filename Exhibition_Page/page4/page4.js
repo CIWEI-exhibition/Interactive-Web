@@ -117,3 +117,17 @@ function close_pop3(flag) {
 function close_pop4(flag) {
     $('#Modal4').hide();
 };
+
+function play(){
+    var sound = new Howl({
+        src: ['water.mp3'],
+        volume: 1,
+        autoplay: true,
+        loop: true,
+        onend : () => {     //오디오가 재생된 다음 실행할 내용
+            console.log('Finished!');
+        }
+    });
+
+    sound.play();
+}
