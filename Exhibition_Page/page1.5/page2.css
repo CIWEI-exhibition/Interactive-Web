@@ -162,12 +162,13 @@ body::-webkit-scrollbar{
     }
 
     .wrapper .small_wrapper .bg-2{
-        width: 400%;
-        margin: 0 0 0 -5%;
+        width: 380%;
+        margin: 6% 0 0 -5%;
     }
 
     .wrapper .small_wrapper .building{
         width: 400%;
+        margin: 0 0 0 -40%;
     }
     
     .wrapper .small_wrapper .bg-moonlight{
@@ -252,12 +253,13 @@ body::-webkit-scrollbar{
     }
 
     .wrapper .small_wrapper .bg-2{
-        width: 400%;
-        margin: 0 0 0 -5%;
+        width: 380%;
+        margin: 6% 0 0 -5%;
     }
 
     .wrapper .small_wrapper .building{
         width: 400%;
+        margin: 0 0 0 -40%;
     }
     
     .wrapper .small_wrapper .bg-moonlight{
@@ -334,6 +336,7 @@ body::-webkit-scrollbar{
     
     .wrapper .small_wrapper .bg-1{
         width: 400%;
+        margin: 13% 0 0 0;
     }
 
     .wrapper .small_wrapper .train{
@@ -342,12 +345,18 @@ body::-webkit-scrollbar{
     }
 
     .wrapper .small_wrapper .bg-2{
-        width: 400%;
-        margin: 0 0 0 -5%;
+        width: 380%;
+        margin: 3.6% 0 0 -5%;
     }
+
+    /* .wrapper .small_wrapper .bg-shadow{
+        width: 350%;
+        margin: -11% 0 0 15.3%;
+    } */
 
     .wrapper .small_wrapper .building{
         width: 400%;
+        margin: 0 0 0 -40%;
     }
     
     .wrapper .small_wrapper .bg-moonlight{
@@ -435,12 +444,18 @@ body::-webkit-scrollbar{
     }
 
     .wrapper .small_wrapper .bg-2{
-        width: 400%;
-        margin: 0 0 0 -5%;
+        width: 380%;
+        margin: 6% 0 0 -5%;
+    }
+
+    .wrapper .small_wrapper .bg-shadow{
+        width: 350%;
+        margin: -11% 0 0 15.3%;
     }
 
     .wrapper .small_wrapper .building{
         width: 400%;
+        margin: 0 0 0 -40%;
     }
     
     .wrapper .small_wrapper .bg-moonlight{
@@ -484,6 +499,11 @@ body::-webkit-scrollbar{
         width: 105%;
         margin: 39% 0 0 -2%;
     }
+
+    /* .wrapper .front_wrapper .fade-out2{
+        width: 400%;
+        margin
+    } */
 }
 
 /*손잡이 따로따로 배치*/
@@ -702,4 +722,9 @@ section div {
     } to{
         transform: rotate(-7deg);
     }
+}
+
+i{
+    position: absolute;
+
 }
