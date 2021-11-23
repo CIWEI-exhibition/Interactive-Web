@@ -204,7 +204,7 @@
                                 </div>
                             </div>
                             <div id="Modal10" class="Modal Modal10">
-                                <div class="modal-content explain">
+                                <div id="mc_explain" class="modal-content explain">
                                     <p id="title">너와 나 지금 이대로</p>
                                     <p id="name">YENA JEON DESIGNER</p>
                                     <p id="explain">시대별 청춘들의 모습을 담아보았습니다.</p>
@@ -285,7 +285,7 @@
                                 </div>
                             </div>
                             <div id="Modal15" class="Modal Modal15">
-                                <div class="modal-content explain">
+                                <div id="mc_explain" class="modal-content explain">
                                     <p id="title">SEASONS: YOUTH</p>
                                     <p id="name">JIYOUNG JUNG DESIGNER</p>
                                     <p id="explain">사계절과 함께하는 푸르른 청춘의 시간들을 담았습니다.</p>
@@ -301,9 +301,6 @@
                                 </div>
                             </div>
                         </div>
-                        
-                        
-                        
                         <label for="slide02" class="right"></label>
                     </a>
                 </li>
@@ -376,20 +373,90 @@
                             </div>
                             <div class="goods">
                                 <img src="memo_goods/comforting me.png" alt="Comforting Me" class="img comfort" id="comfort" width="21.5%" />
-                                <img src="memo_goods/굿즈 소개문.png" alt="굿즈소개문" class="img goodsText" id="goodsText" width="13%" />
-                                <img src="memo_goods/굿즈 전광판.png" alt="굿즈전광판" class="img goodsBoard" id="goodsBoard" width="35%" />
+                                <img src="memo_goods/굿즈 소개문.png" alt="굿즈소개문" class="img goodsText" id="goodsText" width="13%" onClick="open_exgoods();" />
+                                <img src="memo_goods/굿즈 전광판.png" alt="굿즈전광판" class="img goodsBoard" id="goodsBoard" width="35%" onClick="open_goods();" />
                                 
                             </div>
-                            <div id="Modal15" class="Modal Modal15">
-                                <div class="modal-content explain">
-                                    <p id="title">SEASONS: YOUTH</p>
-                                    <p id="name">JIYOUNG JUNG DESIGNER</p>
-                                    <p id="explain">사계절과 함께하는 푸르른 청춘의 시간들을 담았습니다.</p>
-                                    <p id="explain">Time of our youth, in this beautiful season.</p>
+                            <div id="Modal_exgoods" class="Modal Modal_exgoods">
+                                <div class="modal-content explain2">
+                                    <p id="title">Comforting Me</p>
+                                    <!-- <p id="name">JIYOUNG JUNG DESIGNER</p> -->
+                                    <p id="explain">Comforting Me는 aquaurore가 제작한 <b>굿즈 전시</b>입니다.</p>
+                                    <p id="explain">전시가 끝난 후에도 여러분들에게 위로가 되어드리고자 제작했습니다.</p>
+                                                    <!-- 나 자신과 대화하고, 감정을 기록할 수 있는 <b>'굿노트 힐링 다이어리&스티커'</b><br>
+                                                    핸드폰 케이스에 넣고 다닐 수 있는 <b>'미니 달력'</b><br>
+                                                    전시 작품 속 분위기와 상반된 컨셉의 <b>'일러스트 엽서 세트'</b><br>
+                                                    청춘을 응원하는 문구가 담긴 <b>'시리얼 컵'</b>으로 구성되어 있습니다.<br> -->
+                                    <p id="explain">청춘들이 aquaurore 굿즈로 조금이나마 힘을 얻었으면 좋겠습니다.</p>
                          
-                                    <div class="btn" onClick="close_pop15();">    <!--얘는 close 버튼. 모달 창이랑 따로 만들었다!-->
+                                    <div class="btn" onClick="close_exgoods();">    <!--얘는 close 버튼. 모달 창이랑 따로 만들었다!-->
                                         <span class="pop_bt">close</span>
                                     </div>
+                                </div>
+                            </div>
+                            <div id="Modal_goods" class="Modal Modal_goods">
+                                <div class="modal-content modal_goods">
+                                        <!--화면 넘기기-->
+                                        <div class="section2">
+                                            <input type="radio" name="slide2" id="slide2_01" checked>
+                                            <input type="radio" name="slide2" id="slide2_02">
+                                            <input type="radio" name="slide2" id="slide2_03">
+                                            <input type="radio" name="slide2" id="slide2_04">
+
+                                            <div class="slidewrap2">
+                                                <ul class="slidelist2">
+                                                    <li>
+                                                        <a>
+                                                            <label for="slide2_04" class="left2"></label>
+                                                            <div class="diary_wrapper">
+                                                                <img src="memo_goods/goods/ipad.png" alt="다이어리" class="img diary" id="diary" width="100%" />
+                                                                <img src="memo_goods/goods/ipad반사.png" alt="다이어리-반사" class="img diary-reflect" id="diary-reflect" width="100%" />
+                                                                <div class="btn" onClick="close_goods();">    <!--얘는 close 버튼. 모달 창이랑 따로 만들었다!-->
+                                                                    <span class="pop_bt">close</span>
+                                                                </div>
+                                                            </div>
+                                                            <label for="slide2_02" class="right2"></label>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a>
+                                                            <label for="slide2_01" class="left2"></label>
+                                                            <div class="calendar_wrapper">
+                                                                <img src="memo_goods/goods/PHONE.png" alt="미니달력" class="img calendar" id="calendar" width="100%" />
+                                                                <div class="btn" onClick="close_goods();">    <!--얘는 close 버튼. 모달 창이랑 따로 만들었다!-->
+                                                                    <span class="pop_bt">close</span>
+                                                                </div>
+                                                            </div>
+                                                            <label for="slide2_03" class="right2"></label>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a>
+                                                            <label for="slide2_02" class="left2"></label>      <!--3. 굿즈페이지-->
+                                                            <div class="postcard_wrapper">
+                                                                <img src="memo_goods/goods/엽서.png" alt="엽서" class="img postard" id="postcard" width="100%" />
+                                                                <div class="btn" onClick="close_goods();">    <!--얘는 close 버튼. 모달 창이랑 따로 만들었다!-->
+                                                                    <span class="pop_bt">close</span>
+                                                                </div>
+                                                            </div>
+                                                            <label for="slide2_04" class="right2"></label>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a>
+                                                            <label for="slide2_03" class="left2"></label>
+                                                            <div class="cup_wrapper">
+                                                                <img src="memo_goods/goods/CUP.png" alt="컵" class="img cup" id="cup" width="100%" />
+                                                                <div class="btn" onClick="close_goods();">    <!--얘는 close 버튼. 모달 창이랑 따로 만들었다!-->
+                                                                    <span class="pop_bt">close</span>
+                                                                </div>
+                                                            </div>
+                                                            <label for="slide2_01" class="right2"></label>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                 </div>
                             </div>
                         </div>
