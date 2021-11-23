@@ -1,15 +1,25 @@
-window.onload = function(){
-
+function play(){
     var sound = new Howl({
-        src: ['sound/evening.mp3', 'sound/festival.mp3', 'sound/NEW-MORNING.mp3'],
-        volume: 1.0,
+        src: ['total.mp3'],
+        volume: 1,
         autoplay: true,
         loop: true,
         onend : () => {     //오디오가 재생된 다음 실행할 내용
             console.log('Finished!');
         }
     });
+
     sound.play();
+}
+
+var time = 0;
+
+function paused(){
+    sound.pause();
+    time = sound.currentTime();
+}
+
+window.onload = function(){
 
     // 부스 쪽
     var bgSky = document.querySelector(".bgSky");

@@ -43,23 +43,6 @@
     </script>
 </head>
 <body>
-    <!-- <input type="checkbox" id="navbar_menu">
-    <label for="navbar_menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </label>
-    <div class="sidebar">
-        
-        <li><a href="../../Main_Page/index.html">Main</a></li>
-        <li><a href="../../Introduce_Page/index.html">We are</a></li>
-        <li><a href="../../Explain_Exhibition_Page/index.html">This is</a></li>
-        <li><a href="../../Individual_Page/index.html">개인 전시</a></li>
-        <li><a href="../../Community_Page/index.html">Community</a></li>
-        <li><a href="../../Goods_Page/index.html">Goods</a></li>
-        <li><a href="https://www.instagram.com/aquaurore/">
-            <i class="fab fa-instagram"></i></a></li>
-    </div> -->
 
     <div class="wrapper">
         <img src="images/background/bgSky.png" alt="배경-하늘" class="img bgSky" id="bgSky" />
@@ -83,13 +66,15 @@
             <img src="images/booth/busking.png" alt="부스-버스킹" class="img busking" id="busking" />
             <img src="images/booth/ice cream.png" alt="부스-아이스크림" class="img icecream" id="icecream" />
 
-            <a href="../page1/puzzle/puzzle1.html"><img src="images/booth/study.png" alt="부스-스터디" class="img study" id="study" /></a>
+            <a href="../page1/puzzle/puzzle1.html"><img src="images/booth/study.png" alt="부스-스터디" class="img study" id="study" onClick="paused();" /></a>
             <a href="../page1/puzzle/puzzle2.html"><img src="images/booth/love.png" alt="부스-러브" class="img love" id="love" /></a>
             <a href="../page1/puzzle/puzzle3.html"><img src="images/booth/music.png" alt="부스-뮤직" class="img music" id="music" /></a>
             <a href="../page1/puzzle/puzzle4.html"><img src="images/booth/healing.png" alt="부스-힐링" class="img healing" id="healing" /></a>
         </div>
     </div>
         
+    <i id="icon_sound" class="far fa-play-circle fa-3x" onClick="play();"></i>
+
     <script type='text/javascript' src="page1(2).js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"></script>   <!--for 음향. internet explorer에서는 적용 안됨-->
 </body>

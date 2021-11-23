@@ -25,10 +25,12 @@ body::-webkit-scrollbar{
 }
 /*스크롤바 없애기 끝*/
 
-.sound{
-	position: fixed;
-	top: 3%;
-	left: 2%;
+#icon_sound {
+	position: absolute;
+	margin: -2% 0 0 2.5%;
+}
+#icon_sound:hover{
+	transform: scale(1.2);
 }
 
 /*멘트*/
