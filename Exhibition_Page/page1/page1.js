@@ -1,3 +1,17 @@
+
+// var sound = new Howl({
+//     src: ['sound/evening.wav'],
+//     volume: 1.0,
+//     autoplay: true,
+//     loop: true,
+//     onend : () => {     //오디오가 재생된 다음 실행할 내용
+//         console.log('Finished!');
+//     }
+// });
+
+// sound.play();
+
+
 window.onload = function(){
 
     var sky = document.querySelector(".sky");
@@ -22,13 +36,12 @@ window.onload = function(){
         star.style.transform = "translateY("+ -scroll/15 + "px)";            //별이 올라가는것처럼 보이게 함. + 느리게 (별 이미지 추가하면 더 좋을듯)
         star2.style.transform = "translateY("+ -scroll/2 + "px)";
         moon.style.transform = "translateY("+ -scroll/10 + "px)";           //달이 천천히 올라가는 것처럼 보이게 함.
-        shootingStar.style.transform = "translateX("+ -scroll/6 + "px)";    // 별똥별이 오-->왼으로 움직이는 것처럼 보이게 함.
+        shootingStar.style.transform = "translateX("+ scroll/6 + "px)";    // 별똥별이 오-->왼으로 움직이는 것처럼 보이게 함.
     })
 
-    window.addEventListener("scroll", function(event){
-        var scroll2 = this.scrollX;
+    // window.addEventListener("scroll", function(event){
+    //     var scroll2 = this.scrollX;
 
-        bgstar.style.transform = "translateX("+ -scroll2/6 + "px)";
-        bgmountain.style.transform = "translateX("+ -scroll2/3 + "px)";
-    })
+        
+    // })
 }
