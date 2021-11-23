@@ -45,7 +45,6 @@ function open_pop15(flag){
     $('#Modal15').css('display','block');
 };
 
-<<<<<<< HEAD
 //본 전시 소개문
 function open_pop16(flag){
     $('#Modal16').css('display','block');
@@ -61,13 +60,14 @@ function open_pop19(flag){
 };
 function open_pop20(flag){
     $('#Modal20').css('display','block');
-=======
+};
+
+//굿즈 전광판&소개문
 function open_exgoods(flag){
     $('#Modal_exgoods').css('display','block');
 };
 function open_goods(flag){
     $('#Modal_goods').css('display','block');
->>>>>>> 70732510ef620f29eb2f0a3de76df8806bb9b185
 };
   
 // 팝업창 close
@@ -117,7 +117,6 @@ function close_pop15(flag) {
     $('#Modal15').hide();
 };
 
-<<<<<<< HEAD
 //전시 소개문
 function close_pop16(flag) {
     $('#Modal16').hide();
@@ -133,11 +132,12 @@ function close_pop19(flag) {
 };
 function close_pop20(flag) {
     $('#Modal20').hide();
-=======
+};
+
+//굿즈 전광판&소개문
 function close_exgoods(flag){
     $('#Modal_exgoods').hide();
 };
 function close_goods(flag){
     $('#Modal_goods').hide();
->>>>>>> 70732510ef620f29eb2f0a3de76df8806bb9b185
 };
