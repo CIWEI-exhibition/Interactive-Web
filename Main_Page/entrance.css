@@ -173,6 +173,21 @@ body::-webkit-scrollbar{
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
     z-index:100000000;
+    opacity: 90%;
+}
+
+.Art {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+    z-index:100000000;
 }
 
 .modal-content {
@@ -194,11 +209,23 @@ body::-webkit-scrollbar{
     width: 30%;
     margin: 10% auto auto 35%; /* 15% from the top and centered */
 }
+.Art .ch{
+    width: 30%;
+    margin: 10% auto auto 35%; /* 15% from the top and centered */
+}
 .Modal .yn{
     width: 20%; /* Could be more or less, depending on screen size */
     margin: 3% auto 5% 40%; /* 15% from the top and centered */  
 }
+.Art .yn{
+    width: 20%; /* Could be more or less, depending on screen size */
+    margin: 3% auto 5% 40%; /* 15% from the top and centered */  
+}
 .Modal .jy{
+    width: 30%;
+    margin: 10% auto auto 35%; /* 15% from the top and centered */
+}
+.Art .jy{
     width: 30%;
     margin: 10% auto auto 35%; /* 15% from the top and centered */
 }
@@ -269,7 +296,8 @@ body::-webkit-scrollbar{
     width: 50%;
     background-color: #fefefed8;
     padding: 3% 2% 3% 5%;
-    /* border-radius: 30px;      */
+    margin: 8% auto auto 25%;
+    border-radius: 30px;     
     justify-content:center; 
     align-items:center;
     animation: appear .8s cubic-bezier(.77,0,.175,1) forwards;                   
@@ -284,7 +312,7 @@ body::-webkit-scrollbar{
 .Explain #title{
     font-size: 1.2rem;
     font-weight: bold;
-    /* margin-top: 1.2rem; */
+    margin-top: 1.2rem;
 }
 .Explain #subtitle{
     font-weight: bold;
@@ -298,8 +326,21 @@ body::-webkit-scrollbar{
     font-size: 0.7rem;
     color: gray;
 }
-.btn
 
+.Explain .pop_bt{
+    display: block;
+    font-size: 13pt;
+    text-align: center;
+    margin: 0.5rem auto 0 10rem;
+    padding: 0.1rem 3rem 0.1rem 3rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.Explain .pop_bt:hover{
+    background-color: gray;
+    color: white;
+}
 /* .btn{
     background-color: #b7c4dd;
     border: 0;
@@ -313,7 +354,7 @@ body::-webkit-scrollbar{
     cursor: pointer;
 } */
 
-.pop_bt{
+.modal-content .pop_bt{
     display: block;
     font-size: 13pt;
     text-align: center;
@@ -323,7 +364,7 @@ body::-webkit-scrollbar{
     border-radius: 5px;
 }
 
-.pop_bt:hover{
+.modal-content .pop_bt:hover{
     background-color: gray;
     color: white;
 }
