@@ -9,20 +9,21 @@ body::-webkit-scrollbar{
 }
 
 /* 엔딩크레딧 */
-.credit{
+@media (max-width: 1280px){         /*pc*/
+  .credit{
     position: relative;
     min-height: 400px;
-}
+  }
   
-.img{
+  .img{
     position: absolute;
-}
+  }
   
-.credit .bg{
+  .credit .bg{
     margin: auto 0 0 0;
-}
+  }
   
-.small_wrapper .front_wrapper .cd{
+  .small_wrapper .front_wrapper .cd{
     position: absolute;
     margin: 18.95% 0 0 109.3%;
     cursor: pointer;
@@ -32,17 +33,17 @@ body::-webkit-scrollbar{
      -ms-animation: rotate 3s linear infinite;
       -o-animation: rotate 3s linear infinite;
          animation: rotate 3s linear infinite;
-}
+  }
 
-@keyframes rotate{
+  @keyframes rotate{
     100%{
       transform: rotate(360deg);
     }
-}
+  }
 
 
-/* 공지사항 */
-.modal {
+  /* 공지사항 */
+  .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -54,9 +55,9 @@ body::-webkit-scrollbar{
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
     z-index:100000000;
-}
+  }
 
-.modal-content {
+  .modal-content {
     background-color: #fefefe;
     margin: 10% 40% 0 33%; /* 15% from the top and centered */
     padding: 40px;
@@ -64,9 +65,9 @@ body::-webkit-scrollbar{
     width: 30%; /* Could be more or less, depending on screen size */  
     border-radius: 30px;     
     animation: appear .8s cubic-bezier(.77,0,.175,1) forwards;                   
-}
+  }
 
-.btn{
+  .btn{
   display: block;
   font-family: 'IBM Plex Sans KR', sans-serif;
   font-size: 13pt;
@@ -76,6 +77,220 @@ body::-webkit-scrollbar{
   border: 1px solid gray;
   border-radius: 5px;
   cursor: pointer;
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1440px){
+  .credit{
+    position: relative;
+    min-height: 400px;
+  }
+  
+  .img{
+    position: absolute;
+  }
+  
+  .credit .bg{
+    margin: auto 0 0 0;
+  }
+  
+  .small_wrapper .front_wrapper .cd{
+    position: absolute;
+    margin: 18.95% 0 0 109.3%;
+    cursor: pointer;
+    
+    -webkit-animation: rotate 3s linear infinite;
+    -moz-animation: rotate 3s linear infinite;
+     -ms-animation: rotate 3s linear infinite;
+      -o-animation: rotate 3s linear infinite;
+         animation: rotate 3s linear infinite;
+  }
+
+  @keyframes rotate{
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+
+
+  /* 공지사항 */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+    z-index:100000000;
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% 40% 0 33%; /* 15% from the top and centered */
+    padding: 40px;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */  
+    border-radius: 30px;     
+    animation: appear .8s cubic-bezier(.77,0,.175,1) forwards;                   
+  }
+
+  .btn{
+  display: block;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 13pt;
+  text-align: center;
+  margin: 0.5rem 5rem 0 5rem;
+  padding: 0.1rem auto 0.1rem auto;
+  border: 1px solid gray;
+  border-radius: 5px;
+  cursor: pointer;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1900px){     /*pc 3(15인치, 데탑)*/
+  .credit{
+    position: relative;
+    min-height: 300px;
+  }
+  
+  .img{
+    position: absolute;
+  }
+  
+  .credit .bg{
+    margin: auto 0 0 0;
+  }
+  
+  .small_wrapper .front_wrapper .cd{
+    position: absolute;
+    margin: 18.95% 0 0 109.3%;
+    cursor: pointer;
+    
+    -webkit-animation: rotate 3s linear infinite;
+    -moz-animation: rotate 3s linear infinite;
+     -ms-animation: rotate 3s linear infinite;
+      -o-animation: rotate 3s linear infinite;
+         animation: rotate 3s linear infinite;
+  }
+
+  @keyframes rotate{
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+
+
+  /* 공지사항 */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+    z-index:100000000;
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% 40% 0 33%; /* 15% from the top and centered */
+    padding: 40px;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */  
+    border-radius: 30px;     
+    animation: appear .8s cubic-bezier(.77,0,.175,1) forwards;                   
+  }
+
+  .btn{
+  display: block;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 13pt;
+  text-align: center;
+  margin: 0.5rem 5rem 0 5rem;
+  padding: 0.1rem auto 0.1rem auto;
+  border: 1px solid gray;
+  border-radius: 5px;
+  cursor: pointer;
+  }
+}
+
+@media (min-width: 1900px){     /*pc 4(완전 와이드스크린)*/
+  .credit{
+    position: relative;
+    min-height: 400px;
+  }
+  
+  .img{
+    position: absolute;
+  }
+  
+  .credit .bg{
+    margin: auto 0 0 0;
+  }
+  
+  .small_wrapper .front_wrapper .cd{
+    position: absolute;
+    margin: 18.95% 0 0 109.3%;
+    cursor: pointer;
+    
+    -webkit-animation: rotate 3s linear infinite;
+    -moz-animation: rotate 3s linear infinite;
+     -ms-animation: rotate 3s linear infinite;
+      -o-animation: rotate 3s linear infinite;
+         animation: rotate 3s linear infinite;
+  }
+
+  @keyframes rotate{
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+
+
+  /* 공지사항 */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+    z-index:100000000;
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% 40% 0 33%; /* 15% from the top and centered */
+    padding: 40px;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */  
+    border-radius: 30px;     
+    animation: appear .8s cubic-bezier(.77,0,.175,1) forwards;                   
+  }
+
+  .btn{
+  display: block;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 13pt;
+  text-align: center;
+  margin: 0.5rem 5rem 0 5rem;
+  padding: 0.1rem auto 0.1rem auto;
+  border: 1px solid gray;
+  border-radius: 5px;
+  cursor: pointer;
+  }
 }
 
 .btn:hover {
