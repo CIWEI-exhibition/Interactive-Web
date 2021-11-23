@@ -329,10 +329,10 @@ body::-webkit-scrollbar{
 
 @media (min-width: 1440px) and (max-width: 1900px){     /*pc 3(15인치, 데탑)*/
     .Explain {
-        width: 50%;
+        width: 43%;
         background-color: #fefefed8;
-        padding: 3% 2% 3% 8%;
-        margin: 8% auto auto 25%;
+        padding: 3% 2% 3% 7%;
+        margin: 8% auto auto 30%;
         border-radius: 30px;     
         justify-content:center; 
         align-items:center;
