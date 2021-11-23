@@ -67,28 +67,32 @@ body::-webkit-scrollbar{
 }
 
 .btn{
-    background-color: #b7c4dd;
-    border: 0;
-    outline: none;
-    border-radius: 7px;
-    box-shadow: 2px 2px 2px rgb(202, 202, 202), -2px -2px 2px rgb(237, 237, 237);
-    transition: 0.3s;
-    margin: 0% 40% -5% 40%;
-    padding: 5px 10px 5px 21px;
-    text-align: center;
-    cursor: pointer;
+  display: block;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 13pt;
+  text-align: center;
+  margin: 0.5rem 5rem 0 5rem;
+  padding: 0.1rem auto 0.1rem auto;
+  border: 1px solid gray;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .btn:hover {
-    box-shadow: -2px -2px 2px rgb(226, 226, 226), 2px 2px 2px rgb(237, 237, 237);
-    transition: 0.3s;
+  background-color: gray;
+  color: white;
 }
 
 
-p{
-    font-family: 'IBM Plex Sans KR', sans-serif;
-    text-align:center;
-    font-size: 17px;
+.modal-content #title{
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  text-align:center;
+  font-size: 17px;
+}
+.modal-content #explain{
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  text-align:center;
+  font-size: 15px;
 }
 
 .dialog__animate-out{
