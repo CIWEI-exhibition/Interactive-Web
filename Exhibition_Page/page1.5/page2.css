@@ -336,7 +336,7 @@ body::-webkit-scrollbar{
     
     .wrapper .small_wrapper .bg-1{
         width: 400%;
-        margin: 11% 0 0 0;
+        margin: 13% 0 0 0;
     }
 
     .wrapper .small_wrapper .train{
@@ -346,7 +346,7 @@ body::-webkit-scrollbar{
 
     .wrapper .small_wrapper .bg-2{
         width: 380%;
-        margin: 4.7% 0 0 -5%;
+        margin: 3.6% 0 0 -5%;
     }
 
     /* .wrapper .small_wrapper .bg-shadow{
