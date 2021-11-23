@@ -1,8 +1,7 @@
 /* 스크롤 없애기 */
 body{
     -ms-overflow-style: none;
-    /* background-color: #ecede4; */
-    background-color: white;
+    background-color: #ecede4;
 }
 
 body::-webkit-scrollbar{
