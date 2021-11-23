@@ -10,6 +10,18 @@ let scrollTop = 0;
 
 window.onload = function(){
 
+    var sound = new Howl({
+        src: ['subway.mp3'],
+        volume: 1,
+        autoplay: true,
+        loop: true,
+        onend : () => {     //오디오가 재생된 다음 실행할 내용
+            console.log('Finished!');
+        }
+    });
+    
+    sound.play();
+
     //이미지들 연결
     bg = document.getElementById("bg");
     bgFirst = document.getElementById("bg-1");
@@ -164,15 +176,3 @@ $(document).ready(function(){
 
 // window.addEventListener('load', saFunc);
 // window.addEventListener('scroll', saFunc);
-
-var sound = new Howl({
-    src: ['subway.mp3'],
-    volume: 1,
-    autoplay: true,
-    loop: true,
-    onend : () => {     //오디오가 재생된 다음 실행할 내용
-        console.log('Finished!');
-    }
-});
-
-sound.play();
