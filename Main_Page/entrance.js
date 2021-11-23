@@ -44,6 +44,23 @@ function open_pop14(flag){
 function open_pop15(flag){
     $('#Modal15').css('display','block');
 };
+
+//본 전시 소개문
+function open_pop16(flag){
+    $('#Modal16').css('display','block');
+};
+function open_pop17(flag){
+    $('#Modal17').css('display','block');
+};
+function open_pop18(flag){
+    $('#Modal18').css('display','block');
+};
+function open_pop19(flag){
+    $('#Modal19').css('display','block');
+};
+function open_pop20(flag){
+    $('#Modal20').css('display','block');
+};
   
 // 팝업창 close
 function close_pop1(flag) {
@@ -90,4 +107,21 @@ function close_pop14(flag) {
 };
 function close_pop15(flag) {
     $('#Modal15').hide();
+};
+
+//전시 소개문
+function close_pop16(flag) {
+    $('#Modal16').hide();
+};
+function close_pop17(flag) {
+    $('#Modal17').hide();
+};
+function close_pop18(flag) {
+    $('#Modal18').hide();
+};
+function close_pop19(flag) {
+    $('#Modal19').hide();
+};
+function close_pop20(flag) {
+    $('#Modal20').hide();
 };

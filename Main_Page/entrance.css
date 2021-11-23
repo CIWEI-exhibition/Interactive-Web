@@ -240,6 +240,42 @@ body::-webkit-scrollbar{
     color: gray;
 }
 
+/* 전시 소개 */
+.Explain {
+    width: 50%;
+    background-color: #fefefed8;
+    padding: 3% 2% 3% 5%;
+    /* border-radius: 30px;      */
+    justify-content:center; 
+    align-items:center;
+    animation: appear .8s cubic-bezier(.77,0,.175,1) forwards;                   
+}
+.Explain .p{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 1rem;
+    white-space: nowrap;
+    margin: 3px;
+    text-align: left;
+}
+.Explain #title{
+    font-size: 1.2rem;
+    font-weight: bold;
+    /* margin-top: 1.2rem; */
+}
+.Explain #subtitle{
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: gray;
+}
+.Explain #script{
+    font-size: 0.8rem;
+}
+.Explain #explain{
+    font-size: 0.7rem;
+    color: gray;
+}
+.btn
+
 /* .btn{
     background-color: #b7c4dd;
     border: 0;
@@ -287,48 +323,48 @@ body::-webkit-scrollbar{
 
 .enter .art_wrapper .board1{
     position: absolute;
-    margin: -29% 0 0 20%;
+    margin: -29% 0 0 19%;
 }
 
 .enter .art_wrapper .art2{
     position: absolute;
-    margin: -32% 0 0 25.5%;
+    margin: -32% 0 0 25%;
 }
 
 .enter .art_wrapper .board2{
     position: absolute;
-    margin: -29% 0 0 34.5%;
+    margin: -29% 0 0 37%;
 }
 
 .enter .art_wrapper .art3{
     position: absolute;
-    margin: -32% 0 0 40.5%;
+    margin: -32% 0 0 43%;
 }
 
 .enter .art_wrapper .board3{
     position: absolute;
-    margin: -29% 0 0 53.5%;
+    margin: -29% 0 0 55%;
 }
 
 .enter .art_wrapper .art4{
     position: absolute;
-    margin: -32% 0 0 59.5%;
+    margin: -32% 0 0 61%;
 }
 
 .enter .art_wrapper .board4{
     position: absolute;
-    margin: -29% 0 0 72.5%;
+    margin: -29% 0 0 73%;
 }
 
 
 .enter .art_wrapper .art5{
     position: absolute;
-    margin: -32% 0 0 78%;
+    margin: -32% 0 0 79%;
 }
 
 .enter .art_wrapper .board5{
     position: absolute;
-    margin: -29% 0 0 82%;
+    margin: -29% 0 0 91%;
 }
 
 /* 세번째(게시판&굿즈) 이미지 배치*/
