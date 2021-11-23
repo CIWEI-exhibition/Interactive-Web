@@ -1,7 +1,8 @@
 /* 스크롤 없애기 */
 body{
     -ms-overflow-style: none;
-    background-color: #ecede4;
+    /* background-color: #ecede4; */
+    background-color: white;
 }
 
 body::-webkit-scrollbar{
@@ -20,10 +21,12 @@ body::-webkit-scrollbar{
   }
   
   .credit .bg{
+    width: 135%;
     margin: auto 0 0 0;
   }
   
   .small_wrapper .front_wrapper .cd{
+    width: 9.4%;
     position: absolute;
     margin: 18.95% 0 0 109.3%;
     cursor: pointer;
@@ -91,10 +94,12 @@ body::-webkit-scrollbar{
   }
   
   .credit .bg{
+    width: 135%;
     margin: auto 0 0 0;
   }
   
   .small_wrapper .front_wrapper .cd{
+    width: 9.4%;
     position: absolute;
     margin: 18.95% 0 0 109.3%;
     cursor: pointer;
@@ -154,20 +159,23 @@ body::-webkit-scrollbar{
 @media (min-width: 1440px) and (max-width: 1900px){     /*pc 3(15인치, 데탑)*/
   .credit{
     position: relative;
-    min-height: 300px;
+    max-width: 100%;
   }
   
   .img{
     position: absolute;
+    height: auto;
   }
   
   .credit .bg{
+    width: 133.5%;
     margin: auto 0 0 0;
   }
   
   .small_wrapper .front_wrapper .cd{
+    width: 9.2%;
     position: absolute;
-    margin: 18.95% 0 0 109.3%;
+    margin: 18.95% 0 0 108.2%;
     cursor: pointer;
     
     -webkit-animation: rotate 3s linear infinite;
@@ -233,10 +241,12 @@ body::-webkit-scrollbar{
   }
   
   .credit .bg{
+    width: 135%;
     margin: auto 0 0 0;
   }
   
   .small_wrapper .front_wrapper .cd{
+    width: 9.4%;
     position: absolute;
     margin: 18.95% 0 0 109.3%;
     cursor: pointer;
