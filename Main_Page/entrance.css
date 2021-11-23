@@ -296,7 +296,7 @@ body::-webkit-scrollbar{
     width: 50%;
     background-color: #fefefed8;
     padding: 3% 2% 3% 8%;
-    margin: 8% auto auto 25%;
+    margin: auto auto auto 28%;
     border-radius: 30px;     
     justify-content:center; 
     align-items:center;
@@ -306,6 +306,7 @@ body::-webkit-scrollbar{
     font-family: 'IBM Plex Sans KR', sans-serif;
     font-size: 1rem;
     white-space: nowrap;
+    width: 100%;
     margin: 3px;
     text-align: left;
 }
@@ -336,8 +337,9 @@ body::-webkit-scrollbar{
     font-family: 'IBM Plex Sans KR', sans-serif;
     font-size: 13pt;
     text-align: center;
-    margin: 0.5rem auto 0 10rem;
-    padding: 0.1rem 3rem 0.1rem 3rem;
+    /* margin: 0.5rem 0 0 -100%;  */
+    padding: 0.2px;
+    width: 100%;
     border: 1px solid gray;
     border-radius: 5px;
 }
@@ -345,6 +347,11 @@ body::-webkit-scrollbar{
 .Explain .pop_bt:hover{
     background-color: gray;
     color: white;
+}
+
+.btn{
+    margin: auto auto auto 28%;
+    width: 30%;
 }
 /* .btn{
     background-color: #b7c4dd;
