@@ -35,7 +35,7 @@ class GameScene extends Phaser.Scene{
         });
 
         //20분
-        this.player = this.physics.add.sprite(200, HEIGHT-280);
+        this.player = this.physics.add.sprite(200, HEIGHT-300);
         this.player.body.setSize(100, 300);   //충돌영역 지정
         this.player.play("run");
 
@@ -47,12 +47,12 @@ class GameScene extends Phaser.Scene{
         
         //30분
         this.input.on('pointerdown', function(pointer){
-            if(this.player.y < HEIGHT-280) 
+            if(this.player.y < HEIGHT-300) 
                 return;
             this.tweens.add({
                 targets: this.player,
                 y: this.player.y-400,    //점프높이
-                duration: 350,      //점프기간(ms)
+                duration: 400,      //점프기간(ms)
                 yoyo: true,
             });
         }.bind(this));
@@ -75,7 +75,7 @@ class GameScene extends Phaser.Scene{
         this.tweens.add({
             targets: book3,
             x: 0,
-            duration: 700,
+            duration: 1000,
             onComplete: function(tween, targets){
                 book3.destroy();
             }.bind(this)

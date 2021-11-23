@@ -102,3 +102,8 @@ input[id="navbar_menu"]:checked + label + div {
 
 /* 여기까지가 sidebar */
 /* 아래부터가 4페이지 시작! */
+
+/* .bg{
+    position: fixed;
+    margin: 10% 0 0 10%;
+} */
