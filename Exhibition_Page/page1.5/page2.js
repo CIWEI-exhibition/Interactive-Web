@@ -14,14 +14,14 @@ window.onload = function(){
     bg = document.getElementById("bg");
     bgFirst = document.getElementById("bg-1");
     bgSecond = document.getElementById("bg-2");
-    bgStar = document.getElementById("bg-3(star)");
+    bgStar = document.getElementById("bg-3");
+    bgShadow = document.getElementById("bg-shadow");
     bgShootingStar = document.getElementById("bg-shooting");
-    bgMoon = document.getElementById("bg-moon"); //배경 중 유일하게 움직이지 않도록
+    bgMoon = document.getElementById("bg-moon");
     bgMoonlight = document.getElementById("bg-moonlight");
 
     Building = document.getElementById("building");
     Train = document.getElementById("train");
-    Pillars = document.getElementById("pillars");
     Fadeout = document.getElementById("fade-out");
 
     Subway = document.getElementById("subway");
@@ -36,6 +36,7 @@ window.onload = function(){
         bgStar.style.transform = "translateX("+ -scroll/10 + "px)";
         bgFirst.style.transform = "translateX("+ -scroll/5 + "px)";
         bgSecond.style.transform = "translateX("+ -scroll/4 + "px)";
+        bgShadow.style.transform = "translateX("+ -scroll/4 + "px)";
         bgMoon.style.transform = "translateX("+ scroll/2 + "px)";
         bgMoonlight.style.transform = "translateX("+ scroll/2 + "px)";
 
@@ -123,10 +124,10 @@ $(document).ready(function(){
 })
 
 //손잡이 애니메이션(버전2)
-function scrollRotate(){
-    let image = getElementById("subway-handle1");
-    image.style.transform = "rotate(" + window.pageYOffset/2 + "deg)";
-}
+// function scrollRotate(){
+//     let image = getElementById("subway-handle1");
+//     image.style.transform = "rotate(" + window.pageYOffset/2 + "deg)";
+// }
 
 //-------------------------------------------------------------------------
 //채팅창 스크롤

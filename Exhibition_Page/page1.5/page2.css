@@ -346,8 +346,14 @@ body::-webkit-scrollbar{
         margin: 0 0 0 -5%;
     }
 
+    .wrapper .small_wrapper .bg-shadow{
+        width: 350%;
+        margin: -11% 0 0 15.3%;
+    }
+
     .wrapper .small_wrapper .building{
         width: 400%;
+        margin: 0 0 0 -30%;
     }
     
     .wrapper .small_wrapper .bg-moonlight{
