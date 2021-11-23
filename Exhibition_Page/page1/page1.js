@@ -1,18 +1,20 @@
 
-// var sound = new Howl({
-//     src: ['sound/evening.wav'],
-//     volume: 1.0,
-//     autoplay: true,
-//     loop: true,
-//     onend : () => {     //오디오가 재생된 다음 실행할 내용
-//         console.log('Finished!');
-//     }
-// });
 
-// sound.play();
 
 
 window.onload = function(){
+
+    var sound = new Howl({
+        src: ['evening.wav'],
+        volume: 1.0,
+        autoplay: true,
+        loop: true,
+        onend : () => {     //오디오가 재생된 다음 실행할 내용
+            console.log('Finished!');
+        }
+    });
+    
+    sound.play();
 
     var sky = document.querySelector(".sky");
     var star = document.querySelector(".star");
