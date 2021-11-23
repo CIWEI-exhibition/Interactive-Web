@@ -9,10 +9,8 @@ html{
 body{
     margin: 0;
     padding: 0; 
-    font-family: 'Baloo Chettan 2', cursive;
 }
 
-/* 여기까지가 sidebar */
 
 /* 스크롤 없애기 */
 body{
@@ -30,7 +28,7 @@ body::-webkit-scrollbar{
 
 .img{
     position: absolute;
-    top: 280px;
+    top: 0;
     left: 0;
 }
 
@@ -47,7 +45,7 @@ body::-webkit-scrollbar{
 
 #fish{
     position: absolute;
-    top: 15em;
+    top: 0em;
     left: -55em;
 }
 
@@ -56,23 +54,23 @@ body::-webkit-scrollbar{
 }
 
 #whale2{
-    top: -10em;
+    top: 0em;
     left: -17em;
 }
 
 #whale{
-    top: -10em;
+    top: 0em;
     left: 45em;
 }
 
 #rock1{
     position: absolute;
-    top: 17.5em;
+    top: 0em;
     left: 0em;
 }
 
 #rock{
-    top: 17em;
+    top: 0em;
     left: 0em;
 }
 
