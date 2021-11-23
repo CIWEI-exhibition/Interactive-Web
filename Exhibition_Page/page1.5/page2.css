@@ -498,6 +498,11 @@ body::-webkit-scrollbar{
         width: 105%;
         margin: 39% 0 0 -2%;
     }
+
+    /* .wrapper .front_wrapper .fade-out2{
+        width: 400%;
+        margin
+    } */
 }
 
 /*손잡이 따로따로 배치*/
@@ -716,4 +721,9 @@ section div {
     } to{
         transform: rotate(-7deg);
     }
+}
+
+i{
+    position: absolute;
+
 }
