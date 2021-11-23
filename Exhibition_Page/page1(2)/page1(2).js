@@ -45,3 +45,16 @@ window.onload = function(){
         bgMount4.style.transform = "translateX("+ -scroll2/3 + "px)";
     })
 }
+
+function openPuzzle1(){
+    window.open("../page1/puzzle/puzzle1.html","Study","width=1250px, height=470px");
+}
+function openPuzzle2(){
+    window.open("../page1/puzzle/puzzle2.html","Love","width=1250px, height=470px");
+}
+function openPuzzle3(){
+    window.open("../page1/puzzle/puzzle3.html","Study","width=1250px, height=470px");
+}
+function openPuzzle4(){
+    window.open("../page1/puzzle/puzzle4.html","Healing","width=1250px, height=470px");
+}
