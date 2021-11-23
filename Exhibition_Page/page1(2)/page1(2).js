@@ -11,13 +11,6 @@ var sound = new Howl({
 
 sound.play();
 
-var time = 0;
-
-function paused(){
-    sound.pause();
-    time = sound.currentTime();
-}
-
 window.onload = function(){
 
     // 부스 쪽
