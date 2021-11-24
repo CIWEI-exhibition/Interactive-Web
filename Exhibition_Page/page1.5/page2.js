@@ -142,37 +142,29 @@ $(document).ready(function(){
 // }
 
 //-------------------------------------------------------------------------
-//채팅창 스크롤
-// Scroll Animation (sa, 스크롤 애니메이션)
-// const saDefaultMargin = 300;
-// let saTriggerMargin = 0;
-// let saTriggerHeight = 0;
-// const saElementList = document.querySelectorAll('.chat');
+//채팅창 애니메이션
+var typingBool = false; 
+var typingIdx=0; 
 
-// const saFunc = function() {
-//     for (const element of saElementList) {
-//         if (!element.classList.contains('show')) {
-//             if (element.dataset.saMargin) {
-//                 saTriggerMargin = parseInt(element.dataset.saMargin);
-//             } else {
-//                 saTriggerMargin = saDefaultMargin;
-//             }
+// 타이핑될 텍스트를 가져온다 
+var typingTxt = $(".typing-txt").text(); 
 
-//             if (element.dataset.saTrigger) {
-//                 saTriggerHeight = document.querySelector(element.dataset.saTrigger).getBoundingClientRect().top + saTriggerMargin;
-//             } else {
-//                 saTriggerHeight = element.getBoundingClientRect().top + saTriggerMargin;
-//             }
+typingTxt=typingTxt.split(""); // 한글자씩 자른다. 
 
-//             if (window.innerHeight > saTriggerHeight) {
-//                 let delay = (element.dataset.saDelay) ? element.dataset.saDelay : 0;
-//                 setTimeout(function() {
-//                     element.classList.add('show');
-//                 }, delay);
-//             }
-//         }
-//     }
-// }
-
-// window.addEventListener('load', saFunc);
-// window.addEventListener('scroll', saFunc);
+if(typingBool==false){ 
+  // 타이핑이 진행되지 않았다면 
+   typingBool=true;     
+   var tyInt = setInterval(typing,100); // 반복동작 
+} 
+     
+function typing(){ 
+  if(typingIdx<typingTxt.length){ 
+    // 타이핑될 텍스트 길이만큼 반복 
+    $(".typing").append(typingTxt[typingIdx]);
+    // 한글자씩 이어준다. 
+    typingIdx++; 
+   } else{ 
+     //끝나면 반복종료 
+    clearInterval(tyInt); 
+   } 
+}  
