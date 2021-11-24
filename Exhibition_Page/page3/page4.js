@@ -1,6 +1,6 @@
 window.onload = function(){
     var sound = new Howl({
-        src: ['asset/audio/water2.mp3'],
+        src: ['underwater.mp3'],
         volume: 1,
         autoplay: true,
         loop: true,
