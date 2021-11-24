@@ -14,8 +14,8 @@ class GameScene extends Phaser.Scene{
         this.load.image("start", "asset/images/Ment/MentStart.png");
         this.load.image("tap", "asset/images/Ment/MentTap.png");
         this.load.image("over", "asset/images/Ment/MentGameover.png");
-        this.load.audio("jump", "asset/audio/jump.mp3");
-        this.load.audio("hit", "asset/audio/hit.mp3");
+        this.load.audio("jump", "asset/audio/jump3.wav");
+        this.load.audio("hit", "asset/audio/001_뽁.wav");
     }
 
     create(){       //17분
@@ -27,7 +27,8 @@ class GameScene extends Phaser.Scene{
         this.bg1 = this.add.tileSprite(0, HEIGHT-1080, WIDTH, 1920, "bg-1").setOrigin(0, 0);
         this.jelly = this.add.tileSprite(0, HEIGHT-1080, WIDTH, 1920, "jelly").setOrigin(0, 0);
         this.bg4 = this.add.tileSprite(0, HEIGHT-220, WIDTH, 1920, "bg-4").setOrigin(0, 0);
-        
+        this.scoreText = this.add.text(5, 5, 'Points: 0', { font: '24px Arial', fill: '#0095DD' });     //점수추가
+        this.score = 0;
 
         this.anims.create({     //19~20분
             key: "run",
@@ -83,6 +84,8 @@ class GameScene extends Phaser.Scene{
             duration: 1000,
             onComplete: function(tween, targets){
                 book3.destroy();
+                this.score += 10;
+                this.scoreText.setText('Points: '+this.score);
             }.bind(this)
         })
     }
