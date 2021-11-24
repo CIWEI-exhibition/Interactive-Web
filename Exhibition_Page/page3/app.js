@@ -1,4 +1,4 @@
-var config = {
+const config = {
     type: Phaser.AUTO,
     backgroundColor: "#246d9b",
     scene: [GameScene],
@@ -15,8 +15,7 @@ var config = {
     pixelArt: true,
 };
 
-var game;
-game = new Phaser.Game(config);
+var game = new Phaser.Game(config);
 var WIDTH = game.config.width;
 var HEIGHT = game.config.height;
 

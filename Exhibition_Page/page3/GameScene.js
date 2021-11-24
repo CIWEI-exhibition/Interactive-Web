@@ -14,6 +14,8 @@ class GameScene extends Phaser.Scene{
         this.load.image("start", "asset/images/Ment/MentStart.png");
         this.load.image("tap", "asset/images/Ment/MentTap.png");
         this.load.image("over", "asset/images/Ment/MentGameover.png");
+        this.load.audio("jump", "asset/audio/jump.mp3");
+        this.load.audio("hit", "asset/audio/hit.mp3");
     }
 
     create(){       //17분
@@ -46,7 +48,10 @@ class GameScene extends Phaser.Scene{
             callback: this.onTimerEvent, callbackScope: this, loop: true });
         
         //30분
+        // gameState.Sound = this.sound.add("jump");
+
         this.input.on('pointerdown', function(pointer){
+            this.sound.add("jump").play();
             if(this.player.y < HEIGHT-300) 
                 return;
             this.tweens.add({
@@ -83,6 +88,7 @@ class GameScene extends Phaser.Scene{
     }
 
     hitBook3Player(){
+        this.sound.add("hit").play();
         alert("Game Over!");
         this.scene.restart();
     }
