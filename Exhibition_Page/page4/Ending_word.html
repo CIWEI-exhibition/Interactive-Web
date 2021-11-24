@@ -147,6 +147,21 @@
             window.addEventListener('load', saFunc);
             window.addEventListener('scroll', saFunc);
         </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"></script>   <!--for 음원. internet explorer에서는 적용 안됨-->
+    <script>
+        window.onload = function(){
+            var sound = new Howl({
+                src: ['지나갈거야.mp3'],
+                volume: 1,
+                autoplay: true,
+                loop: true,
+                onend : () => {     //오디오가 재생된 다음 실행할 내용
+                    console.log('Finished!');
+                }
+            });
+        }
+    </script>
     </body>
 </html>
 

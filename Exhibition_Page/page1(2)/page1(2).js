@@ -2,7 +2,7 @@
 window.onload = function(){
 
     var sound = new Howl({
-        src: ['total.mp3'],
+        src: ['festival_last.mp3'],
         volume: 1,
         autoplay: true,
         loop: true,
