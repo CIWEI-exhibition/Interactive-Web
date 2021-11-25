@@ -8,17 +8,7 @@ let my = 0;
 let speed = 0.03;
 let scrollTop = 0;
 
-var sound2 = new Howl({
-    src: ['messenger_last.mp3'],
-    volume: 1,
-    autoplay: true,
-    onend : () => {     //오디오가 재생된 다음 실행할 내용
-        console.log('Finished!');
-    }
-});
-function messengerSound(){
-    sound2.play();
-}
+
 
 window.onload = function(){
 
@@ -33,10 +23,17 @@ window.onload = function(){
     });
     sound.play();
 
-    if(chat1.style.opacity == 1){
-        messengerSound();
+    var sound2 = new Howl({
+        src: ['messenger_last.mp3'],
+        volume: 1,
+        autoplay: true,
+        onend : () => {     //오디오가 재생된 다음 실행할 내용
+            console.log('Finished!');
+        }
+    });
+    function messengerSound(){
+        sound2.play();
     }
-    
 
     //이미지들 연결
     bg = document.getElementById("bg");
