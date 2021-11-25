@@ -475,8 +475,8 @@
                             <div class="goods">
                                 <img src="memo_goods/comforting me.png" alt="Comforting Me" class="img comfort" id="comfort" width="21.5%" />
                                 <img src="memo_goods/굿즈 소개문.png" alt="굿즈소개문" class="img goodsText" id="goodsText" width="13%" onClick="open_exgoods();" style="cursor: pointer;"/>
-                                <img src="memo_goods/굿즈 전광판.png" alt="굿즈전광판" class="img goodsBoard" id="goodsBoard" width="35%" onClick="open_goods();" style="cursor: pointer;"/>
-                                
+                                <img src="memo_goods/굿즈 전광판.png" alt="굿즈전광판" class="img goodsBoard" id="goodsBoard" width="35%" onClick="open_goods1();" style="cursor: pointer;"/>
+   
                             </div>
                             <div id="Modal_exgoods" class="Modal Modal_exgoods">
                                 <div class="modal-content explain2">
@@ -490,84 +490,97 @@
                                                     청춘을 응원하는 문구가 담긴 <b>'시리얼 컵'</b>으로 구성되어 있습니다.<br> -->
                                     <p id="explain">청춘들이 aquaurore 굿즈로 조금이나마 힘을 얻었으면 좋겠습니다.</p>
                          
-                                    <div class="btn" onClick="close_exgoods();">    <!--얘는 close 버튼. 모달 창이랑 따로 만들었다!-->
+                                    <div class="btn" onClick="close_exgoods();">
                                         <span class="pop_bt">close</span>
                                     </div>
                                 </div>
                             </div>
-                            <div id="Modal_goods" class="Modal Modal_goods">
-                                <div class="modal-content modal_goods">
-                                        <!--화면 넘기기-->
-                                        <div class="section2">
-                                            <input type="radio" name="slide2" id="slide2_01" checked>
-                                            <input type="radio" name="slide2" id="slide2_02">
-                                            <input type="radio" name="slide2" id="slide2_03">
-                                            <input type="radio" name="slide2" id="slide2_04">
-
-                                            <div class="slidewrap2">
-                                                <ul class="slidelist2">
-                                                    <li>
-                                                        <a>
-                                                            <label for="slide2_04" class="left2"></label>
-                                                            <div class="diary_wrapper">
-                                                                <img src="memo_goods/goods/ipad.png" alt="다이어리" class="img diary" id="diary" width="100%" />
-                                                                <img src="memo_goods/goods/ipad반사.png" alt="다이어리-반사" class="img diary-reflect" id="diary-reflect" width="100%" />
-                                                                <div class="btn" onClick="close_goods();">    <!--얘는 close 버튼. 모달 창이랑 따로 만들었다!-->
-                                                                    <span class="pop_bt">close</span>
-                                                                </div>
-                                                            </div>
-                                                            <label for="slide2_02" class="right2"></label>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a>
-                                                            <label for="slide2_01" class="left2"></label>
-                                                            <div class="calendar_wrapper">
-                                                                <img src="memo_goods/goods/PHONE.png" alt="미니달력" class="img calendar" id="calendar" width="100%" />
-                                                                <div class="btn" onClick="close_goods();">    <!--얘는 close 버튼. 모달 창이랑 따로 만들었다!-->
-                                                                    <span class="pop_bt">close</span>
-                                                                </div>
-                                                            </div>
-                                                            <label for="slide2_03" class="right2"></label>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a>
-                                                            <label for="slide2_02" class="left2"></label>      <!--3. 굿즈페이지-->
-                                                            <div class="postcard_wrapper">
-                                                                <img src="memo_goods/goods/엽서.png" alt="엽서" class="img postard" id="postcard" width="100%" />
-                                                                <div class="btn" onClick="close_goods();">    <!--얘는 close 버튼. 모달 창이랑 따로 만들었다!-->
-                                                                    <span class="pop_bt">close</span>
-                                                                </div>
-                                                            </div>
-                                                            <label for="slide2_04" class="right2"></label>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a>
-                                                            <label for="slide2_03" class="left2"></label>
-                                                            <div class="cup_wrapper">
-                                                                <img src="memo_goods/goods/CUP.png" alt="컵" class="img cup" id="cup" width="100%" />
-                                                                <div class="btn" onClick="close_goods();">    <!--얘는 close 버튼. 모달 창이랑 따로 만들었다!-->
-                                                                    <span class="pop_bt">close</span>
-                                                                </div>
-                                                            </div>
-                                                            <label for="slide2_01" class="right2"></label>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
+                            
+                            <!--굿즈 전광판 모달창-->
+                            <div id="Modal_goods1" class="Modal Modal1">
+                                <img src="memo_goods/left.png" alt="왼화살표" class="img left" id="left" width="5%" onClick="open_goods4();" />
+                                <div class="modal-content ch">
+                                    <div class="top">
+                                        <p id="title">굿노트 힐링 다이어리&스티커</p>
+                                        <p id="name">나 자신과 대화하고, 감정을 기록할 수 있는 <b>'굿노트 힐링 다이어리&스티커'</b></p>
+                                    </div>
+                                    <div class="image">
+                                        <img src="memo_goods/goods/ipad반사.png" alt="다이어리반사" class="img diary_reflect" id="diary_reflect" />
+                                        <img src="memo_goods/goods/ipad.png" alt="다이어리" class="img diary" id="diary" width="100%" />   
+                                    </div>
+                                    <div class="bottom">
+                                        <a id="link" href="../Goods_Page/index.html"><p id="explain"><p>상세페이지 링크</p></a>
+                                        <a id="link" href="https://open.kakao.com/o/stbl1WKd"><p id="explain"><p>구매 링크</p></a>
+                                    </div>
+                                    <div class="btn" onClick="close_goods();">
+                                        <span class="pop_bt">close</span>
+                                    </div>
                                 </div>
+                                <img src="memo_goods/right.png" alt="오화살표" class="img right" id="right" width="5%" onClick="open_goods2();" />
+                            </div>
+                           
+                            <div id="Modal_goods2" class="Art Modal2">
+                                <img src="memo_goods/left.png" alt="왼화살표" class="img left" id="left" width="5%" onClick="open_goods1();" />
+                                <div class="modal-content ch">
+                                    <div class="top">
+                                        <p id="title">미니 달력</p>
+                                        <p id="name">핸드폰 케이스에 넣고 다닐 수 있는 <b>'미니 달력'</b></p>
+                                    </div>
+                                    <div class="image">
+                                        <img src="memo_goods/goods/미니달력뒤.png" alt="달력" class="img calendar" id="calendar" />
+                                        <img src="memo_goods/goods/PHONE.png" alt="핸드폰" class="img phone" id="phone" width="100%" />
+                                        <img src="memo_goods/goods/미니달력반사.png" alt="달력반사" class="img calendar_reflect" id="calendar_reflect" />
+                                    </div>
+                                    <div class="bottom">
+                                        <a id="link" href="https://open.kakao.com/o/stbl1WKd"><p id="explain"><p>구매 링크</p></a>
+                                    </div>
+                                    <div class="btn" onClick="close_goods();">
+                                        <span class="pop_bt">close</span>
+                                    </div>
+                                </div>
+                                <img src="memo_goods/right.png" alt="오화살표" class="img right" id="right" width="5%" onClick="open_goods3();" />
+                            </div>
+                            <div id="Modal_goods3" class="Art Modal3">
+                                <img src="memo_goods/left.png" alt="왼화살표" class="img left" id="left" width="5%" onClick="open_goods2();" />
+                                <div class="modal-content ch">
+                                    <div class="top">
+                                        <p id="title">엽서 세트</p>
+                                        <p id="name">전시 작품 속 분위기와 상반된 컨셉의 <b>'일러스트 엽서 세트'</b></p>
+                                    </div>
+                                    <div class="image">
+                                        <img src="memo_goods/goods/엽서.png" alt="엽서" class="img postcard" id="postcard" width="100%" />
+                                        <img src="memo_goods/goods/엽서반사.png" alt="엽서반사" class="img postcard_reflect" id="postcard_reflect" />
+                                    </div>
+                                    <div class="bottom">
+                                        <a id="link" href="https://open.kakao.com/o/stbl1WKd"><p id="explain"><p>구매 링크</p></a>
+                                    </div>
+                                    <div class="btn" onClick="close_goods();">
+                                        <span class="pop_bt">close</span>
+                                    </div>
+                                </div>
+                                <img src="memo_goods/right.png" alt="오화살표" class="img right" id="right" width="5%" onClick="open_goods4();" />
+                            </div>
+                            <div id="Modal_goods4" class="Art Modal4">
+                                <img src="memo_goods/left.png" alt="왼화살표" class="img left" id="left" width="5%" onClick="open_goods3();" />
+                                <div class="modal-content ch">
+                                    <div class="top">
+                                        <p id="title">시리얼컵</p>
+                                        <p id="name">청춘을 응원하는 문구가 담긴 <b>'시리얼 컵'</b>으로 구성되어 있습니다.</p>
+                                    </div>
+                                    <div class="image">
+                                        <img src="memo_goods/goods/CUP.png" alt="컵" class="img cup" id="cup" width="100%" />
+                                        <img src="memo_goods/goods/cup반사.png" alt="컵반사" class="img cup_reflect" id="cup_reflect" />
+                                    </div>
+                                    <div class="bottom">
+                                        <a id="link" href="https://open.kakao.com/o/stbl1WKd"><p id="explain"><p>구매 링크</p></a>
+                                    </div>
+                                    <div class="btn" onClick="close_goods();">
+                                        <span class="pop_bt">close</span>
+                                    </div>
+                                </div>
+                                <img src="memo_goods/right.png" alt="오화살표" class="img right" id="right" width="5%" onClick="open_goods1();" />
                             </div>
                         </div>
-                        <!-- <label for="slide01" class="right"></label> -->
-                        
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"></script>   <!--for 음원. internet explorer에서는 적용 안됨-->
     <script src="jquery-3.6.0.js"></script>
     <script type="text/javascript" src="entrance.js"></script>

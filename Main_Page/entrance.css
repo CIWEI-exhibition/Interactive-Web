@@ -291,6 +291,47 @@ body::-webkit-scrollbar{
     color: black;
 }
 
+/* 굿즈 전광판 */
+.memo_goods #left{
+    position: absolute;
+    margin: 24% 0 0 27%;
+}
+
+.memo_goods #right{
+    position: absolute;
+    margin: -19.3% 27% 0 0;
+}
+
+.memo_goods .diary_reflect{
+    width: 65%;
+    position: absolute;
+    margin: 49.5% 0 0 0;
+}
+
+.memo_goods .calendar{
+    width: 80%;
+    position: absolute;
+    margin: 25% 0 0 -8%;
+    z-index: -1;
+}
+
+.memo_goods .calendar_reflect{
+    width: 120%;
+    position: absolute;
+    margin: 64% 0 0 -94%;
+}
+
+.memo_goods .postcard_reflect{
+    width: 65%;
+    position: absolute;
+    margin: 13% 0 0 -65%;
+}
+
+.memo_goods .cup_reflect{
+    width: 65%;
+    position: absolute;
+    margin: 21% 0 0 -67%;
+}
 /* 전시 소개 */
 
 @media (max-width: 1280px){      /* pc */
