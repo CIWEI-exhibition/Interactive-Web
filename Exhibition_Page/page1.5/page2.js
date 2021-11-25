@@ -40,7 +40,27 @@ window.onload = function(){
     SubwayHandle = document.getElementById("subway-handle");
     SubwaySeat = document.getElementById("subway-seat");
 
-    
+    chat1 = document.getElementById("chat_1");
+    chat2 = document.getElementById("chat_2");
+    chat3 = document.getElementById("chat_3");
+    chat4 = document.getElementById("chat_4");
+    chat5 = document.getElementById("chat_5");
+    chat6 = document.getElementById("chat_6");
+
+    function alarm(){
+        if(chat1.style.opacity == 1){
+            var sound2 = new Howl({
+                src: ['messenger_1.mp3'],
+                volume: 1,
+                autoplay: true,
+                onend : () => {     //오디오가 재생된 다음 실행할 내용
+                    console.log('Finished!');
+                }
+            });
+            sound2.play();
+        }
+    }
+
     window.addEventListener("scroll", function(event){      //스크롤 이벤트를 걸어주고
         var scroll = this.scrollX;                          // scroll이라는 변수에 scrollY값을 넣어준다.
 
