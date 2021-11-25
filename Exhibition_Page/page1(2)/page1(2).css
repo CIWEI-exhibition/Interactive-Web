@@ -98,34 +98,34 @@ body::-webkit-scrollbar{
     }
     
     .wrapper .bgSky{
-        width: 511%;
+        width: 483.5%;
     }
 
     .wrapper .main_wrapper .bgStar1{
-        width: 461%;
+        width: 440%;
     }
 
     .wrapper .main_wrapper .bgStar2{
-        width: 561%;
+        width: 550%;
     }
 
     .wrapper .main_wrapper .bgStar3{
-        width: 511%;
+        width: 450%;
     }
 
     .wrapper .main_wrapper .bgMount1{
         width: 200%;
-        margin: 24.5% 0 0 -1.5%;
+        margin: 24.2% 0 0 -1.5%;
     }
 
     .wrapper .main_wrapper .bgMount2{
-        width: 310%;
+        width: 280%;
         margin: 28% 0 0 227%;
     }
 
     .wrapper .main_wrapper .bgMount3{
         width: 200%;
-        margin: 21.7% 0 0 44%;
+        margin: 21% 0 0 44%;
     }
 
     .wrapper .main_wrapper .bgMount4{
@@ -135,7 +135,107 @@ body::-webkit-scrollbar{
 
     .wrapper .main_wrapper .bgGround{
         position: fixed;
-        width: 514%;
+        width: 400%;
+        height: 20%;
+        margin: 38% 0 0 0;
+    }
+
+    .wrapper .main_wrapper .bgLamp{
+        width: 432%;
+        margin: 11% 0 0 49%;
+    }
+
+    .wrapper .main_wrapper .bgTree{
+        width: 430%;
+        margin: 16% 0 0 45%;
+    }
+
+    .wrapper .booth_wrapper .banner{
+        width: 45%;
+        margin: 22% 0 0 112%;
+    }
+
+    .wrapper .booth_wrapper .busking{
+        width: 41%;
+        margin: 20.4% 0 0 170%;
+    }
+
+    .wrapper .booth_wrapper .icecream{
+        width: 34%;
+        margin: 12% 0 0 224%;
+    }
+
+    .wrapper .booth_wrapper .study{
+        width: 42%;
+        margin: 14% 0 0 271.5%;
+    }
+
+    .wrapper .booth_wrapper .love{
+        width: 42%;
+        margin: 14% 0 0 326%;
+    }
+
+    .wrapper .booth_wrapper .music{
+        width: 42%;
+        margin: 13% 0 0 381%;
+    }
+
+    .wrapper .booth_wrapper .healing{
+        width: 42%;
+        margin: 14% 0 0 435%;
+    }
+}
+@media (min-width: 1281px) and (max-width: 1440px){      /* pc 13인치*/
+    .wrapper{
+        display: flex;
+        position: relative;
+        max-width: 400%;
+    }
+    
+    .img{
+        position: absolute;
+        height: auto;
+    }
+    
+    .wrapper .bgSky{
+        width: 483.5%;
+    }
+
+    .wrapper .main_wrapper .bgStar1{
+        width: 440%;
+    }
+
+    .wrapper .main_wrapper .bgStar2{
+        width: 550%;
+    }
+
+    .wrapper .main_wrapper .bgStar3{
+        width: 450%;
+    }
+
+    .wrapper .main_wrapper .bgMount1{
+        width: 200%;
+        margin: 24.2% 0 0 -1.5%;
+    }
+
+    .wrapper .main_wrapper .bgMount2{
+        width: 280%;
+        margin: 26% 0 0 227%;
+    }
+
+    .wrapper .main_wrapper .bgMount3{
+        width: 200%;
+        margin: 20% 0 0 44%;
+    }
+
+    .wrapper .main_wrapper .bgMount4{
+        width: 300%;
+        margin: 24% 0 0 220%;
+    }
+
+    .wrapper .main_wrapper .bgGround{
+        position: fixed;
+        width: 350%;
         margin: 39% 0 0 0;
     }
 
@@ -184,7 +284,7 @@ body::-webkit-scrollbar{
         margin: 14% 0 0 450%;
     }
 }
-@media (min-width: 1440px) and (max-width: 1900px){     /*pc 3(15인치, 데탑)*/
+@media (min-width: 1441px) and (max-width: 1900px){     /*pc 3(15인치, 데탑)*/
     .wrapper{
         display: flex;
         position: relative;
