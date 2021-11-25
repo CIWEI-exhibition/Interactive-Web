@@ -1,448 +1,369 @@
 /* 스크롤 없애기 */
 body{
-    -ms-overflow-style: none;
-    background-color: #ecede4;
+  -ms-overflow-style: none;
+  background-color: #ecede4;
+}
+body::-webkit-scrollbar{
+  display: none;
 }
 
-body::-webkit-scrollbar{
-    display: none;
+.scroll-icon{
+  position: absolute;
+  height: auto;
+  margin: -28% 0 0 4%;
+  opacity: 0;
+  -webkit-animation:blink 7s ease-in-out; 
+  -moz-animation:blink 7s ease-in-out; 
+  animation:blink 7s ease-in-out;
 }
 
 .click-icon{
-  position: absolute;
-  margin: 25.3% 0 0 118.3%;
-  opacity: 0;
-  -webkit-animation:blink 7s ease-in-out infinite; 
-  -moz-animation:blink 7s ease-in-out infinite; 
-  animation:blink 7s ease-in-out infinite;
+position: absolute;
+margin: 25.3% 0 0 118.3%;
+opacity: 0;
+-webkit-animation:blink 7s ease-in-out infinite; 
+-moz-animation:blink 7s ease-in-out infinite; 
+animation:blink 7s ease-in-out infinite;
 }
 
 @-webkit-keyframes blink{
-  0% {opacity:0;}
-  15%{opacity: 1;}
-  30%{opacity: 0;}
-  45%{opacity: 1;}
-  60%{opacity: 0;}
-  75%{opacity: 1;}
-  90%{opacity: 0;}
-  100% {opacity:0;} 
+0% {opacity:0;}
+15%{opacity: 1;}
+30%{opacity: 0;}
+45%{opacity: 1;}
+60%{opacity: 0;}
+75%{opacity: 1;}
+90%{opacity: 0;}
+100% {opacity:0;} 
 } 
 
 @-moz-keyframes blink{
-  0% {opacity:0;}
-  15%{opacity: 1;}
-  30%{opacity: 0;}
-  45%{opacity: 1;}
-  60%{opacity: 0;}
-  75%{opacity: 1;}
-  90%{opacity: 0;}
-  100% {opacity:0;} 
+0% {opacity:0;}
+15%{opacity: 1;}
+30%{opacity: 0;}
+45%{opacity: 1;}
+60%{opacity: 0;}
+75%{opacity: 1;}
+90%{opacity: 0;}
+100% {opacity:0;} 
 } 
 
 @keyframes blink{
-  0% {opacity:0;}
-  15%{opacity: 1;}
-  30%{opacity: 0;}
-  45%{opacity: 1;}
-  60%{opacity: 0;}
-  75%{opacity: 1;}
-  90%{opacity: 0;}
-  100% {opacity:0;} 
+0% {opacity:0;}
+15%{opacity: 1;}
+30%{opacity: 0;}
+45%{opacity: 1;}
+60%{opacity: 0;}
+75%{opacity: 1;}
+90%{opacity: 0;}
+100% {opacity:0;} 
 }
 
 /* 엔딩크레딧 */
 @media (max-width: 1280px){         /*pc*/
-  .credit{
-    position: relative;
-    min-height: 400px;
-  }
-  
-  .img{
-    position: absolute;
-  }
-  
-  .credit .bg{
-    width: 135%;
-    margin: auto 0 0 0;
-  }
-  
-  .small_wrapper .front_wrapper .cd{
-    width: 9.4%;
-    position: absolute;
-    margin: 18.95% 0 0 109.3%;
-    cursor: pointer;
-    
-    -webkit-animation: rotate 3s linear infinite;
-    -moz-animation: rotate 3s linear infinite;
-     -ms-animation: rotate 3s linear infinite;
-      -o-animation: rotate 3s linear infinite;
-         animation: rotate 3s linear infinite;
-  }
-
-  @keyframes rotate{
-    100%{
-      transform: rotate(360deg);
-    }
-  }
-
-  /* 공지사항 */
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
-    z-index:100000000;
-  }
-
-  .modal-content {
-    background-color: #fefefe;
-    margin: 10% 40% 0 33%; /* 15% from the top and centered */
-    padding: 40px;
-    border: 1px solid #888;
-    width: 30%; /* Could be more or less, depending on screen size */  
-    border-radius: 30px;     
-    animation: appear .8s cubic-bezier(.77,0,.175,1) forwards;                   
-  }
-
-  .btn{
-  display: block;
-  font-family: 'IBM Plex Sans KR', sans-serif;
-  font-size: 13pt;
-  text-align: center;
-  margin: 0.5rem 5rem 0 5rem;
-  padding: 0.1rem auto 0.1rem auto;
-  border: 1px solid gray;
-  border-radius: 5px;
-  cursor: pointer;
-  }
+.credit{
+  position: relative;
+  min-height: 400px;
 }
 
-@media (min-width: 1281px) and (max-width: 1440px){
-  .credit{
-    position: relative;
-    min-height: 400px;
-  }
-  
-  .img{
-    position: absolute;
-  }
-  
-  .credit .bg{
-    width: 135%;
-    margin: auto 0 0 0;
-  }
-  
-  .small_wrapper .front_wrapper .cd{
-    width: 9.4%;
-    position: absolute;
-    margin: 18.95% 0 0 109.3%;
-    cursor: pointer;
-    
-    -webkit-animation: rotate 3s linear infinite;
-    -moz-animation: rotate 3s linear infinite;
-     -ms-animation: rotate 3s linear infinite;
-      -o-animation: rotate 3s linear infinite;
-         animation: rotate 3s linear infinite;
-  }
-
-  @keyframes rotate{
-    100%{
-      transform: rotate(360deg);
-    }
-  }
-
-
-  /* 공지사항 */
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
-    z-index:100000000;
-  }
-
-  .modal-content {
-    background-color: #fefefe;
-    margin: 10% 40% 0 33%; /* 15% from the top and centered */
-    padding: 40px;
-    border: 1px solid #888;
-    width: 30%; /* Could be more or less, depending on screen size */  
-    border-radius: 30px;     
-    animation: appear .8s cubic-bezier(.77,0,.175,1) forwards;                   
-  }
-
-  .btn{
-  display: block;
-  font-family: 'IBM Plex Sans KR', sans-serif;
-  font-size: 13pt;
-  text-align: center;
-  margin: 0.5rem 5rem 0 5rem;
-  padding: 0.1rem auto 0.1rem auto;
-  border: 1px solid gray;
-  border-radius: 5px;
-  cursor: pointer;
-  }
+.img{
+  position: absolute;
 }
 
-@media (min-width: 1440px) and (max-width: 1900px){     /*pc 3(15인치, 데탑)*/
-  .credit{
-    position: relative;
-    max-width: 100%;
-  }
-  
-  .img{
-    position: absolute;
-    height: auto;
-  }
-  
-  .credit .bg{
-    width: 133.5%;
-    margin: auto 0 0 0;
-  }
-  
-  .small_wrapper .front_wrapper .cd{
-    width: 9.2%;
-    position: absolute;
-    margin: 18.95% 0 0 108.2%;
-    cursor: pointer;
-    
-    -webkit-animation: rotate 3s linear infinite;
-    -moz-animation: rotate 3s linear infinite;
-     -ms-animation: rotate 3s linear infinite;
-      -o-animation: rotate 3s linear infinite;
-         animation: rotate 3s linear infinite;
-  }
-
-  @keyframes rotate{
-    100%{
-      transform: rotate(360deg);
-    }
-  }
-
-
-  /* 공지사항 */
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
-    z-index:100000000;
-  }
-
-  .modal-content {
-    background-color: #fefefe;
-    margin: 10% 40% 0 33%; /* 15% from the top and centered */
-    padding: 40px;
-    border: 1px solid #888;
-    width: 30%; /* Could be more or less, depending on screen size */  
-    border-radius: 30px;     
-    animation: appear .8s cubic-bezier(.77,0,.175,1) forwards;                   
-  }
-
-  .btn{
-  display: block;
-  font-family: 'IBM Plex Sans KR', sans-serif;
-  font-size: 13pt;
-  text-align: center;
-  margin: 0.5rem 5rem 0 5rem;
-  padding: 0.1rem auto 0.1rem auto;
-  border: 1px solid gray;
-  border-radius: 5px;
-  cursor: pointer;
-  }
+.credit .bg{
+  width: 135%;
+  margin: auto 0 0 0;
 }
 
-@media (min-width: 1900px){     /*pc 4(완전 와이드스크린)*/
-  .credit{
-    position: relative;
-    min-height: 400px;
-  }
+.small_wrapper .front_wrapper .cd{
+  width: 9.4%;
+  position: absolute;
+  margin: 18.95% 0 0 109.3%;
+  cursor: pointer;
   
-  .img{
-    position: absolute;
+  -webkit-animation: rotate 3s linear infinite;
+  -moz-animation: rotate 3s linear infinite;
+   -ms-animation: rotate 3s linear infinite;
+    -o-animation: rotate 3s linear infinite;
+       animation: rotate 3s linear infinite;
+}
+@keyframes rotate{
+  100%{
+    transform: rotate(360deg);
   }
-  
-  .credit .bg{
-    width: 135%;
-    margin: auto 0 0 0;
-  }
-  
-  .small_wrapper .front_wrapper .cd{
-    width: 9.4%;
-    position: absolute;
-    margin: 18.95% 0 0 109.3%;
-    cursor: pointer;
-    
-    -webkit-animation: rotate 3s linear infinite;
-    -moz-animation: rotate 3s linear infinite;
-     -ms-animation: rotate 3s linear infinite;
-      -o-animation: rotate 3s linear infinite;
-         animation: rotate 3s linear infinite;
-  }
-
-  @keyframes rotate{
-    100%{
-      transform: rotate(360deg);
-    }
-  }
-
-
-  /* 공지사항 */
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
-    z-index:100000000;
-  }
-
-  .modal-content {
-    background-color: #fefefe;
-    margin: 10% 40% 0 33%; /* 15% from the top and centered */
-    padding: 40px;
-    border: 1px solid #888;
-    width: 30%; /* Could be more or less, depending on screen size */  
-    border-radius: 30px;     
-    animation: appear .8s cubic-bezier(.77,0,.175,1) forwards;                   
-  }
-
+}
+/* 공지사항 */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+  z-index:100000000;
+}
 .modal-content {
-    background-color: #fefefe;
-    margin: 10% 40% 0 33%; /* 15% from the top and centered */
-    padding: 40px;
-    border: 1px solid #888;
-    width: 70%; /* Could be more or less, depending on screen size */  
-    border-radius: 30px;     
-    animation: appear .8s cubic-bezier(.77,0,.175,1) forwards;                   
-}
-.modal .ciwei{
-    width: 30%;
-    margin: 10% auto auto 35%; /* 15% from the top and centered */
+  background-color: #fefefe;
+  margin: 10% 40% 0 33%; /* 15% from the top and centered */
+  padding: 40px;
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */  
+  border-radius: 30px;     
+  animation: appear .8s cubic-bezier(.77,0,.175,1) forwards;                   
 }
 .btn{
-    display: block;
-    font-family: 'IBM Plex Sans KR', sans-serif;
-    font-size: 13pt;
-    text-align: center;
-    margin: 0.5rem 5rem 0 5rem;
-    padding: 0.1rem auto 0.1rem auto;
-    border: 1px solid gray;
-    border-radius: 5px;
-    cursor: pointer;
+display: block;
+font-family: 'IBM Plex Sans KR', sans-serif;
+font-size: 13pt;
+text-align: center;
+margin: 0.5rem 5rem 0 5rem;
+padding: 0.1rem auto 0.1rem auto;
+border: 1px solid gray;
+border-radius: 5px;
+cursor: pointer;
+}
+}
+@media (min-width: 1281px) and (max-width: 1440px){
+.credit{
+  position: relative;
+  min-height: 400px;
 }
 
+.img{
+  position: absolute;
+}
 
+.credit .bg{
+  width: 135%;
+  margin: auto 0 0 0;
+}
+
+.small_wrapper .front_wrapper .cd{
+  width: 9.4%;
+  position: absolute;
+  margin: 18.95% 0 0 109.3%;
+  cursor: pointer;
+  
+  -webkit-animation: rotate 3s linear infinite;
+  -moz-animation: rotate 3s linear infinite;
+   -ms-animation: rotate 3s linear infinite;
+    -o-animation: rotate 3s linear infinite;
+       animation: rotate 3s linear infinite;
+}
+@keyframes rotate{
+  100%{
+    transform: rotate(360deg);
+  }
+}
+/* 공지사항 */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+  z-index:100000000;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% 40% 0 33%; /* 15% from the top and centered */
+  padding: 40px;
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */  
+  border-radius: 30px;     
+  animation: appear .8s cubic-bezier(.77,0,.175,1) forwards;                   
+}
+.btn{
+display: block;
+font-family: 'IBM Plex Sans KR', sans-serif;
+font-size: 13pt;
+text-align: center;
+margin: 0.5rem 5rem 0 5rem;
+padding: 0.1rem auto 0.1rem auto;
+border: 1px solid gray;
+border-radius: 5px;
+cursor: pointer;
+}
+}
+@media (min-width: 1440px) and (max-width: 1900px){     /*pc 3(15인치, 데탑)*/
+.credit{
+  position: relative;
+  max-width: 100%;
+}
+
+.img{
+  position: absolute;
+  height: auto;
+}
+
+.credit .bg{
+  width: 133.5%;
+  margin: auto 0 0 0;
+}
+
+.small_wrapper .front_wrapper .cd{
+  width: 9.2%;
+  position: absolute;
+  margin: 18.95% 0 0 108.2%;
+  cursor: pointer;
+  
+  -webkit-animation: rotate 3s linear infinite;
+  -moz-animation: rotate 3s linear infinite;
+   -ms-animation: rotate 3s linear infinite;
+    -o-animation: rotate 3s linear infinite;
+       animation: rotate 3s linear infinite;
+}
+@keyframes rotate{
+  100%{
+    transform: rotate(360deg);
+  }
+}
+/* 공지사항 */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+  z-index:100000000;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% 40% 0 33%; /* 15% from the top and centered */
+  padding: 40px;
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */  
+  border-radius: 30px;     
+  animation: appear .8s cubic-bezier(.77,0,.175,1) forwards;                   
+}
+.btn{
+display: block;
+font-family: 'IBM Plex Sans KR', sans-serif;
+font-size: 13pt;
+text-align: center;
+margin: 0.5rem 5rem 0 5rem;
+padding: 0.1rem auto 0.1rem auto;
+border: 1px solid gray;
+border-radius: 5px;
+cursor: pointer;
+}
+}
+@media (min-width: 1900px){     /*pc 4(완전 와이드스크린)*/
+.credit{
+  position: relative;
+  min-height: 400px;
+}
+
+.img{
+  position: absolute;
+}
+
+.credit .bg{
+  width: 135%;
+  margin: auto 0 0 0;
+}
+
+.small_wrapper .front_wrapper .cd{
+  width: 9.4%;
+  position: absolute;
+  margin: 18.95% 0 0 109.3%;
+  cursor: pointer;
+  
+  -webkit-animation: rotate 3s linear infinite;
+  -moz-animation: rotate 3s linear infinite;
+   -ms-animation: rotate 3s linear infinite;
+    -o-animation: rotate 3s linear infinite;
+       animation: rotate 3s linear infinite;
+}
+@keyframes rotate{
+  100%{
+    transform: rotate(360deg);
+  }
+}
+/* 공지사항 */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+  z-index:100000000;
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% 40% 0 33%; /* 15% from the top and centered */
+  padding: 40px;
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */  
+  border-radius: 30px;     
+  animation: appear .8s cubic-bezier(.77,0,.175,1) forwards;                   
+}
+.btn{
+display: block;
+font-family: 'IBM Plex Sans KR', sans-serif;
+font-size: 13pt;
+text-align: center;
+margin: 0.5rem 5rem 0 5rem;
+padding: 0.1rem auto 0.1rem auto;
+border: 1px solid gray;
+border-radius: 5px;
+cursor: pointer;
+}
+}
 .btn:hover {
-  background-color: gray;
-  color: white;
+background-color: gray;
+color: white;
 }
-
-
 .modal-content #title{
-  font-family: 'IBM Plex Sans KR', sans-serif;
-  text-align:center;
-  font-size: 17px;
+font-family: 'IBM Plex Sans KR', sans-serif;
+text-align:center;
+font-size: 17px;
 }
 .modal-content #explain{
-  font-family: 'IBM Plex Sans KR', sans-serif;
-  text-align:center;
-  font-size: 15px;
+font-family: 'IBM Plex Sans KR', sans-serif;
+text-align:center;
+font-size: 15px;
 }
-
 .dialog__animate-out{
-    animation: dissappear .8s cubic-bezier(.77,0,.175,1) forwards;
+  animation: dissappear .8s cubic-bezier(.77,0,.175,1) forwards;
 }
-
-  @keyframes appear {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  @keyframes dissappear {
-    from {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    to {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-  }
-
-/* .flower{
-      position: absolute;
-      
-} */
-  
-.scroll-icon{
-    position: fixed;
-    margin: 5% 0 0 45%;
+@keyframes appear {
+  from {
     opacity: 0;
-    -webkit-animation:blink 7s ease-in-out; 
-    -moz-animation:blink 7s ease-in-out; 
-    animation:blink 7s ease-in-out;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-@-webkit-keyframes blink{
-    0% {opacity:0;}
-    15%{opacity: 1;}
-    30%{opacity: 0;}
-    45%{opacity: 1;}
-    60%{opacity: 0;}
-    75%{opacity: 1;}
-    90%{opacity: 0;}
-    100% {opacity:0;} 
-} 
-
-@-moz-keyframes blink{
-    0% {opacity:0;}
-    15%{opacity: 1;}
-    30%{opacity: 0;}
-    45%{opacity: 1;}
-    60%{opacity: 0;}
-    75%{opacity: 1;}
-    90%{opacity: 0;}
-    100% {opacity:0;} 
-} 
-
-@keyframes blink{
-    0% {opacity:0;}
-    15%{opacity: 1;}
-    30%{opacity: 0;}
-    45%{opacity: 1;}
-    60%{opacity: 0;}
-    75%{opacity: 1;}
-    90%{opacity: 0;}
-    100% {opacity:0;} 
-}
+@keyframes dissappear {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
 }
