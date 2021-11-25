@@ -11,6 +11,10 @@ body{
     padding: 0; 
 }
 
+.scroll-icon{
+  position: absolute;
+  height: auto;
+}
 
 /* 스크롤 없애기 */
 body{
