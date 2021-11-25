@@ -8,6 +8,48 @@ body::-webkit-scrollbar{
     display: none;
 }
 
+.click-icon{
+  position: absolute;
+  margin: 25.3% 0 0 118.3%;
+  opacity: 0;
+  -webkit-animation:blink 7s ease-in-out infinite; 
+  -moz-animation:blink 7s ease-in-out infinite; 
+  animation:blink 7s ease-in-out infinite;
+}
+
+@-webkit-keyframes blink{
+  0% {opacity:0;}
+  15%{opacity: 1;}
+  30%{opacity: 0;}
+  45%{opacity: 1;}
+  60%{opacity: 0;}
+  75%{opacity: 1;}
+  90%{opacity: 0;}
+  100% {opacity:0;} 
+} 
+
+@-moz-keyframes blink{
+  0% {opacity:0;}
+  15%{opacity: 1;}
+  30%{opacity: 0;}
+  45%{opacity: 1;}
+  60%{opacity: 0;}
+  75%{opacity: 1;}
+  90%{opacity: 0;}
+  100% {opacity:0;} 
+} 
+
+@keyframes blink{
+  0% {opacity:0;}
+  15%{opacity: 1;}
+  30%{opacity: 0;}
+  45%{opacity: 1;}
+  60%{opacity: 0;}
+  75%{opacity: 1;}
+  90%{opacity: 0;}
+  100% {opacity:0;} 
+}
+
 /* 엔딩크레딧 */
 @media (max-width: 1280px){         /*pc*/
   .credit{

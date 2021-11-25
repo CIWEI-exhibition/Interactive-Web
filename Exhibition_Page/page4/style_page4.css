@@ -21,6 +21,16 @@ body{
   animation:blink 7s ease-in-out;
 }
 
+.click-icon{
+  position: absolute;
+  height: auto;
+  margin: 65.5% 0 0 38.75%;
+  opacity: 0;
+  -webkit-animation:blink 7s ease-in-out infinite; 
+  -moz-animation:blink 7s ease-in-out infinite; 
+  animation:blink 7s ease-in-out infinite;
+}
+
 @-webkit-keyframes blink{
   0% {opacity:0;}
   15%{opacity: 1;}
