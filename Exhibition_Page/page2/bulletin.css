@@ -13,11 +13,17 @@ body::-webkit-scrollbar{
 /* 이미지 배치 */
 .wrapper{
     position: relative;
-    min-height: 500px;
+    /* min-height: 500px; */
 }
     
 .img{
     position: absolute;
+}
+
+.wrapper .bg{
+    width: 102%;
+    position: absolute;
+    margin: -1% -3% 0 -1%;
 }
 
 .wrapper .small_wrapper .submit{
