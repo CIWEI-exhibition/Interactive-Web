@@ -11,15 +11,6 @@ body{
 
 /* 1.5페이지 */
 
-.scroll-icon{
-    position: fixed;
-    margin: -18.5% 0 0 7.5%;
-    opacity: 0;
-    -webkit-animation:blink 7s ease-in-out; 
-    -moz-animation:blink 7s ease-in-out; 
-    animation:blink 7s ease-in-out;
-}
-
 @-webkit-keyframes blink{
     0% {opacity:0;}
     15%{opacity: 1;}
@@ -72,6 +63,15 @@ body::-webkit-scrollbar{
 
 /*이미지 배치--> 따로 있는 애들*/
 @media (max-width: 1280px){     /*모바일 일단 포함, pc(13인치)*/
+    .scroll-icon{
+        position: fixed;
+        margin: -18.5% 0 0 7.5%;
+        opacity: 0;
+        -webkit-animation:blink 7s ease-in-out; 
+        -moz-animation:blink 7s ease-in-out; 
+        animation:blink 7s ease-in-out;
+    }
+    
     .wrapper{
         display: flex;
         position: relative;
@@ -232,8 +232,43 @@ body::-webkit-scrollbar{
     animation: chat 0.2s forwards;
     animation-delay: 22s;
 }
+
+.typing{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 1rem;
+    white-space: nowrap;
+    color: transparent;
+    position: absolute;
+    /*글자 위치 대충 여기서 조절하면 됨!*/
+    margin: 0;
+    top: 92.5%;
+    left: 76.5%;
+    transform: translate(-50%, -50%);
+}
+
+.typing::before{
+    content: "또 나만.. 아직이네.. ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #191a65;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    animation: typing 4s steps(16);  /*steps 괄호 안 숫자는 멘트 길이.*/
+    animation-delay: 23s;
+}
 }
 @media (min-width: 1281px) and (max-width: 1440px){     /*pc 2*/
+    .scroll-icon{
+        position: fixed;
+        margin: -18.5% 0 0 7.5%;
+        opacity: 0;
+        -webkit-animation:blink 7s ease-in-out; 
+        -moz-animation:blink 7s ease-in-out; 
+        animation:blink 7s ease-in-out;
+    }
+
     .wrapper{
         display: flex;
         position: relative;
@@ -393,8 +428,43 @@ body::-webkit-scrollbar{
         animation: chat 0.2s forwards;
         animation-delay: 22s;
     }
+
+    .typing{
+        font-family: 'IBM Plex Sans KR', sans-serif;
+        font-size: 1rem;
+        white-space: nowrap;
+        color: transparent;
+        position: absolute;
+        /*글자 위치 대충 여기서 조절하면 됨!*/
+        margin: 0;
+        top: 92.5%;
+        left: 76.5%;
+        transform: translate(-50%, -50%);
+    }
+
+    .typing::before{
+        content: "또 나만.. 아직이네.. ";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        color: #191a65;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        animation: typing 4s steps(16);  /*steps 괄호 안 숫자는 멘트 길이.*/
+        animation-delay: 23s;
+    }
 }
 @media (min-width: 1440px) and (max-width: 1900px){     /*pc 3(15인치)*/
+    .scroll-icon{
+        position: fixed;
+        margin: -11.5% 0 0 7.5%;
+        opacity: 0;
+        -webkit-animation:blink 7s ease-in-out; 
+        -moz-animation:blink 7s ease-in-out; 
+        animation:blink 7s ease-in-out;
+    }
+
     .wrapper{
         display: flex;
         position: relative;
@@ -493,7 +563,7 @@ body::-webkit-scrollbar{
     /* 채팅창 */
     #chat_bottom{
         position: fixed;
-        margin: 41% 0 0 70%;
+        margin: 42% 0 0 70%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 23s;
@@ -501,7 +571,7 @@ body::-webkit-scrollbar{
     
     #chat_1{
         position: fixed;
-        margin: 1% 0 0 70%;
+        margin: 1% 0 0 69.9%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 8s;
@@ -517,7 +587,7 @@ body::-webkit-scrollbar{
     
     #chat_3{
         position: fixed;
-        margin: -17.9% 0 0 70%;
+        margin: -12.9% 0 0 70%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 12s;
@@ -525,7 +595,7 @@ body::-webkit-scrollbar{
     
     #chat_4{
         position: fixed;
-        margin: -11.9% 0 0 70%;
+        margin: -6.9% 0 0 70%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 14s;
@@ -533,7 +603,7 @@ body::-webkit-scrollbar{
     
     #chat_5{
         position: fixed;
-        margin: -5.9% 0 0 70%;
+        margin: -0.9% 0 0 70%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 16s;
@@ -541,7 +611,7 @@ body::-webkit-scrollbar{
     
     #chat_6{
         position: fixed;
-        margin: 0% 0 0 70%;
+        margin: 5% 0 0 70%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 18s;
@@ -549,13 +619,48 @@ body::-webkit-scrollbar{
     
     #my_chat{
         position: fixed;
-        margin: 6% 0 0 88.5%;
+        margin: 11.5% 0 0 88.5%;
         opacity: 0;
         animation: chat 0.2s forwards;
-        animation-delay: 2s;
+        animation-delay: 20s;
+    }
+    
+    .typing{
+        font-family: 'IBM Plex Sans KR', sans-serif;
+        font-size: 1rem;
+        white-space: nowrap;
+        color: transparent;
+        position: absolute;
+        /*글자 위치 대충 여기서 조절하면 됨!*/
+        margin: 0;
+        top: 92.5%;
+        left: 76.5%;
+        transform: translate(-50%, -50%);
+    }
+
+    .typing::before{
+        content: "또 나만.. 아직이네.. ";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        color: #191a65;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        animation: typing 4s steps(16);  /*steps 괄호 안 숫자는 멘트 길이.*/
+        animation-delay: 23s;
     }
 }
 @media (min-width: 1900px){     /*pc 4(완전 와이드스크린)*/
+    .scroll-icon{
+        position: fixed;
+        margin: -11.5% 0 0 7.5%;
+        opacity: 0;
+        -webkit-animation:blink 7s ease-in-out; 
+        -moz-animation:blink 7s ease-in-out; 
+        animation:blink 7s ease-in-out;
+    }
+
     .wrapper{
         display: flex;
         position: relative;
@@ -654,7 +759,7 @@ body::-webkit-scrollbar{
     /* 채팅창 */
     #chat_bottom{
         position: fixed;
-        margin: 41% 0 0 70%;
+        margin: 42% 0 0 70%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 23s;
@@ -678,7 +783,7 @@ body::-webkit-scrollbar{
     
     #chat_3{
         position: fixed;
-        margin: -17.9% 0 0 70%;
+        margin: -12.9% 0 0 70%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 12s;
@@ -686,7 +791,7 @@ body::-webkit-scrollbar{
     
     #chat_4{
         position: fixed;
-        margin: -11.9% 0 0 70%;
+        margin: -6.9% 0 0 70%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 14s;
@@ -694,7 +799,7 @@ body::-webkit-scrollbar{
     
     #chat_5{
         position: fixed;
-        margin: -5.9% 0 0 70%;
+        margin: -0.9% 0 0 70%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 16s;
@@ -702,7 +807,7 @@ body::-webkit-scrollbar{
     
     #chat_6{
         position: fixed;
-        margin: 0% 0 0 70%;
+        margin: 5% 0 0 70%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 18s;
@@ -710,10 +815,37 @@ body::-webkit-scrollbar{
     
     #my_chat{
         position: fixed;
-        margin: 6% 0 0 88.5%;
+        margin: 11% 0 0 88.5%;
         opacity: 0;
         animation: chat 0.2s forwards;
-        animation-delay: 22s;
+        animation-delay: 20s;
+    }
+
+    .typing{
+        font-family: 'IBM Plex Sans KR', sans-serif;
+        font-size: 1rem;
+        white-space: nowrap;
+        color: transparent;
+        position: absolute;
+        /*글자 위치 대충 여기서 조절하면 됨!*/
+        margin: 0;
+        top: 92.5%;
+        left: 76.5%;
+        transform: translate(-50%, -50%);
+        animation-delay: 23s;
+    }
+
+    .typing::before{
+        content: "또 나만.. 아직이네.. ";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        color: #191a65;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        animation: typing 4s steps(16);  /*steps 괄호 안 숫자는 멘트 길이.*/
+        animation-delay: 23s;
     }
 }
 
