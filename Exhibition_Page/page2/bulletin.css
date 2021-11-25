@@ -1,290 +1,288 @@
 *{
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* 스크롤 없애기 */
 body{
-    -ms-overflow-style: none;
+  -ms-overflow-style: none;
 }
 body::-webkit-scrollbar{
-    display: none;
+  display: none;
 }
 
 /* 이미지 배치 */
 .wrapper{
-    position: relative;
-    /* min-height: 500px; */
+  position: relative;
+  min-height: 500px;
 }
-    
+  
 .img{
-    position: absolute;
+  position: absolute;
 }
 
 .wrapper .bg{
-    width: 102%;
-    position: absolute;
-    margin: -1% -3% 0 -1%;
+  width: 102%;
+  margin: -1% 0 0 -1%;
 }
 
 .wrapper .small_wrapper .submit{
-    position: absolute;
-    margin: 20% 0 0 77%;
+  position: absolute;
+  margin: 20% 0 0 77%;
 }
 
 .wrapper .small_wrapper .submit:hover{
-    filter: brightness(50%);
-    cursor: pointer;
+  filter: brightness(50%);
+  cursor: pointer;
 }
 
 form{
-    position: absolute;
-    margin: 25.3% 0 0 29%;
+  position: absolute;
+  margin: 25.3% 0 0 29%;
 }
 
 form textarea{
-    width: 200%;
-    height: 200%;
+  width: 200%;
+  height: 200%;
 }
 
 form p{
-    font-weight: 700;
-    margin-bottom: 0.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 
 form #content{
-    padding: 0.5rem;
+  padding: 0.5rem;
 }
 /*이미지 및 폼 배치 끝*/
 
 /* 과제팝업 */
 .pop{
-  position: relative;
+position: relative;
 }
 
 #error1{
-  position: absolute;
-  margin: 20% 0 0 58%;
-  opacity: 0;
-  display: none;
-  animation: error 0.2s forwards;
-  animation-delay: 1s;
-  animation-play-state: paused;
+position: absolute;
+margin: 20% 0 0 58%;
+opacity: 0;
+display: none;
+animation: error 0.2s forwards;
+animation-delay: 1s;
+animation-play-state: paused;
 } 
 
 @keyframes error{
-  from{
-    opacity: 0;
-    transform: translateY(-5px) scale(0.5);
-  }
-  to{
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
+from{
+  opacity: 0;
+  transform: translateY(-5px) scale(0.5);
+}
+to{
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
 }
 
 #error2{
-  position: absolute;
-  margin: 33% 0 0 60%;
-  opacity: 0;
-  display: none;
-  animation: error 0.2s forwards;
-  animation-delay: 1.2s;
-  animation-play-state: paused;
+position: absolute;
+margin: 33% 0 0 60%;
+opacity: 0;
+display: none;
+animation: error 0.2s forwards;
+animation-delay: 1.2s;
+animation-play-state: paused;
 } 
 
 #error3{
-  position: absolute;
-  margin: 23% 0 0 43%;
-  opacity: 0;
-  display: none;
-  animation: error 0.2s forwards;
-  animation-delay: 1.4s;
-  animation-play-state: paused;
+position: absolute;
+margin: 23% 0 0 43%;
+opacity: 0;
+display: none;
+animation: error 0.2s forwards;
+animation-delay: 1.4s;
+animation-play-state: paused;
 } 
 
 #error4{
-  position: absolute;
-  margin: 30% 0 0 50%;
-  opacity: 0;
-  display: none;
-  animation: error 0.2s forwards;
-  animation-delay: 1.6s;
-  animation-play-state: paused;
+position: absolute;
+margin: 30% 0 0 50%;
+opacity: 0;
+display: none;
+animation: error 0.2s forwards;
+animation-delay: 1.6s;
+animation-play-state: paused;
 } 
 
 #error5{
-  position: absolute;
-  margin: 38% 0 0 45%;
-  opacity: 0;
-  display: none;
-  animation: error 0.2s forwards;
-  animation-delay: 1.8s;
-  animation-play-state: paused;
+position: absolute;
+margin: 38% 0 0 45%;
+opacity: 0;
+display: none;
+animation: error 0.2s forwards;
+animation-delay: 1.8s;
+animation-play-state: paused;
 } 
 
 #error6{
-  position: absolute;
-  margin: 13% 0 0 38%;
-  opacity: 0;
-  display: none;
-  animation: error 0.2s forwards;
-  animation-delay: 2.0s;
-  animation-play-state: paused;
+position: absolute;
+margin: 13% 0 0 38%;
+opacity: 0;
+display: none;
+animation: error 0.2s forwards;
+animation-delay: 2.0s;
+animation-play-state: paused;
 } 
 
 #error7{
-  position: absolute;
-  margin: 20% 0 0 25%;
-  opacity: 0;
-  display: none;
-  animation: error 0.2s forwards;
-  animation-delay: 2.2s;
-  animation-play-state: paused;
+position: absolute;
+margin: 20% 0 0 25%;
+opacity: 0;
+display: none;
+animation: error 0.2s forwards;
+animation-delay: 2.2s;
+animation-play-state: paused;
 } 
 
 #error8{
-  position: absolute;
-  margin: 35% 0 0 25%;
-  opacity: 0;
-  display: none;
-  animation: error 0.2s forwards;
-  animation-delay: 2.4s;
-  animation-play-state: paused;
+position: absolute;
+margin: 35% 0 0 25%;
+opacity: 0;
+display: none;
+animation: error 0.2s forwards;
+animation-delay: 2.4s;
+animation-play-state: paused;
 }
 
 #error9{
-  position: absolute;
-  margin: 27% 0 0 29%;
-  opacity: 0;
-  display: none;
-  animation: error 0.2s forwards;
-  animation-delay: 2.6s;
-  animation-play-state: paused;
+position: absolute;
+margin: 27% 0 0 29%;
+opacity: 0;
+display: none;
+animation: error 0.2s forwards;
+animation-delay: 2.6s;
+animation-play-state: paused;
 } 
 /* 과제팝업 끝 */
 
 /*블러*/
 @-webkit-keyframes blur {
-    0%, 100%{ filter: blur(0); }
-    50%{ filter: blur(0); }
+  0%, 100%{ filter: blur(0); }
+  50%{ filter: blur(0); }
 }
 @-moz-keyframes blur{
-    0%, 100%{ filter: blur(0); }
-    50%{ filter: blur(0); }
+  0%, 100%{ filter: blur(0); }
+  50%{ filter: blur(0); }
 }
 @-ms-keyframes blur{
-    0%, 100%{ filter: blur(0); }
-    50%{ filter: blur(0); }
+  0%, 100%{ filter: blur(0); }
+  50%{ filter: blur(0); }
 }
 @-o-keyframes blur{
-    0%, 100%{ filter: blur(0); }
-    50%{ filter: blur(0); }
+  0%, 100%{ filter: blur(0); }
+  50%{ filter: blur(0); }
 }
 @keyframes blur {
-    0%, 100%{ filter: blur(0); }
-    50%{ filter: blur(1rem); }
+  0%, 100%{ filter: blur(0); }
+  50%{ filter: blur(1rem); }
 }
 
 .blur {
-    -webkit-animation: blur 3s ease-in-out 5s 2 alternate both;
-    -moz-animation: blur 3s ease-in-out 5s 2 alternate both;
-     -ms-animation: blur 3s ease-in-out 5s 2 alternate both;
-      -o-animation: blur 3s ease-in-out 5s 2 alternate both;
-         animation: blur 3s ease-in-out 5s 2 alternate both;
+  -webkit-animation: blur 3s ease-in-out 5s 2 alternate both;
+  -moz-animation: blur 3s ease-in-out 5s 2 alternate both;
+   -ms-animation: blur 3s ease-in-out 5s 2 alternate both;
+    -o-animation: blur 3s ease-in-out 5s 2 alternate both;
+       animation: blur 3s ease-in-out 5s 2 alternate both;
 }
 
 
 /*물결효과 긁어옴여*/
-  .box {
-    display: none;
-    position: fixed;
-    /* overflow: hidden; */
-    width: 200%;
-    height: 2000%;
-    border-radius: 40%;
-    box-shadow: 0 2px 30px rgba(black, .2);
-    background: lighten(#f0f4c3, 10%);
-    
-    transform: translate3d(0, 0, 0);
-    animation: updown 7s ease-in-out alternate forwards;
-    /* animation-delay: 10s; */
-  }
+.box {
+  display: none;
+  position: fixed;
+  /* overflow: hidden; */
+  width: 200%;
+  height: 2000%;
+  border-radius: 40%;
+  box-shadow: 0 2px 30px rgba(black, .2);
+  background: lighten(#f0f4c3, 10%);
   
-  .wave {
-    position: absolute;
-    opacity: .7;
-    
-    top: 65%;
-    left: -30%;
-    background: #649ae4;
-    width: 120%;
-    height: 35%;
-    /* margin: 0 0 0 -70%; */
+  transform: translate3d(0, 0, 0);
+  animation: updown 7s ease-in-out alternate forwards;
+  /* animation-delay: 10s; */
+}
 
-    transform-origin: 50% 48%;
-    border-radius: 50%;
-    animation: drift 2000ms infinite linear;
-  }
+.wave {
+  position: absolute;
+  opacity: .7;
   
-  .wave.-three {
-    /* top: 70%;
-    left: -30%; */
-    animation: drift 5000ms infinite linear;
-  }
-  
-  .wave.-two {
-    /* top: 70%;
-    left: 30%; */
-    animation: drift 7000ms infinite linear;
+  top: 65%;
+  left: -30%;
+  background: #649ae4;
+  width: 120%;
+  height: 35%;
+  /* margin: 0 0 0 -70%; */
 
-    opacity: .2;
-    background: #c2dbfd;
-  }
-  
-  /* .box:after {
-    content: '';
-    display: block;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(#e8a, 1), rgba(#def, 0) 80%, rgba(white, .5));
-    z-index: 11;
-    transform: translate3d(0, 0, 0);
-  } */
-  
-  /* .title {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-    line-height: 300px;
-    text-align: center;
-    transform: translate3d(0, 0, 0);
-    color: white;
-    text-transform: uppercase;
-    font-family: 'Playfair Display', serif;
-    letter-spacing: .4em;
-    font-size: 24px;
-    text-shadow: 0 1px 0 rgba(black, .1);
-    text-indent: .3em;
-  } */
-  @keyframes drift {
-    from { 
-      transform: rotate(0deg);
-    }
-    to { 
-      transform: rotate(360deg);
-    }
-  }
+  transform-origin: 50% 48%;
+  border-radius: 50%;
+  animation: drift 2000ms infinite linear;
+}
 
-  @keyframes updown {
-    from {
-      transform: translateY(-50%);
-    }
-    to {
-      transform: translateY(-70%);
-    }
-  }
+.wave.-three {
+  /* top: 70%;
+  left: -30%; */
+  animation: drift 5000ms infinite linear;
+}
 
+.wave.-two {
+  /* top: 70%;
+  left: 30%; */
+  animation: drift 7000ms infinite linear;
+
+  opacity: .2;
+  background: #c2dbfd;
+}
+
+/* .box:after {
+  content: '';
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(#e8a, 1), rgba(#def, 0) 80%, rgba(white, .5));
+  z-index: 11;
+  transform: translate3d(0, 0, 0);
+} */
+
+/* .title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  line-height: 300px;
+  text-align: center;
+  transform: translate3d(0, 0, 0);
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: .4em;
+  font-size: 24px;
+  text-shadow: 0 1px 0 rgba(black, .1);
+  text-indent: .3em;
+} */
+@keyframes drift {
+  from { 
+    transform: rotate(0deg);
+  }
+  to { 
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes updown {
+  from {
+    transform: translateY(-50%);
+  }
+  to {
+    transform: translateY(-70%);
+  }
+}

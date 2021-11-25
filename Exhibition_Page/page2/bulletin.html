@@ -18,9 +18,7 @@ integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6ji
         <img src="images/pop/bulletin.png" alt="과제-배경" class="img bg" id="bg" width="100%" />
 		
 		<div class="small_wrapper">
-			<!-- <button type="button" class="img btnSave" id="btnSave" onClick="setTimeout('blur()', 5000);"> -->
-				<img src="images/pop/submit.png" alt="제출" class="img submit" id="submit" width="7%" onClick="setTimeout(errors, 1000);" />
-			<!-- </button> -->
+				<img src="images/pop/submit.png" alt="제출" class="img submit" id="submit" width="7%" onClick="setTimeout(errors, 1000)" />
 			
 			<article>
 				<form name="form" id="form" role="form" method="post" action="${pageContext.request.contextPath}/board/saveBoard">
@@ -70,7 +68,7 @@ integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6ji
 			location.href="${pageContext.request.contextPath}/board/getBoardList";
 		});
 	</script> -->
-
+	</div>
 	<script src="jquery-3.6.0.js"></script>
 	<script type="text/javascript" src="bulletin.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"></script>   <!--for 음원. internet explorer에서는 적용 안됨-->
