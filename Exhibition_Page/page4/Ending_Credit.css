@@ -85,7 +85,6 @@ body::-webkit-scrollbar{
     }
   }
 
-
   /* 공지사항 */
   .modal {
     display: none; /* Hidden by default */
@@ -331,18 +330,31 @@ body::-webkit-scrollbar{
     animation: appear .8s cubic-bezier(.77,0,.175,1) forwards;                   
   }
 
-  .btn{
-  display: block;
-  font-family: 'IBM Plex Sans KR', sans-serif;
-  font-size: 13pt;
-  text-align: center;
-  margin: 0.5rem 5rem 0 5rem;
-  padding: 0.1rem auto 0.1rem auto;
-  border: 1px solid gray;
-  border-radius: 5px;
-  cursor: pointer;
-  }
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% 40% 0 33%; /* 15% from the top and centered */
+    padding: 40px;
+    border: 1px solid #888;
+    width: 70%; /* Could be more or less, depending on screen size */  
+    border-radius: 30px;     
+    animation: appear .8s cubic-bezier(.77,0,.175,1) forwards;                   
 }
+.modal .ciwei{
+    width: 30%;
+    margin: 10% auto auto 35%; /* 15% from the top and centered */
+}
+.btn{
+    display: block;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 13pt;
+    text-align: center;
+    margin: 0.5rem 5rem 0 5rem;
+    padding: 0.1rem auto 0.1rem auto;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 
 .btn:hover {
   background-color: gray;
@@ -363,7 +375,7 @@ body::-webkit-scrollbar{
 
 .dialog__animate-out{
     animation: dissappear .8s cubic-bezier(.77,0,.175,1) forwards;
-  }
+}
 
   @keyframes appear {
     from {
@@ -386,3 +398,51 @@ body::-webkit-scrollbar{
       transform: translateY(20px);
     }
   }
+
+/* .flower{
+      position: absolute;
+      
+} */
+  
+.scroll-icon{
+    position: fixed;
+    margin: 5% 0 0 45%;
+    opacity: 0;
+    -webkit-animation:blink 7s ease-in-out; 
+    -moz-animation:blink 7s ease-in-out; 
+    animation:blink 7s ease-in-out;
+}
+
+@-webkit-keyframes blink{
+    0% {opacity:0;}
+    15%{opacity: 1;}
+    30%{opacity: 0;}
+    45%{opacity: 1;}
+    60%{opacity: 0;}
+    75%{opacity: 1;}
+    90%{opacity: 0;}
+    100% {opacity:0;} 
+} 
+
+@-moz-keyframes blink{
+    0% {opacity:0;}
+    15%{opacity: 1;}
+    30%{opacity: 0;}
+    45%{opacity: 1;}
+    60%{opacity: 0;}
+    75%{opacity: 1;}
+    90%{opacity: 0;}
+    100% {opacity:0;} 
+} 
+
+@keyframes blink{
+    0% {opacity:0;}
+    15%{opacity: 1;}
+    30%{opacity: 0;}
+    45%{opacity: 1;}
+    60%{opacity: 0;}
+    75%{opacity: 1;}
+    90%{opacity: 0;}
+    100% {opacity:0;} 
+}
+}
