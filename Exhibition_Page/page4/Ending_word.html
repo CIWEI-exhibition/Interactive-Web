@@ -68,6 +68,10 @@
     </style>
   </head>
   <body>
+    <div class="scroll">
+        <img src="../scroll-image/scroll-down(black).png" alt="아래로 스크롤" class="scroll-icon" id="scroll-down" width="10%">
+    </div>
+
         <head>
             <section>
                 <div class="sa sa-up"></div>
@@ -111,6 +115,50 @@
                 </div>
             </section>
         </main>
+
+        <style>
+            .scroll-icon{
+                position: fixed;
+                margin: 5% 0 0 45%;
+                opacity: 0;
+                -webkit-animation:blink 7s ease-in-out; 
+                -moz-animation:blink 7s ease-in-out; 
+                animation:blink 7s ease-in-out;
+            }
+
+            @-webkit-keyframes blink{
+                0% {opacity:0;}
+                15%{opacity: 1;}
+                30%{opacity: 0;}
+                45%{opacity: 1;}
+                60%{opacity: 0;}
+                75%{opacity: 1;}
+                90%{opacity: 0;}
+                100% {opacity:0;} 
+            } 
+
+            @-moz-keyframes blink{
+                0% {opacity:0;}
+                15%{opacity: 1;}
+                30%{opacity: 0;}
+                45%{opacity: 1;}
+                60%{opacity: 0;}
+                75%{opacity: 1;}
+                90%{opacity: 0;}
+                100% {opacity:0;} 
+            } 
+
+            @keyframes blink{
+                0% {opacity:0;}
+                15%{opacity: 1;}
+                30%{opacity: 0;}
+                45%{opacity: 1;}
+                60%{opacity: 0;}
+                75%{opacity: 1;}
+                90%{opacity: 0;}
+                100% {opacity:0;} 
+            }
+        </style>
 
         <script>
             // Scroll Animation (sa, 스크롤 애니메이션)
