@@ -573,15 +573,14 @@ body::-webkit-scrollbar{
 /* 채팅창 */
 #chat_bottom{
     position: fixed;
-    margin: 42% 0 0 70%;
+    margin: 42% 0 0 67%;
     opacity: 90%;
 }
 
 #chat_1{
 	position: fixed;
-    margin: 2% 0 0 70%;
+    margin: 2% 0 0 67.4%;
 	opacity: 0;
-    /* display: none; */
     animation: chat1 0.2s forwards;
     animation-delay: 4s;
 }
@@ -601,7 +600,6 @@ body::-webkit-scrollbar{
 	position: fixed;
     margin: 8% 0 0 70%;
 	opacity: 0;
-    /* display: none; */
     animation: chat2 0.2s forwards;
     animation-delay: 6s;
 }
@@ -621,7 +619,6 @@ body::-webkit-scrollbar{
 	position: fixed;
     margin: -16.9% 0 0 70%;
 	opacity: 0;
-    /* display: none; */
     animation: chat3 0.2s forwards;
     animation-delay: 8s;
 }
@@ -641,7 +638,6 @@ body::-webkit-scrollbar{
 	position: fixed;
     margin: -10.9% 0 0 70%;
 	opacity: 0;
-    /* display: none; */
     animation: chat4 0.2s forwards;
     animation-delay: 10s;
 }
@@ -661,7 +657,6 @@ body::-webkit-scrollbar{
 	position: fixed;
     margin: -4.9% 0 0 70%;
 	opacity: 0;
-    /* display: none; */
     animation: chat5 0.2s forwards;
     animation-delay: 12s;
 }
@@ -681,7 +676,6 @@ body::-webkit-scrollbar{
 	position: fixed;
     margin: 1% 0 0 70%;
 	opacity: 0;
-    /* display: none; */
     animation: chat6 0.2s forwards;
     animation-delay: 14s;
 }
@@ -701,7 +695,6 @@ body::-webkit-scrollbar{
 	position: fixed;
     margin: 7% 0 0 88.5%;
 	opacity: 0;
-    /* display: none; */
     animation: chat7 0.2s forwards;
     animation-delay: 16s;
 }
@@ -717,7 +710,7 @@ body::-webkit-scrollbar{
       }
     } 
 
-.wrapper .chat_wrapper p.typing-txt{
+.chat_wrapper p.typing-txt{
     margin: 3% 0 0 70%;
     font-family: 'IBM Plex Sans KR', sans-serif;
     font-size: 1.5rem;
@@ -725,7 +718,7 @@ body::-webkit-scrollbar{
 }
 
 .typing{
-  /*position: absolute;*/ 
+  position: fixed; 
   display: inline-block; 
   animation-name: cursor; 
   animation-duration: 0.6s; 
