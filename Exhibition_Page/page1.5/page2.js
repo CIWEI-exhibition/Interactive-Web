@@ -98,27 +98,47 @@ function stageResize() {        //per를 위한 함수 (document랑 window heigh
 
 //------------------------------------------------------------------------------------------------
 //전시 화면 fade out되는 코드
-$(document).ready(function(){
+// $(window).on("load", function () {
+//     function fade() {
+//       let animation_height = $(window).innerHeight() * 0.5;
+//       let ratio = Math.round((1 / animation_height) * 10000) / 10000;
+//       $(".fade").each(function () {
+//         let objectTop = $(this).offset().top;
+//         let windowBottom = $(window).scrollTop() + $(window).innerHeight();
+//         if (objectTop < windowBottom) {
+//           if (objectTop < windowBottom - animation_height) {
+//             $(this).css({
+//               transition: "opacity 0.1s linear",
+//               transition: "left 0.1s linear",
+//               opacity: 1,
+//               left: "0px",
+//             });
+//           } else {
+//             $(this).css({
+//               transition: "opacity 0.5s linear",
+//               opacity: (windowBottom - objectTop) * ratio,
+//               transition: "left 0.5s linear",
+//               left: `${200 * (1 - (windowBottom - objectTop) * ratio)}px`,
+//             });
+//           }
+//         } else {
+//           $(this).css({
+//             opacity: 0,
+//             left: "200px",
+//           });
+//         }
+//       });
+//     }
+//     $(".fade").css({
+//       opacity: 0,
+//       left: "200px",
+//     });
+//     fade();
 
-    var navHeight = $(".wrapper").height(); /*wrapper의 높이*/
-
-    $(".fade").hide(); /*스크롤 시 나타날 검은 화면 미리 숨기기*/
-
-    $(window).scroll(function(){
-        var rollIt = $(this).scrollTop() >= navHeight;
-        /*scrollTop은 윈도우에서 스크롤 위치가 가장 상위에 있다는 의미
-        --> 스크롤의 위치가 화면 아래일수록 scrollTop 값이 커짐 */
-
-        if(rollIt){ 
-            //윈도우 스크롤 기능의 값이 navHeight 의 높이와 같거나 크면
-            $(".fade").show().css({"position":"fixed"});
-        }
-        else{
-            $(".fade").hide();
-        }
-    
-    });
-})
+//     $(window).scroll(function () {
+//       fade();
+//     });
+//   });
 
 //-------------------------------------------------------------------------
 //채팅창 애니메이션
