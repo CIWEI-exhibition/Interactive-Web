@@ -84,8 +84,8 @@ class GameScene extends Phaser.Scene{
             duration: 1000,
             onComplete: function(tween, targets){
                 book3.destroy();
-                this.score += 10;
-                this.scoreText.setText('Points: '+this.score);
+                // this.score += 10;
+                // this.scoreText.setText('Points: '+this.score);
             }.bind(this)
         })
     }

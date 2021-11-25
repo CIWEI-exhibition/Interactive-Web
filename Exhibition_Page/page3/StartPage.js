@@ -1,7 +1,7 @@
 var StartPage = {
     preload : function(){
         //game 객체에서 menu 이미지를 로드한다.
-        game.load.image('StartPage', './test.png');
+        game.load.image('StartPage', 'test.png');
     },
     create : function(){
         //이미지를 표시한다.
