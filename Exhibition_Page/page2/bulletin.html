@@ -19,7 +19,7 @@ integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6ji
 		
 		<div class="small_wrapper">
 			<!-- <button type="button" class="img btnSave" id="btnSave" onClick="setTimeout('blur()', 5000);"> -->
-				<img src="images/pop/submit.png" alt="제출" class="img submit" id="submit" width="7%" />
+				<img src="images/pop/submit.png" alt="제출" class="img submit" id="submit" width="7%" onClick="setTimeout(errors, 1000);" />
 			<!-- </button> -->
 			
 			<article>
@@ -40,7 +40,6 @@ integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6ji
 			</article>
 		</div>
 
-		<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 		<div id="error" class="pop">
 			<img src="images/pop/오류1.png" alt="오류1" class="img error" id="error1" width="20%">
 			<img src="images/pop/오류2.png" alt="오류2" class="img error" id="error2" width="20%">
@@ -72,6 +71,7 @@ integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6ji
 		});
 	</script> -->
 
+	<script src="jquery-3.6.0.js"></script>
 	<script type="text/javascript" src="bulletin.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"></script>   <!--for 음원. internet explorer에서는 적용 안됨-->
 </body>

@@ -7,7 +7,7 @@ let speed = 0.03;
 window.onload = function(){
 
     var sound = new Howl({
-        src: ['room.mp3'],
+        src: ['room2.mp3'],
         volume: 1,
         autoplay: true,
         loop: true,
@@ -15,7 +15,6 @@ window.onload = function(){
             console.log('Finished!');
         }
     });
-
     sound.play();
 
     // progressBar = document.getElementsByClassName("bar")[0];
@@ -30,6 +29,18 @@ window.onload = function(){
     stageResize();
     // loop();
 
+}
+
+function errors(){
+    var sound2 = new Howl({
+        src: ['errors.mp3'],
+        volume: 1,
+        autoplay: true,
+        onend : () => {
+            console.log('Error Finished!');
+        }
+    });
+    sound2.play();
 }
 
 function scrollFunc(e){
