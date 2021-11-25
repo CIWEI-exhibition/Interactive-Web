@@ -5,7 +5,9 @@
 body{
     margin: 0;
     padding: 0; 
-    background-color: rgb(255, 221, 221);    
+    background-color: #2a2d51;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    text-align: center;
 }
 
 
@@ -259,6 +261,41 @@ body::-webkit-scrollbar{
     animation-delay: 23s;
 }
 }
+ /*툴팁*/
+ .fas{
+    color: white;
+    position: absolute;
+    margin: 5% 0 0 490%;
+    z-index: 5;
+}
+.fas:hover{
+    transform: scale(1.2);
+    transition: 0.1s ease-in-out;
+}
+
+.exit{
+    display: inline-block;
+    position: relative;
+    margin: auto 0 auto 490%;
+    margin-top: 70px;
+}
+.exit .tooltip{
+    position: absolute;
+    width: 90px;
+    padding: 0;
+    visibility: hidden;
+    /* background-color: white; */
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+.exit .tooltip h1{
+    position: absolute;
+    font-size: 16px;
+    margin: -35% 0 0 -55%;
+}
+.exit:hover .tooltip{visibility: visible;}
+.exit:hover .tooltip{visibility: visible;}
 @media (min-width: 1281px) and (max-width: 1440px){     /*pc 2*/
     .scroll-icon{
         position: fixed;
@@ -440,6 +477,7 @@ body::-webkit-scrollbar{
         top: 92.5%;
         left: 76.5%;
         transform: translate(-50%, -50%);
+        /* display: none; */
     }
 
     .typing::before{
@@ -453,7 +491,42 @@ body::-webkit-scrollbar{
         left: 0;
         animation: typing 4s steps(16);  /*steps 괄호 안 숫자는 멘트 길이.*/
         animation-delay: 23s;
+        display: none;
     }
+     /*툴팁*/
+     .fas{
+        color: white;
+        position: absolute;
+        margin: 5% 0 0 490%;
+        z-index: 5;
+    }
+    .fas:hover{
+        transform: scale(1.2);
+        transition: 0.1s ease-in-out;
+    }
+    
+    .exit{
+        display: inline-block;
+        position: relative;
+        margin: auto 0 auto 490%;
+        margin-top: 70px;
+    }
+    .exit .tooltip{
+        position: absolute;
+        width: 90px;
+        padding: 0;
+        visibility: hidden;
+        /* background-color: white; */
+        color: white;
+        text-align: center;
+        z-index: 1;
+    }
+    .exit .tooltip h1{
+        position: absolute;
+        font-size: 16px;
+        margin: -35% 0 0 -55%;
+    }
+    .exit:hover .tooltip{visibility: visible;}
 }
 @media (min-width: 1440px) and (max-width: 1900px){     /*pc 3(15인치)*/
     .scroll-icon{
@@ -650,6 +723,42 @@ body::-webkit-scrollbar{
         animation: typing 4s steps(16);  /*steps 괄호 안 숫자는 멘트 길이.*/
         animation-delay: 23s;
     }
+     /*툴팁*/
+     .fas{
+        color: white;
+        position: absolute;
+        margin: 200% 0 0 100%;
+        z-index: 5;
+    }
+    .fas:hover{
+        transform: scale(1.2);
+        transition: 0.1s ease-in-out;
+    }
+    
+    .exit{
+        display: inline-block;
+        position: relative;
+        /* margin: 0 0 0 385%; */
+        
+        margin-top: -500px;
+    }
+    .exit .tooltip{
+        position: absolute;
+        width: 90px;
+        padding: 0;
+        visibility: hidden;
+        /* background-color: white; */
+        color: white;
+        text-align: center;
+        z-index: 1;
+        margin-bottom: 150%;
+    }
+    .exit .tooltip h1{
+        position: absolute;
+        font-size: 16px;
+        margin: -35% 0 0 -55%;
+    }
+    .exit:hover .tooltip{visibility: visible;}
 }
 @media (min-width: 1900px){     /*pc 4(완전 와이드스크린)*/
     .scroll-icon{
@@ -847,6 +956,40 @@ body::-webkit-scrollbar{
         animation: typing 4s steps(16);  /*steps 괄호 안 숫자는 멘트 길이.*/
         animation-delay: 23s;
     }
+    /*툴팁*/
+    .fas{
+        color: white;
+        position: absolute;
+        margin: 5% 0 0 490%;
+        z-index: 5;
+    }
+    .fas:hover{
+        transform: scale(1.2);
+        transition: 0.1s ease-in-out;
+    }
+    
+    .exit{
+        display: inline-block;
+        position: relative;
+        margin: auto 0 auto 490%;
+        margin-top: 70px;
+    }
+    .exit .tooltip{
+        position: absolute;
+        width: 90px;
+        padding: 0;
+        visibility: hidden;
+        /* background-color: white; */
+        color: white;
+        text-align: center;
+        z-index: 1;
+    }
+    .exit .tooltip h1{
+        position: absolute;
+        font-size: 16px;
+        margin: -35% 0 0 -55%;
+    }
+    .exit:hover .tooltip{visibility: visible;}
 }
 
 /*손잡이 따로따로 배치*/
@@ -946,11 +1089,11 @@ body::-webkit-scrollbar{
     animation-delay: 18s;
 } 
 */
-@keyframes cursor{ 
+/* @keyframes cursor{   이게 커서임!
     0%{border-right: 1px solid #fff} 
     50%{border-right: 1px solid #000} 
     100%{border-right: 1px solid #fff} 
-  }
+  } */
 
 @keyframes typing{
     from{
@@ -1042,9 +1185,4 @@ body::-webkit-scrollbar{
     } to{
         transform: rotate(-7deg);
     }
-}
-
-i{
-    position: absolute;
-
 }
