@@ -56,6 +56,8 @@ window.onload = function(){
     chat5 = document.getElementById("chat_5");
     chat6 = document.getElementById("chat_6");
 
+    
+    
 
     window.addEventListener("scroll", function(event){      //스크롤 이벤트를 걸어주고
         var scroll = this.scrollX;                          // scroll이라는 변수에 scrollY값을 넣어준다.
@@ -77,15 +79,11 @@ window.onload = function(){
     
         stageResize();
         loop();
-        alarm();
     })
-
-}
-
-function alarm(){
     if(chat1.style.opacity == 1){
         sound2.play();
     }
+
 }
 
 function scrollFunc(e){
