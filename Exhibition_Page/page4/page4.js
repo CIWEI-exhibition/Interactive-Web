@@ -19,7 +19,7 @@ window.onload = function(){
             console.log('Finished!');
         }
     });
-
+    
     sound.play();
 
     //이미지들 연결
@@ -94,6 +94,19 @@ window.onload = function(){
     }
 }
 
+function door(){
+    var sound2 = new Howl({
+        src: ['door.mp3'],
+        volume: 1,
+        autoplay: true,
+        onend : () => {     //오디오가 재생된 다음 실행할 내용
+            console.log('Finished!');
+        }
+    });
+
+    sound2.play();
+}
+
 function scrollFunc(e){
     var scrollTop = document.documentElement.scrollTop;
 }
@@ -103,9 +116,10 @@ function stageResize() {        //per를 위한 함수 (document랑 window heigh
     _windowNum = window.outerHeight;
 }
 
+
 // 팝업창
 function open_pop1(flag){
-    $('#Modal1').css('display','block');
+    $('#Modal1').css('display','block'); 
 };
 function open_pop2(flag){
     $('#Modal2').css('display','block');
