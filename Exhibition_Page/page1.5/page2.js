@@ -60,6 +60,7 @@ window.onload = function(){
             sound2.play();
         }
     }
+    alarm();
 
     window.addEventListener("scroll", function(event){      //스크롤 이벤트를 걸어주고
         var scroll = this.scrollX;                          // scroll이라는 변수에 scrollY값을 넣어준다.
