@@ -5,16 +5,7 @@
 body{
     margin: 0;
     padding: 0; 
-    font-family: 'Baloo Chettan 2', cursive;
-}
-
-a{
-    text-decoration: none;
-    color: #fff;
-}
-
-input[id="navbar_menu"]{
-    display: none;
+    background-color: #000;    
 }
 
 /* 1.5페이지 */
@@ -25,7 +16,46 @@ body{
 
 .scroll-icon{
     position: fixed;
+    margin: -18.5% 0 0 7.5%;
+    opacity: 0;
+    -webkit-animation:blink 7s ease-in-out; 
+    -moz-animation:blink 7s ease-in-out; 
+    animation:blink 7s ease-in-out;
 }
+
+@-webkit-keyframes blink{
+    0% {opacity:0;}
+    15%{opacity: 1;}
+    30%{opacity: 0;}
+    45%{opacity: 1;}
+    60%{opacity: 0;}
+    75%{opacity: 1;}
+    90%{opacity: 0;}
+    100% {opacity:0;} 
+} 
+
+@-moz-keyframes blink{
+    0% {opacity:0;}
+    15%{opacity: 1;}
+    30%{opacity: 0;}
+    45%{opacity: 1;}
+    60%{opacity: 0;}
+    75%{opacity: 1;}
+    90%{opacity: 0;}
+    100% {opacity:0;} 
+} 
+
+@keyframes blink{
+    0% {opacity:0;}
+    15%{opacity: 1;}
+    30%{opacity: 0;}
+    45%{opacity: 1;}
+    60%{opacity: 0;}
+    75%{opacity: 1;}
+    90%{opacity: 0;}
+    100% {opacity:0;} 
+}
+
 
 /* 이미지 배치 */
 .wrapper{
@@ -140,6 +170,71 @@ body::-webkit-scrollbar{
         width: 105%;
         margin: 38% 0 0 -2%;
     }
+
+    /* 채팅창 */
+#chat_bottom{
+    position: fixed;
+    margin: 41% 0 0 70%;
+    opacity: 0;
+    animation: chat 0.2s forwards;
+    animation-delay: 23s;
+}
+
+#chat_1{
+	position: fixed;
+    margin: 1% 0 0 70%;
+	opacity: 0;
+    animation: chat 0.2s forwards;
+    animation-delay: 8s;
+}
+
+#chat_2{
+	position: fixed;
+    margin: 7% 0 0 70%;
+	opacity: 0;
+    animation: chat 0.2s forwards;
+    animation-delay: 10s;
+}
+
+#chat_3{
+	position: fixed;
+    margin: -17.9% 0 0 70%;
+	opacity: 0;
+    animation: chat 0.2s forwards;
+    animation-delay: 12s;
+}
+
+#chat_4{
+	position: fixed;
+    margin: -11.9% 0 0 70%;
+	opacity: 0;
+    animation: chat 0.2s forwards;
+    animation-delay: 14s;
+}
+
+#chat_5{
+	position: fixed;
+    margin: -5.9% 0 0 70%;
+	opacity: 0;
+    animation: chat 0.2s forwards;
+    animation-delay: 16s;
+}
+
+#chat_6{
+	position: fixed;
+    margin: 0% 0 0 70%;
+	opacity: 0;
+    animation: chat 0.2s forwards;
+    animation-delay: 18s;
+}
+
+#my_chat{
+	position: fixed;
+    margin: 6% 0 0 88.5%;
+	opacity: 0;
+    animation: chat 0.2s forwards;
+    animation-delay: 22s;
+}
 }
 @media (min-width: 1281px) and (max-width: 1440px){     /*pc 2*/
     .wrapper{
@@ -236,6 +331,70 @@ body::-webkit-scrollbar{
         position: fixed;
         width: 105%;
         margin: 38% 0 0 -2%;
+    }
+    /* 채팅창 */
+    #chat_bottom{
+        position: fixed;
+        margin: 41% 0 0 70%;
+        opacity: 0;
+        animation: chat 0.2s forwards;
+        animation-delay: 23s;
+    }
+    
+    #chat_1{
+        position: fixed;
+        margin: 1% 0 0 70%;
+        opacity: 0;
+        animation: chat 0.2s forwards;
+        animation-delay: 8s;
+    }
+    
+    #chat_2{
+        position: fixed;
+        margin: 7% 0 0 70%;
+        opacity: 0;
+        animation: chat 0.2s forwards;
+        animation-delay: 10s;
+    }
+    
+    #chat_3{
+        position: fixed;
+        margin: -17.9% 0 0 70%;
+        opacity: 0;
+        animation: chat 0.2s forwards;
+        animation-delay: 12s;
+    }
+    
+    #chat_4{
+        position: fixed;
+        margin: -11.9% 0 0 70%;
+        opacity: 0;
+        animation: chat 0.2s forwards;
+        animation-delay: 14s;
+    }
+    
+    #chat_5{
+        position: fixed;
+        margin: -5.9% 0 0 70%;
+        opacity: 0;
+        animation: chat 0.2s forwards;
+        animation-delay: 16s;
+    }
+    
+    #chat_6{
+        position: fixed;
+        margin: 0% 0 0 70%;
+        opacity: 0;
+        animation: chat 0.2s forwards;
+        animation-delay: 18s;
+    }
+    
+    #my_chat{
+        position: fixed;
+        margin: 6% 0 0 88.5%;
+        opacity: 0;
+        animation: chat 0.2s forwards;
+        animation-delay: 22s;
     }
 }
 @media (min-width: 1440px) and (max-width: 1900px){     /*pc 3(15인치)*/
@@ -334,6 +493,70 @@ body::-webkit-scrollbar{
         width: 105%;
         margin: 38% 0 0 -2%;
     }
+    /* 채팅창 */
+    #chat_bottom{
+        position: fixed;
+        margin: 41% 0 0 70%;
+        opacity: 0;
+        animation: chat 0.2s forwards;
+        animation-delay: 23s;
+    }
+    
+    #chat_1{
+        position: fixed;
+        margin: 1% 0 0 70%;
+        opacity: 0;
+        animation: chat 0.2s forwards;
+        animation-delay: 8s;
+    }
+    
+    #chat_2{
+        position: fixed;
+        margin: 7% 0 0 70%;
+        opacity: 0;
+        animation: chat 0.2s forwards;
+        animation-delay: 10s;
+    }
+    
+    #chat_3{
+        position: fixed;
+        margin: -17.9% 0 0 70%;
+        opacity: 0;
+        animation: chat 0.2s forwards;
+        animation-delay: 12s;
+    }
+    
+    #chat_4{
+        position: fixed;
+        margin: -11.9% 0 0 70%;
+        opacity: 0;
+        animation: chat 0.2s forwards;
+        animation-delay: 14s;
+    }
+    
+    #chat_5{
+        position: fixed;
+        margin: -5.9% 0 0 70%;
+        opacity: 0;
+        animation: chat 0.2s forwards;
+        animation-delay: 16s;
+    }
+    
+    #chat_6{
+        position: fixed;
+        margin: 0% 0 0 70%;
+        opacity: 0;
+        animation: chat 0.2s forwards;
+        animation-delay: 18s;
+    }
+    
+    #my_chat{
+        position: fixed;
+        margin: 6% 0 0 88.5%;
+        opacity: 0;
+        animation: chat 0.2s forwards;
+        animation-delay: 2s;
+    }
 }
 @media (min-width: 1900px){     /*pc 4(완전 와이드스크린)*/
     .wrapper{
@@ -431,6 +654,70 @@ body::-webkit-scrollbar{
         width: 105%;
         margin: 38% 0 0 -2%;
     }
+    /* 채팅창 */
+    #chat_bottom{
+        position: fixed;
+        margin: 41% 0 0 70%;
+        opacity: 0;
+        animation: chat 0.2s forwards;
+        animation-delay: 23s;
+    }
+    
+    #chat_1{
+        position: fixed;
+        margin: 1% 0 0 70%;
+        opacity: 0;
+        animation: chat 0.2s forwards;
+        animation-delay: 8s;
+    }
+    
+    #chat_2{
+        position: fixed;
+        margin: 7% 0 0 70%;
+        opacity: 0;
+        animation: chat 0.2s forwards;
+        animation-delay: 10s;
+    }
+    
+    #chat_3{
+        position: fixed;
+        margin: -17.9% 0 0 70%;
+        opacity: 0;
+        animation: chat 0.2s forwards;
+        animation-delay: 12s;
+    }
+    
+    #chat_4{
+        position: fixed;
+        margin: -11.9% 0 0 70%;
+        opacity: 0;
+        animation: chat 0.2s forwards;
+        animation-delay: 14s;
+    }
+    
+    #chat_5{
+        position: fixed;
+        margin: -5.9% 0 0 70%;
+        opacity: 0;
+        animation: chat 0.2s forwards;
+        animation-delay: 16s;
+    }
+    
+    #chat_6{
+        position: fixed;
+        margin: 0% 0 0 70%;
+        opacity: 0;
+        animation: chat 0.2s forwards;
+        animation-delay: 18s;
+    }
+    
+    #my_chat{
+        position: fixed;
+        margin: 6% 0 0 88.5%;
+        opacity: 0;
+        animation: chat 0.2s forwards;
+        animation-delay: 22s;
+    }
 }
 
 /*손잡이 따로따로 배치*/
@@ -492,142 +779,13 @@ body::-webkit-scrollbar{
 }
 
 
-/* 채팅창 */
-#chat_bottom{
-    position: fixed;
-    margin: 42% 0 0 67%;
-    opacity: 90%;
-}
-
-#chat_1{
-	position: fixed;
-    margin: 2% 0 0 67.4%;
-	opacity: 0;
-    animation: chat1 0.2s forwards;
-    animation-delay: 4s;
-}
-
-@keyframes chat1{
-    from{
-      opacity: 0;
-      transform: translateY(-5px) scale(0.5);
-    }
-    to{
-      opacity: 1;
-      transform: translateY(0) scale(1);
-    }
-  }
-
-#chat_2{
-	position: fixed;
-    margin: 8% 0 0 70%;
-	opacity: 0;
-    animation: chat2 0.2s forwards;
-    animation-delay: 6s;
-}
-
-@keyframes chat2{
-  from{
-      opacity: 0;
-      transform: translateY(-5px) scale(0.5);
-    }
-    to{
-      opacity: 1;
-      transform: translateY(0) scale(1);
-    }
-  }  
-
-#chat_3{
-	position: fixed;
-    margin: -16.9% 0 0 70%;
-	opacity: 0;
-    animation: chat3 0.2s forwards;
-    animation-delay: 8s;
-}
-
-@keyframes chat3{
+@keyframes chat{
     from{
         opacity: 0;
         transform: translateY(-5px) scale(0.5);
       }
       to{
-        opacity: 1;
-        transform: translateY(0) scale(1);
-      }
-    } 
-
-#chat_4{
-	position: fixed;
-    margin: -10.9% 0 0 70%;
-	opacity: 0;
-    animation: chat4 0.2s forwards;
-    animation-delay: 10s;
-}
-
-@keyframes chat4{
-    from{
-        opacity: 0;
-        transform: translateY(-5px) scale(0.5);
-      }
-      to{
-        opacity: 1;
-        transform: translateY(0) scale(1);
-      }
-    } 
-
-#chat_5{
-	position: fixed;
-    margin: -4.9% 0 0 70%;
-	opacity: 0;
-    animation: chat5 0.2s forwards;
-    animation-delay: 12s;
-}
-
-@keyframes chat5{
-    from{
-        opacity: 0;
-        transform: translateY(-5px) scale(0.5);
-      }
-      to{
-        opacity: 1;
-        transform: translateY(0) scale(1);
-      }
-    } 
-
-#chat_6{
-	position: fixed;
-    margin: 1% 0 0 70%;
-	opacity: 0;
-    animation: chat6 0.2s forwards;
-    animation-delay: 14s;
-}
-
-@keyframes chat6{
-    from{
-        opacity: 0;
-        transform: translateY(-5px) scale(0.5);
-      }
-      to{
-        opacity: 1;
-        transform: translateY(0) scale(1);
-      }
-    } 
-
-#my_chat{
-	position: fixed;
-    margin: 7% 0 0 88.5%;
-	opacity: 0;
-    animation: chat7 0.2s forwards;
-    animation-delay: 16s;
-}
-
-@keyframes chat7{
-    from{
-        opacity: 0;
-        transform: translateY(-5px) scale(0.5);
-      }
-      to{
-        opacity: 1;
+        opacity: 0.9;
         transform: translateY(0) scale(1);
       }
     } 
