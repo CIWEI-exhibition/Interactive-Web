@@ -26,7 +26,7 @@ body::-webkit-scrollbar{
 .click-icon{
     position: absolute;
     height: auto;
-    margin: 24% 0 0 305%;
+    margin: 23% 0 0 295.3%;
     opacity: 0;
     -webkit-animation:blink 7s ease-in-out infinite; 
     -moz-animation:blink 7s ease-in-out infinite; 
@@ -76,6 +76,7 @@ body::-webkit-scrollbar{
 } */
 
 /*그림 배치*/
+<<<<<<< HEAD
 @media (max-width: 1280px){      /* pc */
     .scroll-icon{
         position: absolute;
@@ -87,6 +88,9 @@ body::-webkit-scrollbar{
         animation:blink 7s ease-in-out;
     }
 
+=======
+@media (max-width: 1280px){      /* pc 13인치*/
+>>>>>>> 4b95fa81a55ec541b18996fcd43be8fa4bb16251
     .wrapper{
         display: flex;
         position: relative;
@@ -99,92 +103,94 @@ body::-webkit-scrollbar{
     }
     
     .wrapper .bgSky{
-        width: 511%;
+        width: 483.5%;
     }
 
     .wrapper .main_wrapper .bgStar1{
-        width: 461%;
+        width: 440%;
     }
 
     .wrapper .main_wrapper .bgStar2{
-        width: 561%;
+        width: 550%;
     }
 
     .wrapper .main_wrapper .bgStar3{
-        width: 511%;
+        width: 450%;
     }
 
     .wrapper .main_wrapper .bgMount1{
         width: 200%;
-        margin: 24.5% 0 0 -1.5%;
+        margin: 24.2% 0 0 -1.5%;
     }
 
     .wrapper .main_wrapper .bgMount2{
-        width: 310%;
+        width: 280%;
         margin: 28% 0 0 227%;
     }
 
     .wrapper .main_wrapper .bgMount3{
         width: 200%;
-        margin: 24% 0 0 44%;
+        margin: 21% 0 0 44%;
     }
 
     .wrapper .main_wrapper .bgMount4{
         width: 300%;
-        margin: 27% 0 0 220%;
+        margin: 26% 0 0 220%;
     }
 
     .wrapper .main_wrapper .bgGround{
         position: fixed;
-        width: 514%;
-        margin: 39% 0 0 0;
+        width: 400%;
+        height: 20%;
+        margin: 38% 0 0 0;
     }
 
     .wrapper .main_wrapper .bgLamp{
-        width: 450%;
-        margin: 10.5% 0 0 49%;
+        width: 432%;
+        margin: 11% 0 0 49%;
     }
 
     .wrapper .main_wrapper .bgTree{
-        width: 460%;
-        margin: 15% 0 0 35%;
+        width: 430%;
+        margin: 16% 0 0 45%;
     }
 
     .wrapper .booth_wrapper .banner{
-        width: 50%;
-        margin: 21% 0 0 113%;
+        width: 45%;
+        margin: 22% 0 0 112%;
     }
 
     .wrapper .booth_wrapper .busking{
-        width: 43%;
-        margin: 21.7% 0 0 175%;
+        width: 41%;
+        margin: 20.4% 0 0 170%;
     }
 
     .wrapper .booth_wrapper .icecream{
-        width: 35%;
-        margin: 13% 0 0 231%;
+        width: 34%;
+        margin: 12% 0 0 224%;
     }
 
     .wrapper .booth_wrapper .study{
         width: 42%;
-        margin: 15% 0 0 281%;
+        margin: 14% 0 0 271.5%;
     }
 
     .wrapper .booth_wrapper .love{
         width: 42%;
-        margin: 15% 0 0 340%;
+        margin: 14% 0 0 326%;
     }
 
     .wrapper .booth_wrapper .music{
         width: 42%;
-        margin: 14% 0 0 396%;
+        margin: 13% 0 0 381%;
     }
 
     .wrapper .booth_wrapper .healing{
         width: 42%;
-        margin: 15% 0 0 450%;
+        margin: 14% 0 0 435%;
     }
 }
+<<<<<<< HEAD
 @media (min-width: 1281px) and (max-width: 1440px){
     .scroll-icon{
         position: absolute;
@@ -196,6 +202,9 @@ body::-webkit-scrollbar{
         animation:blink 7s ease-in-out;
     }
 
+=======
+@media (min-width: 1281px) and (max-width: 1440px){      /* pc 13인치*/
+>>>>>>> 4b95fa81a55ec541b18996fcd43be8fa4bb16251
     .wrapper{
         display: flex;
         position: relative;
@@ -208,11 +217,11 @@ body::-webkit-scrollbar{
     }
     
     .wrapper .bgSky{
-        width: 500%;
+        width: 483.5%;
     }
 
     .wrapper .main_wrapper .bgStar1{
-        width: 450%;
+        width: 440%;
     }
 
     .wrapper .main_wrapper .bgStar2{
@@ -220,43 +229,43 @@ body::-webkit-scrollbar{
     }
 
     .wrapper .main_wrapper .bgStar3{
-        width: 500%;
+        width: 450%;
     }
 
     .wrapper .main_wrapper .bgMount1{
         width: 200%;
-        margin: 24.5% 0 0 -1.5%;
+        margin: 24.2% 0 0 -1.5%;
     }
 
     .wrapper .main_wrapper .bgMount2{
-        width: 310%;
-        margin: 28% 0 0 227%;
+        width: 280%;
+        margin: 26% 0 0 227%;
     }
 
     .wrapper .main_wrapper .bgMount3{
         width: 200%;
-        margin: 24% 0 0 44%;
+        margin: 20% 0 0 44%;
     }
 
     .wrapper .main_wrapper .bgMount4{
         width: 300%;
-        margin: 27% 0 0 220%;
+        margin: 24% 0 0 220%;
     }
 
     .wrapper .main_wrapper .bgGround{
         position: fixed;
-        width: 500%;
+        width: 350%;
         margin: 39% 0 0 0;
     }
 
     .wrapper .main_wrapper .bgLamp{
-        width: 450%;
-        margin: 10.5% 0 0 49%;
+        width: 460%;
+        margin: 10% 0 0 49%;
     }
 
     .wrapper .main_wrapper .bgTree{
         width: 460%;
-        margin: 15% 0 0 35%;
+        margin: 14% 0 0 35%;
     }
 
     .wrapper .booth_wrapper .banner{
@@ -265,8 +274,8 @@ body::-webkit-scrollbar{
     }
 
     .wrapper .booth_wrapper .busking{
-        width: 42%;
-        margin: 21.7% 0 0 175%;
+        width: 43%;
+        margin: 19.2% 0 0 175%;
     }
 
     .wrapper .booth_wrapper .icecream{
@@ -276,24 +285,25 @@ body::-webkit-scrollbar{
 
     .wrapper .booth_wrapper .study{
         width: 42%;
-        margin: 15% 0 0 281%;
+        margin: 14% 0 0 281%;
     }
 
     .wrapper .booth_wrapper .love{
         width: 42%;
-        margin: 15% 0 0 340%;
+        margin: 14% 0 0 340%;
     }
 
     .wrapper .booth_wrapper .music{
         width: 42%;
-        margin: 14% 0 0 396%;
+        margin: 13% 0 0 396%;
     }
 
     .wrapper .booth_wrapper .healing{
         width: 42%;
-        margin: 15% 0 0 450%;
+        margin: 14% 0 0 450%;
     }
 }
+<<<<<<< HEAD
 @media (min-width: 1440px) and (max-width: 1900px){     /*pc 3(15인치, 데탑)*/
     .scroll-icon{
         position: absolute;
@@ -305,6 +315,9 @@ body::-webkit-scrollbar{
         animation:blink 7s ease-in-out;
     }
 
+=======
+@media (min-width: 1441px) and (max-width: 1900px){     /*pc 3(15인치, 데탑)*/
+>>>>>>> 4b95fa81a55ec541b18996fcd43be8fa4bb16251
     .wrapper{
         display: flex;
         position: relative;
