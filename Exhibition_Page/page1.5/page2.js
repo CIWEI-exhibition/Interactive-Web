@@ -20,15 +20,6 @@ window.onload = function(){
         }
     });
 
-    var sound2 = new Howl({
-        src: ['messenger_1.mp3'],
-        volume: 1,
-        autoplay: true,
-        onend : () => {     //오디오가 재생된 다음 실행할 내용
-            console.log('Finished!');
-        }
-    });
-    
     sound.play();
 
     //이미지들 연결
@@ -80,6 +71,16 @@ window.onload = function(){
     })
 
 }
+
+var sound2 = new Howl({
+    src: ['messenger_1.mp3'],
+    volume: 1,
+    autoplay: true,
+    onend : () => {     //오디오가 재생된 다음 실행할 내용
+        console.log('Finished!');
+    }
+});
+
 if(chat1.style.opacity == 1){
     sound2.play();
 }
