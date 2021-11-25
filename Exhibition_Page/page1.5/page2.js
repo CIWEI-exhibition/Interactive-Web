@@ -138,29 +138,15 @@ function stageResize() {        //per를 위한 함수 (document랑 window heigh
 //   });
 
 //-------------------------------------------------------------------------
-//채팅창 애니메이션
-var typingBool = false; 
-var typingIdx=0; 
+// setTimeout(typing2, 1000);
 
-// 타이핑될 텍스트를 가져온다 
-var typingTxt = $(".typing-txt").text(); 
+// var typing = document.querySelector(".typing");
+// var typing_before = document.querySelector(".typing::before")
 
-typingTxt=typingTxt.split(""); // 한글자씩 자른다. 
+// function typing2(){
+//     // typing.style.display = "block";
+//     // typing_before.style.display = "block;"
+//     typing.style.animationPlayState = "running";
+//     typing_before.style.animationPlayState = "running";
+// }
 
-if(typingBool==false){ 
-  // 타이핑이 진행되지 않았다면 
-   typingBool=true;     
-   var tyInt = setInterval(typing,100); // 반복동작 
-} 
-     
-function typing(){ 
-  if(typingIdx<typingTxt.length){ 
-    // 타이핑될 텍스트 길이만큼 반복 
-    $(".typing").append(typingTxt[typingIdx]);
-    // 한글자씩 이어준다. 
-    typingIdx++; 
-   } else{ 
-     //끝나면 반복종료 
-    clearInterval(tyInt); 
-   } 
-}  

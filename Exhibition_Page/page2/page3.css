@@ -18,23 +18,88 @@ body::-webkit-scrollbar{
     display: none;
 }
 
-.scroll-icon{
-    position: absolute;
-    height: auto;
-    margin: -34% 0 0 45%;
-    opacity: 0;
-    -webkit-animation:blinks 7s ease-in-out; 
-    -moz-animation:blinks 7s ease-in-out; 
-    animation:blinks 7s ease-in-out;
+@media (max-width: 1280px){     /*모바일 일단 포함, pc(13인치)*/
+    .scroll-icon{
+        position: absolute;
+        height: auto;
+        margin: -34% 0 0 45%;
+        opacity: 0;
+        -webkit-animation:blinks 7s ease-in-out; 
+        -moz-animation:blinks 7s ease-in-out; 
+        animation:blinks 7s ease-in-out;
+    }
+    
+    .click-icon{
+        position: absolute;
+        margin: 58% 0 0 54%;
+        opacity: 0;
+        -webkit-animation:blink 7s ease-in-out infinite; 
+        -moz-animation:blink 7s ease-in-out infinite; 
+        animation:blink 7s ease-in-out infinite;
+    }
 }
 
-.click-icon{
-    position: absolute;
-    margin: 58% 0 0 54%;
-    opacity: 0;
-    -webkit-animation:blink 7s ease-in-out infinite; 
-    -moz-animation:blink 7s ease-in-out infinite; 
-    animation:blink 7s ease-in-out infinite;
+@media (min-width: 1281px) and (max-width: 1440px){     /*pc 2*/
+    .scroll-icon{
+        position: absolute;
+        height: auto;
+        margin: -34% 0 0 45%;
+        opacity: 0;
+        -webkit-animation:blinks 7s ease-in-out; 
+        -moz-animation:blinks 7s ease-in-out; 
+        animation:blinks 7s ease-in-out;
+    }
+    
+    .click-icon{
+        position: absolute;
+        margin: 58% 0 0 54%;
+        opacity: 0;
+        -webkit-animation:blink 7s ease-in-out infinite; 
+        -moz-animation:blink 7s ease-in-out infinite; 
+        animation:blink 7s ease-in-out infinite;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1900px){     /*pc 3(15인치)*/
+    .scroll-icon{
+        position: absolute;
+        height: auto;
+        margin: -31% 0 0 45%;
+        opacity: 0;
+        -webkit-animation:blinks 7s ease-in-out; 
+        -moz-animation:blinks 7s ease-in-out; 
+        animation:blinks 7s ease-in-out;
+    }
+    
+    .click-icon{
+        position: absolute;
+        margin: 58% 0 0 54%;
+        opacity: 0;
+        -webkit-animation:blink 7s ease-in-out infinite; 
+        -moz-animation:blink 7s ease-in-out infinite; 
+        animation:blink 7s ease-in-out infinite;
+    }
+}
+
+@media (min-width: 1900px){     /*pc 4(완전 와이드스크린)*/
+    .scroll-icon{
+        position: absolute;
+        height: auto;
+        margin: -31% 0 0 45%;
+        opacity: 0;
+        -webkit-animation:blinks 7s ease-in-out; 
+        -moz-animation:blinks 7s ease-in-out; 
+        animation:blinks 7s ease-in-out;
+    }
+    
+    .click-icon{
+        position: absolute;
+        margin: 58% 0 0 54%;
+        opacity: 0;
+        -webkit-animation:blink 7s ease-in-out infinite; 
+        -moz-animation:blink 7s ease-in-out infinite; 
+        animation:blink 7s ease-in-out infinite;
+    }
 }
 
 @-webkit-keyframes blinks{

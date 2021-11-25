@@ -22,15 +22,6 @@ body::-webkit-scrollbar{
     display: none;
 }
 
-.scroll-icon{
-    position: absolute;
-    height: auto;
-    margin: 17% 0 0 7.5%;
-    opacity: 0;
-    -webkit-animation:blink 7s ease-in-out; 
-    -moz-animation:blink 7s ease-in-out; 
-    animation:blink 7s ease-in-out;
-}
 
 .click-icon{
     position: absolute;
@@ -85,7 +76,21 @@ body::-webkit-scrollbar{
 } */
 
 /*그림 배치*/
+<<<<<<< HEAD
+@media (max-width: 1280px){      /* pc */
+    .scroll-icon{
+        position: absolute;
+        height: auto;
+        margin: 17% 0 0 7.5%;
+        opacity: 0;
+        -webkit-animation:blink 7s ease-in-out; 
+        -moz-animation:blink 7s ease-in-out; 
+        animation:blink 7s ease-in-out;
+    }
+
+=======
 @media (max-width: 1280px){      /* pc 13인치*/
+>>>>>>> 4b95fa81a55ec541b18996fcd43be8fa4bb16251
     .wrapper{
         display: flex;
         position: relative;
@@ -185,7 +190,21 @@ body::-webkit-scrollbar{
         margin: 14% 0 0 435%;
     }
 }
+<<<<<<< HEAD
+@media (min-width: 1281px) and (max-width: 1440px){
+    .scroll-icon{
+        position: absolute;
+        height: auto;
+        margin: 17% 0 0 7.5%;
+        opacity: 0;
+        -webkit-animation:blink 7s ease-in-out; 
+        -moz-animation:blink 7s ease-in-out; 
+        animation:blink 7s ease-in-out;
+    }
+
+=======
 @media (min-width: 1281px) and (max-width: 1440px){      /* pc 13인치*/
+>>>>>>> 4b95fa81a55ec541b18996fcd43be8fa4bb16251
     .wrapper{
         display: flex;
         position: relative;
@@ -284,7 +303,21 @@ body::-webkit-scrollbar{
         margin: 14% 0 0 450%;
     }
 }
+<<<<<<< HEAD
+@media (min-width: 1440px) and (max-width: 1900px){     /*pc 3(15인치, 데탑)*/
+    .scroll-icon{
+        position: absolute;
+        height: auto;
+        margin: 18% 0 0 7.5%;
+        opacity: 0;
+        -webkit-animation:blink 7s ease-in-out; 
+        -moz-animation:blink 7s ease-in-out; 
+        animation:blink 7s ease-in-out;
+    }
+
+=======
 @media (min-width: 1441px) and (max-width: 1900px){     /*pc 3(15인치, 데탑)*/
+>>>>>>> 4b95fa81a55ec541b18996fcd43be8fa4bb16251
     .wrapper{
         display: flex;
         position: relative;
@@ -384,6 +417,16 @@ body::-webkit-scrollbar{
     }
 }
 @media (min-width: 1900px){     /*pc 4(완전 와이드스크린)*/
+    .scroll-icon{
+        position: absolute;
+        height: auto;
+        margin: 18% 0 0 7.5%;
+        opacity: 0;
+        -webkit-animation:blink 7s ease-in-out; 
+        -moz-animation:blink 7s ease-in-out; 
+        animation:blink 7s ease-in-out;
+    }
+    
     .wrapper{
         display: flex;
         position: relative;
