@@ -60,12 +60,12 @@ form #content{
   margin: 20% 0 0 58%;
   opacity: 0;
   display: none;
-  animation: error1 0.2s forwards;
+  animation: error 0.2s forwards;
   animation-delay: 1s;
   animation-play-state: paused;
 } 
 
-@keyframes error1{
+@keyframes error{
   from{
     opacity: 0;
     transform: translateY(-5px) scale(0.5);
@@ -81,146 +81,69 @@ form #content{
   margin: 33% 0 0 60%;
   opacity: 0;
   display: none;
-  animation: error2 0.2s forwards;
+  animation: error 0.2s forwards;
   animation-delay: 1.2s;
   animation-play-state: paused;
 } 
-
-@keyframes error2{
-  from{
-    opacity: 0;
-    transform: translateY(-5px) scale(0.5);
-  }
-  to{
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
 
 #error3{
   position: absolute;
   margin: 23% 0 0 43%;
   opacity: 0;
   display: none;
-  animation: error3 0.2s forwards;
+  animation: error 0.2s forwards;
   animation-delay: 1.4s;
   animation-play-state: paused;
 } 
-
-@keyframes error3{
-  from{
-    opacity: 0;
-    transform: translateY(-5px) scale(0.5);
-  }
-  to{
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
 
 #error4{
   position: absolute;
   margin: 30% 0 0 50%;
   opacity: 0;
   display: none;
-  animation: error4 0.2s forwards;
+  animation: error 0.2s forwards;
   animation-delay: 1.6s;
   animation-play-state: paused;
 } 
-
-@keyframes error4{
-  from{
-    opacity: 0;
-    transform: translateY(-5px) scale(0.5);
-  }
-  to{
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
 
 #error5{
   position: absolute;
   margin: 38% 0 0 45%;
   opacity: 0;
   display: none;
-  animation: error5 0.2s forwards;
+  animation: error 0.2s forwards;
   animation-delay: 1.8s;
   animation-play-state: paused;
 } 
-
-@keyframes error5{
-  from{
-    opacity: 0;
-    transform: translateY(-5px) scale(0.5);
-  }
-  to{
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
 
 #error6{
   position: absolute;
   margin: 13% 0 0 38%;
   opacity: 0;
   display: none;
-  animation: error6 0.2s forwards;
+  animation: error 0.2s forwards;
   animation-delay: 2.0s;
   animation-play-state: paused;
 } 
-
-@keyframes error6{
-  from{
-    opacity: 0;
-    transform: translateY(-5px) scale(0.5);
-  }
-  to{
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
 
 #error7{
   position: absolute;
   margin: 20% 0 0 25%;
   opacity: 0;
   display: none;
-  animation: error7 0.2s forwards;
+  animation: error 0.2s forwards;
   animation-delay: 2.2s;
   animation-play-state: paused;
 } 
-
-@keyframes error7{
-  from{
-    opacity: 0;
-    transform: translateY(-5px) scale(0.5);
-  }
-  to{
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
 
 #error8{
   position: absolute;
   margin: 35% 0 0 25%;
   opacity: 0;
   display: none;
-  animation: error8 0.2s forwards;
+  animation: error 0.2s forwards;
   animation-delay: 2.4s;
   animation-play-state: paused;
-} 
-
-@keyframes error8{
-  from{
-    opacity: 0;
-    transform: translateY(-5px) scale(0.5);
-  }
-  to{
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
 }
 
 #error9{
@@ -228,21 +151,10 @@ form #content{
   margin: 27% 0 0 29%;
   opacity: 0;
   display: none;
-  animation: error9 0.2s forwards;
+  animation: error 0.2s forwards;
   animation-delay: 2.6s;
   animation-play-state: paused;
 } 
-
-@keyframes error9{
-  from{
-    opacity: 0;
-    transform: translateY(-5px) scale(0.5);
-  }
-  to{
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
 /* 과제팝업 끝 */
 
 /*블러*/
