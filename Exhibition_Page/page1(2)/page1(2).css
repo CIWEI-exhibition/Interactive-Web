@@ -110,6 +110,11 @@ body{
 body::-webkit-scrollbar{
     display: none;
 }
+
+.scroll-icon{
+    position: absolute;
+    height: auto;
+}
 /*스크롤바 없애기 끝*/
 
 /* #icon_sound {
