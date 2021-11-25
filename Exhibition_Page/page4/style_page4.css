@@ -183,7 +183,7 @@ body::-webkit-scrollbar{
 
 #hand{
   position: absolute;
-  margin: -30% 0 0 -10%;
+  margin: -35% 0 0 -10%;
   animation-name: hand;
   animation-duration: 5s;
  animation-timing-function: linear;
