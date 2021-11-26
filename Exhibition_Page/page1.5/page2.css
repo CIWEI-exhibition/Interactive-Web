@@ -962,7 +962,7 @@ body::-webkit-scrollbar{
     .exit{
         display: inline-block;
         position: fixed;
-        margin: 5% 0 0 42%;
+        margin: 10% 0 0 42%;
     }
     .exit .tooltip{
         position: fixed;
