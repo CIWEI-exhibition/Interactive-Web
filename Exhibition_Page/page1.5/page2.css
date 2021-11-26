@@ -67,7 +67,7 @@ body::-webkit-scrollbar{
 @media (max-width: 1280px){     /*모바일 일단 포함, pc(13인치)*/
     .scroll-icon{
         position: fixed;
-        margin: -18.5% 0 0 7.5%;
+        margin: -18.5% 0 0 -43%;
         opacity: 0;
         -webkit-animation:blink 7s ease-in-out; 
         -moz-animation:blink 7s ease-in-out; 
@@ -243,8 +243,8 @@ body::-webkit-scrollbar{
     position: absolute;
     /*글자 위치 대충 여기서 조절하면 됨!*/
     margin: 0;
-    top: 92.5%;
-    left: 76.5%;
+    top: 100.5%;
+    left: 100.5%;
     transform: translate(-50%, -50%);
 }
 
