@@ -525,7 +525,7 @@ body::-webkit-scrollbar{
     }
     .exit:hover .tooltip{visibility: visible;}
 }
-@media (min-width: 1701px) and (max-width: 1900px){     /*pc 4(완전 와이드스크린)*/
+@media (min-width: 1701px) and (max-width: 1900px){     /*pc 4(17인치)*/
     .scroll-icon{
         position: absolute;
         height: auto;
@@ -595,52 +595,52 @@ body::-webkit-scrollbar{
     .wrapper .main_wrapper .bgGround{
         position: fixed;
         width: 500%;
-        margin: 40.55% 0 0 0;
+        margin: 60% 0 0 0;
     }
 
     .wrapper .main_wrapper .bgLamp{
         width: 450%;
-        margin: 12% 0 0 49%;
+        margin: 32% 0 0 49%;
     }
 
     .wrapper .main_wrapper .bgTree{
         width: 460%;
-        margin: 16.5% 0 0 37%;
+        margin: 36.5% 0 0 37%;
     }
 
     .wrapper .booth_wrapper .banner{
         width: 50%;
-        margin: 22.5% 0 0 113%;
+        margin: 42.5% 0 0 113%;
     }
 
     .wrapper .booth_wrapper .busking{
         width: 42%;
-        margin: 23.5% 0 0 175%;
+        margin: 43.5% 0 0 175%;
     }
 
     .wrapper .booth_wrapper .icecream{
         width: 35%;
-        margin: 14.5% 0 0 231%;
+        margin: 34.5% 0 0 231%;
     }
 
     .wrapper .booth_wrapper .study{
         width: 42%;
-        margin: 16.5% 0 0 281%;
+        margin: 36.5% 0 0 281%;
     }
 
     .wrapper .booth_wrapper .love{
         width: 42%;
-        margin: 16.5% 0 0 340%;
+        margin: 36.5% 0 0 340%;
     }
 
     .wrapper .booth_wrapper .music{
         width: 42%;
-        margin: 15.5% 0 0 396%;
+        margin: 35.5% 0 0 396%;
     }
 
     .wrapper .booth_wrapper .healing{
         width: 42%;
-        margin: 16.5% 0 0 450%;
+        margin: 36.5% 0 0 450%;
     }
     /*툴팁*/
     .fas{
@@ -676,7 +676,7 @@ body::-webkit-scrollbar{
     }
     .exit:hover .tooltip{visibility: visible;}
 }
-@media (min-width: 1901px) {
+@media (min-width: 1901px) {        /*데탑*/
     .scroll-icon{
         position: absolute;
         height: auto;
