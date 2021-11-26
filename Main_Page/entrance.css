@@ -599,25 +599,3 @@ body::-webkit-scrollbar{
     position: absolute;
     margin: -34% 0 0 50%;
 }
-
-
-.modal_goods .diary_wrapper .diary{
-    position: absolute;
-}
-/* .modal_goods .diary_wrapper .diary-reflect{
-    position: absolute;
-    top: 0;
-    left: 0;
-} */
-
-.modal_goods .calendar_wrapper .calendar{
-    position: absolute;
-}
-
-.modal_goods .postcard_wrapper .postcard{
-    position: absolute;
-}
-
-.modal_goods .cup_wrapper .cup{
-    position: absolute;
-}

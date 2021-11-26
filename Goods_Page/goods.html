@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goods</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" 
+    crossorigin="anonymous">
+ 
+    <link rel="stylesheet" href="goods.css">
+    <!--구글폰트-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3bd70c3cf5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="section">
+        <input type="radio" name="slide" id="slide01" checked>
+        <input type="radio" name="slide" id="slide02">
+        <input type="radio" name="slide" id="slide03">
+        <input type="radio" name="slide" id="slide04">
+
+        <div class="slidewrap">
+            <ul class="slidelist">
+                <li>
+                    <a>
+                        <label for="slide04" class="left"></label>
+                        <div class="board">
+                            <a href="https://open.kakao.com/o/stbl1WKd"><img src="images/diary.JPG" alt="다이어리" class="img bg" id="bg_diary" width="100%" style="cursor: pointer"/></a>
+                            <!-- <img src="../Main_Page/memo_goods/전광판bg.png" alt="전광판bg" class="img bg" id="bg" width="100%" />
+                            <div class="diary_wrapper">
+                                    <img src="../Main_Page/memo_goods/goods/ipad.png" alt="다이어리" class="img diary" id="diary" width="45%" onClick="open_pop1();" style="cursor: pointer;"/>
+                                    <img src="../Main_Page/memo_goods/goods/ipad반사.png" alt="다이어리반사" class="img diary_reflect" id="diary_reflect" width="45%" styld="cursor: pointer;"/>
+                            </div> -->
+                            <div class="btn" onClick="close_pop15();">    <!--얘는 close 버튼. 모달 창이랑 따로 만들었다!-->
+                                <span class="pop_bt">close</span>
+                            </div>
+                            <div class="ment"
+                        </div>
+                        <label for="slide02" class="right"></label>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <label for="slide01" class="left"></label>
+                        <div class="board">
+                            <a href="https://open.kakao.com/o/stbl1WKd"><img src="images/calendar.JPG" alt="달력" class="img bg_calendar" id="bg_calendar" width="100%" style="cursor:pointer"/></a>
+                            <!-- <img src="../Main_Page/memo_goods/전광판bg.png" alt="전광판bg" class="img bg" id="memo_bg" width="100%" />
+                            <div class="calendar_wrapper">
+                                    <img src="../Main_Page/memo_goods/goods/미니달력뒤.png" alt="미니달력뒤" class="img calendar_back" id="calendar_back" width="60%" onClick="open_pop1();" style="cursor: pointer;"/>
+                                    <img src="../Main_Page/memo_goods/goods/PHONE.png" alt="달력-폰" class="img calendar_phone" id="calendar_phone" width="60%" style="cursor: pointer;"/>
+                                    <img src="../Main_Page/memo_goods/goods/미니달력반사.png" alt="달력반사" class="img calendar_reflect" id="calendar_phone" width="60%" style="cursor: pointer;"/>
+                            </div> -->
+                            <div class="btn" onClick="close_pop15();">    <!--얘는 close 버튼. 모달 창이랑 따로 만들었다!-->
+                                <span class="pop_bt">close</span>
+                            </div>
+                        </div>
+                        <label for="slide03" class="right"></label>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <label for="slide02" class="left"></label>
+                        <div class="board">
+                            <a href="https://open.kakao.com/o/stbl1WKd"><img src="images/postcard.jpg" alt="엽서" class="img bg_postcard" id="bg_postcard" width="100%" style="cursor: pointer"/></a>
+                            <!-- <img src="../Main_Page/memo_goods전광판bg.png" alt="전광판bg" class="img bg" id="memo_bg" width="100%" />
+                            <div class="postcard_wrapper">
+                                    <img src="../Main_Page/memo_goods/goods/엽서" alt="엽서" class="img postcard" id="postcard" width="60%" onClick="open_pop1();" style="cursor: pointer;"/>
+                                    <img src="../Main_Page/memo_goods/goods/엽서반사.png" alt="엽서반사" class="img calendar_phone" id="calendar_phone" width="60%" style="cursor: pointer;"/>
+                            </div> -->
+                            <div class="btn" onClick="close_pop15();">    <!--얘는 close 버튼. 모달 창이랑 따로 만들었다!-->
+                                <span class="pop_bt">close</span>
+                            </div>
+                        </div>
+                        <label for="slide04" class="right"></label>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <label for="slide03" class="left"></label>
+                        <div class="board">
+                            <a href="https://open.kakao.com/o/stbl1WKd"><img src="images/cup.jpg" alt="시리얼컵" class="img bg_cup" id="bg_cup" width="100%" style="cursor:pointer"/></a>
+                            <!-- <img src="../Main_Page/memo_goods/전광판bg.png" alt="전광판bg" class="img bg" id="memo_bg" width="100%" />
+                            <div class="cup_wrapper">
+                                    <img src="../Main_Page/memo_goods/goods/CUP.png" alt="컵" class="img cup" id="cup" width="60%" onClick="open_pop1();" style="cursor: pointer;"/>
+                                    <img src="../Main_Page/memo_goods/goods/cup반사.png" alt="" class="img cup_reflect" id="cup_reflect" width="60%" style="cursor: pointer;"/>
+                            </div> -->
+                            <div class="btn" onClick="close_pop15();">    <!--얘는 close 버튼. 모달 창이랑 따로 만들었다!-->
+                                <span class="pop_bt">close</span>
+                            </div>
+                        </div>
+                        <label for="slide01" class="right"></label>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+               
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"></script>   <!--for 음원. internet explorer에서는 적용 안됨-->
+    <script src="jquery-3.6.0.js"></script>
+    <!-- <script type="text/javascript" src="entrance.js"></script> -->
+</body>
+</html>
