@@ -17,44 +17,44 @@ body::-webkit-scrollbar{
 }
 
 /* 내부 */
-.section input, .section2 input {
+.section input{
     display: none;
 }
 
-.section input[id="slide"], .section2 input[id="slide2"] {
+.section input[id="slide"]{
     display: none;
 }
 
-.section .slidewrap, .section2 .slidewrap2{
+.section .slidewrap{
     max-width: 100%;
     margin: 0 auto 0 auto;
     overflow: hidden;
 }
 
-.section .slidelist, .section2 .slidelist2{
+.section .slidelist{
     white-space: nowrap;
     font-size: 0;
     padding: 0;
     margin: 0;
 }
 
-.section .slidelist ul, .section2 .slidelist2 ul{
+.section .slidelist ul{
     margin: 0;
 }
 
-.section .slidelist > li, .sectoin2 .slidelist2 > li{
+.section .slidelist > li{
     display: inline-block;
     vertical-align: middle;
     width: 100%;
     transition: all .5s;
 }
 
-.section .slidelist > li > a, .section2 .slidelist2 > li > a{
+.section .slidelist > li > a{
     display: block;
     position: relative;
 }
 
-.section .slidelist label, .section2 .slidelist2 label{
+.section .slidelist label{
     position: absolute;
     z-index: 10;
     top: 50%;
@@ -68,16 +68,8 @@ body::-webkit-scrollbar{
     background: url("memo_goods/left.png") center center / 100% no-repeat;
     margin: 28% 0 0 0;
 }
-.modal_goods .section2 .slidelsit2 .left2{
-    left: 0;
-    background: url("memo_goods/left.png") center center / 100% no-repeat;
-}
 
 .section .slidelist .right{
-    right: 0;
-    background: url("memo_goods/right.png") center center / 100% no-repeat;
-}
-.modal_goods .section2 .slidelist2 .right2{
     right: 0;
     background: url("memo_goods/right.png") center center / 100% no-repeat;
 }
@@ -86,10 +78,6 @@ body::-webkit-scrollbar{
 .section [id="slide02"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
 .section [id="slide03"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
 
-.section2 [id="slide2_01"]:checked ~ .slidewrap2 .slidelist2 > li {transform: translateX(0%);}
-.section2 [id="slide2_02"]:checked ~ .slidewrap2 .slidelist2 > li {transform: translateX(-100%);}
-.section2 [id="slide2_03"]:checked ~ .slidewrap2 .slidelist2 > li {transform: translateX(-200%);}
-.section2 [id="slide2_04"]:checked ~ .slidewrap2 .slidelist2 > li {transform: translateX(-300%);}
 
 /*첫번째(개인전시)이미지 배치*/
 .indiv .light{
@@ -291,6 +279,47 @@ body::-webkit-scrollbar{
     color: black;
 }
 
+/* 굿즈 전광판 */
+.memo_goods #left{
+    position: absolute;
+    margin: 24% 0 0 27%;
+}
+
+.memo_goods #right{
+    position: absolute;
+    margin: -19.3% 27% 0 0;
+}
+
+.memo_goods .diary_reflect{
+    width: 65%;
+    position: absolute;
+    margin: 49.5% 0 0 0;
+}
+
+.memo_goods .calendar{
+    width: 80%;
+    position: absolute;
+    margin: 25% 0 0 -8%;
+    z-index: -1;
+}
+
+.memo_goods .calendar_reflect{
+    width: 120%;
+    position: absolute;
+    margin: 64% 0 0 -94%;
+}
+
+.memo_goods .postcard_reflect{
+    width: 65%;
+    position: absolute;
+    margin: 13% 0 0 -65%;
+}
+
+.memo_goods .cup_reflect{
+    width: 65%;
+    position: absolute;
+    margin: 21% 0 0 -67%;
+}
 /* 전시 소개 */
 
 @media (max-width: 1280px){      /* pc */
@@ -518,6 +547,30 @@ body::-webkit-scrollbar{
 .memo .board{
     position: absolute;
     margin: -36% 0 0 7%;
+}
+
+.memo .postit1{
+    position: absolute;
+    margin: -34% 0 0 20%;
+}
+.memo .postit2{
+    position: absolute;
+    margin: -30% 0 0 40%
+}
+.memo .postit3{
+    position: absolute;
+    margin: -34% 0 0 35%;
+}
+.memo .postit4{
+    position: absolute;
+    margin: -27% 0 0 15%;
+}
+.memo .postit5{
+    position: absolute;
+    margin: -30% 0 0 28%;
+}
+.memo .postit6{
+    position: absolute;
 }
 
 .goods .comfort{

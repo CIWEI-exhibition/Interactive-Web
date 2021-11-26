@@ -85,7 +85,7 @@ body::-webkit-scrollbar{
     .scroll-icon{
         position: absolute;
         height: auto;
-        margin: -31% 0 0 45%;
+        margin: -24% 0 0 42%;
         opacity: 0;
         -webkit-animation:blinks 7s ease-in-out; 
         -moz-animation:blinks 7s ease-in-out; 

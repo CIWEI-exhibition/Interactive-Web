@@ -5,7 +5,9 @@
 body{
     margin: 0;
     padding: 0; 
-    background-color: rgb(255, 221, 221);    
+    background-color: #2a2d51;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    text-align: center;
 }
 
 
@@ -258,207 +260,45 @@ body::-webkit-scrollbar{
     animation: typing 4s steps(16);  /*steps 괄호 안 숫자는 멘트 길이.*/
     animation-delay: 23s;
 }
+ /*툴팁*/
+ .fas{
+    color: white;
+    position: absolute;
+    margin: 5% 0 0 490%;
+    z-index: 5;
 }
+.fas:hover{
+    transform: scale(1.2);
+    transition: 0.1s ease-in-out;
+}
+.exit{
+    display: inline-block;
+    position: fixed;
+    margin: 5% 0 0 42%;
+}
+.exit .tooltip{
+    position: fixed;
+    width: 100px;
+    padding: 0;
+    visibility: hidden;
+    /* background-color: white; */
+    color: white;
+    text-align: center;
+    z-index: 5;
+}
+.exit .tooltip h1{
+    position: fixed;
+    font-size: 16px;
+    margin: -2% 0 0 -3%;
+    z-index: 5;
+}
+.exit:hover .tooltip{visibility: visible;}
+}
+
 @media (min-width: 1281px) and (max-width: 1440px){     /*pc 2*/
     .scroll-icon{
         position: fixed;
-        margin: -18.5% 0 0 7.5%;
-        opacity: 0;
-        -webkit-animation:blink 7s ease-in-out; 
-        -moz-animation:blink 7s ease-in-out; 
-        animation:blink 7s ease-in-out;
-    }
-
-    .wrapper{
-        display: flex;
-        position: relative;
-        max-width: 400%;
-    }
-
-    .img{
-        position: absolute;
-        height: auto;
-    }
-
-    .wrapper .bg{
-        width: 400%;
-    }
-
-    .wrapper .small_wrapper .bg-3{
-        width: 350%;
-    }
-
-    .wrapper .small_wrapper .bg-shooting{
-        width: 60%;
-        margin: 12% 0 0 25%;
-    }
-
-    .wrapper .small_wrapper .bg-moon{
-        width: 9%;
-        margin: 11% 0 0 40%;
-    }
-    
-    .wrapper .small_wrapper .bg-1{
-        width: 400%;
-        margin: 15% 0 0 -5%;
-    }
-
-    .wrapper .small_wrapper .train{
-        width: 60%;
-        margin: 23.5% 0 0 5%;
-    }
-
-    .wrapper .small_wrapper .bg-2{
-        width: 340%;
-        margin: 10.9% 0 0 20%;
-    }
-
-    /* .wrapper .small_wrapper .bg-shadow{
-        width: 350%;
-        margin: -11% 0 0 15.3%;
-    } */
-
-    .wrapper .small_wrapper .building{
-        width: 200%;
-        margin: 12% 0 0 130%;
-    }
-    
-    .wrapper .small_wrapper .bg-moonlight{
-        width: 40%;
-        margin: 30% 0 0 20%;
-    }
-
-    .wrapper .small_wrapper .fade-out{
-        width: 400%;
-    }
-
-    .wrapper .front_wrapper .subway{
-        position: fixed;
-        width: 100%;
-        margin: -1% 0 0 0;
-    }
-
-    .wrapper .front_wrapper .handle1{
-        position: fixed;
-        width: 3%;
-        margin: -1% 0 0 19%;
-    }
-    .wrapper .front_wrapper .handle2{
-        position: fixed;
-        width: 3%;
-        margin: -1% 0 0 38%;
-    }
-    .wrapper .front_wrapper .handle3{
-        position: fixed;
-        width: 3%;
-        margin: -1% 0 0 57%;
-    }
-    .wrapper .front_wrapper .handle4{
-        position: fixed;
-        width: 3%;
-        margin: -1% 0 0 76%;
-    }
-
-    .wrapper .front_wrapper .seat{
-        position: fixed;
-        width: 105%;
-        margin: 38% 0 0 -2%;
-    }
-    /* 채팅창 */
-    #chat_bottom{
-        position: fixed;
-        margin: 41% 0 0 70%;
-        opacity: 0;
-        animation: chat 0.2s forwards;
-        animation-delay: 23s;
-    }
-    
-    #chat_1{
-        position: fixed;
-        margin: 1% 0 0 70%;
-        opacity: 0;
-        animation: chat 0.2s forwards;
-        animation-delay: 8s;
-    }
-    
-    #chat_2{
-        position: fixed;
-        margin: 7% 0 0 70%;
-        opacity: 0;
-        animation: chat 0.2s forwards;
-        animation-delay: 10s;
-    }
-    
-    #chat_3{
-        position: fixed;
-        margin: -17.9% 0 0 70%;
-        opacity: 0;
-        animation: chat 0.2s forwards;
-        animation-delay: 12s;
-    }
-    
-    #chat_4{
-        position: fixed;
-        margin: -11.9% 0 0 70%;
-        opacity: 0;
-        animation: chat 0.2s forwards;
-        animation-delay: 14s;
-    }
-    
-    #chat_5{
-        position: fixed;
-        margin: -5.9% 0 0 70%;
-        opacity: 0;
-        animation: chat 0.2s forwards;
-        animation-delay: 16s;
-    }
-    
-    #chat_6{
-        position: fixed;
-        margin: 0% 0 0 70%;
-        opacity: 0;
-        animation: chat 0.2s forwards;
-        animation-delay: 18s;
-    }
-    
-    #my_chat{
-        position: fixed;
-        margin: 6% 0 0 88.5%;
-        opacity: 0;
-        animation: chat 0.2s forwards;
-        animation-delay: 22s;
-    }
-
-    .typing{
-        font-family: 'IBM Plex Sans KR', sans-serif;
-        font-size: 1rem;
-        white-space: nowrap;
-        color: transparent;
-        position: absolute;
-        /*글자 위치 대충 여기서 조절하면 됨!*/
-        margin: 0;
-        top: 92.5%;
-        left: 76.5%;
-        transform: translate(-50%, -50%);
-    }
-
-    .typing::before{
-        content: "또 나만.. 아직이네.. ";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        color: #191a65;
-        overflow: hidden;
-        top: 0;
-        left: 0;
-        animation: typing 4s steps(16);  /*steps 괄호 안 숫자는 멘트 길이.*/
-        animation-delay: 23s;
-    }
-}
-@media (min-width: 1440px) and (max-width: 1900px){     /*pc 3(15인치)*/
-    .scroll-icon{
-        position: fixed;
-        margin: -11.5% 0 0 7.5%;
+        margin: -11.5% 0 0 -43%;
         opacity: 0;
         -webkit-animation:blink 7s ease-in-out; 
         -moz-animation:blink 7s ease-in-out; 
@@ -587,7 +427,7 @@ body::-webkit-scrollbar{
     
     #chat_3{
         position: fixed;
-        margin: -12.9% 0 0 70%;
+        margin: -13% 0 0 20.2%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 12s;
@@ -595,7 +435,7 @@ body::-webkit-scrollbar{
     
     #chat_4{
         position: fixed;
-        margin: -6.9% 0 0 70%;
+        margin: -7% 0 0 20.2%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 14s;
@@ -603,7 +443,7 @@ body::-webkit-scrollbar{
     
     #chat_5{
         position: fixed;
-        margin: -0.9% 0 0 70%;
+        margin: -1% 0 0 20.5%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 16s;
@@ -611,7 +451,7 @@ body::-webkit-scrollbar{
     
     #chat_6{
         position: fixed;
-        margin: 5% 0 0 70%;
+        margin: 5% 0 0 20.5%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 18s;
@@ -619,7 +459,7 @@ body::-webkit-scrollbar{
     
     #my_chat{
         position: fixed;
-        margin: 11.5% 0 0 88.5%;
+        margin: 11.5% 0 0 38%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 20s;
@@ -650,11 +490,44 @@ body::-webkit-scrollbar{
         animation: typing 4s steps(16);  /*steps 괄호 안 숫자는 멘트 길이.*/
         animation-delay: 23s;
     }
+    /*툴팁*/
+    .fas{
+        color: white;
+        position: fixed;
+        margin: -30% 0 0 0%;
+        z-index: 5;
+    }
+    .fas:hover{
+        transform: scale(1.2);
+        transition: 0.1s ease-in-out;
+    }
+    .exit{
+        display: inline-block;
+        position: fixed;
+        margin: 5% 0 0 42%;
+    }
+    .exit .tooltip{
+        position: fixed;
+        width: 100px;
+        padding: 0;
+        visibility: hidden;
+        /* background-color: white; */
+        color: white;
+        text-align: center;
+        z-index: 5;
+    }
+    .exit .tooltip h1{
+        position: fixed;
+        font-size: 16px;
+        margin: -32% 0 0 -3.5%;
+        z-index: 5;
+    }
+    .exit:hover .tooltip{visibility: visible;}
 }
-@media (min-width: 1900px){     /*pc 4(완전 와이드스크린)*/
+@media (min-width: 1440px) and (max-width: 1900px){     /*pc 3(15인치)*/
     .scroll-icon{
         position: fixed;
-        margin: -11.5% 0 0 7.5%;
+        margin: -11.5% 0 0 -43%;
         opacity: 0;
         -webkit-animation:blink 7s ease-in-out; 
         -moz-animation:blink 7s ease-in-out; 
@@ -697,7 +570,7 @@ body::-webkit-scrollbar{
 
     .wrapper .small_wrapper .train{
         width: 60%;
-        margin: 23.5% 0 0 5%;
+        margin: 23.2% 0 0 5%;
     }
 
     .wrapper .small_wrapper .bg-2{
@@ -767,7 +640,7 @@ body::-webkit-scrollbar{
     
     #chat_1{
         position: fixed;
-        margin: 1% 0 0 70%;
+        margin: 1% 0 0 69.9%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 8s;
@@ -783,7 +656,7 @@ body::-webkit-scrollbar{
     
     #chat_3{
         position: fixed;
-        margin: -12.9% 0 0 70%;
+        margin: -13% 0 0 20.2%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 12s;
@@ -791,7 +664,7 @@ body::-webkit-scrollbar{
     
     #chat_4{
         position: fixed;
-        margin: -6.9% 0 0 70%;
+        margin: -7% 0 0 20.2%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 14s;
@@ -799,7 +672,7 @@ body::-webkit-scrollbar{
     
     #chat_5{
         position: fixed;
-        margin: -0.9% 0 0 70%;
+        margin: -1% 0 0 20.5%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 16s;
@@ -807,7 +680,7 @@ body::-webkit-scrollbar{
     
     #chat_6{
         position: fixed;
-        margin: 5% 0 0 70%;
+        margin: 5% 0 0 20.5%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 18s;
@@ -815,12 +688,12 @@ body::-webkit-scrollbar{
     
     #my_chat{
         position: fixed;
-        margin: 11% 0 0 88.5%;
+        margin: 11.5% 0 0 38%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 20s;
     }
-
+    
     .typing{
         font-family: 'IBM Plex Sans KR', sans-serif;
         font-size: 1rem;
@@ -832,7 +705,6 @@ body::-webkit-scrollbar{
         top: 92.5%;
         left: 76.5%;
         transform: translate(-50%, -50%);
-        animation-delay: 23s;
     }
 
     .typing::before{
@@ -847,6 +719,268 @@ body::-webkit-scrollbar{
         animation: typing 4s steps(16);  /*steps 괄호 안 숫자는 멘트 길이.*/
         animation-delay: 23s;
     }
+    /*툴팁*/
+    .fas{
+        color: white;
+        position: fixed;
+        margin: -30% 0 0 0%;
+        z-index: 5;
+    }
+    .fas:hover{
+        transform: scale(1.2);
+        transition: 0.1s ease-in-out;
+    }
+    .exit{
+        display: inline-block;
+        position: fixed;
+        margin: 5% 0 0 42%;
+    }
+    .exit .tooltip{
+        position: fixed;
+        width: 100px;
+        padding: 0;
+        visibility: hidden;
+        /* background-color: white; */
+        color: white;
+        text-align: center;
+        z-index: 5;
+    }
+    .exit .tooltip h1{
+        position: fixed;
+        font-size: 16px;
+        margin: -32% 0 0 -3.5%;
+        z-index: 5;
+    }
+    .exit:hover .tooltip{visibility: visible;}
+}
+@media (min-width: 1900px){     /*pc 4(완전 와이드스크린)*/
+    .scroll-icon{
+        position: fixed;
+        margin: -7.5% 0 0 -43%;
+        opacity: 0;
+        -webkit-animation:blink 7s ease-in-out; 
+        -moz-animation:blink 7s ease-in-out; 
+        animation:blink 7s ease-in-out;
+    }
+
+    .wrapper{
+        display: flex;
+        position: relative;
+        max-width: 400%;
+    }
+
+    .img{
+        position: absolute;
+        height: auto;
+    }
+
+    .wrapper .bg{
+        width: 400%;
+    }
+
+    .wrapper .small_wrapper .bg-3{
+        width: 350%;
+    }
+
+    .wrapper .small_wrapper .bg-shooting{
+        width: 60%;
+        margin: 12% 0 0 25%;
+    }
+
+    .wrapper .small_wrapper .bg-moon{
+        width: 8%;
+        margin: 13% 0 0 40%;
+    }
+    
+    .wrapper .small_wrapper .bg-1{
+        width: 400%;
+        margin: 15% 0 0 -5%;
+    }
+
+    .wrapper .small_wrapper .train{
+        width: 60%;
+        margin: 23.15% 0 0 5%;
+    }
+
+    .wrapper .small_wrapper .bg-2{
+        width: 340%;
+        margin: 10.9% 0 0 20%;
+    }
+
+    /* .wrapper .small_wrapper .bg-shadow{
+        width: 350%;
+        margin: -11% 0 0 15.3%;
+    } */
+
+    .wrapper .small_wrapper .building{
+        width: 200%;
+        margin: 12% 0 0 130%;
+    }
+    
+    .wrapper .small_wrapper .bg-moonlight{
+        width: 40%;
+        margin: 30% 0 0 20%;
+    }
+
+    .wrapper .small_wrapper .fade-out{
+        width: 400%;
+    }
+
+    .wrapper .front_wrapper .subway{
+        position: fixed;
+        width: 100%;
+        margin: -1% 0 0 0;
+    }
+
+    .wrapper .front_wrapper .handle1{
+        position: fixed;
+        width: 3%;
+        margin: -1% 0 0 19%;
+    }
+    .wrapper .front_wrapper .handle2{
+        position: fixed;
+        width: 3%;
+        margin: -1% 0 0 38%;
+    }
+    .wrapper .front_wrapper .handle3{
+        position: fixed;
+        width: 3%;
+        margin: -1% 0 0 57%;
+    }
+    .wrapper .front_wrapper .handle4{
+        position: fixed;
+        width: 3%;
+        margin: -1% 0 0 76%;
+    }
+
+    .wrapper .front_wrapper .seat{
+        position: fixed;
+        width: 105%;
+        margin: 40% 0 0 -2%;
+    }
+    /* 채팅창 */
+    #chat_bottom{
+        position: fixed;
+        margin: 42% 0 0 70%;
+        opacity: 0;
+        animation: chat 0.2s forwards;
+        animation-delay: 23s;
+    }
+    
+    #chat_1{
+        position: fixed;
+        margin: 1% 0 0 69.9%;
+        opacity: 0;
+        animation: chat 0.2s forwards;
+        animation-delay: 8s;
+    }
+    
+    #chat_2{
+        position: fixed;
+        margin: 7% 0 0 70%;
+        opacity: 0;
+        animation: chat 0.2s forwards;
+        animation-delay: 10s;
+    }
+    
+    #chat_3{
+        position: fixed;
+        margin: -8% 0 0 20.2%;
+        opacity: 0;
+        animation: chat 0.2s forwards;
+        animation-delay: 12s;
+    }
+    
+    #chat_4{
+        position: fixed;
+        margin: -2% 0 0 20.2%;
+        opacity: 0;
+        animation: chat 0.2s forwards;
+        animation-delay: 14s;
+    }
+    
+    #chat_5{
+        position: fixed;
+        margin: 4.5% 0 0 20.5%;
+        opacity: 0;
+        animation: chat 0.2s forwards;
+        animation-delay: 16s;
+    }
+    
+    #chat_6{
+        position: fixed;
+        margin: 10.5% 0 0 20.5%;
+        opacity: 0;
+        animation: chat 0.2s forwards;
+        animation-delay: 18s;
+    }
+    
+    #my_chat{
+        position: fixed;
+        margin: 17% 0 0 38%;
+        opacity: 0;
+        animation: chat 0.2s forwards;
+        animation-delay: 20s;
+    }
+    
+    .typing{
+        font-family: 'IBM Plex Sans KR', sans-serif;
+        font-size: 1rem;
+        white-space: nowrap;
+        color: transparent;
+        position: absolute;
+        /*글자 위치 대충 여기서 조절하면 됨!*/
+        margin: 0;
+        top: 89%;
+        left: 76.5%;
+        transform: translate(-50%, -50%);
+    }
+
+    .typing::before{
+        content: "또 나만.. 아직이네.. ";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        color: #191a65;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        animation: typing 4s steps(16);  /*steps 괄호 안 숫자는 멘트 길이.*/
+        animation-delay: 23s;
+    }
+    /*툴팁*/
+    .fas{
+        color: white;
+        position: fixed;
+        margin: -30% 0 0 0%;
+        z-index: 5;
+    }
+    .fas:hover{
+        transform: scale(1.2);
+        transition: 0.1s ease-in-out;
+    }
+    .exit{
+        display: inline-block;
+        position: fixed;
+        margin: 5% 0 0 42%;
+    }
+    .exit .tooltip{
+        position: fixed;
+        width: 100px;
+        padding: 0;
+        visibility: hidden;
+        /* background-color: white; */
+        color: white;
+        text-align: center;
+        z-index: 5;
+    }
+    .exit .tooltip h1{
+        position: fixed;
+        font-size: 16px;
+        margin: -32% 0 0 -3.5%;
+        z-index: 5;
+    }
+    .exit:hover .tooltip{visibility: visible;}
 }
 
 /*손잡이 따로따로 배치*/
@@ -946,11 +1080,11 @@ body::-webkit-scrollbar{
     animation-delay: 18s;
 } 
 */
-@keyframes cursor{ 
+/* @keyframes cursor{   이게 커서임!
     0%{border-right: 1px solid #fff} 
     50%{border-right: 1px solid #000} 
     100%{border-right: 1px solid #fff} 
-  }
+  } */
 
 @keyframes typing{
     from{
@@ -1042,9 +1176,4 @@ body::-webkit-scrollbar{
     } to{
         transform: rotate(-7deg);
     }
-}
-
-i{
-    position: absolute;
-
 }

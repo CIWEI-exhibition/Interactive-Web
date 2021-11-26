@@ -66,8 +66,25 @@ function open_pop20(flag){
 function open_exgoods(flag){
     $('#Modal_exgoods').css('display','block');
 };
-function open_goods(flag){
-    $('#Modal_goods').css('display','block');
+function open_goods1(flag){
+    $('#Modal_goods1').css('display','block');
+    $('#Modal_goods4').hide();      //왼
+    $('#Modal_goods2').hide();      //오
+};
+function open_goods2(flag){
+    $('#Modal_goods2').css('display','block');
+    $('#Modal_goods1').hide();
+    $('#Modal_goods3').hide();
+};
+function open_goods3(flag){
+    $('#Modal_goods3').css('display','block');
+    $('#Modal_goods2').hide();
+    $('#Modal_goods4').hide();
+};
+function open_goods4(flag){
+    $('#Modal_goods4').css('display','block');
+    $('#Modal_goods3').hide();
+    $('#Modal_goods1').hide();
 };
   
 // 팝업창 close
@@ -134,10 +151,14 @@ function close_pop20(flag) {
     $('#Modal20').hide();
 };
 
+
 //굿즈 전광판&소개문
 function close_exgoods(flag){
     $('#Modal_exgoods').hide();
 };
 function close_goods(flag){
-    $('#Modal_goods').hide();
+    $('#Modal_goods1').hide();
+    $('#Modal_goods2').hide();
+    $('#Modal_goods3').hide();
+    $('#Modal_goods4').hide();
 };

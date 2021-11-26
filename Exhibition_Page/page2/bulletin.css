@@ -1,68 +1,85 @@
 *{
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* 스크롤 없애기 */
 body{
-    -ms-overflow-style: none;
+  -ms-overflow-style: none;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  /* text-align: center;  절대 하지 말것*/
 }
 body::-webkit-scrollbar{
-    display: none;
+  display: none;
 }
 
 /* 이미지 배치 */
 .wrapper{
-    position: relative;
-    min-height: 500px;
+  position: relative;
+  min-height: 500px;
 }
-    
+  
 .img{
-    position: absolute;
+  position: absolute;
+}
+
+.wrapper .bg{
+  width: 102%;
+  margin: -1% 0 0 -1%;
 }
 
 .wrapper .small_wrapper .submit{
-    position: absolute;
-    margin: 20% 0 0 77%;
+  position: absolute;
+  margin: 19% 0 0 77%;
+  animation: zoom 3s ease-in-out;
+}
+
+@keyframes zoom {
+  0%, 100%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.2);
+  }
 }
 
 .wrapper .small_wrapper .submit:hover{
-    filter: brightness(50%);
-    cursor: pointer;
+  filter: brightness(50%);
+  cursor: pointer;
 }
 
 form{
-    position: absolute;
-    margin: 25.3% 0 0 29%;
+  position: absolute;
+  margin: 25.3% 0 0 29%;
 }
 
 form textarea{
-    width: 200%;
-    height: 200%;
+  width: 200%;
+  height: 200%;
 }
 
 form p{
-    font-weight: 700;
-    margin-bottom: 0.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 
 form #content{
-    padding: 0.5rem;
+  padding: 0.5rem;
 }
 /*이미지 및 폼 배치 끝*/
 
 /* 과제팝업 */
 .pop{
-  position: relative;
+position: relative;
 }
 
 #error1{
-  position: absolute;
-  margin: 20% 0 0 58%;
-  opacity: 0;
-  display: none;
-  animation: error 0.2s forwards;
-  animation-delay: 1s;
-  animation-play-state: paused;
+position: absolute;
+margin: 20% 0 0 58%;
+opacity: 0;
+display: none;
+animation: error 0.2s forwards;
+animation-delay: 1s;
+animation-play-state: paused;
 } 
 
 @keyframes error{
@@ -159,126 +176,268 @@ form #content{
 
 /*블러*/
 @-webkit-keyframes blur {
-    0%, 100%{ filter: blur(0); }
-    50%{ filter: blur(0); }
+  0%, 100%{ filter: blur(0); }
+  50%{ filter: blur(0); }
 }
 @-moz-keyframes blur{
-    0%, 100%{ filter: blur(0); }
-    50%{ filter: blur(0); }
+  0%, 100%{ filter: blur(0); }
+  50%{ filter: blur(0); }
 }
 @-ms-keyframes blur{
-    0%, 100%{ filter: blur(0); }
-    50%{ filter: blur(0); }
+  0%, 100%{ filter: blur(0); }
+  50%{ filter: blur(0); }
 }
 @-o-keyframes blur{
-    0%, 100%{ filter: blur(0); }
-    50%{ filter: blur(0); }
+  0%, 100%{ filter: blur(0); }
+  50%{ filter: blur(0); }
 }
 @keyframes blur {
-    0%, 100%{ filter: blur(0); }
-    50%{ filter: blur(1rem); }
+  0%, 100%{ filter: blur(0); }
+  50%{ filter: blur(1rem); }
 }
 
 .blur {
-    -webkit-animation: blur 3s ease-in-out 5s 2 alternate both;
-    -moz-animation: blur 3s ease-in-out 5s 2 alternate both;
-     -ms-animation: blur 3s ease-in-out 5s 2 alternate both;
-      -o-animation: blur 3s ease-in-out 5s 2 alternate both;
-         animation: blur 3s ease-in-out 5s 2 alternate both;
+  -webkit-animation: blur 3s ease-in-out 5s 2 alternate both;
+  -moz-animation: blur 3s ease-in-out 5s 2 alternate both;
+   -ms-animation: blur 3s ease-in-out 5s 2 alternate both;
+    -o-animation: blur 3s ease-in-out 5s 2 alternate both;
+       animation: blur 3s ease-in-out 5s 2 alternate both;
 }
 
 
 /*물결효과 긁어옴여*/
-  .box {
-    display: none;
-    position: fixed;
-    /* overflow: hidden; */
-    width: 200%;
-    height: 2000%;
-    border-radius: 40%;
-    box-shadow: 0 2px 30px rgba(black, .2);
-    background: lighten(#f0f4c3, 10%);
-    
-    transform: translate3d(0, 0, 0);
-    animation: updown 7s ease-in-out alternate forwards;
-    /* animation-delay: 10s; */
-  }
+.box {
+  display: none;
+  position: fixed;
+  /* overflow: hidden; */
+  width: 200%;
+  height: 2000%;
+  border-radius: 40%;
+  box-shadow: 0 2px 30px rgba(black, .2);
+  background: lighten(#f0f4c3, 10%);
   
-  .wave {
-    position: absolute;
-    opacity: .7;
-    
-    top: 65%;
-    left: -30%;
-    background: #649ae4;
-    width: 120%;
-    height: 35%;
-    /* margin: 0 0 0 -70%; */
+  transform: translate3d(0, 0, 0);
+  animation: updown 7s ease-in-out alternate forwards;
+  /* animation-delay: 10s; */
+}
 
-    transform-origin: 50% 48%;
-    border-radius: 50%;
-    animation: drift 2000ms infinite linear;
-  }
+.wave {
+  position: absolute;
+  opacity: .7;
   
-  .wave.-three {
-    /* top: 70%;
-    left: -30%; */
-    animation: drift 5000ms infinite linear;
-  }
-  
-  .wave.-two {
-    /* top: 70%;
-    left: 30%; */
-    animation: drift 7000ms infinite linear;
+  top: 65%;
+  left: -30%;
+  background: #649ae4;
+  width: 120%;
+  height: 35%;
+  /* margin: 0 0 0 -70%; */
 
-    opacity: .2;
-    background: #c2dbfd;
+  transform-origin: 50% 48%;
+  border-radius: 50%;
+  animation: drift 2000ms infinite linear;
+}
+
+.wave.-three {
+  /* top: 70%;
+  left: -30%; */
+  animation: drift 5000ms infinite linear;
+}
+
+.wave.-two {
+  /* top: 70%;
+  left: 30%; */
+  animation: drift 7000ms infinite linear;
+
+  opacity: .2;
+  background: #c2dbfd;
+}
+
+/* .box:after {
+  content: '';
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(#e8a, 1), rgba(#def, 0) 80%, rgba(white, .5));
+  z-index: 11;
+  transform: translate3d(0, 0, 0);
+} */
+
+/* .title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  line-height: 300px;
+  text-align: center;
+  transform: translate3d(0, 0, 0);
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: .4em;
+  font-size: 24px;
+  text-shadow: 0 1px 0 rgba(black, .1);
+  text-indent: .3em;
+} */
+@keyframes drift {
+  from { 
+    transform: rotate(0deg);
   }
-  
-  /* .box:after {
-    content: '';
-    display: block;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(#e8a, 1), rgba(#def, 0) 80%, rgba(white, .5));
-    z-index: 11;
-    transform: translate3d(0, 0, 0);
-  } */
-  
-  /* .title {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-    line-height: 300px;
-    text-align: center;
-    transform: translate3d(0, 0, 0);
+  to { 
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes updown {
+  from {
+    transform: translateY(-50%);
+  }
+  to {
+    transform: translateY(-70%);
+  }
+}
+
+/*미디어쿼리*/
+@media (max-width: 1280px){     /*모바일 일단 포함, pc(13인치)*/
+  /*툴팁*/
+.fas{
+  color: white;
+  position: fixed;
+  margin: -30% 0 0 0%;
+  z-index: 5;
+}
+.fas:hover{
+  transform: scale(1.2);
+  transition: 0.1s ease-in-out;
+}
+.exit{
+  display: inline-block;
+  position: fixed;
+  margin: 2.5% 0 0 91%;
+}
+.exit .tooltip{
+  position: fixed;
+  width: 100px;
+  padding: 0;
+  visibility: hidden;
+  /* background-color: white; */
+  color: white;
+  text-align: center;
+  z-index: 5;
+}
+.exit .tooltip h1{
+  position: fixed;
+  font-size: 16px;
+  margin: -32% 0 0 -3.5%;
+  z-index: 5;
+}
+.exit:hover .tooltip{visibility: visible;}
+}
+@media (min-width: 1281px) and (max-width: 1440px){ 
+  .fas{
     color: white;
-    text-transform: uppercase;
-    font-family: 'Playfair Display', serif;
-    letter-spacing: .4em;
-    font-size: 24px;
-    text-shadow: 0 1px 0 rgba(black, .1);
-    text-indent: .3em;
-  } */
-  @keyframes drift {
-    from { 
-      transform: rotate(0deg);
-    }
-    to { 
-      transform: rotate(360deg);
-    }
+    position: fixed;
+    margin: -30% 0 0 0%;
+    z-index: 5;
   }
+  .fas:hover{
+    transform: scale(1.2);
+    transition: 0.1s ease-in-out;
+  }
+  .exit{
+    display: inline-block;
+    position: fixed;
+    margin: 2.5% 0 0 91%;
+  }
+  .exit .tooltip{
+    position: fixed;
+    width: 100px;
+    padding: 0;
+    visibility: hidden;
+    /* background-color: white; */
+    color: white;
+    text-align: center;
+    z-index: 5;
+  }
+  .exit .tooltip h1{
+    position: fixed;
+    font-size: 16px;
+    margin: -32% 0 0 -3.5%;
+    z-index: 5;
+  }
+  .exit:hover .tooltip{visibility: visible;}
+}
+@media (min-width: 1440px) and (max-width: 1900px){     /*pc 3(15인치)*/
+  /*툴팁*/
+.fas{
+  color: white;
+  position: fixed;
+  margin: -30% 0 0 0%;
+  z-index: 5;
+}
+.fas:hover{
+  transform: scale(1.2);
+  transition: 0.1s ease-in-out;
+}
+.exit{
+  display: inline-block;
+  position: fixed;
+  margin: 2.5% 0 0 91%;
+}
+.exit .tooltip{
+  position: fixed;
+  width: 100px;
+  padding: 0;
+  visibility: hidden;
+  /* background-color: white; */
+  color: white;
+  text-align: center;
+  z-index: 5;
+}
+.exit .tooltip h1{
+  position: fixed;
+  font-size: 16px;
+  margin: -32% 0 0 -3.5%;
+  z-index: 5;
+}
+.exit:hover .tooltip{visibility: visible;}
+}
 
-  @keyframes updown {
-    from {
-      transform: translateY(-50%);
-    }
-    to {
-      transform: translateY(-70%);
-    }
-  }
+@media (min-width: 1900px){     /*pc 4(완전 와이드스크린)*/
+  /*툴팁*/
+.fas{
+  color: white;
+  position: fixed;
+  margin: -26% 0 0 0%;
+  z-index: 5;
+}
+.fas:hover{
+  transform: scale(1.2);
+  transition: 0.1s ease-in-out;
+}
+.exit{
+  display: inline-block;
+  position: fixed;
+  margin: 2.5% 0 0 91%;
+}
+.exit .tooltip{
+  position: fixed;
+  width: 100px;
+  padding: 0;
+  visibility: hidden;
+  /* background-color: white; */
+  color: white;
+  text-align: center;
+  z-index: 5;
+}
+.exit .tooltip h1{
+  position: fixed;
+  font-size: 16px;
+  margin: -27.5% 0 0 -2.5%;
+  z-index: 5;
+}
+.exit:hover .tooltip{visibility: visible;}
+}
 
