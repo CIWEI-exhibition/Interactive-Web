@@ -788,8 +788,8 @@ body::-webkit-scrollbar{
     }
 
     .wrapper .small_wrapper .bg-moon{
-        width: 9%;
-        margin: 11% 0 0 40%;
+        width: 8%;
+        margin: 13% 0 0 40%;
     }
     
     .wrapper .small_wrapper .bg-1{
@@ -799,7 +799,7 @@ body::-webkit-scrollbar{
 
     .wrapper .small_wrapper .train{
         width: 60%;
-        margin: 23.2% 0 0 5%;
+        margin: 23.15% 0 0 5%;
     }
 
     .wrapper .small_wrapper .bg-2{
@@ -856,7 +856,7 @@ body::-webkit-scrollbar{
     .wrapper .front_wrapper .seat{
         position: fixed;
         width: 105%;
-        margin: 38% 0 0 -2%;
+        margin: 40% 0 0 -2%;
     }
     /* 채팅창 */
     #chat_bottom{
@@ -885,7 +885,7 @@ body::-webkit-scrollbar{
     
     #chat_3{
         position: fixed;
-        margin: -13% 0 0 20.2%;
+        margin: -8% 0 0 20.2%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 12s;
@@ -893,7 +893,7 @@ body::-webkit-scrollbar{
     
     #chat_4{
         position: fixed;
-        margin: -7% 0 0 20.2%;
+        margin: -2% 0 0 20.2%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 14s;
@@ -901,7 +901,7 @@ body::-webkit-scrollbar{
     
     #chat_5{
         position: fixed;
-        margin: -1% 0 0 20.5%;
+        margin: 4.5% 0 0 20.5%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 16s;
@@ -909,7 +909,7 @@ body::-webkit-scrollbar{
     
     #chat_6{
         position: fixed;
-        margin: 5% 0 0 20.5%;
+        margin: 10.5% 0 0 20.5%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 18s;
@@ -917,7 +917,7 @@ body::-webkit-scrollbar{
     
     #my_chat{
         position: fixed;
-        margin: 11.5% 0 0 38%;
+        margin: 17% 0 0 38%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 20s;
@@ -931,7 +931,7 @@ body::-webkit-scrollbar{
         position: absolute;
         /*글자 위치 대충 여기서 조절하면 됨!*/
         margin: 0;
-        top: 92.5%;
+        top: 89%;
         left: 76.5%;
         transform: translate(-50%, -50%);
     }
