@@ -197,7 +197,7 @@ body::-webkit-scrollbar{
 
 #chat_3{
 	position: fixed;
-    margin: -17.9% 0 0 70%;
+    margin: 17.9% 0 0 70%;
 	opacity: 0;
     animation: chat 0.2s forwards;
     animation-delay: 12s;
