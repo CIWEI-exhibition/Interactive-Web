@@ -574,73 +574,73 @@ body::-webkit-scrollbar{
 
     .wrapper .main_wrapper .bgMount1{
         width: 200%;
-        margin: 26% 0 0 -1.5%;
+        margin: 30% 0 0 -1.5%;
     }
 
     .wrapper .main_wrapper .bgMount2{
         width: 310%;
-        margin: 29.5% 0 0 227%;
+        margin: 33.5% 0 0 227%;
     }
 
     .wrapper .main_wrapper .bgMount3{
         width: 200%;
-        margin: 25.5% 0 0 44%;
+        margin: 29.5% 0 0 44%;
     }
 
     .wrapper .main_wrapper .bgMount4{
         width: 300%;
-        margin: 28.5% 0 0 220%;
+        margin: 32.5% 0 0 220%;
     }
 
     .wrapper .main_wrapper .bgGround{
         position: fixed;
         width: 500%;
-        margin: 60% 0 0 0;
+        margin: 44.55% 0 0 0;
     }
 
     .wrapper .main_wrapper .bgLamp{
         width: 450%;
-        margin: 32% 0 0 49%;
+        margin: 16% 0 0 49%;
     }
 
     .wrapper .main_wrapper .bgTree{
         width: 460%;
-        margin: 36.5% 0 0 37%;
+        margin: 20.5% 0 0 37%;
     }
 
     .wrapper .booth_wrapper .banner{
         width: 50%;
-        margin: 42.5% 0 0 113%;
+        margin: 26.5% 0 0 113%;
     }
 
     .wrapper .booth_wrapper .busking{
         width: 42%;
-        margin: 43.5% 0 0 175%;
+        margin: 27.5% 0 0 175%;
     }
 
     .wrapper .booth_wrapper .icecream{
         width: 35%;
-        margin: 34.5% 0 0 231%;
+        margin: 18.5% 0 0 231%;
     }
 
     .wrapper .booth_wrapper .study{
         width: 42%;
-        margin: 36.5% 0 0 281%;
+        margin: 20.5% 0 0 281%;
     }
 
     .wrapper .booth_wrapper .love{
         width: 42%;
-        margin: 36.5% 0 0 340%;
+        margin: 20.5% 0 0 340%;
     }
 
     .wrapper .booth_wrapper .music{
         width: 42%;
-        margin: 35.5% 0 0 396%;
+        margin: 19.5% 0 0 396%;
     }
 
     .wrapper .booth_wrapper .healing{
         width: 42%;
-        margin: 36.5% 0 0 450%;
+        margin: 20.5% 0 0 450%;
     }
     /*툴팁*/
     .fas{
