@@ -373,7 +373,7 @@ body::-webkit-scrollbar{
     .exit:hover .tooltip{visibility: visible;}
 }
 
-@media (min-width: 1440px) and (max-width: 1900px){     /*pc 3(15인치, 데탑)*/
+@media (min-width: 1440px) and (max-width: 1700px){     /*pc 3(15인치, 데탑)*/
     .scroll-icon{
         position: absolute;
         height: auto;
@@ -525,7 +525,7 @@ body::-webkit-scrollbar{
     }
     .exit:hover .tooltip{visibility: visible;}
 }
-@media (min-width: 1900px){     /*pc 4(완전 와이드스크린)*/
+@media (min-width: 1701px){     /*pc 4(완전 와이드스크린)*/
     .scroll-icon{
         position: absolute;
         height: auto;
