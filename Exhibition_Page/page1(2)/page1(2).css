@@ -538,7 +538,7 @@ body::-webkit-scrollbar{
     .click-icon{
         position: absolute;
         height: auto;
-        margin: 23% 0 0 295.3%;
+        margin: 25% 0 0 305%;
         opacity: 0;
         -webkit-animation:blink 7s ease-in-out infinite; 
         -moz-animation:blink 7s ease-in-out infinite; 
