@@ -299,7 +299,9 @@ animation-play-state: paused;
   }
 }
 
-/*툴팁*/
+/*미디어쿼리*/
+@media (max-width: 1280px){     /*모바일 일단 포함, pc(13인치)*/
+  /*툴팁*/
 .fas{
   color: white;
   position: fixed;
@@ -332,3 +334,110 @@ animation-play-state: paused;
   z-index: 5;
 }
 .exit:hover .tooltip{visibility: visible;}
+}
+@media (min-width: 1281px) and (max-width: 1440px){ 
+  .fas{
+    color: white;
+    position: fixed;
+    margin: -30% 0 0 0%;
+    z-index: 5;
+  }
+  .fas:hover{
+    transform: scale(1.2);
+    transition: 0.1s ease-in-out;
+  }
+  .exit{
+    display: inline-block;
+    position: fixed;
+    margin: 2.5% 0 0 91%;
+  }
+  .exit .tooltip{
+    position: fixed;
+    width: 100px;
+    padding: 0;
+    visibility: hidden;
+    /* background-color: white; */
+    color: white;
+    text-align: center;
+    z-index: 5;
+  }
+  .exit .tooltip h1{
+    position: fixed;
+    font-size: 16px;
+    margin: -32% 0 0 -3.5%;
+    z-index: 5;
+  }
+  .exit:hover .tooltip{visibility: visible;}
+}
+@media (min-width: 1440px) and (max-width: 1900px){     /*pc 3(15인치)*/
+  /*툴팁*/
+.fas{
+  color: white;
+  position: fixed;
+  margin: -30% 0 0 0%;
+  z-index: 5;
+}
+.fas:hover{
+  transform: scale(1.2);
+  transition: 0.1s ease-in-out;
+}
+.exit{
+  display: inline-block;
+  position: fixed;
+  margin: 2.5% 0 0 91%;
+}
+.exit .tooltip{
+  position: fixed;
+  width: 100px;
+  padding: 0;
+  visibility: hidden;
+  /* background-color: white; */
+  color: white;
+  text-align: center;
+  z-index: 5;
+}
+.exit .tooltip h1{
+  position: fixed;
+  font-size: 16px;
+  margin: -32% 0 0 -3.5%;
+  z-index: 5;
+}
+.exit:hover .tooltip{visibility: visible;}
+}
+
+@media (min-width: 1900px){     /*pc 4(완전 와이드스크린)*/
+  /*툴팁*/
+.fas{
+  color: white;
+  position: fixed;
+  margin: -26% 0 0 0%;
+  z-index: 5;
+}
+.fas:hover{
+  transform: scale(1.2);
+  transition: 0.1s ease-in-out;
+}
+.exit{
+  display: inline-block;
+  position: fixed;
+  margin: 2.5% 0 0 91%;
+}
+.exit .tooltip{
+  position: fixed;
+  width: 100px;
+  padding: 0;
+  visibility: hidden;
+  /* background-color: white; */
+  color: white;
+  text-align: center;
+  z-index: 5;
+}
+.exit .tooltip h1{
+  position: fixed;
+  font-size: 16px;
+  margin: -32% 0 0 -3.5%;
+  z-index: 5;
+}
+.exit:hover .tooltip{visibility: visible;}
+}
+
