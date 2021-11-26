@@ -337,6 +337,9 @@ body::-webkit-scrollbar{
         margin: auto auto auto 28%;
         width: 30%;
     }
+    .btn_p{
+        margin: 8% 0 2% 5%;
+    }
 }
 
 @media (min-width: 1281px) and (max-width: 1440px){
@@ -353,6 +356,9 @@ body::-webkit-scrollbar{
     .btn{
         margin: auto auto auto 28%;
         width: 30%;
+    }
+    .btn_p{
+        margin: auto auto auto 5%;
     }
 }
 
@@ -371,6 +377,9 @@ body::-webkit-scrollbar{
         margin: auto auto auto 28%;
         width: 30%;
     }
+    .btn_p{
+        margin: auto auto auto 5%;
+    }
 }
 
 @media (min-width: 1900px){     /*pc 4(완전 와이드스크린)*/
@@ -387,6 +396,9 @@ body::-webkit-scrollbar{
     .btn{
         margin: auto auto auto 23%;
         width: 30%;
+    }
+    .btn_p{
+        margin: auto auto auto 5%;
     }
 }
 
