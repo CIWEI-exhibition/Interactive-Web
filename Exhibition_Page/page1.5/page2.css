@@ -298,7 +298,7 @@ body::-webkit-scrollbar{
 @media (min-width: 1281px) and (max-width: 1440px){     /*pc 2*/
     .scroll-icon{
         position: fixed;
-        margin: -18.5% 0 0 7.5%;
+        margin: -11.5% 0 0 -43%;
         opacity: 0;
         -webkit-animation:blink 7s ease-in-out; 
         -moz-animation:blink 7s ease-in-out; 
@@ -341,7 +341,7 @@ body::-webkit-scrollbar{
 
     .wrapper .small_wrapper .train{
         width: 60%;
-        margin: 23.5% 0 0 5%;
+        margin: 23.2% 0 0 5%;
     }
 
     .wrapper .small_wrapper .bg-2{
@@ -403,7 +403,7 @@ body::-webkit-scrollbar{
     /* 채팅창 */
     #chat_bottom{
         position: fixed;
-        margin: 41% 0 0 70%;
+        margin: 42% 0 0 70%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 23s;
@@ -411,7 +411,7 @@ body::-webkit-scrollbar{
     
     #chat_1{
         position: fixed;
-        margin: 1% 0 0 70%;
+        margin: 1% 0 0 69.9%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 8s;
@@ -427,7 +427,7 @@ body::-webkit-scrollbar{
     
     #chat_3{
         position: fixed;
-        margin: -17.9% 0 0 70%;
+        margin: -13% 0 0 20.2%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 12s;
@@ -435,7 +435,7 @@ body::-webkit-scrollbar{
     
     #chat_4{
         position: fixed;
-        margin: -11.9% 0 0 70%;
+        margin: -7% 0 0 20.2%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 14s;
@@ -443,7 +443,7 @@ body::-webkit-scrollbar{
     
     #chat_5{
         position: fixed;
-        margin: -5.9% 0 0 70%;
+        margin: -1% 0 0 20.5%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 16s;
@@ -451,7 +451,7 @@ body::-webkit-scrollbar{
     
     #chat_6{
         position: fixed;
-        margin: 0% 0 0 70%;
+        margin: 5% 0 0 20.5%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 18s;
@@ -459,12 +459,12 @@ body::-webkit-scrollbar{
     
     #my_chat{
         position: fixed;
-        margin: 6% 0 0 88.5%;
+        margin: 11.5% 0 0 38%;
         opacity: 0;
         animation: chat 0.2s forwards;
-        animation-delay: 22s;
+        animation-delay: 20s;
     }
-
+    
     .typing{
         font-family: 'IBM Plex Sans KR', sans-serif;
         font-size: 1rem;
@@ -476,7 +476,6 @@ body::-webkit-scrollbar{
         top: 92.5%;
         left: 76.5%;
         transform: translate(-50%, -50%);
-        /* display: none; */
     }
 
     .typing::before{
@@ -490,13 +489,12 @@ body::-webkit-scrollbar{
         left: 0;
         animation: typing 4s steps(16);  /*steps 괄호 안 숫자는 멘트 길이.*/
         animation-delay: 23s;
-        display: none;
     }
-     /*툴팁*/
+    /*툴팁*/
     .fas{
         color: white;
-        position: absolute;
-        margin: 5% 0 0 490%;
+        position: fixed;
+        margin: -30% 0 0 0%;
         z-index: 5;
     }
     .fas:hover{
@@ -521,7 +519,7 @@ body::-webkit-scrollbar{
     .exit .tooltip h1{
         position: fixed;
         font-size: 16px;
-        margin: -2% 0 0 -3%;
+        margin: -32% 0 0 -3.5%;
         z-index: 5;
     }
     .exit:hover .tooltip{visibility: visible;}
@@ -758,7 +756,7 @@ body::-webkit-scrollbar{
 @media (min-width: 1900px){     /*pc 4(완전 와이드스크린)*/
     .scroll-icon{
         position: fixed;
-        margin: -11.5% 0 0 7.5%;
+        margin: -11.5% 0 0 -43%;
         opacity: 0;
         -webkit-animation:blink 7s ease-in-out; 
         -moz-animation:blink 7s ease-in-out; 
@@ -801,7 +799,7 @@ body::-webkit-scrollbar{
 
     .wrapper .small_wrapper .train{
         width: 60%;
-        margin: 23.5% 0 0 5%;
+        margin: 23.2% 0 0 5%;
     }
 
     .wrapper .small_wrapper .bg-2{
@@ -871,7 +869,7 @@ body::-webkit-scrollbar{
     
     #chat_1{
         position: fixed;
-        margin: 1% 0 0 70%;
+        margin: 1% 0 0 69.9%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 8s;
@@ -887,7 +885,7 @@ body::-webkit-scrollbar{
     
     #chat_3{
         position: fixed;
-        margin: -12.9% 0 0 70%;
+        margin: -13% 0 0 20.2%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 12s;
@@ -895,7 +893,7 @@ body::-webkit-scrollbar{
     
     #chat_4{
         position: fixed;
-        margin: -6.9% 0 0 70%;
+        margin: -7% 0 0 20.2%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 14s;
@@ -903,7 +901,7 @@ body::-webkit-scrollbar{
     
     #chat_5{
         position: fixed;
-        margin: -0.9% 0 0 70%;
+        margin: -1% 0 0 20.5%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 16s;
@@ -911,7 +909,7 @@ body::-webkit-scrollbar{
     
     #chat_6{
         position: fixed;
-        margin: 5% 0 0 70%;
+        margin: 5% 0 0 20.5%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 18s;
@@ -919,12 +917,12 @@ body::-webkit-scrollbar{
     
     #my_chat{
         position: fixed;
-        margin: 11% 0 0 88.5%;
+        margin: 11.5% 0 0 38%;
         opacity: 0;
         animation: chat 0.2s forwards;
         animation-delay: 20s;
     }
-
+    
     .typing{
         font-family: 'IBM Plex Sans KR', sans-serif;
         font-size: 1rem;
@@ -936,7 +934,6 @@ body::-webkit-scrollbar{
         top: 92.5%;
         left: 76.5%;
         transform: translate(-50%, -50%);
-        animation-delay: 23s;
     }
 
     .typing::before{
@@ -955,7 +952,7 @@ body::-webkit-scrollbar{
     .fas{
         color: white;
         position: fixed;
-        margin: 5% 0 0 490%;
+        margin: -30% 0 0 0%;
         z-index: 5;
     }
     .fas:hover{
@@ -980,7 +977,7 @@ body::-webkit-scrollbar{
     .exit .tooltip h1{
         position: fixed;
         font-size: 16px;
-        margin: -2% 0 0 -3%;
+        margin: -32% 0 0 -3.5%;
         z-index: 5;
     }
     .exit:hover .tooltip{visibility: visible;}
