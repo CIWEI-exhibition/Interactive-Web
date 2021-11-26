@@ -180,7 +180,7 @@ body::-webkit-scrollbar{
 
 .modal-content {
     background-color: #fefefe;
-    padding: 1% 4% 1% 4%;
+    padding: 1% 2% 1% 2%;
     border: 1px solid #888;
     border-radius: 30px;     
     justify-content:center; 
