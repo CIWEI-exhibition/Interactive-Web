@@ -435,7 +435,7 @@ animation-play-state: paused;
 .exit .tooltip h1{
   position: fixed;
   font-size: 16px;
-  margin: -32% 0 0 -3.5%;
+  margin: -27.5% 0 0 -2.5%;
   z-index: 5;
 }
 .exit:hover .tooltip{visibility: visible;}

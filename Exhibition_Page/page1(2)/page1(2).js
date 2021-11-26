@@ -15,7 +15,7 @@ window.onload = function(){
     
     // 부스 쪽
     var bgSky = document.querySelector(".bgSky");
-    var bgStar1 = document.querySelector(".bgStar1");
+    // var bgStar1 = document.querySelector(".bgStar1");
     var bgStar2 = document.querySelector(".bgStar2");
     var bgStar3 = document.querySelector(".bgStar3");
     var bgMount1 = document.querySelector(".bgMount1");
