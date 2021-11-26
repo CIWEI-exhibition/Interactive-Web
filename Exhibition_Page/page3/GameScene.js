@@ -14,7 +14,7 @@ class GameScene extends Phaser.Scene{
         this.load.image("start", "asset/images/Ment/MentStart.png");
         this.load.image("tap", "asset/images/Ment/MentTap.png");
         this.load.image("over", "asset/images/Ment/MentGameover.png");
-        this.load.audio("jump", "asset/sound/jump.mp3");
+        this.load.audio("jump2", "asset/sound/jump_2.mp3");
         this.load.audio("hit", "asset/sound/hit.mp3");
     }
 
@@ -55,7 +55,7 @@ class GameScene extends Phaser.Scene{
         //     gameState.square.fillColor = 0xFFFF00;
         //   });
         this.input.keyboard.on('keydown-SPACE', function(){
-            this.sound.add("jump").play();
+            this.sound.add("jump2").play();
             if(this.player.y < HEIGHT-300) 
                 return;
             this.tweens.add({

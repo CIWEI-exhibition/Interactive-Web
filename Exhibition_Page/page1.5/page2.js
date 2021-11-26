@@ -24,7 +24,7 @@ window.onload = function(){
     sound.play();
 
     var sound2 = new Howl({
-        src: ['messenger_last.mp3'],
+        src: ['messenger_last2.mp3'],
         volume: 1,
         autoplay: true,
         onend : () => {     //오디오가 재생된 다음 실행할 내용
