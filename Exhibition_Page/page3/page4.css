@@ -6,7 +6,7 @@ body{
     background-color: #246D9B;
     margin: 0;
     padding: 0; 
-    font-family: 'Baloo Chettan 2', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
 }
 
 a{
@@ -107,3 +107,47 @@ input[id="navbar_menu"]:checked + label + div {
     position: fixed;
     margin: 10% 0 0 10%;
 } */
+
+ /*툴팁*/
+ .fas{
+    color: white;
+    position: fixed;
+    margin: -26% 0 0 0%;
+    z-index: 5;
+  }
+  i{
+      margin: 10% 0 0 0;
+  }
+  .fas:hover{
+    transform: scale(1.2);
+    transition: 0.1s ease-in-out;
+  }
+  .exit{
+    display: inline-block;
+    position: fixed;
+    margin: 2.5% 0 0 91%;
+  }
+  .exit .tooltip{
+    position: fixed;
+    width: 100px;
+    padding: 0;
+    visibility: hidden;
+    /* background-color: white; */
+    color: white;
+    text-align: center;
+    z-index: 5;
+  }
+  .exit .tooltip h1{
+    position: fixed;
+    font-size: 16px;
+    margin: -32% 0 0 -3.5%;
+    z-index: 5;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+  }
+  h1{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+  }
+  #text{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+  }
+  .exit:hover .tooltip{visibility: visible;}

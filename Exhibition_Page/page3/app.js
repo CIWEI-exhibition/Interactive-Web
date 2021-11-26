@@ -19,9 +19,9 @@ var game = new Phaser.Game(config);
 var WIDTH = game.config.width;
 var HEIGHT = game.config.height;
 
-game.state.add('StartPage',StartPage);
-game.state.add('GameScene',GameScene);
+// game.state.add('StartPage',StartPage);
+// game.state.add('GameScene',GameScene);
 
-game.state.start('StartPage');
+// game.state.start('StartPage');
 
 
