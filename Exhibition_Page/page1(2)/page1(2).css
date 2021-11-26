@@ -23,17 +23,6 @@ body::-webkit-scrollbar{
     display: none;
 }
 
-
-.click-icon{
-    position: absolute;
-    height: auto;
-    margin: 23% 0 0 295.3%;
-    opacity: 0;
-    -webkit-animation:blink 7s ease-in-out infinite; 
-    -moz-animation:blink 7s ease-in-out infinite; 
-    animation:blink 7s ease-in-out infinite;
-}
-
 @-webkit-keyframes blink{
     0% {opacity:0;}
     15%{opacity: 1;}
@@ -86,6 +75,16 @@ body::-webkit-scrollbar{
         -webkit-animation:blink 7s ease-in-out; 
         -moz-animation:blink 7s ease-in-out; 
         animation:blink 7s ease-in-out;
+    }
+
+    .click-icon{
+        position: absolute;
+        height: auto;
+        margin: 23% 0 0 295.3%;
+        opacity: 0;
+        -webkit-animation:blink 7s ease-in-out infinite; 
+        -moz-animation:blink 7s ease-in-out infinite; 
+        animation:blink 7s ease-in-out infinite;
     }
 
     .wrapper{
@@ -186,6 +185,7 @@ body::-webkit-scrollbar{
         width: 42%;
         margin: 14% 0 0 435%;
     }
+    /*툴팁*/
     .fas{
         color: white;
         position: absolute;
@@ -196,27 +196,26 @@ body::-webkit-scrollbar{
         transform: scale(1.2);
         transition: 0.1s ease-in-out;
     }
-    /*툴팁*/
     .exit{
         display: inline-block;
-        position: relative;
-        margin: auto 0 auto 490%;
-        margin-top: 70px;
+        position: fixed;
+        margin: 5% 0 0 42%;
     }
     .exit .tooltip{
-        position: absolute;
-        width: 90px;
+        position: fixed;
+        width: 100px;
         padding: 0;
         visibility: hidden;
         /* background-color: white; */
         color: white;
         text-align: center;
-        z-index: 1;
+        z-index: 5;
     }
     .exit .tooltip h1{
-        position: absolute;
+        position: fixed;
         font-size: 16px;
-        margin: -35% 0 0 -55%;
+        margin: -2% 0 0 -3%;
+        z-index: 5;
     }
     .exit:hover .tooltip{visibility: visible;}
 }
@@ -230,6 +229,16 @@ body::-webkit-scrollbar{
         -webkit-animation:blink 7s ease-in-out; 
         -moz-animation:blink 7s ease-in-out; 
         animation:blink 7s ease-in-out;
+    }
+
+    .click-icon{
+        position: absolute;
+        height: auto;
+        margin: 27% 0 0 305%;
+        opacity: 0;
+        -webkit-animation:blink 7s ease-in-out infinite; 
+        -moz-animation:blink 7s ease-in-out infinite; 
+        animation:blink 7s ease-in-out infinite;
     }
 
     .wrapper{
@@ -329,6 +338,7 @@ body::-webkit-scrollbar{
         width: 42%;
         margin: 14% 0 0 450%;
     }
+    /*툴팁*/
     .fas{
         color: white;
         position: absolute;
@@ -339,27 +349,26 @@ body::-webkit-scrollbar{
         transform: scale(1.2);
         transition: 0.1s ease-in-out;
     }
-    /*툴팁*/
     .exit{
         display: inline-block;
-        position: relative;
-        margin: auto 0 auto 490%;
-        margin-top: 70px;
+        position: fixed;
+        margin: 5% 0 0 42%;
     }
     .exit .tooltip{
-        position: absolute;
-        width: 90px;
+        position: fixed;
+        width: 100px;
         padding: 0;
         visibility: hidden;
         /* background-color: white; */
         color: white;
         text-align: center;
-        z-index: 1;
+        z-index: 5;
     }
     .exit .tooltip h1{
-        position: absolute;
+        position: fixed;
         font-size: 16px;
-        margin: -35% 0 0 -55%;
+        margin: -2% 0 0 -3%;
+        z-index: 5;
     }
     .exit:hover .tooltip{visibility: visible;}
 }
@@ -373,6 +382,15 @@ body::-webkit-scrollbar{
         -webkit-animation:blink 7s ease-in-out; 
         -moz-animation:blink 7s ease-in-out; 
         animation:blink 7s ease-in-out;
+    }
+    .click-icon{
+        position: absolute;
+        height: auto;
+        margin: 24% 0 0 305%;
+        opacity: 0;
+        -webkit-animation:blink 7s ease-in-out infinite; 
+        -moz-animation:blink 7s ease-in-out infinite; 
+        animation:blink 7s ease-in-out infinite;
     }
 
     .wrapper{
@@ -473,6 +491,7 @@ body::-webkit-scrollbar{
         margin: 15% 0 0 450%;
     }
 
+    /*툴팁*/
     .fas{
         color: white;
         position: absolute;
@@ -483,27 +502,26 @@ body::-webkit-scrollbar{
         transform: scale(1.2);
         transition: 0.1s ease-in-out;
     }
-    /*툴팁*/
     .exit{
         display: inline-block;
-        position: absolute;
-        margin: 0 0 0 0;
-        margin-top: 70px;
+        position: fixed;
+        margin: 5% 0 0 42%;
     }
     .exit .tooltip{
-        position: absolute;
-        width: 90px;
+        position: fixed;
+        width: 100px;
         padding: 0;
         visibility: hidden;
         /* background-color: white; */
         color: white;
         text-align: center;
-        z-index: 1;
+        z-index: 5;
     }
     .exit .tooltip h1{
-        position: absolute;
+        position: fixed;
         font-size: 16px;
-        margin: -35% 0 0 -55%;
+        margin: -2% 0 0 -3%;
+        z-index: 5;
     }
     .exit:hover .tooltip{visibility: visible;}
 }
@@ -516,6 +534,15 @@ body::-webkit-scrollbar{
         -webkit-animation:blink 7s ease-in-out; 
         -moz-animation:blink 7s ease-in-out; 
         animation:blink 7s ease-in-out;
+    }
+    .click-icon{
+        position: absolute;
+        height: auto;
+        margin: 23% 0 0 295.3%;
+        opacity: 0;
+        -webkit-animation:blink 7s ease-in-out infinite; 
+        -moz-animation:blink 7s ease-in-out infinite; 
+        animation:blink 7s ease-in-out infinite;
     }
     
     .wrapper{
@@ -615,6 +642,7 @@ body::-webkit-scrollbar{
         width: 42%;
         margin: 16.5% 0 0 450%;
     }
+    /*툴팁*/
     .fas{
         color: white;
         position: absolute;
@@ -625,27 +653,26 @@ body::-webkit-scrollbar{
         transform: scale(1.2);
         transition: 0.1s ease-in-out;
     }
-    /*툴팁*/
     .exit{
         display: inline-block;
-        position: relative;
-        margin: auto 0 auto 490%;
-        margin-top: 70px;
+        position: fixed;
+        margin: 5% 0 0 42%;
     }
     .exit .tooltip{
-        position: absolute;
-        width: 90px;
+        position: fixed;
+        width: 100px;
         padding: 0;
         visibility: hidden;
         /* background-color: white; */
         color: white;
         text-align: center;
-        z-index: 1;
+        z-index: 5;
     }
     .exit .tooltip h1{
-        position: absolute;
+        position: fixed;
         font-size: 16px;
-        margin: -35% 0 0 -55%;
+        margin: -2% 0 0 -3%;
+        z-index: 5;
     }
     .exit:hover .tooltip{visibility: visible;}
 }
