@@ -756,7 +756,7 @@ body::-webkit-scrollbar{
 @media (min-width: 1900px){     /*pc 4(완전 와이드스크린)*/
     .scroll-icon{
         position: fixed;
-        margin: -11.5% 0 0 -43%;
+        margin: -7.5% 0 0 -43%;
         opacity: 0;
         -webkit-animation:blink 7s ease-in-out; 
         -moz-animation:blink 7s ease-in-out; 
