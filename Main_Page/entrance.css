@@ -169,7 +169,7 @@ body::-webkit-scrollbar{
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
-    top: 0;
+    top: 5%;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
@@ -180,7 +180,7 @@ body::-webkit-scrollbar{
 
 .modal-content {
     background-color: #fefefe;
-    padding: 5rem;
+    padding: 1% 4% 1% 4%;
     border: 1px solid #888;
     border-radius: 30px;     
     justify-content:center; 
@@ -198,8 +198,8 @@ body::-webkit-scrollbar{
     margin: 10% auto auto 35%; /* 15% from the top and centered */
 }
 .Art .ch{
-    width: 30%;
-    margin: 10% auto auto 35%; /* 15% from the top and centered */
+    width: 33%;
+    margin: 9% auto auto 33%; /* 15% from the top and centered */
 }
 .Modal .yn{
     width: 20%; /* Could be more or less, depending on screen size */
@@ -207,7 +207,7 @@ body::-webkit-scrollbar{
 }
 .Art .yn{
     width: 20%; /* Could be more or less, depending on screen size */
-    margin: 3% auto 5% 40%; /* 15% from the top and centered */  
+    margin: 8% auto 5% 39%; /* 15% from the top and centered */  
 }
 .Modal .jy{
     width: 30%;
@@ -218,9 +218,9 @@ body::-webkit-scrollbar{
     margin: 10% auto auto 35%; /* 15% from the top and centered */
 }
 .Modal .explain{        /*개인전시 설명문*/
-    width: 20%;
-    padding: 3rem;
-    margin: 15% auto auto 40%;
+    width: 25%;
+    padding: 15px 5% 3px 5%;
+    margin: 15% auto auto 37%;
 }
 .Modal .explain2{       /*굿즈 설명문*/
     width: 30%;
@@ -337,6 +337,9 @@ body::-webkit-scrollbar{
         margin: auto auto auto 28%;
         width: 30%;
     }
+    .btn_p{
+        margin: 8% 0 2% 5%;
+    }
 }
 
 @media (min-width: 1281px) and (max-width: 1440px){
@@ -353,6 +356,9 @@ body::-webkit-scrollbar{
     .btn{
         margin: auto auto auto 28%;
         width: 30%;
+    }
+    .btn_p{
+        margin: auto auto auto 5%;
     }
 }
 
@@ -371,6 +377,9 @@ body::-webkit-scrollbar{
         margin: auto auto auto 28%;
         width: 30%;
     }
+    .btn_p{
+        margin: auto auto auto 5%;
+    }
 }
 
 @media (min-width: 1900px){     /*pc 4(완전 와이드스크린)*/
@@ -387,6 +396,9 @@ body::-webkit-scrollbar{
     .btn{
         margin: auto auto auto 23%;
         width: 30%;
+    }
+    .btn_p{
+        margin: auto auto auto 5%;
     }
 }
 

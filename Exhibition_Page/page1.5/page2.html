@@ -42,33 +42,7 @@
 			    });
 		    });
 	    </script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script type="text/javascript">
 
-            jQuery(document).ready(function($){
-
-                var x = $(document).scrollTop(0);
-                $(document).scroll(function(){
-                    var y = $(document).scrollTop();
-                    var z = y - x;
-                    if(z >= 0 && y >= 220){
-                        $("div").stop().animate({
-                            marginTop: "0",
-                            opacity: 1
-                        });
-                    }
-                    if(z <= 0 && y >= 220){
-                        $("div").stop().animate({
-                            marginTop: "200px",
-                            opacity: 0
-                        });
-                    }
-                    x = y;
-                    $("p").text(z + " , " + y);
-                });
-            });
-
-        </script> -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
@@ -108,14 +82,12 @@
             <img src="images3/chat/chat5.png" alt="채팅-5" class="chat up" id="chat_5" width="13%"></div>
             <img src="images3/chat/chat6.png" alt="채팅-6" class="chat up" id="chat_6" width="19%"></div>
             <img src="images3/chat/my_chat.png" alt="채팅-내 글" class="chat up" id="my_chat" width="6%"></div>
-            <!-- <img src="images3/chat/chat_ing.png" alt="채팅-적는중인 것" class="chat ing" id="chat_ing" width="10%"> -->
-            <!-- <p class="typing">또 나만.. 아직이네.. </p> -->
-        
+
             <!-- <img src="images3/front/Full-Fade-out.png" alt="전체-페이드아웃" class="fade" id="full-fade-out" width="100%"> -->
         </div>
         
         <p class="typing-txt">또 나만.. 아직이네..</p>
-        <p class="typing">또 나만.. 아직이네..</p>
+        <p class="typing"></p>
 
         <div class="scroll">
             <img src="../scroll-image/scroll-side(black).png" alt="옆으로 스크롤" class="scroll-icon" id="scroll-side" width="10%">
