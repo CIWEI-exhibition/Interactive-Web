@@ -30,7 +30,7 @@ body::-webkit-scrollbar{
 .wrapper .small_wrapper .submit{
   position: absolute;
   margin: 19% 0 0 77%;
-  animation: zoom 3s ease-in-out;
+  animation: zoom 3s infinite ease-in-out;
 }
 
 @keyframes zoom {
