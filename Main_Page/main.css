@@ -4,13 +4,8 @@
 
 body {
     margin: 0;
-    background-color: #97BCDB;  
-    /* background-color: #92BAD8; */
-}
-
-@font-face {
-    src: url("../NanumSquareR.otf");
-    font-family: "NanumSquare";
+    /* background-color: #97BCDB;   */
+    background-color: #92BAD8;
 }
 
 /*사이드바 끝*/
