@@ -182,17 +182,59 @@ body::-webkit-scrollbar{
   margin: -50% 0 0 25%;
 } */
 
-#hand{
-  position: absolute;
-  margin: -35% 0 0 -10%;
-  animation-name: hand;
-  animation-duration: 5s;
- animation-timing-function: linear;
- animation-iteration-count: infinite;
-  animation-direction:alternate;
-  animation-fill-mode: forwards;
+
+@media (max-width: 1280px){     /*모바일 일단 포함, pc(13인치)*/
+  #hand{
+    position: absolute;
+    margin: -32% 0 0 -10%;
+    animation-name: hand;
+    animation-duration: 5s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
+  }
 }
 
+@media (min-width: 1281px) and (max-width: 1440px){     /*pc 2*/
+  #hand{
+    position: absolute;
+    margin: -30% 0 0 -10%;
+    animation-name: hand;
+    animation-duration: 5s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
+  }
+}
+
+
+@media (min-width: 1440px) and (max-width: 1900px){     /*pc 3(15인치)*/
+  #hand{
+    position: absolute;
+    margin: -28% 0 0 -10%;
+    animation-name: hand;
+    animation-duration: 5s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
+  }
+}
+
+@media (min-width: 1900px){     /*pc 4(완전 와이드스크린)*/
+  #hand{
+    position: absolute;
+    margin: -18% 0 0 -10%;
+    animation-name: hand;
+    animation-duration: 5s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
+  }
+}
 #small-cloud{
   position: absolute;
   margin: -15% 0 0 25%;
@@ -1147,7 +1189,7 @@ body::-webkit-scrollbar{
 @media (min-width: 1900px){     /*pc 4(완전 와이드스크린)*/
   #grass_white{
     position: absolute;
-    margin: -43% 0 0 10%;
+    margin: -33% 0 0 10%;
     animation-name: shadow;
     animation-duration: 1s;
     animation-timing-function: linear;
@@ -1158,7 +1200,7 @@ body::-webkit-scrollbar{
 
   #shadow_grass{
     position: absolute;
-    margin: -38% 0 0 10%;
+    margin: -30% 0 0 10%;
     animation-name: shadow;
     animation-duration: 1.5s;
   	animation-timing-function: linear;
@@ -1169,7 +1211,7 @@ body::-webkit-scrollbar{
 
   #shadow_right{
     position: absolute;
-    margin: -28% 0 0 18.3%;
+    margin: -20% 0 0 18.3%;
     /* animation-name: shadow;
     animation-duration: 2s;
 	animation-timing-function: linear;
@@ -1180,7 +1222,7 @@ body::-webkit-scrollbar{
 
   #shadow_left{
     position: absolute;
-    margin: -28% 0 0 1%;
+    margin: -20% 0 0 1%;
     animation-name: shadow;
     animation-duration: 1.5s;
   	animation-timing-function: linear;
