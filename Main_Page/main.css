@@ -170,18 +170,18 @@ body::-webkit-scrollbar{
     display: none;
 }
 .wrapper{
-    display: relative;
+    position: relative;
     /* min-height: 500px; */
     overflow: hidden;
 }
 
 .img{
-    display: absolute;
+    position: absolute;
 }
 
 .wrapper .logo_wrapper .logo{
-    position: sticky;
-    margin: -90% 0 0 37.1%;
+    position: absolute;
+    margin: -44.5% 0 0 37.1%;
 }
 
 .wrapper .button_wrapper .button1{
