@@ -443,7 +443,7 @@ cursor: pointer;
 .exit{
   display: inline-block;
   position: fixed;
-  margin: 5% 0 0 90%;
+  margin: 10% 0 0 90%;
 }
 .exit .tooltip{
   position: fixed;
