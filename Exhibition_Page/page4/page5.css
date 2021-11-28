@@ -229,8 +229,21 @@ body::-webkit-scrollbar{
     margin: -18% 0 0 -10%;
     animation-name: hand;
     animation-duration: 5s;
-   animation-timing-function: linear;
-   animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
+  }
+}
+
+@media (width: 2560px) {
+  #hand{
+    position: absolute;
+    margin: -10% 0 0 -10%;
+    animation-name: hand;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
     animation-direction:alternate;
     animation-fill-mode: forwards;
   }
@@ -1231,6 +1244,7 @@ body::-webkit-scrollbar{
     animation-fill-mode: forwards;
   }
 }
+
 
 #blanket{
     position: absolute;
