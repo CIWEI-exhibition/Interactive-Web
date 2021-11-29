@@ -117,6 +117,29 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js"></script>   <!--for 음원. internet explorer에서는 적용 안됨-->
     <script type="text/javascript" src="note.js"></script> 
-    <script type="text/javascript" src="db.js"></script> 
+    
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyDPqXUbJmHVDnknnINz3U-MGiT9BqNAi2Q",
+          authDomain: "aquaurore.firebaseapp.com",
+          projectId: "aquaurore",
+          storageBucket: "aquaurore.appspot.com",
+          messagingSenderId: "176474862153",
+          appId: "1:176474862153:web:c1007d5c0d85b0f327c598",
+          measurementId: "G-Q8KX483VQR"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
 </body> 
 </html>
