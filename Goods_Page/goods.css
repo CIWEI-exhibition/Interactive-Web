@@ -126,9 +126,10 @@ p{
     text-align: center;
     margin: 0.5rem auto 0 auto;
     padding: 0.1rem 3rem 0.1rem 3rem;
-    border: 1px solid gray;
+    border: 1px solid whitesmoke;
     border-radius: 5px;
     color: gray;
+    background-color: whitesmoke;
 }
 
 a{
@@ -136,20 +137,24 @@ a{
 }
 
 .btn .pop_bt:hover{
+    border: 1px solid gray;
     background-color: gray;
     color: white;
 }
 
 /* 이미지 배치 및 애니메이션 */
+.ment_1{
+    margin: -55% 0 0 32%;
+}
 .board .diary_wrapper .diary{
     position: absolute;
-    margin: -47% 0 0 30%;
+    margin: -45% 0 0 32%;
     animation: up 3s ease-in-out 0s infinite alternate;
 }
 
 .board .diary_wrapper .diary_reflect{
     position: absolute;
-    margin: -14% 0 0 30%;
+    margin: -14% 0 0 32%;
     animation: down 3s ease-in-out 0s infinite alternate;
 }
 
