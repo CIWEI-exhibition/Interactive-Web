@@ -236,7 +236,7 @@ a{
 /* 미디어쿼리 */
 @media (max-width: 1280px){
     .ment_1{
-        margin: -55% 0 0 25%;
+        margin: -55% 0 0 29.5%;
     }
     .board .diary_wrapper .diary{
         position: absolute;
@@ -251,10 +251,14 @@ a{
     }
 
     .ment_2{
-        margin: -55% 0 0 32%;
+        margin: -55% 0 0 38%;
     }
 
     .ment_3{
-        margin: -55% 0 0 30%;
+        margin: -55% 0 0 35%;
+    }
+
+    .ment_4{
+        margin: -55% 0 0 38%;
     }
 }
