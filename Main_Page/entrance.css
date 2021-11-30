@@ -16,6 +16,10 @@ body::-webkit-scrollbar{
     display: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 /* 내부 */
 .section input{
     display: none;
@@ -470,6 +474,14 @@ body::-webkit-scrollbar{
     padding: 0.1rem 3rem 0.1rem 3rem;
     border: 1px solid gray;
     border-radius: 5px;
+}
+
+.pop_bt{
+    text-align: center;
+}
+
+span{
+    text-align: center;
 }
 
 .modal-content .pop_bt:hover{
