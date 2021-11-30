@@ -215,6 +215,7 @@ a{
     animation: down 3s ease-in-out 0s infinite alternate;
 }
 
+/* 애니메이션 */
 @keyframes up{
     0%, 100%{
         transform: translate(0);
@@ -229,5 +230,31 @@ a{
     }
     50%{
         transform: translateY(-5%);
+    }
+}
+
+/* 미디어쿼리 */
+@media (max-width: 1280px){
+    .ment_1{
+        margin: -55% 0 0 30%;
+    }
+    .board .diary_wrapper .diary{
+        position: absolute;
+        margin: -42% 0 0 32%;
+        animation: up 3s ease-in-out 0s infinite alternate;
+    }
+    
+    .board .diary_wrapper .diary_reflect{
+        position: absolute;
+        margin: -11% 0 0 32%;
+        animation: down 3s ease-in-out 0s infinite alternate;
+    }
+
+    .ment_2{
+        margin: -55% 0 0 37%;
+    }
+    
+    .ment_3{
+        margin: -55% 0 0 34%;
     }
 }
