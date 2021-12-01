@@ -4,6 +4,15 @@
  * 이 버전은 배열을 이용하며 JSON으로 색상을 추가했습니다. 
  */ 
 
+// import axios from 'axios';
+
+// axios.get('https://www.aquaurore.co.kr/Community_Page/note.html').then((Response)=>{
+//     console.log(Response.data);
+// }).catch((Error)=>{
+//     console.log(Error);
+// })
+
+/////////////////////////////////////
 function play(){
     var sound = new Howl({
         src: ['지나갈거야.mp3'],
@@ -112,6 +121,19 @@ function addStickyToDOM(key, stickyObj) {
      
     // 스티키 노트를 클릭하면 삭제되도록 이벤트 리스너를 붙임 
     // sticky.onclick = deleteSticky;  // 나중에 삭제 필요할때 해제할 것
+
+    // axios({
+    //     method:"POST",
+    //     url:'https://www.aquaurore.co.kr/Community_Page/note.html',
+    //     data:{
+    //         "localStorage": localStorage.value
+    //     } 
+    //  }).then((res)=>{
+    //      console.log(res);
+    //  }).catch(error=>{
+    //      console.log(error);
+    //      throw new Error(error);
+    //  });
 } 
 
 function removeStickyFromDOM(key) { 
