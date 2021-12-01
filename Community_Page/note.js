@@ -57,7 +57,6 @@ function getStickiesArray() {
 } 
 
 function createSticky() { 
-    const db = getDatabase(); //db추가 내용
     var stickiesArray = getStickiesArray(); 
     var value = document.getElementById("input-message").value; 
     // var ColorSelectObj = document.getElementById("note-color"); 
@@ -78,9 +77,6 @@ function createSticky() {
     localStorage.setItem("stickiesArray", JSON.stringify(stickiesArray)); 
      
     addStickyToDOM(key, stickyObj); 
-
-    const updates = {};
-    
 } 
 
 function deleteSticky(e) { 
@@ -125,6 +121,19 @@ function addStickyToDOM(key, stickyObj) {
      
     // 스티키 노트를 클릭하면 삭제되도록 이벤트 리스너를 붙임 
     // sticky.onclick = deleteSticky;  // 나중에 삭제 필요할때 해제할 것
+
+    axios({
+        method:"POST",
+        url:'https://www.aquaurore.co.kr/Community_Page/note.html',
+        data:{
+            "localStorage": localStorage.value
+        } 
+     }).then((res)=>{
+         console.log(res);
+     }).catch(error=>{
+         console.log(error);
+         throw new Error(error);
+     });
 } 
 
 function removeStickyFromDOM(key) { 
