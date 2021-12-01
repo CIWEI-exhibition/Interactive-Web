@@ -54,6 +54,18 @@ class GameScene extends Phaser.Scene{
         //     console.log(gameState);
         //     gameState.square.fillColor = 0xFFFF00;
         //   });
+        this.input.on('pointerdown,', function(){
+            this.sound.add("jump2").play();
+            if(this.player.y < HEIGHT-300)
+                return;
+            this.tweens.add({
+                targets: this.player,
+                y: this.player.y-400,
+                duration: 400,
+                yoyo: true,
+            });
+        }.bind(this));
+
         this.input.keyboard.on('keydown-SPACE', function(){
             this.sound.add("jump2").play();
             if(this.player.y < HEIGHT-300) 
