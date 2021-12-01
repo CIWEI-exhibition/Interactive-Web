@@ -4,6 +4,15 @@
  * 이 버전은 배열을 이용하며 JSON으로 색상을 추가했습니다. 
  */ 
 
+import axios from 'axios';
+
+axios.get('https://www.aquaurore.co.kr/Community_Page/note.html').then((Response)=>{
+    console.log(Response.data);
+}).catch((Error)=>{
+    console.log(Error);
+})
+
+/////////////////////////////////////
 function play(){
     var sound = new Howl({
         src: ['지나갈거야.mp3'],
@@ -48,6 +57,7 @@ function getStickiesArray() {
 } 
 
 function createSticky() { 
+    const db = getDatabase(); //db추가 내용
     var stickiesArray = getStickiesArray(); 
     var value = document.getElementById("input-message").value; 
     // var ColorSelectObj = document.getElementById("note-color"); 
@@ -68,6 +78,9 @@ function createSticky() {
     localStorage.setItem("stickiesArray", JSON.stringify(stickiesArray)); 
      
     addStickyToDOM(key, stickyObj); 
+
+    const updates = {};
+    
 } 
 
 function deleteSticky(e) { 
