@@ -66,19 +66,160 @@ body::-webkit-scrollbar{
 } */
 
 /*그림 배치*/
-@media (max-height: 1024px){
+@media (max-width: 1024px){
+    .scroll-icon{
+        position: absolute;
+        height: auto;
+        margin: 17% 0 0 7.5%;
+        opacity: 0;
+        -webkit-animation:blink 7s ease-in-out; 
+        -moz-animation:blink 7s ease-in-out; 
+        animation:blink 7s ease-in-out;
+    }
+
+    .click-icon{
+        position: absolute;
+        height: auto;
+        margin: 23% 0 0 295.3%;
+        opacity: 0;
+        -webkit-animation:blink 7s ease-in-out infinite; 
+        -moz-animation:blink 7s ease-in-out infinite; 
+        animation:blink 7s ease-in-out infinite;
+    }
+
+    .wrapper{
+        display: flex;
+        position: relative;
+        max-width: 400%;
+    }
+    
+    .img{
+        position: absolute;
+        height: auto;
+    }
+    
+    .wrapper .bgSky{
+        width: 483.5%;
+    }
+
+    .wrapper .main_wrapper .bgStar1{
+        width: 440%;
+    }
+
     .wrapper .main_wrapper .bgStar2{
-        width: 500%;
+        width: 470%;
+    }
+
+    .wrapper .main_wrapper .bgStar3{
+        width: 450%;
+    }
+
+    .wrapper .main_wrapper .bgMount1{
+        width: 200%;
+        margin: 24.2% 0 0 -1.5%;
+    }
+
+    .wrapper .main_wrapper .bgMount2{
+        width: 280%;
+        margin: 28% 0 0 210%;
+    }
+
+    .wrapper .main_wrapper .bgMount3{
+        width: 200%;
+        margin: 21% 0 0 44%;
+    }
+
+    .wrapper .main_wrapper .bgMount4{
+        width: 300%;
+        margin: 26% 0 0 200%;
     }
 
     .wrapper .main_wrapper .bgGround{
         position: fixed;
-        width: 350%;
+        width: 300%;
         height: auto;
-        margin: -30% 0 0 0;
+        margin: 9.5% 0 0 0;
     }
+
+    .wrapper .main_wrapper .bgLamp{
+        width: 432%;
+        margin: 11% 0 0 49%;
+    }
+
+    .wrapper .main_wrapper .bgTree{
+        width: 430%;
+        margin: 16% 0 0 45%;
+    }
+
+    .wrapper .booth_wrapper .banner{
+        width: 45%;
+        margin: 22% 0 0 112%;
+    }
+
+    .wrapper .booth_wrapper .busking{
+        width: 41%;
+        margin: 20.4% 0 0 170%;
+    }
+
+    .wrapper .booth_wrapper .icecream{
+        width: 34%;
+        margin: 12% 0 0 224%;
+    }
+
+    .wrapper .booth_wrapper .study{
+        width: 42%;
+        margin: 14% 0 0 271.5%;
+    }
+
+    .wrapper .booth_wrapper .love{
+        width: 42%;
+        margin: 14% 0 0 326%;
+    }
+
+    .wrapper .booth_wrapper .music{
+        width: 42%;
+        margin: 13% 0 0 381%;
+    }
+
+    .wrapper .booth_wrapper .healing{
+        width: 42%;
+        margin: 14% 0 0 435%;
+    }
+    /*툴팁*/
+    .fas{
+        color: white;
+        position: absolute;
+        margin: 5% 0 0 490%;
+        z-index: 5;
+    }
+    .fas:hover{
+        transform: scale(1.2);
+        transition: 0.1s ease-in-out;
+    }
+    .exit{
+        display: inline-block;
+        position: fixed;
+        margin: 1% 0 0 80%;
+    }
+    .exit .tooltip{
+        position: fixed;
+        width: 100px;
+        padding: 0;
+        visibility: hidden;
+        /* background-color: white; */
+        color: white;
+        text-align: center;
+        z-index: 5;
+    }
+    .exit .tooltip h1{
+        position: fixed;
+        font-size: 16px;
+        margin: -2% 0 0 -3%;
+        z-index: 5;
+    }
+    .exit:hover .tooltip{visibility: visible;}
 }
-@media (max-width: 1280px){      /* pc */
+@media (min-width: 1025px) and (max-width: 1280px){      /* pc */
     .scroll-icon{
         position: absolute;
         height: auto;
