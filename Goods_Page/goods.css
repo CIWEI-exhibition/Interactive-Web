@@ -233,6 +233,12 @@ a{
     }
 }
 
+/* 버튼 */
+.fas{
+    position: absolute;
+    margin: -50% 0 0 30%;
+}
+
 /* 미디어쿼리 */
 @media (max-width: 1280px){
     .ment_1{
@@ -261,4 +267,40 @@ a{
     .ment_4{
         margin: -55% 0 0 38%;
     }
+}
+
+@media (min-width: 1900px){
+    .ment{
+        position: absolute;
+        margin: -55% 0 0 32.5%;
+        z-index: 5;
+    }
+    
+    p{
+        font-family: 'IBM Plex Sans KR', sans-serif;
+        font-size: 1.5rem;
+        white-space: nowrap;
+        width: 100%;
+        margin: 3px;
+        text-align: center;
+    }
+    
+    .ment #title{
+        font-family: 'IBM Plex Sans KR', sans-serif;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top: 2rem;
+    }
+    
+    .ment #explain1{
+        font-family: 'IBM Plex Sans KR', sans-serif;
+        font-size: 1.5rem;
+        color: black;
+    }
+    .ment #explain2{
+        font-family: 'IBM Plex Sans KR', sans-serif;
+        font-size: 1rem;
+        color: gray;
+    }
+    
 }
