@@ -199,7 +199,7 @@ body::-webkit-scrollbar{
     .exit{
         display: inline-block;
         position: fixed;
-        margin: 1% 0 0 80%;
+        margin: 1% 0 0 85%;
     }
     .exit .tooltip{
         position: fixed;
