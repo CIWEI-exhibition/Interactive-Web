@@ -1,8 +1,10 @@
 # AQUAURORE
 ## Interactive-Web Exhibition
 
-### * 홈페이지
+<img width="960" alt="aquaurore" src="https://user-images.githubusercontent.com/80036437/175542640-589f44e3-e948-473a-9d33-582e78416555.png">
+
+#### * WebSite
 https://www.aquaurore.co.kr/
 
-#### * SNS 링크
+#### * SNS
 https://instagram.com/aquaurore?igshid=YmMyMTA2M2Y=
