@@ -5,6 +5,13 @@
 
 ##### * WebSite
 https://www.aquaurore.co.kr/
+<br>
+(현재 도메인 만료되어, 하단 유튜브 영상으로 확인하실 수 있습니다.)
+<br>
+📽️https://youtu.be/1TxUWU2lw4U <br></br>
+<img width="360" src="https://github.com/user-attachments/assets/18198c28-899f-47f7-b33c-26f35df6a041">
+
+<br>
 
 ##### * SNS
 https://instagram.com/aquaurore?igshid=YmMyMTA2M2Y=
