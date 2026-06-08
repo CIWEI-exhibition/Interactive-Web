@@ -1,13 +1,16 @@
 package com.example.aquaurore.controller;
 
-import org.springframework.stereotype.Controller;
+import com.example.aquaurore.common.ApiResponse;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
+@RequestMapping("/api")
 public class WebController {
 
-    @GetMapping("/")
-    public String redirectToIndex() {
-        return "redirect:/index.html";
+    @GetMapping("/health")
+    public ApiResponse<String> health() {
+        return ApiResponse.ok("AQUAURORE API is running");
     }
 }
