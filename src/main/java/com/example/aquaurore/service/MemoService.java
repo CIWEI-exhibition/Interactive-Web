@@ -24,8 +24,10 @@ public class MemoService {
 
     @Transactional
     public MemoDto.Response create(MemoDto.CreateRequest request) {
+        String nickname = (request.getNickname() == null || request.getNickname().isBlank())
+                ? "익명" : request.getNickname();
         Memo memo = Memo.builder()
-                .nickname(request.getNickname())
+                .nickname(nickname)
                 .content(request.getContent())
                 .color(request.getColor())
                 .build();
