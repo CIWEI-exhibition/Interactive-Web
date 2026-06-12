@@ -39,4 +39,9 @@ public class OrderDto {
         private String buyerName;
         private String buyerEmail;
     }
+
+    @Getter
+    public static class UpdateStatusRequest {
+        private String status;
+    }
 }

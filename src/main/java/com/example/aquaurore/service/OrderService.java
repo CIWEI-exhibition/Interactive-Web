@@ -37,4 +37,12 @@ public class OrderService {
                 .build();
         return new OrderDto.Response(orderRepository.save(order));
     }
+
+    @Transactional
+    public OrderDto.Response updateStatus(Long id, OrderDto.UpdateStatusRequest request) {
+        Order order = orderRepository.findById(id)
+                .orElseThrow(() -> new IllegalArgumentException("Order not found: " + id));
+        order.updateStatus(Order.OrderStatus.valueOf(request.getStatus()));
+        return new OrderDto.Response(order);
+    }
 }

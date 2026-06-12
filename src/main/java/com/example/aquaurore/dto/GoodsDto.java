@@ -32,4 +32,13 @@ public class GoodsDto {
         private Integer stock;
         private String imageUrl;
     }
+
+    @Getter
+    public static class UpdateRequest {
+        private String name;
+        private String description;
+        private Integer price;
+        private Integer stock;
+        private String imageUrl;
+    }
 }

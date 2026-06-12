@@ -49,4 +49,8 @@ public class Order {
         this.buyerEmail = buyerEmail;
         this.status = OrderStatus.PENDING;
     }
+
+    public void updateStatus(OrderStatus status) {
+        this.status = status;
+    }
 }

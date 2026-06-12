@@ -39,4 +39,18 @@ public class GoodsService {
                 .build();
         return new GoodsDto.Response(goodsRepository.save(goods));
     }
+
+    @Transactional
+    public GoodsDto.Response update(Long id, GoodsDto.UpdateRequest request) {
+        Goods goods = goodsRepository.findById(id)
+                .orElseThrow(() -> new IllegalArgumentException("Goods not found: " + id));
+        goods.update(request.getName(), request.getDescription(),
+                request.getPrice(), request.getStock(), request.getImageUrl());
+        return new GoodsDto.Response(goods);
+    }
+
+    @Transactional
+    public void delete(Long id) {
+        goodsRepository.deleteById(id);
+    }
 }

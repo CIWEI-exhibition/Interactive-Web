@@ -23,4 +23,10 @@ public class OrderController {
     public ApiResponse<List<OrderDto.Response>> findAll() {
         return ApiResponse.ok(orderService.findAll());
     }
+
+    @PatchMapping("/api/admin/orders/{id}/status")
+    public ApiResponse<OrderDto.Response> updateStatus(@PathVariable Long id,
+                                                        @RequestBody OrderDto.UpdateStatusRequest request) {
+        return ApiResponse.ok(orderService.updateStatus(id, request));
+    }
 }

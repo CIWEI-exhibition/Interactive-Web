@@ -28,4 +28,16 @@ public class GoodsController {
     public ApiResponse<GoodsDto.Response> create(@RequestBody GoodsDto.CreateRequest request) {
         return ApiResponse.ok(goodsService.create(request));
     }
+
+    @PutMapping("/api/admin/goods/{id}")
+    public ApiResponse<GoodsDto.Response> update(@PathVariable Long id,
+                                                  @RequestBody GoodsDto.UpdateRequest request) {
+        return ApiResponse.ok(goodsService.update(id, request));
+    }
+
+    @DeleteMapping("/api/admin/goods/{id}")
+    public ApiResponse<Void> delete(@PathVariable Long id) {
+        goodsService.delete(id);
+        return ApiResponse.ok(null);
+    }
 }

@@ -35,4 +35,12 @@ public class Goods {
         this.stock = stock;
         this.imageUrl = imageUrl;
     }
+
+    public void update(String name, String description, Integer price, Integer stock, String imageUrl) {
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.stock = stock;
+        this.imageUrl = imageUrl;
+    }
 }
