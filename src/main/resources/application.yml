@@ -2,7 +2,7 @@ spring:
   application:
     name: aquaurore
   profiles:
-    active: dev
+    active: local
 
 ---
 spring:
@@ -34,9 +34,43 @@ jwt:
   secret: aquaurore-dev-secret-key-must-be-at-least-256-bits-long-for-hs256
   expiration: 86400000
 
+admin:
+  username: admin
+  password: aquaurore2024
+
 springdoc:
   swagger-ui:
     path: /swagger-ui.html
+
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+  datasource:
+    url: jdbc:mysql://localhost:3306/aquaurore?useSSL=false&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: aquaurore2024
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+
+server:
+  port: 8080
+
+jwt:
+  secret: aquaurore-local-secret-key-must-be-at-least-256-bits-long-for-hs256
+  expiration: 86400000
+
+admin:
+  username: admin
+  password: aquaurore2024
 
 ---
 spring:
@@ -60,3 +94,7 @@ server:
 jwt:
   secret: ${JWT_SECRET}
   expiration: 86400000
+
+admin:
+  username: ${ADMIN_USERNAME:admin}
+  password: ${ADMIN_PASSWORD}
