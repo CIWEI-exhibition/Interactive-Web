@@ -6,4 +6,4 @@ RUN chmod +x gradlew && ./gradlew build -x test
 FROM eclipse-temurin:17-jre-alpine
 WORKDIR /app
 COPY --from=build /app/build/libs/*.jar app.jar
-ENTRYPOINT ["java", "-Xmx384m", "-Xms128m", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-Xmx384m", "-Xms128m", "-Dspring.profiles.active=prod", "-jar", "app.jar"]
