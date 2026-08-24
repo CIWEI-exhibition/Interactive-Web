@@ -1,0 +1,2 @@
+DEV_JWT_SECRET: your-dev-jwt-secret-must-be-at-least-256-bits-long-for-hs256
+DEV_ADMIN_PASSWORD: your-dev-admin-password

@@ -1,0 +1,3 @@
+LOCAL_DB_PASSWORD: your-mysql-password
+LOCAL_JWT_SECRET: your-local-jwt-secret-must-be-at-least-256-bits-long-for-hs256
+LOCAL_ADMIN_PASSWORD: your-admin-password
